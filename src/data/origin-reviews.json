@@ -1,0 +1,3702 @@
+{
+  "Adjectives:예뻐요": {
+    "lemma": "예쁘다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:예쁘다"
+    ],
+    "componentIds": [
+      "pattern:eu"
+    ],
+    "note": "예쁘다 → 예뻐요."
+  },
+  "Adjectives:잘생겼어요": {
+    "lemma": "잘생기다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:잘생기다"
+    ],
+    "componentIds": [
+      "stem:생기다"
+    ],
+    "note": "잘 = well; 생기다 describes appearance. 생겼어요 uses a past-shaped form for a present appearance."
+  },
+  "Adjectives:못생겼어요": {
+    "lemma": "못생기다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:못생기다"
+    ],
+    "componentIds": [
+      "stem:생기다"
+    ],
+    "note": "못 = poorly; 생기다 describes appearance. 생겼어요 uses a past-shaped form for a present appearance."
+  },
+  "Adjectives:귀여워요": {
+    "lemma": "귀엽다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:귀엽다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "귀엽다 → 귀여워요."
+  },
+  "Adjectives:날씬해요": {
+    "lemma": "날씬하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:날씬하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "pattern:hada-adjective"
+    ],
+    "note": "날씬 + 하다 → 날씬해요."
+  },
+  "Adjectives:뚱뚱해요": {
+    "lemma": "뚱뚱하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:뚱뚱하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "pattern:hada-adjective"
+    ],
+    "note": "뚱뚱 + 하다 → 뚱뚱해요."
+  },
+  "Adjectives:바빠요": {
+    "lemma": "바쁘다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:바쁘다"
+    ],
+    "componentIds": [
+      "pattern:eu"
+    ],
+    "note": "바쁘다 → 바빠요."
+  },
+  "Adjectives:피곤해요": {
+    "lemma": "피곤하다",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:피곤하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "stem:피곤",
+      "pattern:hada-adjective"
+    ],
+    "note": "피곤 + 하다 → 피곤해요."
+  },
+  "Adjectives:아파요": {
+    "lemma": "아프다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:아프다"
+    ],
+    "componentIds": [
+      "pattern:eu"
+    ],
+    "note": "아프다 → 아파요."
+  },
+  "Adjectives:슬퍼요": {
+    "lemma": "슬프다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:슬프다"
+    ],
+    "componentIds": [
+      "pattern:eu"
+    ],
+    "note": "슬프다 → 슬퍼요."
+  },
+  "Adjectives:행복해요": {
+    "lemma": "행복하다",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:행복하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "stem:행복",
+      "pattern:hada-adjective"
+    ],
+    "note": "행복 + 하다 → 행복해요."
+  },
+  "Adjectives:무서워요": {
+    "lemma": "무섭다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:무섭다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "무섭다 → 무서워요."
+  },
+  "Adjectives:재미있어요": {
+    "lemma": "재미있다",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:재미있다"
+    ],
+    "componentIds": [
+      "stem:재미",
+      "stem:있다"
+    ],
+    "note": "재미 (fun) + 있다 (exists)."
+  },
+  "Adjectives:재미없어요": {
+    "lemma": "재미없다",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:재미없다"
+    ],
+    "componentIds": [
+      "stem:재미",
+      "stem:없다"
+    ],
+    "note": "재미 (fun) + 없다 (is absent)."
+  },
+  "Adjectives:좋아요": {
+    "lemma": "좋다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:좋다"
+    ],
+    "componentIds": [
+      "stem:좋다"
+    ],
+    "note": "좋다 → 좋아요."
+  },
+  "Adjectives:나빠요": {
+    "lemma": "나쁘다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:나쁘다"
+    ],
+    "componentIds": [
+      "pattern:eu"
+    ],
+    "note": "나쁘다 → 나빠요."
+  },
+  "Adjectives:커요": {
+    "lemma": "크다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:크다"
+    ],
+    "componentIds": [
+      "pattern:eu"
+    ],
+    "note": "크다 → 커요."
+  },
+  "Adjectives:작아요": {
+    "lemma": "작다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:작다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Adjectives:길어요": {
+    "lemma": "길다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:길다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Adjectives:짧아요": {
+    "lemma": "짧다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:짧다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Adjectives:넓어요": {
+    "lemma": "넓다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:넓다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Adjectives:좁아요": {
+    "lemma": "좁다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:좁다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Adjectives:두꺼워요": {
+    "lemma": "두껍다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:두껍다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "두껍다 → 두꺼워요."
+  },
+  "Adjectives:얇아요": {
+    "lemma": "얇다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:얇다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Adjectives:무거워요": {
+    "lemma": "무겁다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:무겁다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "무겁다 → 무거워요."
+  },
+  "Adjectives:가벼워요": {
+    "lemma": "가볍다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:가볍다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "가볍다 → 가벼워요."
+  },
+  "Adjectives:가까워요": {
+    "lemma": "가깝다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:가깝다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "가깝다 → 가까워요."
+  },
+  "Adjectives:멀어요": {
+    "lemma": "멀다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:멀다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Adjectives:같아요": {
+    "lemma": "같다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:같다"
+    ],
+    "componentIds": [
+      "stem:같다"
+    ],
+    "note": "같다 → 같아요."
+  },
+  "Adjectives:똑같아요": {
+    "lemma": "똑같다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:똑같다"
+    ],
+    "componentIds": [
+      "stem:같다"
+    ],
+    "note": "똑 = exactly; 같다 = be the same."
+  },
+  "Adjectives:달라요": {
+    "lemma": "다르다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:다르다"
+    ],
+    "componentIds": [
+      "pattern:reu"
+    ],
+    "note": "다르다 → 달라요."
+  },
+  "Adjectives:빨라요": {
+    "lemma": "빠르다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:빠르다"
+    ],
+    "componentIds": [
+      "pattern:reu"
+    ],
+    "note": "빠르다 → 빨라요."
+  },
+  "Adjectives:느려요": {
+    "lemma": "느리다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:느리다"
+    ],
+    "componentIds": [
+      "pattern:i-eo"
+    ],
+    "note": "느리다 → 느려요."
+  },
+  "Adjectives:쉬워요": {
+    "lemma": "쉽다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:쉽다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "쉽다 → 쉬워요."
+  },
+  "Adjectives:어려워요": {
+    "lemma": "어렵다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:어렵다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "어렵다 → 어려워요."
+  },
+  "Adjectives:힘들어요": {
+    "lemma": "힘들다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:힘들다"
+    ],
+    "componentIds": [],
+    "note": "힘 = strength; 들다 here means “be required.” Something that takes effort."
+  },
+  "Adjectives:깨끗해요": {
+    "lemma": "깨끗하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:깨끗하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "pattern:hada-adjective"
+    ],
+    "note": "깨끗 + 하다 → 깨끗해요."
+  },
+  "Adjectives:더러워요": {
+    "lemma": "더럽다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:더럽다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "더럽다 → 더러워요."
+  },
+  "Adjectives:조용해요": {
+    "lemma": "조용하다",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:조용하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "pattern:hada-adjective"
+    ],
+    "note": "조용 + 하다 → 조용해요."
+  },
+  "Adjectives:시끄러워요": {
+    "lemma": "시끄럽다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:시끄럽다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "시끄럽다 → 시끄러워요."
+  },
+  "Adjectives:밝아요": {
+    "lemma": "밝다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:밝다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Adjectives:어두워요": {
+    "lemma": "어둡다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:어둡다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "어둡다 → 어두워요."
+  },
+  "Adjectives:더워요": {
+    "lemma": "덥다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:덥다"
+    ],
+    "componentIds": [
+      "stem:덥다",
+      "pattern:bieup"
+    ],
+    "note": "덥다 → 더워요."
+  },
+  "Adjectives:추워요": {
+    "lemma": "춥다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:춥다"
+    ],
+    "componentIds": [
+      "stem:춥다",
+      "pattern:bieup"
+    ],
+    "note": "춥다 → 추워요."
+  },
+  "Adjectives:뜨거워요": {
+    "lemma": "뜨겁다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:뜨겁다"
+    ],
+    "componentIds": [
+      "stem:뜨겁다",
+      "pattern:bieup"
+    ],
+    "note": "뜨겁다 → 뜨거워요."
+  },
+  "Adjectives:차가워요": {
+    "lemma": "차갑다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:차갑다"
+    ],
+    "componentIds": [
+      "stem:차갑다",
+      "pattern:bieup"
+    ],
+    "note": "차갑다 → 차가워요."
+  },
+  "Adjectives:따뜻해요": {
+    "lemma": "따뜻하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:따뜻하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "pattern:hada-adjective"
+    ],
+    "note": "따뜻 + 하다 → 따뜻해요."
+  },
+  "Adjectives:시원해요": {
+    "lemma": "시원하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:시원하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "pattern:hada-adjective"
+    ],
+    "note": "시원 + 하다 → 시원해요."
+  },
+  "Adjectives:싸요": {
+    "lemma": "싸다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:싸다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Adjectives:비싸요": {
+    "lemma": "비싸다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:비싸다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Adjectives:매워요": {
+    "lemma": "맵다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:맵다"
+    ],
+    "componentIds": [
+      "pattern:bieup"
+    ],
+    "note": "맵다 → 매워요."
+  },
+  "Adjectives:맛있어요": {
+    "lemma": "맛있다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:맛있다"
+    ],
+    "componentIds": [
+      "stem:맛",
+      "stem:있다"
+    ],
+    "note": "맛 (taste) + 있다 (exists)."
+  },
+  "Adjectives:맛없어요": {
+    "lemma": "맛없다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:맛없다"
+    ],
+    "componentIds": [
+      "stem:맛",
+      "stem:없다"
+    ],
+    "note": "맛 (taste) + 없다 (is absent)."
+  },
+  "Verbs:가요": {
+    "lemma": "가다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:가다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:와요": {
+    "lemma": "오다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:오다"
+    ],
+    "componentIds": [
+      "pattern:o-a"
+    ],
+    "note": "오다 → 와요."
+  },
+  "Verbs:다녀요": {
+    "lemma": "다니다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:다니다"
+    ],
+    "componentIds": [
+      "pattern:i-eo"
+    ],
+    "note": "다니다 → 다녀요."
+  },
+  "Verbs:먹어요": {
+    "lemma": "먹다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:먹다",
+      "wikt:먹방"
+    ],
+    "componentIds": [
+      "stem:먹다"
+    ],
+    "note": "먹다 → 먹어요. English mukbang is borrowed from 먹방: 먹- (eat) + 방, short for 방송 (broadcast)."
+  },
+  "Verbs:마셔요": {
+    "lemma": "마시다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:마시다"
+    ],
+    "componentIds": [
+      "pattern:i-eo"
+    ],
+    "note": "마시다 → 마셔요."
+  },
+  "Verbs:자요": {
+    "lemma": "자다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:자다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:가르쳐요": {
+    "lemma": "가르치다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:가르치다"
+    ],
+    "componentIds": [
+      "stem:가르치다",
+      "pattern:i-eo"
+    ],
+    "note": "가르치다 → 가르쳐요."
+  },
+  "Verbs:배워요": {
+    "lemma": "배우다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:배우다"
+    ],
+    "componentIds": [
+      "stem:배우다",
+      "pattern:u-eo"
+    ],
+    "note": "배우다 → 배워요."
+  },
+  "Verbs:봐요": {
+    "lemma": "보다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:보다"
+    ],
+    "componentIds": [
+      "pattern:o-a"
+    ],
+    "note": "보다 → 봐요."
+  },
+  "Verbs:만나요": {
+    "lemma": "만나다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:만나다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:읽어요": {
+    "lemma": "읽다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:읽다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:써요": {
+    "lemma": "쓰다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:쓰다"
+    ],
+    "componentIds": [
+      "pattern:eu"
+    ],
+    "note": "쓰다 → 써요."
+  },
+  "Verbs:쇼핑해요": {
+    "lemma": "쇼핑하다",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:쇼핑하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "stem:쇼핑",
+      "pattern:hada-verb"
+    ],
+    "note": "쇼핑 + 하다 → 쇼핑해요."
+  },
+  "Verbs:청소해요": {
+    "lemma": "청소하다",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:청소하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "stem:청소",
+      "pattern:hada-verb"
+    ],
+    "note": "청소 + 하다 → 청소해요."
+  },
+  "Verbs:운동해요": {
+    "lemma": "운동하다",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:운동하다",
+      "wikt:하다",
+      "wikt:動"
+    ],
+    "componentIds": [
+      "stem:운동",
+      "pattern:hada-verb",
+      "hanja:動"
+    ],
+    "note": "운동 + 하다 → 운동해요."
+  },
+  "Verbs:기다려요": {
+    "lemma": "기다리다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:기다리다"
+    ],
+    "componentIds": [
+      "pattern:i-eo"
+    ],
+    "note": "기다리다 → 기다려요."
+  },
+  "Verbs:요리해요": {
+    "lemma": "요리하다",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:요리하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "stem:요리",
+      "pattern:hada-verb"
+    ],
+    "note": "요리 + 하다 → 요리해요."
+  },
+  "Verbs:일해요": {
+    "lemma": "일하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:일하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "stem:일",
+      "pattern:hada-verb"
+    ],
+    "note": "일 + 하다 → 일해요."
+  },
+  "Verbs:공부해요": {
+    "lemma": "공부하다",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:공부하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "stem:공부",
+      "pattern:hada-verb"
+    ],
+    "note": "공부 + 하다 → 공부해요."
+  },
+  "Verbs:타요": {
+    "lemma": "타다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:타다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:말해요": {
+    "lemma": "말하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:말하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "stem:말",
+      "pattern:hada-verb"
+    ],
+    "note": "말 + 하다 → 말해요."
+  },
+  "Verbs:울어요": {
+    "lemma": "울다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:울다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:웃어요": {
+    "lemma": "웃다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:웃다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:좋아해요": {
+    "lemma": "좋아하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:좋아하다",
+      "wikt:-어하다"
+    ],
+    "componentIds": [
+      "stem:좋아하다",
+      "stem:좋다",
+      "pattern:feeling"
+    ],
+    "note": "좋- + 아하다 → 좋아해요."
+  },
+  "Verbs:사랑해요": {
+    "lemma": "사랑하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:사랑하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "stem:사랑",
+      "pattern:hada-verb"
+    ],
+    "note": "사랑 + 하다 → 사랑해요."
+  },
+  "Verbs:싫어해요": {
+    "lemma": "싫어하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:싫어하다",
+      "wikt:-어하다"
+    ],
+    "componentIds": [
+      "pattern:feeling"
+    ],
+    "note": "싫- + 어하다 → 싫어해요."
+  },
+  "Verbs:씻어요": {
+    "lemma": "씻다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:씻다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:샤워해요": {
+    "lemma": "샤워하다",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:샤워하다",
+      "wikt:하다"
+    ],
+    "componentIds": [
+      "stem:샤워",
+      "pattern:hada-verb"
+    ],
+    "note": "샤워 + 하다 → 샤워해요."
+  },
+  "Verbs:들어요": {
+    "lemma": "듣다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:듣다"
+    ],
+    "componentIds": [
+      "pattern:digeut"
+    ],
+    "note": "듣다 → 들어요."
+  },
+  "Verbs:걸어요": {
+    "lemma": "걷다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:걷다"
+    ],
+    "componentIds": [
+      "pattern:digeut"
+    ],
+    "note": "걷다 → 걸어요."
+  },
+  "Verbs:사요": {
+    "lemma": "사다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:사다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:만들어요": {
+    "lemma": "만들다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:만들다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:일어나요": {
+    "lemma": "일어나다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:일어나다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Verbs:줘요": {
+    "lemma": "주다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:주다"
+    ],
+    "componentIds": [
+      "pattern:u-eo"
+    ],
+    "note": "주다 → 줘요."
+  },
+  "Verbs:받아요": {
+    "lemma": "받다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:받다"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no concise, useful origin or recurring component added."
+  },
+  "Time & days:엊그제": {
+    "lemma": "엊그제",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:엊그제"
+    ],
+    "componentIds": [],
+    "omissionReason": "Older formation is uncertain, nontransparent, or not useful here; no historical decomposition asserted."
+  },
+  "Time & days:어제": {
+    "lemma": "어제",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:어제"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Time & days:오늘": {
+    "lemma": "오늘",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:오늘"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Time & days:내일": {
+    "lemma": "내일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:내일",
+      "wikt:日"
+    ],
+    "componentIds": [
+      "hanja:日"
+    ],
+    "note": "내 (來) = coming; 일 (日) = day."
+  },
+  "Time & days:모레": {
+    "lemma": "모레",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:모레"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Time & days:월요일": {
+    "lemma": "월요일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:월요일",
+      "wikt:月",
+      "wikt:日"
+    ],
+    "componentIds": [
+      "hanja:月",
+      "stem:요일",
+      "hanja:日"
+    ],
+    "note": "월 (月) = moon; 요일 = day of the week."
+  },
+  "Time & days:화요일": {
+    "lemma": "화요일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:화요일",
+      "wikt:火",
+      "wikt:日"
+    ],
+    "componentIds": [
+      "hanja:火",
+      "stem:요일",
+      "hanja:日"
+    ],
+    "note": "화 (火) = fire / Mars; 요일 = day of the week."
+  },
+  "Time & days:수요일": {
+    "lemma": "수요일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:수요일",
+      "wikt:水",
+      "wikt:日"
+    ],
+    "componentIds": [
+      "hanja:水",
+      "stem:요일",
+      "hanja:日"
+    ],
+    "note": "수 (水) = water / Mercury; 요일 = day of the week."
+  },
+  "Time & days:목요일": {
+    "lemma": "목요일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:목요일",
+      "wikt:木",
+      "wikt:日"
+    ],
+    "componentIds": [
+      "hanja:木",
+      "stem:요일",
+      "hanja:日"
+    ],
+    "note": "목 (木) = wood / Jupiter; 요일 = day of the week."
+  },
+  "Time & days:금요일": {
+    "lemma": "금요일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:금요일",
+      "wikt:金",
+      "wikt:日"
+    ],
+    "componentIds": [
+      "hanja:金",
+      "stem:요일",
+      "hanja:日"
+    ],
+    "note": "금 (金) = metal / Venus; 요일 = day of the week."
+  },
+  "Time & days:토요일": {
+    "lemma": "토요일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:토요일",
+      "wikt:土",
+      "wikt:日"
+    ],
+    "componentIds": [
+      "hanja:土",
+      "stem:요일",
+      "hanja:日"
+    ],
+    "note": "토 (土) = earth / Saturn; 요일 = day of the week."
+  },
+  "Time & days:일요일": {
+    "lemma": "일요일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:일요일",
+      "wikt:日"
+    ],
+    "componentIds": [
+      "hanja:日",
+      "stem:요일"
+    ],
+    "note": "일 (日) = sun; 요일 = day of the week."
+  },
+  "Time & days:평일": {
+    "lemma": "평일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:평일",
+      "wikt:日"
+    ],
+    "componentIds": [
+      "hanja:日"
+    ],
+    "note": "평 (平) = ordinary; 일 (日) = day."
+  },
+  "Time & days:주말": {
+    "lemma": "주말",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:주말"
+    ],
+    "componentIds": [],
+    "note": "주 (週) = week; 말 (末) = end."
+  },
+  "Sports / Exercise:농구": {
+    "lemma": "농구",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:농구",
+      "wikt:球"
+    ],
+    "componentIds": [
+      "hanja:球"
+    ],
+    "note": "농 (籠) = basket; 구 (球) = ball."
+  },
+  "Sports / Exercise:축구": {
+    "lemma": "축구",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:축구",
+      "wikt:球"
+    ],
+    "componentIds": [
+      "hanja:球"
+    ],
+    "note": "축 (蹴) = kick; 구 (球) = ball."
+  },
+  "Sports / Exercise:야구": {
+    "lemma": "야구",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:야구",
+      "wikt:野",
+      "wikt:球"
+    ],
+    "componentIds": [
+      "hanja:野",
+      "hanja:球"
+    ],
+    "note": "야 (野) = field; 구 (球) = ball."
+  },
+  "Sports / Exercise:수영": {
+    "lemma": "수영",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:수영",
+      "wikt:水"
+    ],
+    "componentIds": [
+      "hanja:水"
+    ],
+    "note": "수 (水) = water; 영 (泳) = swimming."
+  },
+  "Sports / Exercise:태권도": {
+    "lemma": "태권도",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:태권도"
+    ],
+    "componentIds": [],
+    "note": "태권 (跆拳) = foot and fist; 도 (道) = way. Coined in 1955."
+  },
+  "Sports / Exercise:골프": {
+    "lemma": "골프",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:골프"
+    ],
+    "componentIds": [
+      "loan:English:golf"
+    ]
+  },
+  "Sports / Exercise:탁구": {
+    "lemma": "탁구",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:탁구",
+      "wikt:球"
+    ],
+    "componentIds": [
+      "hanja:球"
+    ],
+    "note": "탁 (卓) = table; 구 (球) = ball."
+  },
+  "Sports / Exercise:요가": {
+    "lemma": "요가",
+    "kind": "loanword",
+    "componentIds": [
+      "loan:Sanskrit:yoga"
+    ],
+    "sourceIds": [
+      "nikl:yoga"
+    ]
+  },
+  "Sports / Exercise:마라톤": {
+    "lemma": "마라톤",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:마라톤"
+    ],
+    "componentIds": [
+      "loan:English:marathon"
+    ]
+  },
+  "Sports / Exercise:테니스": {
+    "lemma": "테니스",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:테니스"
+    ],
+    "componentIds": [
+      "loan:English:tennis"
+    ]
+  },
+  "Sports / Exercise:배구": {
+    "lemma": "배구",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:배구",
+      "wikt:球",
+      "wikt:排球"
+    ],
+    "componentIds": [
+      "hanja:球"
+    ],
+    "note": "배 (排) = push aside / volley; 구 (球) = ball. Unrelated to 배, pear. Japanese reads the same 排球 as haikyū."
+  },
+  "Sports / Exercise:배드민턴": {
+    "lemma": "배드민턴",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:배드민턴"
+    ],
+    "componentIds": [
+      "loan:English:badminton"
+    ]
+  },
+  "Sports / Exercise:달리기": {
+    "lemma": "달리기",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:달리기",
+      "wikt:-기"
+    ],
+    "componentIds": [],
+    "note": "달리- (dalli-, run) + -기 (gi, turns an action into a noun): running."
+  },
+  "Sports / Exercise:복싱": {
+    "lemma": "복싱",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:복싱"
+    ],
+    "componentIds": [
+      "loan:English:boxing"
+    ]
+  },
+  "Sports / Exercise:헬스": {
+    "lemma": "헬스",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:헬스"
+    ],
+    "componentIds": [
+      "stem:헬스",
+      "loan:English:health"
+    ],
+    "note": "From English “health”; Korean 헬스 here means gym exercise."
+  },
+  "Seasons:봄": {
+    "lemma": "봄",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:봄"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Seasons:여름": {
+    "lemma": "여름",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:여름"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Seasons:가을": {
+    "lemma": "가을",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:가을"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Seasons:겨울": {
+    "lemma": "겨울",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:겨울"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Colors:빨간색": {
+    "lemma": "빨간색",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:빨간색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "빨간, from 빨갛다 = red; 색 (色) = color."
+  },
+  "Colors:주황색": {
+    "lemma": "주황색",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:주황색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "주황 (朱黃) = vermilion + yellow; 색 (色) = color."
+  },
+  "Colors:노란색": {
+    "lemma": "노란색",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:노란색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "노란, from 노랗다 = yellow; 색 (色) = color."
+  },
+  "Colors:초록색": {
+    "lemma": "초록색",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:초록색",
+      "wikt:綠",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:綠",
+      "hanja:色"
+    ],
+    "note": "초 (草) = grass; 록 (綠) = green; 색 (色) = color."
+  },
+  "Colors:파란색": {
+    "lemma": "파란색",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:파란색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "stem:파란색",
+      "hanja:色"
+    ],
+    "note": "파란, from 파랗다 = blue; 색 (色) = color."
+  },
+  "Colors:남색": {
+    "lemma": "남색",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:남색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "남 (藍) = indigo; 색 (色) = color. Not 男, male."
+  },
+  "Colors:보라색": {
+    "lemma": "보라색",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:보라색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "보라 = purple; 색 (色) = color. No older origin is claimed for 보라."
+  },
+  "Colors:흰색": {
+    "lemma": "흰색",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:흰색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "흰, from 희다 = white; 색 (色) = color."
+  },
+  "Colors:검은색": {
+    "lemma": "검은색",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:검은색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "검은, from 검다 = black; 색 (色) = color."
+  },
+  "Colors:회색": {
+    "lemma": "회색",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:회색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "회 (灰) = ash; 색 (色) = color."
+  },
+  "Colors:분홍색": {
+    "lemma": "분홍색",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:분홍색",
+      "wikt:紅",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:紅",
+      "hanja:色"
+    ],
+    "note": "분홍 (粉紅) = powder + red, meaning pink; 색 (色) = color."
+  },
+  "Colors:갈색": {
+    "lemma": "갈색",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:갈색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "갈 (褐) = brown; 색 (色) = color."
+  },
+  "Colors:하늘색": {
+    "lemma": "하늘색",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:하늘색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "하늘 = sky; 색 (色) = color: sky blue."
+  },
+  "Colors:베이지색": {
+    "lemma": "베이지색",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:베이지색",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "hanja:色"
+    ],
+    "note": "베이지 = beige; 색 (色) = color."
+  },
+  "Fruit:사과": {
+    "lemma": "사과",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:사과"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Fruit:포도": {
+    "lemma": "포도",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:포도"
+    ],
+    "componentIds": [
+      "stem:포도"
+    ],
+    "note": "포도 (葡萄) is the whole grape word; keep it intact in compounds."
+  },
+  "Fruit:바나나": {
+    "lemma": "바나나",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:바나나"
+    ],
+    "componentIds": [
+      "loan:English:banana"
+    ]
+  },
+  "Fruit:딸기": {
+    "lemma": "딸기",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:딸기"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Fruit:수박": {
+    "lemma": "수박",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:수박"
+    ],
+    "componentIds": [],
+    "omissionReason": "Older formation is uncertain, nontransparent, or not useful here; no historical decomposition asserted."
+  },
+  "Fruit:망고": {
+    "lemma": "망고",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:망고"
+    ],
+    "componentIds": [
+      "loan:English:mango"
+    ]
+  },
+  "Fruit:오렌지": {
+    "lemma": "오렌지",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:오렌지"
+    ],
+    "componentIds": [
+      "stem:오렌지"
+    ],
+    "note": "Related to English “orange”; the source does not establish a single borrowing route."
+  },
+  "Fruit:배": {
+    "lemma": "배",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:배"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Fruit:복숭아": {
+    "lemma": "복숭아",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:복숭아"
+    ],
+    "componentIds": [],
+    "omissionReason": "Older formation is uncertain, nontransparent, or not useful here; no historical decomposition asserted."
+  },
+  "Fruit:키위": {
+    "lemma": "키위",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:키위"
+    ],
+    "componentIds": [
+      "loan:English:kiwi"
+    ]
+  },
+  "Fruit:레몬": {
+    "lemma": "레몬",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:레몬"
+    ],
+    "componentIds": [
+      "loan:English:lemon"
+    ]
+  },
+  "Fruit:체리": {
+    "lemma": "체리",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:체리"
+    ],
+    "componentIds": [
+      "loan:English:cherry"
+    ]
+  },
+  "Drinks:콜라": {
+    "lemma": "콜라",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:콜라"
+    ],
+    "componentIds": [
+      "loan:English:cola"
+    ]
+  },
+  "Drinks:사이다": {
+    "lemma": "사이다",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:사이다"
+    ],
+    "componentIds": [
+      "loan:English:cider"
+    ],
+    "note": "From “cider,” but Korean 사이다 means lemon-lime soda."
+  },
+  "Drinks:커피": {
+    "lemma": "커피",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:커피"
+    ],
+    "componentIds": [
+      "stem:커피",
+      "loan:English:coffee"
+    ]
+  },
+  "Drinks:녹차": {
+    "lemma": "녹차",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:녹차",
+      "wikt:綠",
+      "wikt:茶"
+    ],
+    "componentIds": [
+      "hanja:綠",
+      "hanja:茶"
+    ],
+    "note": "녹 (綠) = green; 차 (茶) = tea. 綠 also reads 록 inside 초록색."
+  },
+  "Drinks:홍차": {
+    "lemma": "홍차",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:홍차",
+      "wikt:紅",
+      "wikt:茶"
+    ],
+    "componentIds": [
+      "hanja:紅",
+      "hanja:茶"
+    ],
+    "note": "홍 (紅) = red; 차 (茶) = tea. Korean names this tea by its reddish liquid."
+  },
+  "Drinks:오렌지주스": {
+    "lemma": "오렌지",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:오렌지",
+      "wikt:주스"
+    ],
+    "componentIds": [
+      "stem:오렌지",
+      "stem:주스"
+    ],
+    "note": "오렌지 = orange; 주스 = juice."
+  },
+  "Drinks:포도주스": {
+    "lemma": "포도",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:포도",
+      "wikt:주스"
+    ],
+    "componentIds": [
+      "stem:포도",
+      "stem:주스"
+    ],
+    "note": "포도 = grape; 주스 = juice."
+  },
+  "Drinks:버블티": {
+    "lemma": "버블티",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:버블티"
+    ],
+    "componentIds": [
+      "loan:English:bubble tea"
+    ]
+  },
+  "Drinks:우유": {
+    "lemma": "우유",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:우유"
+    ],
+    "componentIds": [],
+    "note": "우 (牛) = cow; 유 (乳) = milk."
+  },
+  "Drinks:스무디": {
+    "lemma": "스무디",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:스무디"
+    ],
+    "componentIds": [
+      "loan:English:smoothie"
+    ]
+  },
+  "Drinks:맥주": {
+    "lemma": "맥주",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:맥주"
+    ],
+    "componentIds": [],
+    "note": "맥 (麥) = barley; 주 (酒) = alcohol. The 주 in 주스 comes from English “juice.”"
+  },
+  "Drinks:물": {
+    "lemma": "물",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:물"
+    ],
+    "componentIds": [
+      "stem:물"
+    ]
+  },
+  "Drinks:차": {
+    "lemma": "차",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:차",
+      "wikt:茶",
+      "wikt:chai"
+    ],
+    "componentIds": [
+      "hanja:茶"
+    ],
+    "note": "차 (茶) = tea. English chai comes from the same Chinese 茶, via Hindustani and Persian."
+  },
+  "Drinks:주스": {
+    "lemma": "주스",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:주스"
+    ],
+    "componentIds": [
+      "stem:주스",
+      "loan:English:juice"
+    ]
+  },
+  "Food:한국 음식": {
+    "lemma": "한국",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:한국",
+      "wikt:음식",
+      "wikt:國",
+      "wikt:食"
+    ],
+    "componentIds": [
+      "stem:한국",
+      "hanja:國",
+      "stem:음식",
+      "hanja:食"
+    ],
+    "note": "한국 (韓國) = Korea; 음식 = food."
+  },
+  "Food:중국 음식": {
+    "lemma": "중국",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:중국",
+      "wikt:음식",
+      "wikt:國",
+      "wikt:食"
+    ],
+    "componentIds": [
+      "hanja:國",
+      "stem:음식",
+      "hanja:食"
+    ],
+    "note": "중국 (中國) = China; 국 (國) = country; 음식 = food."
+  },
+  "Food:일본 음식": {
+    "lemma": "일본",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:일본",
+      "wikt:음식",
+      "wikt:日",
+      "wikt:食"
+    ],
+    "componentIds": [
+      "hanja:日",
+      "stem:음식",
+      "hanja:食"
+    ],
+    "note": "일본 (日本) = Japan; 日 is sun, 本 is origin; 음식 = food."
+  },
+  "Food:서양 음식": {
+    "lemma": "서양",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:서양",
+      "wikt:음식",
+      "wikt:食"
+    ],
+    "componentIds": [
+      "stem:음식",
+      "hanja:食"
+    ],
+    "note": "서양 (西洋) = the West; 西 is west, 洋 is ocean; 음식 = food."
+  },
+  "Food:고기": {
+    "lemma": "고기",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:고기",
+      "wikt:불고기"
+    ],
+    "componentIds": [
+      "stem:고기"
+    ],
+    "note": "불고기 (bulgogi) = 불 (fire) + 고기 (meat)."
+  },
+  "Food:채소": {
+    "lemma": "채소",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:채소",
+      "wikt:菜"
+    ],
+    "componentIds": [
+      "hanja:菜"
+    ],
+    "note": "채 (菜) and 소 (蔬) both refer to vegetables."
+  },
+  "Food:야채": {
+    "lemma": "야채",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:야채",
+      "wikt:野",
+      "wikt:菜"
+    ],
+    "componentIds": [
+      "hanja:野",
+      "hanja:菜"
+    ],
+    "note": "야 (野) = field; 채 (菜) = vegetable."
+  },
+  "Food:면": {
+    "lemma": "면",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:면"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Food:빵": {
+    "lemma": "빵",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:빵"
+    ],
+    "componentIds": [
+      "loan:Japanese:パン (pan)"
+    ],
+    "note": "Japanese pan comes from Portuguese pão, “bread.” Spanish pan is a useful sound cue, not the donor language."
+  },
+  "Food:아이스크림": {
+    "lemma": "아이스크림",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:아이스크림"
+    ],
+    "componentIds": [
+      "loan:English:ice cream"
+    ]
+  },
+  "Food:치즈": {
+    "lemma": "치즈",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:치즈"
+    ],
+    "componentIds": [
+      "loan:English:cheese"
+    ]
+  },
+  "Food:밥": {
+    "lemma": "밥",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:밥",
+      "wikt:비빔밥"
+    ],
+    "componentIds": [
+      "stem:밥"
+    ],
+    "note": "비빔밥 (bibimbap) = 비빔 (mixing) + 밥 (rice)."
+  },
+  "Food:김치": {
+    "lemma": "김치",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:김치"
+    ],
+    "componentIds": [],
+    "omissionReason": "Older formation is uncertain, nontransparent, or not useful here; no historical decomposition asserted."
+  },
+  "Food:계란": {
+    "lemma": "계란",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:계란"
+    ],
+    "componentIds": [],
+    "note": "계 (鷄) = chicken; 란 (卵) = egg."
+  },
+  "Food:닭고기": {
+    "lemma": "닭고기",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:닭고기"
+    ],
+    "componentIds": [
+      "stem:고기"
+    ],
+    "note": "닭 (dak) = chicken; 고기 (gogi) = meat."
+  },
+  "Food:생선": {
+    "lemma": "생선",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:생선"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Movies:공포 영화": {
+    "lemma": "공포",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:공포",
+      "wikt:영화"
+    ],
+    "componentIds": [
+      "stem:영화"
+    ],
+    "note": "공포 (恐怖) = fear / horror; 영화 = movie."
+  },
+  "Movies:로맨틱 영화": {
+    "lemma": "영화",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:영화"
+    ],
+    "componentIds": [
+      "stem:영화"
+    ],
+    "note": "영화 (映畫), “movie,” is the shared whole word after the genre name."
+  },
+  "Movies:코미디 영화": {
+    "lemma": "코미디",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:코미디",
+      "wikt:영화"
+    ],
+    "componentIds": [
+      "stem:영화"
+    ],
+    "note": "코미디 comes from English comedy; 영화 = movie."
+  },
+  "Movies:판타지 영화": {
+    "lemma": "판타지",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:판타지",
+      "wikt:영화"
+    ],
+    "componentIds": [
+      "stem:영화"
+    ],
+    "note": "판타지 comes from English fantasy; 영화 = movie."
+  },
+  "Movies:SF 영화": {
+    "lemma": "영화",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:영화"
+    ],
+    "componentIds": [
+      "stem:영화"
+    ],
+    "note": "영화 (映畫), “movie,” is the shared whole word after the genre name."
+  },
+  "Movies:액션 영화": {
+    "lemma": "액션",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:액션",
+      "wikt:영화"
+    ],
+    "componentIds": [
+      "stem:영화"
+    ],
+    "note": "액션 comes from English action; 영화 = movie."
+  },
+  "Movies:애니메이션": {
+    "lemma": "애니메이션",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:애니메이션"
+    ],
+    "componentIds": [
+      "loan:English:animation"
+    ]
+  },
+  "Movies:다큐멘터리": {
+    "lemma": "다큐멘터리",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:다큐멘터리"
+    ],
+    "componentIds": [
+      "loan:English:documentary"
+    ]
+  },
+  "Movies:드라마": {
+    "lemma": "드라마",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:드라마"
+    ],
+    "componentIds": [
+      "loan:English:drama"
+    ]
+  },
+  "Music:댄스": {
+    "lemma": "댄스",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:댄스"
+    ],
+    "componentIds": [
+      "loan:English:dance"
+    ]
+  },
+  "Music:힙합": {
+    "lemma": "힙합",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:힙합"
+    ],
+    "componentIds": [
+      "loan:English:hip-hop"
+    ]
+  },
+  "Music:락": {
+    "lemma": "락",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:락"
+    ],
+    "componentIds": [
+      "loan:English:rock"
+    ],
+    "note": "A source spelling of the English music word “rock”; 록 is the standard spelling. Both cards are preserved."
+  },
+  "Music:록": {
+    "lemma": "록",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:록"
+    ],
+    "componentIds": [
+      "loan:English:rock"
+    ]
+  },
+  "Music:일렉트로닉": {
+    "lemma": "일렉트로닉",
+    "kind": "uncertain",
+    "componentIds": [],
+    "sourceIds": [],
+    "lookupUrls": [
+      "https://en.wiktionary.org/wiki/%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%9C%EB%8B%89",
+      "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%9C%EB%8B%89"
+    ],
+    "omissionReason": "Lookups reviewed; no accessible origin entry confirmed. Keep the familiar English sound cue, without an origin claim."
+  },
+  "Music:발라드": {
+    "lemma": "발라드",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:발라드"
+    ],
+    "componentIds": [],
+    "omissionReason": "French ballade / English ballad route not resolved; retain the sound anchor without asserting one donor."
+  },
+  "Music:랩": {
+    "lemma": "랩",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:랩"
+    ],
+    "componentIds": [
+      "loan:English:rap"
+    ]
+  },
+  "Music:팝": {
+    "lemma": "팝",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:팝"
+    ],
+    "componentIds": [
+      "loan:English:pop"
+    ]
+  },
+  "Music:가요": {
+    "lemma": "가요",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:가요",
+      "wikt:歌"
+    ],
+    "componentIds": [
+      "hanja:歌"
+    ],
+    "note": "가 (歌) and 요 (謠) both concern songs. Unrelated to 가요, “go.”"
+  },
+  "Music:케이팝": {
+    "lemma": "케이팝",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:케이팝"
+    ],
+    "componentIds": [
+      "loan:English:K-pop",
+      "loan:English:pop"
+    ]
+  },
+  "Music:재즈": {
+    "lemma": "재즈",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:재즈"
+    ],
+    "componentIds": [
+      "loan:English:jazz"
+    ]
+  },
+  "Music:클래식": {
+    "lemma": "클래식",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:클래식"
+    ],
+    "componentIds": [
+      "loan:English:classic"
+    ]
+  },
+  "Music:알앤비": {
+    "lemma": "알앤비",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:알앤비"
+    ],
+    "componentIds": [
+      "loan:English:R&B"
+    ]
+  },
+  "Family:여자": {
+    "lemma": "여자",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:여자",
+      "wikt:女"
+    ],
+    "componentIds": [
+      "hanja:女"
+    ],
+    "note": "여 (女) = female; 자 (子) is the person/child component here, not 者 in 기자."
+  },
+  "Family:남자": {
+    "lemma": "남자",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:남자",
+      "wikt:男"
+    ],
+    "componentIds": [
+      "hanja:男"
+    ],
+    "note": "남 (男) = male; 자 (子) is the person/child component here, not 者 in 기자."
+  },
+  "Family:할아버지": {
+    "lemma": "할아버지",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:할아버지"
+    ],
+    "componentIds": [
+      "stem:아버지",
+      "stem:할아버지"
+    ],
+    "note": "할- = grand-; 아버지 = father."
+  },
+  "Family:할머니": {
+    "lemma": "할머니",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:할머니"
+    ],
+    "componentIds": [
+      "stem:할머니"
+    ]
+  },
+  "Family:외할아버지": {
+    "lemma": "외할아버지",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:외할아버지",
+      "wikt:外"
+    ],
+    "componentIds": [
+      "hanja:外",
+      "stem:할아버지"
+    ],
+    "note": "외 (外), “outside,” marks the maternal side in these family terms."
+  },
+  "Family:외할머니": {
+    "lemma": "외할머니",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:외할머니",
+      "wikt:外"
+    ],
+    "componentIds": [
+      "hanja:外",
+      "stem:할머니"
+    ],
+    "note": "외 (外), “outside,” marks the maternal side in these family terms."
+  },
+  "Family:아버지": {
+    "lemma": "아버지",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:아버지"
+    ],
+    "componentIds": [
+      "stem:아버지"
+    ]
+  },
+  "Family:어머니": {
+    "lemma": "어머니",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:어머니"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Family:아빠": {
+    "lemma": "아빠",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:아빠"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Family:엄마": {
+    "lemma": "엄마",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:엄마"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Family:형": {
+    "lemma": "형",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:형"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Family:누나": {
+    "lemma": "누나",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:누나"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Family:오빠": {
+    "lemma": "오빠",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:오빠"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Family:언니": {
+    "lemma": "언니",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:언니"
+    ],
+    "componentIds": [],
+    "omissionReason": "Older formation is uncertain, nontransparent, or not useful here; no historical decomposition asserted."
+  },
+  "Family:남동생": {
+    "lemma": "남동생",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:남동생",
+      "wikt:男"
+    ],
+    "componentIds": [
+      "hanja:男",
+      "stem:동생"
+    ],
+    "note": "남 (男) = male + 동생 (同生) = younger sibling."
+  },
+  "Family:여동생": {
+    "lemma": "여동생",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:여동생",
+      "wikt:女"
+    ],
+    "componentIds": [
+      "hanja:女",
+      "stem:동생"
+    ],
+    "note": "여 (女) = female + 동생 (同生) = younger sibling."
+  },
+  "Family:동생": {
+    "lemma": "동생",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:동생"
+    ],
+    "componentIds": [
+      "stem:동생"
+    ],
+    "note": "동생 (同生): 동 (同) = same; 생 (生) = birth / life. The whole word means younger sibling."
+  },
+  "Family:남편": {
+    "lemma": "남편",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:남편",
+      "wikt:男"
+    ],
+    "componentIds": [
+      "hanja:男"
+    ],
+    "note": "남 (男) = male. Learn 편 as part of the whole husband word, not as a reusable job ending."
+  },
+  "Family:아내": {
+    "lemma": "아내",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:아내"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Family:아들": {
+    "lemma": "아들",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:아들"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Family:딸": {
+    "lemma": "딸",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:딸"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Family:부모님": {
+    "lemma": "부모님",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:부모님",
+      "wikt:-님"
+    ],
+    "componentIds": [
+      "stem:부모",
+      "pattern:nim"
+    ],
+    "note": "부모 (父母) = father + mother; -님 adds respect."
+  },
+  "Family:가족": {
+    "lemma": "가족",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:가족"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Objects:책": {
+    "lemma": "책",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:책",
+      "wikt:冊"
+    ],
+    "componentIds": [
+      "hanja:冊"
+    ]
+  },
+  "Objects:공책": {
+    "lemma": "공책",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:공책",
+      "wikt:空",
+      "wikt:冊"
+    ],
+    "componentIds": [
+      "hanja:空",
+      "hanja:冊"
+    ],
+    "note": "공 (空) = empty; 책 (冊) = book: a book ready to fill."
+  },
+  "Objects:핸드폰": {
+    "lemma": "핸드폰",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:핸드폰"
+    ],
+    "componentIds": [],
+    "note": "Built from English hand + phone; a locally formed English-based compound."
+  },
+  "Objects:컴퓨터": {
+    "lemma": "컴퓨터",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:컴퓨터"
+    ],
+    "componentIds": [
+      "loan:English:computer"
+    ]
+  },
+  "Objects:시계": {
+    "lemma": "시계",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:시계",
+      "wikt:時"
+    ],
+    "componentIds": [
+      "hanja:時"
+    ],
+    "note": "시 (時) = time; 계 (計) = measuring / counting."
+  },
+  "Objects:창문": {
+    "lemma": "창문",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:창문"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Objects:칠판": {
+    "lemma": "칠판",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:칠판"
+    ],
+    "componentIds": [],
+    "note": "칠 (漆) = lacquer / paint; 판 (板) = board."
+  },
+  "Objects:책상": {
+    "lemma": "책상",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:책상",
+      "wikt:冊"
+    ],
+    "componentIds": [
+      "hanja:冊"
+    ],
+    "note": "책 (冊) = book; 상 (床) = a bed or platform: a surface for books."
+  },
+  "Objects:의자": {
+    "lemma": "의자",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:의자"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Objects:필통": {
+    "lemma": "필통",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:필통",
+      "wikt:筆"
+    ],
+    "componentIds": [
+      "hanja:筆"
+    ],
+    "note": "필 (筆) = writing tool; 통 (筒) = tube / container."
+  },
+  "Objects:펜": {
+    "lemma": "펜",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:펜"
+    ],
+    "componentIds": [
+      "loan:English:pen"
+    ]
+  },
+  "Objects:지우개": {
+    "lemma": "지우개",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:지우개",
+      "wikt:-개"
+    ],
+    "componentIds": [],
+    "note": "지우- (jiu-, erase) + -개 (gae, a tool/person that does something): an erasing tool."
+  },
+  "Objects:지갑": {
+    "lemma": "지갑",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:지갑"
+    ],
+    "componentIds": [],
+    "note": "지 (紙) = paper; 갑 (匣) = case / box."
+  },
+  "Objects:돈": {
+    "lemma": "돈",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:돈"
+    ],
+    "componentIds": [],
+    "omissionReason": "Older formation is uncertain, nontransparent, or not useful here; no historical decomposition asserted."
+  },
+  "Objects:여권": {
+    "lemma": "여권",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:여권",
+      "wikt:旅"
+    ],
+    "componentIds": [
+      "hanja:旅"
+    ],
+    "note": "여 (旅) = travel; 권 (券) = document / ticket."
+  },
+  "Objects:가방": {
+    "lemma": "가방",
+    "kind": "loanword",
+    "sourceIds": [
+      "nikl:gabang",
+      "wikt:가방"
+    ],
+    "componentIds": [
+      "loan:Japanese:かばん (kaban)"
+    ],
+    "note": "Kaban → gabang: the Japanese bag word."
+  },
+  "Objects:연필": {
+    "lemma": "연필",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:연필",
+      "wikt:筆"
+    ],
+    "componentIds": [
+      "hanja:筆"
+    ],
+    "note": "연 (鉛) = lead; 필 (筆) = writing tool. Modern pencils contain graphite."
+  },
+  "Objects:종이": {
+    "lemma": "종이",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:종이"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Objects:열쇠": {
+    "lemma": "열쇠",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:열쇠"
+    ],
+    "componentIds": [],
+    "note": "열- (yeol-, open) + 쇠 (soe, metal): metal for opening."
+  },
+  "Objects:안경": {
+    "lemma": "안경",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:안경"
+    ],
+    "componentIds": [],
+    "note": "안 (眼) = eye; 경 (鏡) = mirror / lens. 경찰 uses a different 경, 警."
+  },
+  "Objects:우산": {
+    "lemma": "우산",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:우산"
+    ],
+    "componentIds": [],
+    "note": "우 (雨) = rain; 산 (傘) = umbrella."
+  },
+  "Jobs / Occupations:선생님": {
+    "lemma": "선생님",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:선생님",
+      "wikt:-님",
+      "wikt:선생"
+    ],
+    "componentIds": [
+      "stem:선생",
+      "pattern:nim"
+    ],
+    "note": "선생 (先生) = teacher; -님 adds respectful address. 선생 is a doublet of 센세이: Japanese sensei is the same 先生."
+  },
+  "Jobs / Occupations:학생": {
+    "lemma": "학생",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:학생",
+      "wikt:學"
+    ],
+    "componentIds": [
+      "hanja:學"
+    ],
+    "note": "학 (學) = learning; 생 (生) here denotes a learner."
+  },
+  "Jobs / Occupations:회사원": {
+    "lemma": "회사원",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:회사원"
+    ],
+    "componentIds": [
+      "stem:회사"
+    ],
+    "note": "회사 (會社) = company; 원 (員) = member / employee."
+  },
+  "Jobs / Occupations:의사": {
+    "lemma": "의사",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:의사",
+      "nikl:sa-profession",
+      "wikt:師"
+    ],
+    "componentIds": [
+      "hanja:師"
+    ],
+    "note": "의 (醫) = medicine; 사 (師) = professional."
+  },
+  "Jobs / Occupations:간호사": {
+    "lemma": "간호사",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:간호사",
+      "nikl:sa-profession",
+      "wikt:護",
+      "wikt:師"
+    ],
+    "componentIds": [
+      "hanja:護",
+      "hanja:師"
+    ],
+    "note": "간호 (看護) = caring for patients; 사 (師) = professional. 호 (護) means protect / care for."
+  },
+  "Jobs / Occupations:배우": {
+    "lemma": "배우",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:배우"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Jobs / Occupations:경찰": {
+    "lemma": "경찰",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:경찰"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Jobs / Occupations:군인": {
+    "lemma": "군인",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:군인"
+    ],
+    "componentIds": [],
+    "note": "군 (軍) = military; 인 (人) = person."
+  },
+  "Jobs / Occupations:가수": {
+    "lemma": "가수",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:가수",
+      "wikt:歌"
+    ],
+    "componentIds": [
+      "hanja:歌"
+    ],
+    "note": "가 (歌) = song; 수 (手) literally “hand,” here a skilled performer."
+  },
+  "Jobs / Occupations:요리사": {
+    "lemma": "요리사",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:요리사",
+      "nikl:sa-profession",
+      "wikt:師"
+    ],
+    "componentIds": [
+      "stem:요리",
+      "hanja:師"
+    ],
+    "note": "요리 (料理) = cooking; 사 (師) = professional."
+  },
+  "Jobs / Occupations:기자": {
+    "lemma": "기자",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:기자",
+      "wikt:者"
+    ],
+    "componentIds": [
+      "hanja:者"
+    ],
+    "note": "기 (記) = record; 자 (者) = person."
+  },
+  "Jobs / Occupations:주부": {
+    "lemma": "주부",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:주부"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Jobs / Occupations:엔지니어": {
+    "lemma": "엔지니어",
+    "kind": "uncertain",
+    "componentIds": [],
+    "sourceIds": [],
+    "lookupUrls": [
+      "https://en.wiktionary.org/wiki/%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4",
+      "https://krdict.korean.go.kr/eng/dicMarinerSearch/search?mainSearchWord=%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4"
+    ],
+    "omissionReason": "Lookups reviewed; no accessible origin entry confirmed. Keep the familiar English sound cue, without an origin claim."
+  },
+  "Jobs / Occupations:개발자": {
+    "lemma": "개발자",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:개발자",
+      "wikt:者"
+    ],
+    "componentIds": [
+      "hanja:者",
+      "stem:개발자"
+    ],
+    "note": "개발 (開發) = development; 자 (者) = person."
+  },
+  "Jobs / Occupations:변호사": {
+    "lemma": "변호사",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:변호사",
+      "wikt:護"
+    ],
+    "componentIds": [
+      "hanja:護"
+    ],
+    "note": "변호 (辯護) = legal defense; 호 (護) = protect. 사 is 士 here, not 의사’s 師."
+  },
+  "Jobs / Occupations:약사": {
+    "lemma": "약사",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:약사",
+      "nikl:sa-profession",
+      "wikt:藥",
+      "wikt:師"
+    ],
+    "componentIds": [
+      "hanja:藥",
+      "hanja:師"
+    ],
+    "note": "약 (藥) = medicine; 사 (師) = professional."
+  },
+  "Places:학교": {
+    "lemma": "학교",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "nikl:school",
+      "wikt:학교",
+      "wikt:學",
+      "wikt:校"
+    ],
+    "componentIds": [
+      "hanja:學",
+      "hanja:校"
+    ],
+    "note": "학 (學) is learning; 교 (校) is school."
+  },
+  "Places:교실": {
+    "lemma": "교실",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:교실",
+      "wikt:室"
+    ],
+    "componentIds": [
+      "hanja:室"
+    ],
+    "note": "교 (敎) = teaching; 실 (室) = room. 학교 uses a different 교, 校."
+  },
+  "Places:집": {
+    "lemma": "집",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:집"
+    ],
+    "componentIds": [],
+    "omissionReason": "Reviewed; no additional origin gives a compact retrieval advantage in this deck."
+  },
+  "Places:서점": {
+    "lemma": "서점",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:서점",
+      "wikt:書",
+      "wikt:店"
+    ],
+    "componentIds": [
+      "hanja:書",
+      "hanja:店"
+    ],
+    "note": "서 (書) = books; 점 (店) = shop."
+  },
+  "Places:화장실": {
+    "lemma": "화장실",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:화장실",
+      "wikt:室"
+    ],
+    "componentIds": [
+      "hanja:室"
+    ],
+    "note": "화장 (化粧) = grooming / makeup; 실 (室) = room."
+  },
+  "Places:식당": {
+    "lemma": "식당",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:식당",
+      "wikt:食"
+    ],
+    "componentIds": [
+      "hanja:食"
+    ],
+    "note": "식 (食) = food; 당 (堂) = hall."
+  },
+  "Places:편의점": {
+    "lemma": "편의점",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:편의점",
+      "wikt:店"
+    ],
+    "componentIds": [
+      "hanja:店"
+    ],
+    "note": "편의 (便宜) = convenience; 점 (店) = shop."
+  },
+  "Places:백화점": {
+    "lemma": "백화점",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:백화점",
+      "wikt:店"
+    ],
+    "componentIds": [
+      "hanja:店"
+    ],
+    "note": "백 (百) = hundred; 화 (貨) = goods; 점 (店) = shop."
+  },
+  "Places:은행": {
+    "lemma": "은행",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:은행"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "Places:공원": {
+    "lemma": "공원",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:공원"
+    ],
+    "componentIds": [],
+    "note": "공 (公) = public; 원 (園) = garden."
+  },
+  "Places:병원": {
+    "lemma": "병원",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:병원"
+    ],
+    "componentIds": [],
+    "note": "병 (病) = illness; 원 (院) = institution. 공원’s 원 is 園, garden."
+  },
+  "Places:약국": {
+    "lemma": "약국",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:약국",
+      "wikt:藥"
+    ],
+    "componentIds": [
+      "hanja:藥"
+    ],
+    "note": "약 (藥) = medicine; 국 (局) = bureau / establishment here."
+  },
+  "Places:공항": {
+    "lemma": "공항",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:공항",
+      "wikt:空"
+    ],
+    "componentIds": [
+      "hanja:空"
+    ],
+    "note": "공 (空) = open space / air; 항 (港) = port. 공원 uses 公, public."
+  },
+  "Places:미용실": {
+    "lemma": "미용실",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:미용실",
+      "wikt:室"
+    ],
+    "componentIds": [
+      "hanja:室"
+    ],
+    "note": "미용 (美容) = beauty care; 실 (室) = room."
+  },
+  "Places:지하철역": {
+    "lemma": "지하철역",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:지하철역"
+    ],
+    "componentIds": [],
+    "note": "지하 (地下) = underground; 철 (鐵) = iron, in 철도 “railway”; 역 (驛) = station."
+  },
+  "Places:카페": {
+    "lemma": "카페",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:카페"
+    ],
+    "componentIds": [
+      "loan:French:café"
+    ]
+  },
+  "Places:회사": {
+    "lemma": "회사",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:회사"
+    ],
+    "componentIds": [
+      "stem:회사"
+    ],
+    "note": "회사 (會社) is the whole “company” component in 회사원."
+  },
+  "Places:도서관": {
+    "lemma": "도서관",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:도서관",
+      "wikt:書",
+      "wikt:館"
+    ],
+    "componentIds": [
+      "stem:도서",
+      "hanja:書",
+      "hanja:館"
+    ],
+    "note": "도서 (圖書) = books; 관 (館) = building. 서 (書), writing/books, is the same root as in 서점."
+  },
+  "Places:마트": {
+    "lemma": "마트",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:마트"
+    ],
+    "componentIds": [
+      "loan:English:mart"
+    ]
+  },
+  "Places:시장": {
+    "lemma": "시장",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:시장",
+      "wikt:場"
+    ],
+    "componentIds": [
+      "hanja:場"
+    ],
+    "note": "시 (市) = market; 장 (場) = place. 시계’s 시 is 時, time."
+  },
+  "Places:헬스장": {
+    "lemma": "헬스장",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:헬스장",
+      "wikt:場"
+    ],
+    "componentIds": [
+      "stem:헬스",
+      "hanja:場"
+    ],
+    "note": "헬스, from English health, means gym exercise here; 장 (場) = place."
+  },
+  "Useful words:무슨": {
+    "lemma": "무슨",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:무슨"
+    ],
+    "componentIds": [
+      "stem:무슨"
+    ],
+    "note": "무슨 asks for the kind / category before a noun."
+  },
+  "Useful words:제일": {
+    "lemma": "제일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:제일"
+    ],
+    "componentIds": [
+      "stem:제일"
+    ],
+    "note": "제 (第) marks order; 일 (一) = one: first / most."
+  },
+  "Useful words:많이": {
+    "lemma": "많이",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:많이"
+    ],
+    "componentIds": [
+      "stem:많다"
+    ],
+    "note": "많- (many / much) + -이 (adverb ending) → 많이, “a lot.”"
+  },
+  "Useful words:여행": {
+    "lemma": "여행",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:여행",
+      "wikt:旅"
+    ],
+    "componentIds": [
+      "hanja:旅"
+    ],
+    "note": "여 (旅) = travel; 행 (行) = going. 행복’s 행 is 幸, a different root."
+  },
+  "Useful words:한국": {
+    "lemma": "한국",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:한국",
+      "wikt:國"
+    ],
+    "componentIds": [
+      "stem:한국",
+      "hanja:國"
+    ],
+    "note": "한 (韓) refers to Korea; 국 (國) = country."
+  },
+  "Useful words:커피숍": {
+    "lemma": "커피숍",
+    "kind": "loanword",
+    "sourceIds": [
+      "wikt:커피숍"
+    ],
+    "componentIds": [
+      "stem:커피",
+      "loan:English:coffee shop"
+    ]
+  },
+  "heading:형용사": {
+    "lemma": "형용사",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:형용사",
+      "wikt:詞"
+    ],
+    "componentIds": [
+      "hanja:詞"
+    ],
+    "note": "형용 (形容) = appearance / description; 사 (詞) = word. 형 here is not 兄, older brother."
+  },
+  "heading:동사": {
+    "lemma": "동사",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:동사",
+      "wikt:動",
+      "wikt:詞"
+    ],
+    "componentIds": [
+      "hanja:動",
+      "hanja:詞"
+    ],
+    "note": "동 (動) = action; 사 (詞) = word: an action word."
+  },
+  "heading:시간": {
+    "lemma": "시간",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:시간",
+      "wikt:時"
+    ],
+    "componentIds": [
+      "hanja:時"
+    ],
+    "note": "시 (時) = time; 간 (間) = interval."
+  },
+  "heading:요일": {
+    "lemma": "요일",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:요일",
+      "wikt:日"
+    ],
+    "componentIds": [
+      "stem:요일",
+      "hanja:日"
+    ],
+    "note": "요일 (曜日) is the shared “day of the week” unit."
+  },
+  "heading:운동": {
+    "lemma": "운동",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:운동",
+      "wikt:動"
+    ],
+    "componentIds": [
+      "stem:운동",
+      "hanja:動"
+    ],
+    "note": "운동 (運動) = exercise / movement; 동 (動) means movement."
+  },
+  "heading:계절": {
+    "lemma": "계절",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:계절"
+    ],
+    "componentIds": [
+      "stem:계절"
+    ],
+    "note": "계 (季) = season; 절 (節) = division / period."
+  },
+  "heading:색깔": {
+    "lemma": "색깔",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:색깔",
+      "wikt:色"
+    ],
+    "componentIds": [
+      "stem:색깔",
+      "hanja:色"
+    ],
+    "note": "색 (色) = color; -깔 is a native suffix for a quality / appearance."
+  },
+  "heading:과일": {
+    "lemma": "과일",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:과일"
+    ],
+    "componentIds": [
+      "stem:과일"
+    ],
+    "note": "Use 과일 as the whole fruit word; no smaller historical decomposition is asserted."
+  },
+  "heading:음료": {
+    "lemma": "음료",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:음료",
+      "wikt:飮"
+    ],
+    "componentIds": [
+      "stem:음료",
+      "hanja:飮"
+    ],
+    "note": "음 (飮) = drinking; 료 (料) = material. Unrelated to 음 (音), sound, in 음악."
+  },
+  "heading:음식": {
+    "lemma": "음식",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:음식",
+      "wikt:飮",
+      "wikt:食"
+    ],
+    "componentIds": [
+      "stem:음식",
+      "hanja:飮",
+      "hanja:食"
+    ],
+    "note": "음 (飮) = drinking; 식 (食) = eating. Together, 음식 means food."
+  },
+  "heading:영화": {
+    "lemma": "영화",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:영화"
+    ],
+    "componentIds": [
+      "stem:영화"
+    ],
+    "note": "영 (映) = project / reflect; 화 (畫) = picture."
+  },
+  "heading:음악": {
+    "lemma": "음악",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:음악"
+    ],
+    "componentIds": [
+      "stem:음악"
+    ],
+    "note": "음 (音) = sound; 악 (樂) = music. 음식 uses 飮, drinking."
+  },
+  "heading:물건": {
+    "lemma": "물건",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:물건"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "heading:직업": {
+    "lemma": "직업",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:직업"
+    ],
+    "componentIds": [],
+    "omissionReason": "Hanja verified; no useful recurring component selected for this card."
+  },
+  "heading:장소": {
+    "lemma": "장소",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:장소",
+      "wikt:場"
+    ],
+    "componentIds": [
+      "hanja:場"
+    ],
+    "note": "장 (場) and 소 (所) both concern a place. 청소 uses a different 소, 掃."
+  },
+  "phrase:날씨가 더워요": {
+    "lemma": "날씨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:날씨",
+      "wikt:덥다",
+      "wikt:-가"
+    ],
+    "componentIds": [
+      "stem:날씨",
+      "stem:덥다",
+      "pattern:subject"
+    ],
+    "note": "날씨 = weather; 가 marks the subject; 덥다 → 더워요."
+  },
+  "phrase:커피가 뜨거워요": {
+    "lemma": "커피",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:커피",
+      "wikt:뜨겁다",
+      "wikt:-가"
+    ],
+    "componentIds": [
+      "stem:커피",
+      "stem:뜨겁다",
+      "pattern:subject"
+    ],
+    "note": "커피 = coffee; 가 marks the subject; 뜨겁다 → 뜨거워요."
+  },
+  "phrase:날씨가 추워요": {
+    "lemma": "날씨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:날씨",
+      "wikt:춥다",
+      "wikt:-가"
+    ],
+    "componentIds": [
+      "stem:날씨",
+      "stem:춥다",
+      "pattern:subject"
+    ],
+    "note": "날씨 = weather; 가 marks the subject; 춥다 → 추워요."
+  },
+  "phrase:물이 차가워요": {
+    "lemma": "물",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:물",
+      "wikt:차갑다",
+      "wikt:-이"
+    ],
+    "componentIds": [
+      "stem:물",
+      "stem:차갑다",
+      "pattern:subject"
+    ],
+    "note": "물 = water; 이 marks the subject; 차갑다 → 차가워요."
+  },
+  "phrase:한국어를 배워요": {
+    "lemma": "한국어",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:한국어",
+      "wikt:배우다",
+      "wikt:-을",
+      "wikt:語"
+    ],
+    "componentIds": [
+      "stem:한국",
+      "hanja:語",
+      "stem:배우다",
+      "pattern:object"
+    ],
+    "note": "한국 + 어 (語, language) = Korean; 를 marks the object; 배우다 → 배워요."
+  },
+  "phrase:영어를 가르쳐요": {
+    "lemma": "영어",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:영어",
+      "wikt:가르치다",
+      "wikt:-을",
+      "wikt:語"
+    ],
+    "componentIds": [
+      "hanja:語",
+      "stem:가르치다",
+      "pattern:object"
+    ],
+    "note": "영어 (英語) = English; 어 (語) = language; 가르치다 → 가르쳐요."
+  },
+  "phrase:무슨 운동을 해요?": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:운동",
+      "wikt:하다",
+      "wikt:-을"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:운동",
+      "pattern:hada-verb"
+    ],
+    "note": "무슨 = what kind of; 운동 = exercise; 하다 → 해요, do."
+  },
+  "phrase:저는 수영을 해요": {
+    "lemma": "저",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:저",
+      "wikt:-는",
+      "wikt:수영",
+      "wikt:하다",
+      "wikt:水"
+    ],
+    "componentIds": [
+      "hanja:水",
+      "pattern:hada-verb"
+    ],
+    "note": "저는 = as for me; 수영 = swimming; 하다 → 해요, do."
+  },
+  "phrase:무슨 색깔을 좋아해요?": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:색깔",
+      "wikt:좋아하다",
+      "wikt:-을"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:색깔",
+      "stem:좋아하다"
+    ],
+    "note": "무슨 = what kind of; 색깔 = color; 좋아하다 → 좋아해요, like."
+  },
+  "phrase:파란색을 좋아해요": {
+    "lemma": "파란색",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:파란색",
+      "wikt:좋아하다",
+      "wikt:-을"
+    ],
+    "componentIds": [
+      "stem:파란색",
+      "stem:좋아하다",
+      "pattern:object"
+    ],
+    "note": "파란색 = blue; 을 marks the object; 좋아하다 → 좋아해요, like."
+  },
+  "phrase:밥 먹어요": {
+    "lemma": "밥",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:밥",
+      "wikt:먹다"
+    ],
+    "componentIds": [
+      "stem:밥",
+      "stem:먹다"
+    ],
+    "note": "밥 = rice / meal; 먹다 → 먹어요, eat."
+  },
+  "phrase:엔지니어예요": {
+    "lemma": "이다",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:-이다"
+    ],
+    "componentIds": [
+      "stem:엔지니어",
+      "pattern:yeyo"
+    ],
+    "note": "The occupation + 예요 expresses “I am an engineer.”"
+  },
+  "phrase:개발자예요": {
+    "lemma": "개발자",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:-이다",
+      "wikt:개발자"
+    ],
+    "componentIds": [
+      "stem:개발자",
+      "pattern:yeyo"
+    ],
+    "note": "개발자 = developer; 예요 adds “am/is.”"
+  },
+  "phrase:무슨 음식": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:음식"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:음식"
+    ],
+    "note": "무슨 = what kind of / which; 음식 = food."
+  },
+  "phrase:무슨 운동": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:운동"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:운동"
+    ],
+    "note": "무슨 = what kind of / which; 운동 = exercise."
+  },
+  "phrase:무슨 영화": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:영화"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:영화"
+    ],
+    "note": "무슨 = what kind of / which; 영화 = movie."
+  },
+  "phrase:무슨 음악": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:음악"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:음악"
+    ],
+    "note": "무슨 = what kind of / which; 음악 = music."
+  },
+  "phrase:무슨 색깔": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:색깔"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:색깔"
+    ],
+    "note": "무슨 = what kind of / which; 색깔 = color."
+  },
+  "phrase:무슨 과일": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:과일"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:과일"
+    ],
+    "note": "무슨 = what kind of / which; 과일 = fruit."
+  },
+  "phrase:무슨 음료": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:음료"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:음료"
+    ],
+    "note": "무슨 = what kind of / which; 음료 = beverage."
+  },
+  "phrase:무슨 계절": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:계절"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:계절"
+    ],
+    "note": "무슨 = what kind of / which; 계절 = season."
+  },
+  "phrase:제일 좋아해요": {
+    "lemma": "제일",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:제일",
+      "wikt:좋아하다"
+    ],
+    "componentIds": [
+      "stem:제일",
+      "stem:좋아하다"
+    ],
+    "note": "제일 = most; 좋아하다 → 좋아해요, like: like the most."
+  },
+  "phrase:무슨 음식을 제일 좋아해요?": {
+    "lemma": "무슨",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:무슨",
+      "wikt:음식",
+      "wikt:제일",
+      "wikt:좋아하다",
+      "wikt:-을"
+    ],
+    "componentIds": [
+      "stem:무슨",
+      "stem:음식",
+      "stem:제일",
+      "stem:좋아하다"
+    ],
+    "note": "무슨 음식 = what food; 제일 좋아해요 = like the most."
+  },
+  "phrase:한국 음식을 제일 좋아해요": {
+    "lemma": "한국",
+    "kind": "phrase",
+    "sourceIds": [
+      "wikt:한국",
+      "wikt:음식",
+      "wikt:제일",
+      "wikt:좋아하다",
+      "wikt:-을"
+    ],
+    "componentIds": [
+      "stem:한국",
+      "stem:음식",
+      "stem:제일",
+      "stem:좋아하다"
+    ],
+    "note": "한국 음식 = Korean food; 제일 좋아해요 = like the most."
+  }
+}

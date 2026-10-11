@@ -1,0 +1,948 @@
+{
+  "hanja:學": {
+    "label": "학",
+    "meaning": "learning / study",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "學"
+  },
+  "hanja:校": {
+    "label": "교",
+    "meaning": "school",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "校"
+  },
+  "hanja:室": {
+    "label": "실",
+    "meaning": "room",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "室"
+  },
+  "hanja:書": {
+    "label": "서",
+    "meaning": "writing / books",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "書"
+  },
+  "hanja:館": {
+    "label": "관",
+    "meaning": "building / hall",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "館"
+  },
+  "hanja:店": {
+    "label": "점",
+    "meaning": "shop",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "店"
+  },
+  "hanja:冊": {
+    "label": "책",
+    "meaning": "book",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "冊"
+  },
+  "hanja:空": {
+    "label": "공",
+    "meaning": "empty / open space",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "空"
+  },
+  "hanja:筆": {
+    "label": "필",
+    "meaning": "writing brush / pen",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "筆"
+  },
+  "hanja:藥": {
+    "label": "약",
+    "meaning": "medicine",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "藥"
+  },
+  "hanja:師": {
+    "label": "사",
+    "meaning": "teacher / professional",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "師"
+  },
+  "hanja:護": {
+    "label": "호",
+    "meaning": "protect / care for",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "護"
+  },
+  "hanja:者": {
+    "label": "자",
+    "meaning": "person who does something",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "者"
+  },
+  "hanja:旅": {
+    "label": "여",
+    "meaning": "travel",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "旅"
+  },
+  "hanja:食": {
+    "label": "식",
+    "meaning": "food / eating",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "食"
+  },
+  "hanja:飮": {
+    "label": "음",
+    "meaning": "drinking",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "飮"
+  },
+  "hanja:水": {
+    "label": "수",
+    "meaning": "water",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "水"
+  },
+  "hanja:球": {
+    "label": "구",
+    "meaning": "ball",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "球"
+  },
+  "hanja:野": {
+    "label": "야",
+    "meaning": "field",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "野"
+  },
+  "hanja:茶": {
+    "label": "차",
+    "meaning": "tea",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "茶"
+  },
+  "hanja:綠": {
+    "label": "록 / 녹",
+    "meaning": "green",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "綠"
+  },
+  "hanja:紅": {
+    "label": "홍",
+    "meaning": "red",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "紅"
+  },
+  "hanja:色": {
+    "label": "색",
+    "meaning": "color",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "色"
+  },
+  "hanja:國": {
+    "label": "국",
+    "meaning": "country",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "國"
+  },
+  "hanja:語": {
+    "label": "어",
+    "meaning": "language",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "語"
+  },
+  "hanja:日": {
+    "label": "일",
+    "meaning": "day / sun",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "日"
+  },
+  "hanja:月": {
+    "label": "월",
+    "meaning": "moon",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "月"
+  },
+  "hanja:火": {
+    "label": "화",
+    "meaning": "fire",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "火"
+  },
+  "hanja:木": {
+    "label": "목",
+    "meaning": "wood / tree",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "木"
+  },
+  "hanja:金": {
+    "label": "금",
+    "meaning": "metal / gold",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "金"
+  },
+  "hanja:土": {
+    "label": "토",
+    "meaning": "earth / soil",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "土"
+  },
+  "hanja:場": {
+    "label": "장",
+    "meaning": "place / grounds",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "場"
+  },
+  "hanja:時": {
+    "label": "시",
+    "meaning": "time",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "時"
+  },
+  "hanja:外": {
+    "label": "외",
+    "meaning": "outside; maternal side in family terms",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "外"
+  },
+  "hanja:男": {
+    "label": "남",
+    "meaning": "male",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "男"
+  },
+  "hanja:女": {
+    "label": "여",
+    "meaning": "female",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "女"
+  },
+  "hanja:菜": {
+    "label": "채",
+    "meaning": "vegetable",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "菜"
+  },
+  "hanja:動": {
+    "label": "동",
+    "meaning": "movement / action",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "動"
+  },
+  "hanja:詞": {
+    "label": "사",
+    "meaning": "word / part of speech",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "詞"
+  },
+  "hanja:歌": {
+    "label": "가",
+    "meaning": "song",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "歌"
+  },
+  "stem:도서": {
+    "label": "도서",
+    "meaning": "books",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:회사": {
+    "label": "회사",
+    "meaning": "company",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:요리": {
+    "label": "요리",
+    "meaning": "cooking",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:동생": {
+    "label": "동생",
+    "meaning": "younger sibling",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:선생": {
+    "label": "선생",
+    "meaning": "teacher",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:부모": {
+    "label": "부모",
+    "meaning": "parents",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:음식": {
+    "label": "음식",
+    "meaning": "food",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:음료": {
+    "label": "음료",
+    "meaning": "beverage",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:영화": {
+    "label": "영화",
+    "meaning": "movie",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:음악": {
+    "label": "음악",
+    "meaning": "music",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:운동": {
+    "label": "운동",
+    "meaning": "exercise",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:계절": {
+    "label": "계절",
+    "meaning": "season",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:과일": {
+    "label": "과일",
+    "meaning": "fruit",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:색깔": {
+    "label": "색깔",
+    "meaning": "color",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:주스": {
+    "label": "주스",
+    "meaning": "juice",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:포도": {
+    "label": "포도",
+    "meaning": "grape",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:오렌지": {
+    "label": "오렌지",
+    "meaning": "orange",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:커피": {
+    "label": "커피",
+    "meaning": "coffee",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:헬스": {
+    "label": "헬스",
+    "meaning": "working out / gym training",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:한국": {
+    "label": "한국",
+    "meaning": "Korea",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:무슨": {
+    "label": "무슨",
+    "meaning": "what kind of / which",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:제일": {
+    "label": "제일",
+    "meaning": "the most",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:좋아하다": {
+    "label": "좋아하다",
+    "meaning": "to like",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:고기": {
+    "label": "고기",
+    "meaning": "meat",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:아버지": {
+    "label": "아버지",
+    "meaning": "father",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:할아버지": {
+    "label": "할아버지",
+    "meaning": "grandfather",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:할머니": {
+    "label": "할머니",
+    "meaning": "grandmother",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:재미": {
+    "label": "재미",
+    "meaning": "fun",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:맛": {
+    "label": "맛",
+    "meaning": "taste",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:있다": {
+    "label": "있다",
+    "meaning": "to exist / be present",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:없다": {
+    "label": "없다",
+    "meaning": "to be absent",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:좋다": {
+    "label": "좋다",
+    "meaning": "to be good",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:같다": {
+    "label": "같다",
+    "meaning": "to be the same",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:생기다": {
+    "label": "생기다",
+    "meaning": "to look / appear",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:배우다": {
+    "label": "배우다",
+    "meaning": "to learn",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:가르치다": {
+    "label": "가르치다",
+    "meaning": "to teach",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:덥다": {
+    "label": "덥다",
+    "meaning": "hot weather",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:춥다": {
+    "label": "춥다",
+    "meaning": "cold weather",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:뜨겁다": {
+    "label": "뜨겁다",
+    "meaning": "hot to touch",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:차갑다": {
+    "label": "차갑다",
+    "meaning": "cold to touch",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:날씨": {
+    "label": "날씨",
+    "meaning": "weather",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:물": {
+    "label": "물",
+    "meaning": "water",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:먹다": {
+    "label": "먹다",
+    "meaning": "to eat",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:밥": {
+    "label": "밥",
+    "meaning": "rice / meal",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:엔지니어": {
+    "label": "엔지니어",
+    "meaning": "engineer",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:개발자": {
+    "label": "개발자",
+    "meaning": "developer",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:파란색": {
+    "label": "파란색",
+    "meaning": "blue",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:많다": {
+    "label": "많다",
+    "meaning": "to be many / much",
+    "kind": "stem",
+    "weight": 5
+  },
+  "pattern:bieup": {
+    "label": "ㅂ → 우",
+    "meaning": "ㅂ-irregular form: 우 + 어요 → 워요",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:eu": {
+    "label": "으 drops",
+    "meaning": "으 disappears before 아/어요",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:reu": {
+    "label": "르 → ㄹ라",
+    "meaning": "르-irregular pattern in these words",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:i-eo": {
+    "label": "이 + 어 → 여",
+    "meaning": "vowel contraction before 요",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:u-eo": {
+    "label": "우 + 어 → 워",
+    "meaning": "vowel contraction before 요",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:o-a": {
+    "label": "오 + 아 → 와",
+    "meaning": "vowel contraction before 요",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:digeut": {
+    "label": "ㄷ → ㄹ",
+    "meaning": "ㄷ-irregular stem before 어요",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:hada-verb": {
+    "label": "-하다 → 해요",
+    "meaning": "forms an action verb: do / perform",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:hada-adjective": {
+    "label": "-하다 → 해요",
+    "meaning": "forms a descriptive word: be …",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:feeling": {
+    "label": "-아/어하다",
+    "meaning": "turns a feeling into a verb about experiencing it",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:nim": {
+    "label": "-님",
+    "meaning": "adds respectful address",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:subject": {
+    "label": "이 / 가",
+    "meaning": "marks the subject; 이 after a consonant, 가 after a vowel",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:object": {
+    "label": "을 / 를",
+    "meaning": "marks the object; 을 after a consonant, 를 after a vowel",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:yeyo": {
+    "label": "예요",
+    "meaning": "polite “am/is/are” after a noun ending in a vowel",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "stem:피곤": {
+    "label": "피곤",
+    "meaning": "tiredness",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:행복": {
+    "label": "행복",
+    "meaning": "happiness",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:쇼핑": {
+    "label": "쇼핑",
+    "meaning": "shopping",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:청소": {
+    "label": "청소",
+    "meaning": "cleaning",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:일": {
+    "label": "일",
+    "meaning": "work",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:공부": {
+    "label": "공부",
+    "meaning": "study",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:말": {
+    "label": "말",
+    "meaning": "speech",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:사랑": {
+    "label": "사랑",
+    "meaning": "love",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:샤워": {
+    "label": "샤워",
+    "meaning": "shower",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:요일": {
+    "label": "요일",
+    "meaning": "day of the week",
+    "kind": "stem",
+    "weight": 5
+  },
+  "loan:English:golf": {
+    "label": "golf",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:marathon": {
+    "label": "marathon",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:tennis": {
+    "label": "tennis",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:badminton": {
+    "label": "badminton",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:boxing": {
+    "label": "boxing",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:health": {
+    "label": "health",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:banana": {
+    "label": "banana",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:mango": {
+    "label": "mango",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:kiwi": {
+    "label": "kiwi",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:lemon": {
+    "label": "lemon",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:cherry": {
+    "label": "cherry",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:cola": {
+    "label": "cola",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:cider": {
+    "label": "cider",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:coffee": {
+    "label": "coffee",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:bubble tea": {
+    "label": "bubble tea",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:smoothie": {
+    "label": "smoothie",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:juice": {
+    "label": "juice",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:ice cream": {
+    "label": "ice cream",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:cheese": {
+    "label": "cheese",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:animation": {
+    "label": "animation",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:documentary": {
+    "label": "documentary",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:drama": {
+    "label": "drama",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:dance": {
+    "label": "dance",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:hip-hop": {
+    "label": "hip-hop",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:rock": {
+    "label": "rock",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:rap": {
+    "label": "rap",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:pop": {
+    "label": "pop",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:K-pop": {
+    "label": "K-pop",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:jazz": {
+    "label": "jazz",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:classic": {
+    "label": "classic",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:R&B": {
+    "label": "R&B",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:computer": {
+    "label": "computer",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:pen": {
+    "label": "pen",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:mart": {
+    "label": "mart",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:English:coffee shop": {
+    "label": "coffee shop",
+    "meaning": "English source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:French:café": {
+    "label": "café",
+    "meaning": "French source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:Japanese:パン (pan)": {
+    "label": "パン (pan)",
+    "meaning": "Japanese source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:Japanese:かばん (kaban)": {
+    "label": "かばん (kaban)",
+    "meaning": "Japanese source word",
+    "kind": "loanword",
+    "weight": 8
+  },
+  "loan:Sanskrit:yoga": {
+    "label": "yoga",
+    "meaning": "Sanskrit source word",
+    "kind": "loanword",
+    "weight": 8
+  }
+}
