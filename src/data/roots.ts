@@ -2,7 +2,7 @@ import conceptData from './root-concepts.json' with { type: 'json' }
 import reviewData from './origin-reviews.json' with { type: 'json' }
 import sourceData from './origin-sources.json' with { type: 'json' }
 import type { OriginReview, OriginSource, RootConcept, RootsAid } from '../types/roots'
-import type { VocabularySource } from '../types/vocabulary'
+import type { CardSource, VocabularySource } from '../types/vocabulary'
 
 export const rootConcepts = conceptData as Record<string, RootConcept>
 export const originReviews: Record<string, OriginReview> = reviewData as Record<string, OriginReview>
@@ -12,9 +12,13 @@ const relationLabels: Record<RootConcept['kind'], string> = {
   hanja: 'Shared Hanja', stem: 'Same word / stem', pattern: 'Shared pattern', loanword: 'Same loanword',
 }
 
+type Card = CardSource & Partial<Pick<VocabularySource, 'sourceKind' | 'sourceLine'>>
+/** A connector or particle explains the pattern it shares, so it leads; then words, then phrases, in source order. */
+const order = (card: Card) => card.sourceLine === undefined ? -1 : Number(card.sourceKind === 'phrase')
+
 /** Only curated concept IDs make an edge. Hangul spelling is never used to infer a relationship. */
-export function buildRootsAids(items: VocabularySource[]): Map<string, RootsAid> {
-  const members = new Map<string, VocabularySource[]>()
+export function buildRootsAids(items: Card[]): Map<string, RootsAid> {
+  const members = new Map<string, Card[]>()
   for (const item of items) {
     for (const id of originReviews[item.id]?.componentIds ?? []) {
       members.set(id, [...members.get(id) ?? [], item])
@@ -31,7 +35,7 @@ export function buildRootsAids(items: VocabularySource[]): Map<string, RootsAid>
       || (members.get(a.id)?.length ?? 0) - (members.get(b.id)?.length ?? 0)
     ).map(component => ({ component, words: [...members.get(component.id) ?? []]
       .filter(other => other.id !== item.id && other.korean !== item.korean)
-      .sort((a, b) => Number(a.sourceKind === 'phrase') - Number(b.sourceKind === 'phrase') || a.sourceLine - b.sourceLine),
+      .sort((a, b) => order(a) - order(b) || (a.sourceLine ?? 0) - (b.sourceLine ?? 0)),
     }))
     const related: RootsAid['related'] = []
     const seen = new Set<string>()

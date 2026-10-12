@@ -1426,5 +1426,345 @@
   "wikt:排球": {
     "title": "Wiktionary · 排球",
     "url": "https://en.wiktionary.org/wiki/%E6%8E%92%E7%90%83#Japanese"
+  },
+  "wikt:Monday": {
+    "title": "Wiktionary · Monday",
+    "url": "https://en.wiktionary.org/wiki/Monday#English"
+  },
+  "wikt:lunes": {
+    "title": "Wiktionary · lunes",
+    "url": "https://en.wiktionary.org/wiki/lunes#Spanish"
+  },
+  "wikt:lundi": {
+    "title": "Wiktionary · lundi",
+    "url": "https://en.wiktionary.org/wiki/lundi#French"
+  },
+  "wikt:martes": {
+    "title": "Wiktionary · martes",
+    "url": "https://en.wiktionary.org/wiki/martes#Spanish"
+  },
+  "wikt:miércoles": {
+    "title": "Wiktionary · miércoles",
+    "url": "https://en.wiktionary.org/wiki/mi%C3%A9rcoles#Spanish"
+  },
+  "wikt:jueves": {
+    "title": "Wiktionary · jueves",
+    "url": "https://en.wiktionary.org/wiki/jueves#Spanish"
+  },
+  "wikt:viernes": {
+    "title": "Wiktionary · viernes",
+    "url": "https://en.wiktionary.org/wiki/viernes#Spanish"
+  },
+  "wikt:Saturday": {
+    "title": "Wiktionary · Saturday",
+    "url": "https://en.wiktionary.org/wiki/Saturday#English"
+  },
+  "wikt:Sunday": {
+    "title": "Wiktionary · Sunday",
+    "url": "https://en.wiktionary.org/wiki/Sunday#English"
+  },
+  "wikt:싫다": {
+    "title": "Wiktionary · 싫다",
+    "url": "https://en.wiktionary.org/wiki/%EC%8B%AB%EB%8B%A4#Korean"
+  },
+  "wikt:士": {
+    "title": "Wiktionary · 士",
+    "url": "https://en.wiktionary.org/wiki/%E5%A3%AB#Korean"
+  },
+  "nikl:geudaeum": {
+    "title": "NIKL Standard Korean Dictionary · 그-다음",
+    "url": "https://stdict.korean.go.kr/search/searchResult.do?pageSize=10&searchKeyword=%EA%B7%B8%EB%8B%A4%EC%9D%8C"
+  },
+  "nikl:geuraedo": {
+    "title": "NIKL Korean Basic Dictionary · 그래도",
+    "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=36264&nation=eng"
+  },
+  "nikl:geureomyeon": {
+    "title": "NIKL Korean Basic Dictionary · 그러면 (short for 그리하면, 그러하면)",
+    "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=89806&nation=eng"
+  },
+  "nikl:geureonde": {
+    "title": "NIKL Korean Basic Dictionary · 그런데 (short for 그러한데)",
+    "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=89530&nation=eng"
+  },
+  "nikl:go-ending": {
+    "title": "NIKL Korean Basic Dictionary · -고",
+    "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=78583&nation=eng"
+  },
+  "nikl:nada-auxiliary": {
+    "title": "NIKL Korean Basic Dictionary · 나다 (helper verb)",
+    "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62134&nation=eng"
+  },
+  "wikt:-거나": {
+    "title": "Wiktionary · -거나",
+    "url": "https://en.wiktionary.org/wiki/-%EA%B1%B0%EB%82%98#Korean"
+  },
+  "wikt:-고": {
+    "title": "Wiktionary · -고",
+    "url": "https://en.wiktionary.org/wiki/-%EA%B3%A0#Korean"
+  },
+  "wikt:-는데": {
+    "title": "Wiktionary · -는데",
+    "url": "https://en.wiktionary.org/wiki/-%EB%8A%94%EB%8D%B0#Korean"
+  },
+  "wikt:-니까": {
+    "title": "Wiktionary · -니까",
+    "url": "https://en.wiktionary.org/wiki/-%EB%8B%88%EA%B9%8C#Korean"
+  },
+  "wikt:-도": {
+    "title": "Wiktionary · -도",
+    "url": "https://en.wiktionary.org/wiki/-%EB%8F%84#Korean"
+  },
+  "wikt:-러": {
+    "title": "Wiktionary · -러",
+    "url": "https://en.wiktionary.org/wiki/-%EB%9F%AC#Korean"
+  },
+  "wikt:-면": {
+    "title": "Wiktionary · -면",
+    "url": "https://en.wiktionary.org/wiki/-%EB%A9%B4#Korean"
+  },
+  "wikt:-아도": {
+    "title": "Wiktionary · -아도",
+    "url": "https://en.wiktionary.org/wiki/-%EC%95%84%EB%8F%84#Korean"
+  },
+  "wikt:-아서": {
+    "title": "Wiktionary · -아서",
+    "url": "https://en.wiktionary.org/wiki/-%EC%95%84%EC%84%9C#Korean"
+  },
+  "wikt:-어도": {
+    "title": "Wiktionary · -어도",
+    "url": "https://en.wiktionary.org/wiki/-%EC%96%B4%EB%8F%84#Korean"
+  },
+  "wikt:-어서": {
+    "title": "Wiktionary · -어서",
+    "url": "https://en.wiktionary.org/wiki/-%EC%96%B4%EC%84%9C#Korean"
+  },
+  "wikt:-에": {
+    "title": "Wiktionary · -에",
+    "url": "https://en.wiktionary.org/wiki/-%EC%97%90#Korean"
+  },
+  "wikt:-으니까": {
+    "title": "Wiktionary · -으니까",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9C%BC%EB%8B%88%EA%B9%8C#Korean"
+  },
+  "wikt:-으러": {
+    "title": "Wiktionary · -으러",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9C%BC%EB%9F%AC#Korean"
+  },
+  "wikt:-으면": {
+    "title": "Wiktionary · -으면",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9C%BC%EB%A9%B4#Korean"
+  },
+  "wikt:-은데": {
+    "title": "Wiktionary · -은데",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9D%80%EB%8D%B0#Korean"
+  },
+  "wikt:-지만": {
+    "title": "Wiktionary · -지만",
+    "url": "https://en.wiktionary.org/wiki/-%EC%A7%80%EB%A7%8C#Korean"
+  },
+  "wikt:그": {
+    "title": "Wiktionary · 그",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%B8#Korean"
+  },
+  "wikt:그래도": {
+    "title": "Wiktionary · 그래도",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%9E%98%EB%8F%84#Korean"
+  },
+  "wikt:그래서": {
+    "title": "Wiktionary · 그래서",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%9E%98%EC%84%9C#Korean"
+  },
+  "wikt:그러니까": {
+    "title": "Wiktionary · 그러니까",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%9F%AC%EB%8B%88%EA%B9%8C#Korean"
+  },
+  "wikt:그러다": {
+    "title": "Wiktionary · 그러다",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%9F%AC%EB%8B%A4#Korean"
+  },
+  "wikt:그러면": {
+    "title": "Wiktionary · 그러면",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%9F%AC%EB%A9%B4#Korean"
+  },
+  "wikt:그런데": {
+    "title": "Wiktionary · 그런데",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%9F%B0%EB%8D%B0#Korean"
+  },
+  "wikt:그렇다": {
+    "title": "Wiktionary · 그렇다",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%A0%87%EB%8B%A4#Korean"
+  },
+  "wikt:그렇지만": {
+    "title": "Wiktionary · 그렇지만",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%A0%87%EC%A7%80%EB%A7%8C#Korean"
+  },
+  "wikt:그리고": {
+    "title": "Wiktionary · 그리고",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%B8%EB%A6%AC%EA%B3%A0#Korean"
+  },
+  "wikt:근데": {
+    "title": "Wiktionary · 근데",
+    "url": "https://en.wiktionary.org/wiki/%EA%B7%BC%EB%8D%B0#Korean"
+  },
+  "wikt:다음": {
+    "title": "Wiktionary · 다음",
+    "url": "https://en.wiktionary.org/wiki/%EB%8B%A4%EC%9D%8C#Korean"
+  },
+  "wikt:또": {
+    "title": "Wiktionary · 또",
+    "url": "https://en.wiktionary.org/wiki/%EB%98%90#Korean"
+  },
+  "wikt:또는": {
+    "title": "Wiktionary · 또는",
+    "url": "https://en.wiktionary.org/wiki/%EB%98%90%EB%8A%94#Korean"
+  },
+  "wikt:아니다": {
+    "title": "Wiktionary · 아니다",
+    "url": "https://en.wiktionary.org/wiki/%EC%95%84%EB%8B%88%EB%8B%A4#Korean"
+  },
+  "wikt:아니면": {
+    "title": "Wiktionary · 아니면",
+    "url": "https://en.wiktionary.org/wiki/%EC%95%84%EB%8B%88%EB%A9%B4#Korean"
+  },
+  "wikt:왜냐면": {
+    "title": "Wiktionary · 왜냐면",
+    "url": "https://en.wiktionary.org/wiki/%EC%99%9C%EB%83%90%EB%A9%B4#Korean"
+  },
+  "wikt:왜냐하면": {
+    "title": "Wiktionary · 왜냐하면",
+    "url": "https://en.wiktionary.org/wiki/%EC%99%9C%EB%83%90%ED%95%98%EB%A9%B4#Korean"
+  },
+  "wikt:하지만": {
+    "title": "Wiktionary · 하지만",
+    "url": "https://en.wiktionary.org/wiki/%ED%95%98%EC%A7%80%EB%A7%8C#Korean"
+  },
+  "wikt:-은": {
+    "title": "Wiktionary · -은",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9D%80#Korean"
+  },
+  "wikt:제": {
+    "title": "Wiktionary · 제",
+    "url": "https://en.wiktionary.org/wiki/%EC%A0%9C#Korean"
+  },
+  "wikt:내": {
+    "title": "Wiktionary · 내",
+    "url": "https://en.wiktionary.org/wiki/%EB%82%B4#Korean"
+  },
+  "wikt:-를": {
+    "title": "Wiktionary · -를",
+    "url": "https://en.wiktionary.org/wiki/-%EB%A5%BC#Korean"
+  },
+  "wikt:-의": {
+    "title": "Wiktionary · -의",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9D%98#Korean"
+  },
+  "wikt:-에서": {
+    "title": "Wiktionary · -에서",
+    "url": "https://en.wiktionary.org/wiki/-%EC%97%90%EC%84%9C#Korean"
+  },
+  "wikt:-서": {
+    "title": "Wiktionary · -서",
+    "url": "https://en.wiktionary.org/wiki/-%EC%84%9C#Korean"
+  },
+  "wikt:-부터": {
+    "title": "Wiktionary · -부터",
+    "url": "https://en.wiktionary.org/wiki/-%EB%B6%80%ED%84%B0#Korean"
+  },
+  "nikl:buteo": {
+    "title": "NIKL Urimalsaem · 부터 (history)",
+    "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=178264&viewType=confirm"
+  },
+  "wikt:붙다": {
+    "title": "Wiktionary · 붙다",
+    "url": "https://en.wiktionary.org/wiki/%EB%B6%99%EB%8B%A4#Korean"
+  },
+  "wikt:-까지": {
+    "title": "Wiktionary · -까지",
+    "url": "https://en.wiktionary.org/wiki/-%EA%B9%8C%EC%A7%80#Korean"
+  },
+  "wikt:가장": {
+    "title": "Wiktionary · 가장",
+    "url": "https://en.wiktionary.org/wiki/%EA%B0%80%EC%9E%A5#Korean"
+  },
+  "wikt:-으로": {
+    "title": "Wiktionary · -으로",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9C%BC%EB%A1%9C#Korean"
+  },
+  "wikt:-로": {
+    "title": "Wiktionary · -로",
+    "url": "https://en.wiktionary.org/wiki/-%EB%A1%9C#Korean"
+  },
+  "wikt:로": {
+    "title": "Wiktionary · 로",
+    "url": "https://en.wiktionary.org/wiki/%EB%A1%9C#Korean"
+  },
+  "wikt:-에게": {
+    "title": "Wiktionary · -에게",
+    "url": "https://en.wiktionary.org/wiki/-%EC%97%90%EA%B2%8C#Korean"
+  },
+  "wikt:-한테": {
+    "title": "Wiktionary · -한테",
+    "url": "https://en.wiktionary.org/wiki/-%ED%95%9C%ED%85%8C#Korean"
+  },
+  "wikt:-께": {
+    "title": "Wiktionary · -께",
+    "url": "https://en.wiktionary.org/wiki/-%EA%BB%98#Korean"
+  },
+  "wikt:-한테서": {
+    "title": "Wiktionary · -한테서",
+    "url": "https://en.wiktionary.org/wiki/-%ED%95%9C%ED%85%8C%EC%84%9C#Korean"
+  },
+  "wikt:-과": {
+    "title": "Wiktionary · -과",
+    "url": "https://en.wiktionary.org/wiki/-%EA%B3%BC#Korean"
+  },
+  "wikt:-와": {
+    "title": "Wiktionary · -와",
+    "url": "https://en.wiktionary.org/wiki/-%EC%99%80#Korean"
+  },
+  "wikt:-하고": {
+    "title": "Wiktionary · -하고",
+    "url": "https://en.wiktionary.org/wiki/-%ED%95%98%EA%B3%A0#Korean"
+  },
+  "wikt:-이랑": {
+    "title": "Wiktionary · -이랑",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9D%B4%EB%9E%91#Korean"
+  },
+  "wikt:-랑": {
+    "title": "Wiktionary · -랑",
+    "url": "https://en.wiktionary.org/wiki/-%EB%9E%91#Korean"
+  },
+  "wikt:-만": {
+    "title": "Wiktionary · -만",
+    "url": "https://en.wiktionary.org/wiki/-%EB%A7%8C#Korean"
+  },
+  "wikt:-밖에": {
+    "title": "Wiktionary · -밖에",
+    "url": "https://en.wiktionary.org/wiki/-%EB%B0%96%EC%97%90#Korean"
+  },
+  "wikt:밖": {
+    "title": "Wiktionary · 밖",
+    "url": "https://en.wiktionary.org/wiki/%EB%B0%96#Korean"
+  },
+  "wikt:-보다": {
+    "title": "Wiktionary · -보다",
+    "url": "https://en.wiktionary.org/wiki/-%EB%B3%B4%EB%8B%A4#Korean"
+  },
+  "wikt:-처럼": {
+    "title": "Wiktionary · -처럼",
+    "url": "https://en.wiktionary.org/wiki/-%EC%B2%98%EB%9F%BC#Korean"
+  },
+  "wikt:體": {
+    "title": "Wiktionary · 體",
+    "url": "https://en.wiktionary.org/wiki/%E9%AB%94#Korean"
+  },
+  "wikt:-마다": {
+    "title": "Wiktionary · -마다",
+    "url": "https://en.wiktionary.org/wiki/-%EB%A7%88%EB%8B%A4#Korean"
+  },
+  "wikt:-이나": {
+    "title": "Wiktionary · -이나",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9D%B4%EB%82%98#Korean"
   }
 }

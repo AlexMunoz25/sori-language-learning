@@ -944,5 +944,120 @@
     "meaning": "Sanskrit source word",
     "kind": "loanword",
     "weight": 8
+  },
+  "pattern:-고": {
+    "label": "-고",
+    "meaning": "and: joins two actions or facts",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-지만": {
+    "label": "-지만",
+    "meaning": "but: adds a contrasting fact",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-는데": {
+    "label": "-는데 / -(으)ㄴ데",
+    "meaning": "gives the background, or a soft but",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-아서": {
+    "label": "-아서 / -어서",
+    "meaning": "so, because; and then (linked steps)",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-니까": {
+    "label": "-(으)니까",
+    "meaning": "because, since: a reason you can act on",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-면": {
+    "label": "-(으)면",
+    "meaning": "if, when",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-아도": {
+    "label": "-아도 / -어도",
+    "meaning": "even if, even though",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "stem:그러하다": {
+    "label": "그러하다 / 그렇다",
+    "meaning": "to be so, be like that",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:그리하다": {
+    "label": "그리하다",
+    "meaning": "to do so",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:하다": {
+    "label": "하다",
+    "meaning": "to do; also 'to say'",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:또": {
+    "label": "또",
+    "meaning": "also, again",
+    "kind": "stem",
+    "weight": 5
+  },
+  "pattern:topic": {
+    "label": "은 / 는",
+    "meaning": "marks the topic; 은 after a consonant, 는 after a vowel",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-에": {
+    "label": "에",
+    "meaning": "at / to: marks a place, time, or destination",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-서": {
+    "label": "서",
+    "meaning": "from, or where an action happens: short for 에서, from old 이시다, 'to be at'",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-로": {
+    "label": "(으)로",
+    "meaning": "toward / by means of: direction, tool, or way",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "stem:붙다": {
+    "label": "붙다",
+    "meaning": "to stick, to attach",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:밖": {
+    "label": "밖",
+    "meaning": "outside",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:보다": {
+    "label": "보다",
+    "meaning": "to see, to watch",
+    "kind": "stem",
+    "weight": 5
+  },
+  "hanja:體": {
+    "label": "체",
+    "meaning": "body; form, manner",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "體"
   }
 }

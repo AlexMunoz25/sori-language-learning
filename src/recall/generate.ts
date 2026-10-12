@@ -118,7 +118,9 @@ export function orderQuestions<T extends Assignment>(assignments: T[], random: (
 
 /** Builds a test: distinct cards, balanced types in random order, positional question ids. */
 export function buildTest(pool: VocabularyItem[], options: { length: number; rules: QuestionRule[]; random?: () => number; recent?: ReadonlyMap<string, number> }): TestQuestion[] {
-  const { rules, random = Math.random } = options
+  const { random = Math.random } = options
+  // Only modes that can ask some of these words share the questions out: words never wait on Complete the sentence.
+  const rules = options.rules.filter(rule => pool.some(item => rule.supports(item)))
   if (!rules.length) return []
   const eligible = pool.filter(item => rules.some(rule => rule.supports(item)))
   const items = pickItems(eligible, Math.max(0, Math.min(options.length, eligible.length)), random, options.recent)

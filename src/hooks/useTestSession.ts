@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import { vocabularyById } from '../data/vocabulary'
+import { useEffect, useRef, useState } from 'react'
+import { cardById } from '../data/cards'
 import { emptyAnswer, isBlank, parseAnswer, verdictOf } from '../recall/answers'
 import { buildTest, recencyOf } from '../recall/generate'
 import { compactStrokes, previewStrokes } from '../recall/ink'
@@ -15,6 +15,15 @@ export interface TestPreferences {
   length: TestLength
   /** Disabled rather than enabled, so a newly registered mode starts switched on. */
   disabledTypes: string[]
+}
+/**
+ * The modes a test of these words uses: those that can ask at least one of them, minus the ones switched off.
+ * Switched off everywhere it applies? Then all of them, so a section never ends up with nothing to ask.
+ */
+export function rulesFor(pool: VocabularyItem[], disabledTypes: string[]) {
+  const relevant = questionRules.filter(rule => pool.some(item => rule.supports(item)))
+  const enabled = relevant.filter(rule => !disabledTypes.includes(rule.id))
+  return enabled.length ? enabled : relevant
 }
 /** Which words a test drew from, kept for its label while it runs. */
 export interface TestPool { category: string; filter: StudyFilter }
@@ -84,7 +93,7 @@ function parseTest(value: unknown): ActiveTest | null {
   for (const raw of value.questions) {
     if (!isRecord(raw) || typeof raw.id !== 'string' || typeof raw.itemId !== 'string' || typeof raw.type !== 'string'
       || questions.some(question => question.id === raw.id)) return null
-    const item = vocabularyById.get(raw.itemId)
+    const item = cardById.get(raw.itemId)
     const rule = questionRuleById.get(raw.type)
     if (!item || !rule?.supports(item)) return null
     const data = rule.parseData ? rule.parseData(raw.data, item) : undefined
@@ -100,7 +109,8 @@ function parseTest(value: unknown): ActiveTest | null {
     if (saved === undefined ? index < current : index > current) return null
     if (saved === undefined) continue
     const record = parseRecord(saved, questionRuleById.get(question.type)!)
-    if (!record) return null
+    // Moving on needs a grade, so every earlier answer has one.
+    if (!record || (index < current && !verdictOf(record))) return null
     answers[question.id] = record
   }
   // A damaged draft is dropped rather than costing the whole test.
@@ -116,7 +126,7 @@ function parseTest(value: unknown): ActiveTest | null {
 function initialStore(): Store {
   const saved = readStorage('sessionStorage', testStorageKey)
   const history = isRecord(saved) && Array.isArray(saved.history)
-    ? saved.history.filter(Array.isArray).map(ids => ids.filter((id: unknown): id is string => typeof id === 'string' && vocabularyById.has(id))).slice(-20) : []
+    ? saved.history.filter(Array.isArray).map(ids => ids.filter((id: unknown): id is string => typeof id === 'string' && cardById.has(id))).slice(-20) : []
   return { test: isRecord(saved) ? parseTest(saved.test) : null, history, preferences: parsePreferences(readStorage('localStorage', preferencesKey)) }
 }
 
@@ -125,12 +135,20 @@ function serialize({ test, history }: Store) {
   if (!test) return { version: 1, test: null, history }
   const currentId = test.questions[test.current]?.id
   const answers = Object.fromEntries(Object.entries(test.answers).map(([id, record]) => [id, record.answer.kind === 'ink'
-    ? { ...record, answer: { kind: 'ink', strokes: id === currentId ? compactStrokes(record.answer.strokes) : previewStrokes(record.answer.strokes) } } : record]))
-  const draft = test.draft?.kind === 'ink' ? { kind: 'ink', strokes: compactStrokes(test.draft.strokes) } : test.draft
+    ? { ...record, answer: { ...record.answer, strokes: id === currentId ? compactStrokes(record.answer.strokes) : previewStrokes(record.answer.strokes) } } : record]))
+  const draft = test.draft?.kind === 'ink' ? { ...test.draft, strokes: compactStrokes(test.draft.strokes) } : test.draft
   return { version: 1, test: { ...test, answers, draft }, history }
 }
 
 const isPromise = <T,>(value: T | Promise<T>): value is Promise<T> => typeof (value as Promise<T>)?.then === 'function'
+const unreadable: Evaluation = { result: 'uncertain', by: 'unavailable' }
+/** Runs a rule's evaluation; a thrown error or a failed promise means the answer couldn't be read, never that it's wrong. */
+function evaluate(question: TestQuestion, answer: Answer): Evaluation | Promise<Evaluation> {
+  try {
+    const result = questionRuleById.get(question.type)!.evaluate(cardById.get(question.itemId)!, answer, { data: question.data })
+    return isPromise(result) ? result.catch(() => unreadable) : result
+  } catch { return unreadable }
+}
 
 export function useTestSession() {
   const [store, setStore] = useState(initialStore)
@@ -143,7 +161,6 @@ export function useTestSession() {
   }, [store])
 
   const { test, preferences } = store
-  const enabledRules = questionRules.filter(rule => !preferences.disabledTypes.includes(rule.id))
   const question = test && !test.ended ? test.questions[test.current] : undefined
   const record = question && test?.answers[question.id]
   const phase: TestPhase = !test ? 'setup' : !question ? 'complete' : !record ? 'answering' : !record.auto ? 'checking'
@@ -153,21 +170,33 @@ export function useTestSession() {
   const setRecord = (id: string, change: (record: AnswerRecord) => AnswerRecord) =>
     update(test => test.answers[id] ? { ...test, answers: { ...test.answers, [id]: change(test.answers[id]) } } : test)
 
-  // Answers that take time to read (handwriting) are evaluated here, so a reload mid-check simply reads them again.
+  // Readings in flight, by question and answer, so a re-render, a remount, or StrictMode's second effect never reads twice.
+  const reads = useRef(new Map<string, Promise<Evaluation>>())
+  // The answer at the current position still waiting to be read, in a running or an ended test.
+  const atCurrent = test?.questions[test.current]
+  const unread = atCurrent && test.answers[atCurrent.id] && !test.answers[atCurrent.id].auto ? { question: atCurrent, record: test.answers[atCurrent.id] } : undefined
+  // Answers that take time to read (handwriting) finish here, so a reload mid-check simply reads them again, even after
+  // End test. The result never lands on a different answer (a retake reuses question ids).
   useEffect(() => {
-    if (phase !== 'checking' || !question || !record) return
-    const controller = new AbortController()
-    const id = question.id
-    Promise.resolve()
-      .then(() => questionRuleById.get(question.type)!.evaluate(vocabularyById.get(question.itemId)!, record.answer, { signal: controller.signal }))
-      .catch((): Evaluation => ({ result: 'uncertain', by: 'unavailable' }))
-      .then(evaluation => { if (!controller.signal.aborted) setRecord(id, current => current.auto ? current : { ...current, auto: evaluation }) })
-    return () => controller.abort()
-  }, [phase, question?.id])
+    if (!unread) return
+    const { id } = unread.question
+    const { answeredAt } = unread.record
+    const key = `${id}|${answeredAt}`
+    let pending = reads.current.get(key)
+    if (!pending) {
+      const result = evaluate(unread.question, unread.record.answer)
+      pending = isPromise(result) ? result : Promise.resolve(result)
+      reads.current.set(key, pending)
+    }
+    pending.then(evaluation => {
+      reads.current.delete(key)
+      setRecord(id, current => current.auto || current.answeredAt !== answeredAt ? current : { ...current, auto: evaluation })
+    })
+  }, [unread?.question.id, unread?.record.answeredAt])
 
   /** A new test from these words; returns how many questions it has. Randomness stays out of state updaters. */
   function begin(pool: VocabularyItem[], info: TestPool, length: number, recent?: ReadonlyMap<string, number>) {
-    const questions = buildTest(pool, { length, rules: enabledRules, recent })
+    const questions = buildTest(pool, { length, rules: rulesFor(pool, preferences.disabledTypes), recent })
     if (!questions.length) return 0
     setStore(previous => ({ ...previous, history: [...previous.history, questions.map(item => item.itemId)].slice(-20),
       test: { pool: info, questions, answers: {}, current: 0, ended: false, draft: null, hints: 0 } }))
@@ -175,38 +204,53 @@ export function useTestSession() {
   }
 
   return {
-    phase, test, question, record, preferences, enabledRules, storageAvailable,
+    phase, test, question, record, preferences, storageAvailable,
+    /** The modes a test of these words would use. */
+    rulesFor: (pool: VocabularyItem[]) => rulesFor(pool, preferences.disabledTypes),
     score: test ? scoreTest(test.questions, test.answers) : undefined,
     start: (pool: VocabularyItem[], info: TestPool) =>
       begin(pool, info, preferences.length === 'all' ? pool.length : preferences.length, recencyOf(store.history)),
     /** The same words again, in a new order and with new directions; the score, hints, and answers start over. */
     retake: () => {
       if (!test) return 0
-      const items = [...new Set(test.questions.map(entry => entry.itemId))].map(id => vocabularyById.get(id)!)
+      const items = [...new Set(test.questions.map(entry => entry.itemId))].map(id => cardById.get(id)!)
       return begin(items, test.pool, items.length)
     },
     setDraft: (answer: Answer) => update(current => ({ ...current, draft: answer })),
+    /** One more hint for the current question; only before it's answered. */
     showHint: () => update(current => current.answers[current.questions[current.current]?.id] ? current : { ...current, hints: current.hints + 1 }),
-    /** Records the answer with its hints; a synchronous evaluation grades it at once, otherwise it's read in the background. */
-    submit: (evaluate?: (answer: Answer) => Evaluation | Promise<Evaluation>) => {
+    /** Records the answer with its hints. Typed answers are graded at once; handwriting is read in the background. */
+    submit: () => {
       if (!test || !question || test.answers[question.id] || test.ended) return
       const rule = questionRuleById.get(question.type)!
       const answer = test.draft?.kind === rule.answer ? test.draft : emptyAnswer(rule.answer)
       const answeredAt = new Date().toISOString()
       let auto: Evaluation | undefined = isBlank(answer) ? { result: 'incorrect', by: 'blank' } : undefined
-      if (!auto && evaluate) {
-        try {
-          const result = evaluate(answer)
-          if (!isPromise(result)) auto = result
-        } catch { auto = { result: 'uncertain', by: 'unavailable' } }
+      if (!auto) {
+        const result = evaluate(question, answer)
+        if (isPromise(result)) reads.current.set(`${question.id}|${answeredAt}`, result)
+        else auto = result
       }
       const hints = test.hints
       update(current => current.answers[question.id] ? current
         : { ...current, draft: null, answers: { ...current.answers, [question.id]: { answer, answeredAt, hints, ...auto ? { auto } : {} } } })
     },
-    /** The learner's decision when the app wasn't sure, or their correction of a misread answer. */
-    decide: (verdict: Verdict, corrected?: string) => {
-      if (question) setRecord(question.id, current => ({ ...current, self: verdict, ...corrected !== undefined ? { corrected } : {} }))
+    /** The learner's own judgement: when the app wasn't sure, couldn't read the answer, or got it wrong. */
+    decide: (verdict: Verdict) => { if (question) setRecord(question.id, current => ({ ...current, self: verdict })) },
+    /** What the learner says their handwriting reads, graded exactly like a recognised reading. */
+    correct: (reading: string) => {
+      if (!question) return
+      const rule = questionRuleById.get(question.type)!
+      const read = reading.trim().slice(0, 100)
+      if (!read || !rule.grade) return
+      const verdict = rule.grade(cardById.get(question.itemId)!, read)
+      setRecord(question.id, current => ({ ...current, self: verdict, corrected: read }))
+    },
+    /** Takes back the learner's decision or correction, so the app's reading stands (or they're asked again). */
+    undecide: () => { if (question) setRecord(question.id, ({ self: _, corrected: __, ...current }) => current) },
+    /** Reads handwriting again after the recognizer couldn't be reached. */
+    recheck: () => {
+      if (question) setRecord(question.id, current => current.auto?.by === 'unavailable' && !current.self ? { answer: current.answer, answeredAt: current.answeredAt, hints: current.hints } : current)
     },
     /** Moves on only once the question is graded, so every question is scored exactly once. */
     next: () => update(current => {
@@ -224,10 +268,14 @@ export function useTestSession() {
     }),
     reset: () => update(() => null),
     setLength: (length: TestLength) => setStore(previous => ({ ...previous, preferences: { ...previous.preferences, length } })),
-    toggleType: (id: string) => setStore(previous => {
+    /** Switches a mode on or off for every test; the last one these words can use stays on. */
+    toggleType: (id: string, pool: VocabularyItem[]) => setStore(previous => {
       const { disabledTypes } = previous.preferences
-      const next = disabledTypes.includes(id) ? disabledTypes.filter(type => type !== id) : [...disabledTypes, id]
-      return next.length >= questionRules.length ? previous : { ...previous, preferences: { ...previous.preferences, disabledTypes: next } }
+      const enabled = rulesFor(pool, disabledTypes).map(rule => rule.id)
+      if (enabled.length === 1 && enabled[0] === id) return previous
+      // Switching one off keeps the others that showed as on, even when they only showed because all were off.
+      const next = enabled.includes(id) ? [...disabledTypes.filter(type => !enabled.includes(type)), id] : disabledTypes.filter(type => type !== id)
+      return { ...previous, preferences: { ...previous.preferences, disabledTypes: next } }
     }),
   }
 }

@@ -1,11 +1,12 @@
+import { editDistance } from './distance'
 import type { AnswerKey } from './types'
 
 const initials = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ'
 const medials = 'ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ'
 const finals = ['', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ', 'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', 'ㄺ', 'ㄻ', 'ㄼ', 'ㄽ', 'ㄾ', 'ㄿ', 'ㅀ', 'ㅁ', 'ㅂ', 'ㅄ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ']
 
-/** Spacing and punctuation don't count: 무슨 음식을 제일 좋아해요? ~ 무슨음식을제일좋아해요 */
-export const normalizeKorean = (text: string) => text.normalize('NFC').replace(/[\s?!.,~·…'"“”‘’()[\]-]/g, '')
+/** Spacing, punctuation, and the case of Latin letters don't count: 무슨 음식을 제일 좋아해요? ~ 무슨음식을제일좋아해요, SF 영화 ~ sf영화 */
+export const normalizeKorean = (text: string) => text.normalize('NFC').toLowerCase().replace(/[\s?!.,~·…'"“”‘’()[\]-]/g, '')
 
 /** Syllables as their letters: 사과 → ㅅㅏㄱㅘ. Anything that isn't a Hangul syllable passes through. */
 export function toJamo(text: string) {
@@ -15,17 +16,6 @@ export function toJamo(text: string) {
     const final = finals[code % 28]
     return [initials[Math.floor(code / 588)], medials[Math.floor(code % 588 / 28)], ...final ? [final] : []]
   })
-}
-
-/** Damerau–Levenshtein distance between two letter sequences. */
-function editDistance(a: string[], b: string[]) {
-  const rows = Array.from({ length: a.length + 1 }, (_, i) => Array.from({ length: b.length + 1 }, (_, j) => i || j ? (i ? (j ? 0 : i) : j) : 0))
-  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) {
-    const cost = a[i - 1] === b[j - 1] ? 0 : 1
-    rows[i][j] = Math.min(rows[i - 1][j] + 1, rows[i][j - 1] + 1, rows[i - 1][j - 1] + cost)
-    if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) rows[i][j] = Math.min(rows[i][j], rows[i - 2][j - 2] + 1)
-  }
-  return rows[a.length][b.length]
 }
 
 export interface KoreanMatch {

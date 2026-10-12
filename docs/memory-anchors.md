@@ -2,7 +2,7 @@
 
 A Memory Anchor connects an unfamiliar Korean word to something you already know. The reaction it should produce is: *“That sounds like X, and X goes with this meaning.”* It links three things at once: the Korean **sound**, the **meaning**, and a **familiar** word, phrase, situation, or reference.
 
-An anchor is not an explanation of how the word is built. “기 gi (記) ‘record’ + 자 ja (者) ‘person’ → 기자” is useful research, and it belongs in **Roots**. Conjugation notes (“예쁘다 → 예뻐요. 으 drops.”) also belong in Roots.
+Most anchors are sound hooks. When a word genuinely breaks into meaningful parts, one of its three candidates explains them instead, a **root-based anchor**: 말 mal = WORDS + 해요 hae-yo = DO → doing speech: to speak. It shows *why* the word means what it means, and its parts recur across the deck (空 in 공항 and 공책, 師 in 의사, 약사, and 요리사). The full research, sources, and related words stay in **Roots**; a conjugation note alone (“예쁘다 → 예뻐요. 으 drops.”) is not an anchor.
 
 What works for this learner was derived from their ratings: see [the feedback analysis](anchor-feedback-analysis.md). In short, the best anchors have one instantly familiar keyword that sounds like the head of the Korean word and already implies the meaning: light BULB → 밝아요 (bright), BALA → 빨라요 (fast), MORDOR → 멀어요 (far).
 
@@ -30,12 +30,14 @@ Special cases:
 - **Loanwords:** the source word is the familiar thing. Name it and point out the sound changes: COFFEE → 커피 *keo-pi* (Korean has no f).
 - **Phrases:** chain the hooks of the words inside, so each word's own anchor is reinforced: 날씨 ≈ NASTY weather + 가 + 더워요 ≈ hot DEHORS.
 - **Cognates you already know:** when the real origin *is* the familiar thing, it can be the anchor: CHAI → 차, SENSEI → 선생님, BULGOGI → 고기, Tokyo's CHIKATETSU → 지하철역.
-- **Breakdowns stay in Roots,** even as a bonus line or a literal translation that mirrors English (축 = kick + 구 = ball; 주말 = week + end). The anchor finds a sound hook instead: Saturday at the MALL → 주말 *ju-mal*.
+- **Root-based anchors:** when the card's Roots record breaks the word into meaningful parts (Hanja, a native compound, a noun + 하다 / 있다 / 없다, a stem + a word-forming ending), one candidate spells them out, part by part: `Korean (Hanja) reading = MEANING + … → gloss`. Examples: 공 (空) gong = AIR + 항 (港) hang = PORT → air-port, word for word; 맛 mat = TASTE + 있어요 i-sseo-yo = THERE IS → it has taste: delicious; 열 yeol = OPEN + 쇠 ssoe = METAL → metal that opens: key. Point to another card only when the two really share the component (“Same 綠 as 초록색”), and warn where a syllable only sounds the same (“Not 공원's 원 (園)”). The other two candidates stay sound hooks or references, so the learner can choose between understanding and association.
+- **No forced breakdowns:** a single stem (좋다), a conjugation pattern (예쁘다 → 예뻐요), a loanword, or a word whose record asserts no decomposition (사과, 김치, the 편 of 남편) gets no root-based anchor. A part is never given a meaning the record doesn't state, and a mnemonic is never presented as history.
+- **Connectors and particles:** the hook carries the item's job rather than a word's meaning: something that sounds like 도 and means *also*, like 만 and means *only*. Many sentence connectors are genuine compounds of a “do / be so” stem and a clause ending (그래 + 도, 그러 + 면), so they get a root-based candidate where the sourced record gives that derivation. Tempting splits stay out when no source gives them: 그리고 only shares a root with 그 and 그렇다, so it keeps three sound hooks, as do most particles. See [Connectors and Particles](grammar-cards.md).
 
 ## Labels and conventions
 
 - **Phonetic mnemonic · EN / ES / FR / KO:** a sound-alike hook. The UI notes it is not the word's origin. KO means the hook is another Korean word with the same sound (배우, actor / 배우다, to learn).
-- **Verified word components:** phrase chains and cognates of familiar words (CHAI, SENSEI), each resting on a verified fact. Every factual statement must be supported by the card's Roots record. Inside these anchors, **≈** marks a sound-alike, and the UI explains it.
+- **Verified word components:** root-based anchors, phrase chains, and cognates of familiar words (CHAI, SENSEI), each resting on a verified fact. Every factual statement must be supported by the card's Roots record. Root-based anchors show one part per line; inside other anchors, **≈** marks a sound-alike, and the UI explains it.
 - **Borrowed word:** a loanword whose source word is the anchor.
 - CAPITALS mark the hook to picture.
 
@@ -53,14 +55,15 @@ The Memory Anchor and Roots controls reveal independently. Pronunciation and the
 1. Ask: “Would this make me think *that sounds like something I know*, and would that thing lead me to the meaning?” If not, keep looking.
 2. Check the hook against the real Korean sound: 어 is the vowel in “cup,” 으 is an unrounded “oo,” 시 sounds like “shi,” initial ㄱ/ㄷ/ㅂ/ㅈ sit between g/k, d/t, b/p, and j/ch, and ㄹ is a flap between vowels.
 3. Never present a shared syllable as a shared root. Homophones (공원 公 vs 공항 空, 배 pear vs 배구 排) stay apart in Roots. A Korean sound-alike hook must not imply a relationship.
-4. Any fact inside an anchor must be supported by the card's Roots record. Add the source and note to `origin-reviews.json` first.
-5. In Roots, verify both membership and meaning. The same Hanja can have different senses, so character identity alone is not sufficient.
-6. Distinguish a modern morphological pattern from historical origin. Do not force older decompositions for native or nativized words.
-7. Preserve `vocabulary.md` meanings and forms even when a dictionary entry differs. Document discrepancies.
+4. Any fact inside an anchor must be supported by the card's Roots record. Add the source and note to `origin-reviews.json` first. The validator enforces it for root-based anchors: every Hanja must be in the card's record, and every Korean piece must come from the card, its note and components, or a card that shares a component.
+5. Wherever a record breaks a word into meaningful parts, one candidate should be root-based. When adding one, replace the weakest remaining candidate under a new id (a five-star default and a kept ★★★★ keyword are never replaced); when an existing candidate already was the breakdown, polish it under its own id so the learner's choice survives.
+6. In Roots, verify both membership and meaning. The same Hanja can have different senses, so character identity alone is not sufficient.
+7. Distinguish a modern morphological pattern from historical origin. Do not force older decompositions for native or nativized words.
+8. Preserve `vocabulary.md` meanings and forms even when a dictionary entry differs. Document discrepancies.
 
 ## Editing data
 
-- `src/data/memory-aids.ts`: one reviewed block per source card, and the only source of Memory Anchors. A `key|reading guide` line, then three indented candidates: `id|hook language|kind|anchor`, where kind is `sound`, `roots`, `loanword`, or `reading`, and `1*` marks a five-star default.
+- `src/data/memory-aids.ts`: one reviewed block per card (connectors and particles in `grammarEntries`, keyed by card id), and the only source of Memory Anchors. A `key|reading guide` line, then three indented candidates: `id|hook language|kind|anchor`, where kind is `sound`, `roots`, `loanword`, or `reading`, and `1*` marks a five-star default.
 - `src/data/origin-reviews.json`: one record per **card ID**, including dictionary lemma, origin classification, source IDs, curated component IDs, and an optional note. Record an omission reason when there is no useful origin. The two unconfirmed origin lookups retain attempted URLs.
 - `src/data/root-concepts.json`: semantic component identities. Hanja keys include the actual character, e.g. `hanja:書`. Lexical stems, grammatical patterns, and loanword components use different key namespaces.
 - `src/data/origin-sources.json`: reviewed source titles and URLs. The research is static; study never calls a dictionary API.

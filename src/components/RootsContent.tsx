@@ -21,7 +21,7 @@ export function RootsContent({ aid }: { aid: RootsAid }) {
     </dl>
     {aid.note && <p className="root-note">{aid.note}</p>}
     {aid.related.length > 0 && <div className="related-words" data-testid="related-words">
-      <h3>Related in your vocabulary</h3>
+      <h3>Related in your cards</h3>
       <ul>{aid.related.map(word => <li key={word.id}>
         <span className="related-word"><span lang="ko">{word.korean}</span><span>{word.meaning}</span></span>
         <span className="related-connection">{word.connection}</span>

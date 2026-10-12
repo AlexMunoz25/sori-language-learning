@@ -1,9 +1,13 @@
-import type { VocabularyItem } from '../types/vocabulary'
+import type { AnchorKind, VocabularyItem } from '../types/vocabulary'
 import type { Hint } from './hints'
 import type { InkStroke } from './ink'
 
-/** How the learner answers. A new kind (e.g. multiple choice) adds a variant here and a field in TestView. */
-export type Answer = { kind: 'text'; text: string } | { kind: 'ink'; strokes: InkStroke[] }
+/** How the learner answers. A new kind adds a variant here and a field in TestView. */
+export type Answer = { kind: 'text'; text: string }
+  /** `aspect`: width ÷ height of the pad it was written on, so recognition sees the shapes undistorted. */
+  | { kind: 'ink'; strokes: InkStroke[]; aspect?: number }
+  /** One of the options the question offered; empty until one is picked. */
+  | { kind: 'choice'; choice: string }
 export type AnswerKind = Answer['kind']
 export type Verdict = 'correct' | 'incorrect'
 
@@ -18,8 +22,8 @@ export interface QuestionRule {
   supports(item: VocabularyItem): boolean
   /** What the learner sees. No two questions in one test share a prompt. */
   promptKey(item: VocabularyItem): string
-  /** The correct answer and what else counts. A future scorer reads it too. */
-  answerKey(item: VocabularyItem): AnswerKey
+  /** The correct answer and what else counts; `data` is the question's payload, when the rule prepares one. */
+  answerKey(item: VocabularyItem, data?: unknown): AnswerKey
   /** Optional payload fixed when the test is built, such as multiple-choice options. Comes with `parseData`. */
   prepare?(item: VocabularyItem, context: { pool: VocabularyItem[]; random: () => number }): unknown
   /** Validates a restored payload; undefined rejects it. */
@@ -34,10 +38,14 @@ export interface QuestionRule {
 
 export interface EvaluationContext {
   signal?: AbortSignal
+  /** The question's payload from `prepare`. */
+  data?: unknown
 }
 export interface HintContext {
-  /** The learner's saved Memory Anchor for the card, if any. */
-  anchor?: string
+  /** The question's payload from `prepare`. */
+  data?: unknown
+  /** The learner's saved Memory Anchor for the card, if any. `own`: one they wrote, so it may lack the usual CAPITAL keywords. */
+  anchor?: { text: string; kind: AnchorKind; own: boolean }
 }
 
 export interface TestQuestion {

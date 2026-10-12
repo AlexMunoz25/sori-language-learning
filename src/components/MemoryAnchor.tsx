@@ -2,12 +2,28 @@ import { useEffect, useState } from 'react'
 import { ArrowLeftRight, Check, PenLine, Sparkles, Star } from 'lucide-react'
 import type { AnchorCandidate, VocabularyItem } from '../types/vocabulary'
 import { customAnchorId, type AnchorChoice } from '../hooks/useAnchorChoice'
+import { rootParts } from '../data/root-anchors'
 
 const kindLabels = { sound: 'Phonetic mnemonic', reading: 'Reading cue', roots: 'Verified word components', loanword: 'Borrowed word' }
 
 function label(anchor: AnchorCandidate) {
   if (anchor.id === customAnchorId) return 'Your own anchor'
   return kindLabels[anchor.kind] + (anchor.kind === 'sound' ? ` · ${anchor.language.toUpperCase()}` : '')
+}
+
+/** An anchor's words. A root-based one is laid out part by part, Korean, Hanja, reading, meaning, with the same text. */
+function AnchorText({ anchor }: { anchor: AnchorCandidate }) {
+  const parsed = anchor.kind === 'roots' ? rootParts(anchor.text) : undefined
+  if (!parsed) return <>{anchor.text}</>
+  return <span className="root-parts">
+    {parsed.parts.map((part, index) => <span key={index} className="root-part">
+      {index > 0 && <span className="root-plus"> + </span>}
+      <span className="root-korean" lang="ko">{part.korean}</span>
+      {part.hanja && <>{' '}<span className="root-hanja">({part.hanja})</span></>}
+      {' '}<span className="root-reading">{part.reading}</span>{' = '}<strong className="root-meaning">{part.meaning}</strong>
+    </span>)}
+    <span className="root-gloss"> → {parsed.gloss}</span>
+  </span>
 }
 
 function AnchorNote({ anchor }: { anchor: AnchorCandidate }) {
@@ -37,7 +53,7 @@ export function MemoryAnchor({ item, choice }: { item: VocabularyItem; choice: A
         <button className="anchor-change" aria-label="Change memory anchor" onClick={() => setChoosing(true)}><ArrowLeftRight size={12} aria-hidden="true" />Change</button>
       </div>
       <p className="anchor-meaning">{item.meaning}<span aria-hidden="true"> →</span></p>
-      <p data-testid="mnemonic">{selected.text}</p>
+      <p data-testid="mnemonic"><AnchorText anchor={selected} /></p>
       <AnchorNote anchor={selected} />
       <div className="anchor-rating flex items-center" role="group" aria-label="How well does this anchor stick?">
         {[1, 2, 3, 4, 5].map(stars => <button key={stars} aria-label={`Rate ${stars} of 5`} aria-pressed={rating === stars} onClick={() => choice.rate(selected.id, stars)}>
@@ -57,7 +73,7 @@ export function MemoryAnchor({ item, choice }: { item: VocabularyItem; choice: A
         const current = anchor.id === selected?.id
         return <li key={anchor.id}>
           <button className={`anchor-option${current ? ' current' : ''}`} aria-pressed={current} data-testid="anchor-option" onClick={() => { choice.select(anchor.id); close() }}>
-            <span className="anchor-option-text">{anchor.text}</span>
+            <span className="anchor-option-text"><AnchorText anchor={anchor} /></span>
             <span className="anchor-option-tag">{current && <Check size={11} aria-hidden="true" />}{current ? 'Current · ' : ''}{label(anchor)}</span>
           </button>
         </li>

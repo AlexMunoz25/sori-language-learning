@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
-import { AudioLines, BookOpen, Check, ChevronDown, Eye, EyeOff, Lightbulb, MessageSquareText, Network, RotateCcw, Star, Turtle, Volume2, X } from 'lucide-react'
+import { AudioLines, BookOpen, Check, ChevronDown, Eye, EyeOff, Lightbulb, MessageSquareQuote, MessageSquareText, Network, RotateCcw, Ruler, Scale, Sparkles, Star, Turtle, Volume2, X } from 'lucide-react'
+import { sectionInfo, spokenText } from '../data/cards'
 import type { StudyMode, VocabularyItem, WordStatus } from '../types/vocabulary'
 import { useAnchorChoice } from '../hooks/useAnchorChoice'
 import { useSpeech } from '../hooks/useSpeech'
+import { GrammarComparisons, GrammarExamples, GrammarTricks, GrammarUsage } from './GrammarContent'
 import { KoreanWord } from './KoreanWord'
 import { MemoryAnchor } from './MemoryAnchor'
 import { RootsContent } from './RootsContent'
@@ -28,6 +30,7 @@ export function StudyCard({ item, mode, status, onMark, onNavigate, onLearn, ope
   openAnchor?: boolean
 }) {
   const listening = mode === 'listening'
+  const [noun] = sectionInfo[item.section].noun
   const [wordVisible, setWordVisible] = useState(false)
   const [reset, setReset] = useState(0)
   const speech = useSpeech()
@@ -38,7 +41,7 @@ export function StudyCard({ item, mode, status, onMark, onNavigate, onLearn, ope
   useEffect(() => () => cancel(), [cancel])
   useEffect(() => { if (openAnchor) card.current?.focus({ preventScroll: true }) }, [])
   const koreanWord = <KoreanWord word={item.korean} />
-  return <article ref={card} tabIndex={-1} className={`study-card ${listening ? 'listening-card' : ''}`} aria-label="Vocabulary study card"
+  return <article ref={card} tabIndex={-1} className={`study-card ${listening ? 'listening-card' : ''} ${item.grammar ? 'grammar-card' : ''}`} aria-label={item.grammar ? `${item.section === 'connectors' ? 'Connector' : 'Particle'} study card` : 'Vocabulary study card'}
     onTouchStart={event => {
       // Writing on the pad must never turn the page.
       if (event.touches.length !== 1 || (event.target as HTMLElement).closest('button, a, input, .writing-pad')) { touch.current = null; return }
@@ -56,15 +59,15 @@ export function StudyCard({ item, mode, status, onMark, onNavigate, onLearn, ope
     <div className="card-kicker flex items-center justify-between gap-3"><span>{listening ? 'LISTEN & WRITE' : 'A MOMENT TO REMEMBER'}</span><span className="tiny-dot" /></div>
     {!listening && <div className="word-stage">{koreanWord}</div>}
     <div className="audio-controls flex items-center justify-center gap-3">
-      <button className={`audio-normal ${speech.playing === 'normal' ? 'playing' : ''}`} aria-label="Play pronunciation" onClick={() => speech.speak(item.korean, 'normal')} disabled={!speech.supported}>
+      <button className={`audio-normal ${speech.playing === 'normal' ? 'playing' : ''}`} aria-label="Play pronunciation" onClick={() => speech.speak(spokenText(item), 'normal')} disabled={!speech.supported}>
         <Volume2 size={22} strokeWidth={1.7} /><span>Normal</span>{speech.playing === 'normal' && <span className="playing-dot" />}
       </button>
-      <button className={`audio-slow ${speech.playing === 'slow' ? 'playing' : ''}`} aria-label="Play slowly" onClick={() => speech.speak(item.korean, 'slow')} disabled={!speech.supported}>
+      <button className={`audio-slow ${speech.playing === 'slow' ? 'playing' : ''}`} aria-label="Play slowly" onClick={() => speech.speak(spokenText(item), 'slow')} disabled={!speech.supported}>
         <Turtle size={22} strokeWidth={1.6} /><span>Slow</span>
       </button>
     </div>
     <div className="audio-feedback" aria-live="polite">
-      {!speech.supported && <p>Speech isn’t supported in this browser. You can still reveal and study the word.</p>}
+      {!speech.supported && <p>Speech isn’t supported in this browser. You can still reveal and study the {noun}.</p>}
       {speech.error && <p>{speech.error}</p>}
     </div>
     {listening ? <div className="listening-exercise">
@@ -75,7 +78,7 @@ export function StudyCard({ item, mode, status, onMark, onNavigate, onLearn, ope
       </Reveal>
       <WritingPad>
         <button className="reveal-word" aria-expanded={wordVisible} aria-controls="listening-answer" onClick={() => setWordVisible(!wordVisible)}>
-          {wordVisible ? <EyeOff size={18} /> : <Eye size={18} />}{wordVisible ? 'Hide word' : 'Reveal word'}
+          {wordVisible ? <EyeOff size={18} /> : <Eye size={18} />}{wordVisible ? `Hide ${noun}` : `Reveal ${noun}`}
         </button>
       </WritingPad>
       <div id="listening-answer" className="listening-answer" aria-live="polite">{wordVisible && koreanWord}</div>
@@ -92,6 +95,22 @@ export function StudyCard({ item, mode, status, onMark, onNavigate, onLearn, ope
           <RootsContent aid={item.roots} />
         </Reveal>}
       </div>
+      {/* Connectors and particles: how it's used, in sentences, rules, tricks, and side by side with look-alikes. One row of
+          tiles keeps the card on one screen; each opens its own panel below. */}
+      {item.grammar && <div className="memory-layers grammar-layers">
+        <Reveal label="Examples" icon={<MessageSquareQuote size={17} />} tone="examples-reveal" compact>
+          <GrammarExamples grammar={item.grammar} speech={speech} />
+        </Reveal>
+        <Reveal label="Usage rules" icon={<Ruler size={17} />} tone="usage-reveal" compact>
+          <GrammarUsage grammar={item.grammar} />
+        </Reveal>
+        <Reveal label="Memory tricks" icon={<Sparkles size={17} />} tone="tricks-reveal" compact>
+          <GrammarTricks grammar={item.grammar} />
+        </Reveal>
+        <Reveal label="Comparisons" icon={<Scale size={17} />} tone="compare-reveal" compact>
+          <GrammarComparisons grammar={item.grammar} />
+        </Reveal>
+      </div>}
       <Reveal label="Meaning" icon={<Eye size={18} />}>
         <p className="meaning" data-testid="meaning">{item.meaning}</p>
         {anchor.due && <div className="recall-check" data-testid="recall-check">
@@ -108,7 +127,7 @@ export function StudyCard({ item, mode, status, onMark, onNavigate, onLearn, ope
     <div className={`progress-controls grid gap-2 ${listening ? 'grid-cols-3' : 'grid-cols-2'}`}>
       <button className={`mark-button difficult ${status === 'difficult' ? 'active' : ''}`} aria-label="Mark as difficult" aria-pressed={status === 'difficult'} onClick={() => onMark('difficult')}><Star size={18} fill={status === 'difficult' ? 'currentColor' : 'none'} />Difficult</button>
       <button className={`mark-button known ${status === 'known' ? 'active' : ''}`} aria-label="Mark as known" aria-pressed={status === 'known'} onClick={() => onMark('known')}><Check size={19} />Known</button>
-      {listening && <button className="mark-button learn" aria-label="Learn this word" onClick={onLearn}><BookOpen size={18} />Learn</button>}
+      {listening && <button className="mark-button learn" aria-label={`Learn this ${noun}`} onClick={onLearn}><BookOpen size={18} />Learn</button>}
     </div>
   </article>
 }

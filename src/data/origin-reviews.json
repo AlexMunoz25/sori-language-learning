@@ -868,12 +868,13 @@
     "kind": "native",
     "sourceIds": [
       "wikt:싫어하다",
-      "wikt:-어하다"
+      "wikt:-어하다",
+      "wikt:싫다"
     ],
     "componentIds": [
       "pattern:feeling"
     ],
-    "note": "싫- + 어하다 → 싫어해요."
+    "note": "싫다 = to be disagreeable, hateful; 싫- + 어하다 → 싫어해요."
   },
   "Verbs:씻어요": {
     "lemma": "씻다",
@@ -1020,14 +1021,17 @@
     "sourceIds": [
       "wikt:월요일",
       "wikt:月",
-      "wikt:日"
+      "wikt:日",
+      "wikt:Monday",
+      "wikt:lunes",
+      "wikt:lundi"
     ],
     "componentIds": [
       "hanja:月",
       "stem:요일",
       "hanja:日"
     ],
-    "note": "월 (月) = moon; 요일 = day of the week."
+    "note": "월 (月) = moon; 요일 = day of the week. Monday, lunes, and lundi are also the Moon's day (Latin diēs Lūnae)."
   },
   "Time & days:화요일": {
     "lemma": "화요일",
@@ -1035,14 +1039,15 @@
     "sourceIds": [
       "wikt:화요일",
       "wikt:火",
-      "wikt:日"
+      "wikt:日",
+      "wikt:martes"
     ],
     "componentIds": [
       "hanja:火",
       "stem:요일",
       "hanja:日"
     ],
-    "note": "화 (火) = fire / Mars; 요일 = day of the week."
+    "note": "화 (火) = fire / Mars; 요일 = day of the week. Spanish martes is also Mars's day (Latin diēs Mārtis)."
   },
   "Time & days:수요일": {
     "lemma": "수요일",
@@ -1050,14 +1055,15 @@
     "sourceIds": [
       "wikt:수요일",
       "wikt:水",
-      "wikt:日"
+      "wikt:日",
+      "wikt:miércoles"
     ],
     "componentIds": [
       "hanja:水",
       "stem:요일",
       "hanja:日"
     ],
-    "note": "수 (水) = water / Mercury; 요일 = day of the week."
+    "note": "수 (水) = water / Mercury; 요일 = day of the week. Spanish miércoles is also Mercury's day (Latin diēs Mercurī)."
   },
   "Time & days:목요일": {
     "lemma": "목요일",
@@ -1065,14 +1071,15 @@
     "sourceIds": [
       "wikt:목요일",
       "wikt:木",
-      "wikt:日"
+      "wikt:日",
+      "wikt:jueves"
     ],
     "componentIds": [
       "hanja:木",
       "stem:요일",
       "hanja:日"
     ],
-    "note": "목 (木) = wood / Jupiter; 요일 = day of the week."
+    "note": "목 (木) = wood / Jupiter; 요일 = day of the week. Spanish jueves is also Jupiter's day (Latin Iovis diēs)."
   },
   "Time & days:금요일": {
     "lemma": "금요일",
@@ -1080,14 +1087,15 @@
     "sourceIds": [
       "wikt:금요일",
       "wikt:金",
-      "wikt:日"
+      "wikt:日",
+      "wikt:viernes"
     ],
     "componentIds": [
       "hanja:金",
       "stem:요일",
       "hanja:日"
     ],
-    "note": "금 (金) = metal / Venus; 요일 = day of the week."
+    "note": "금 (金) = metal / Venus; 요일 = day of the week. Spanish viernes is also Venus's day (Latin diēs Veneris)."
   },
   "Time & days:토요일": {
     "lemma": "토요일",
@@ -1095,27 +1103,29 @@
     "sourceIds": [
       "wikt:토요일",
       "wikt:土",
-      "wikt:日"
+      "wikt:日",
+      "wikt:Saturday"
     ],
     "componentIds": [
       "hanja:土",
       "stem:요일",
       "hanja:日"
     ],
-    "note": "토 (土) = earth / Saturn; 요일 = day of the week."
+    "note": "토 (土) = earth / Saturn; 요일 = day of the week. English Saturday is also Saturn's day (Latin diēs Saturnī)."
   },
   "Time & days:일요일": {
     "lemma": "일요일",
     "kind": "sino-korean",
     "sourceIds": [
       "wikt:일요일",
-      "wikt:日"
+      "wikt:日",
+      "wikt:Sunday"
     ],
     "componentIds": [
       "hanja:日",
       "stem:요일"
     ],
-    "note": "일 (日) = sun; 요일 = day of the week."
+    "note": "일 (日) = sun; 요일 = day of the week. English Sunday is also the Sun's day (Latin diēs Sōlis)."
   },
   "Time & days:평일": {
     "lemma": "평일",
@@ -2841,12 +2851,13 @@
     "kind": "sino-korean",
     "sourceIds": [
       "wikt:변호사",
-      "wikt:護"
+      "wikt:護",
+      "wikt:士"
     ],
     "componentIds": [
       "hanja:護"
     ],
-    "note": "변호 (辯護) = legal defense; 호 (護) = protect. 사 is 士 here, not 의사’s 師."
+    "note": "변호 (辯護) = legal defense; 호 (護) = protect. 사 is 士 here, not 의사’s 師. 士 = scholar; gentleman."
   },
   "Jobs / Occupations:약사": {
     "lemma": "약사",
@@ -3457,7 +3468,8 @@
     "componentIds": [
       "stem:무슨",
       "stem:운동",
-      "pattern:hada-verb"
+      "pattern:hada-verb",
+      "pattern:object"
     ],
     "note": "무슨 = what kind of; 운동 = exercise; 하다 → 해요, do."
   },
@@ -3473,7 +3485,8 @@
     ],
     "componentIds": [
       "hanja:水",
-      "pattern:hada-verb"
+      "pattern:hada-verb",
+      "pattern:topic"
     ],
     "note": "저는 = as for me; 수영 = swimming; 하다 → 해요, do."
   },
@@ -3489,7 +3502,8 @@
     "componentIds": [
       "stem:무슨",
       "stem:색깔",
-      "stem:좋아하다"
+      "stem:좋아하다",
+      "pattern:object"
     ],
     "note": "무슨 = what kind of; 색깔 = color; 좋아하다 → 좋아해요, like."
   },
@@ -3677,7 +3691,8 @@
       "stem:무슨",
       "stem:음식",
       "stem:제일",
-      "stem:좋아하다"
+      "stem:좋아하다",
+      "pattern:object"
     ],
     "note": "무슨 음식 = what food; 제일 좋아해요 = like the most."
   },
@@ -3695,8 +3710,553 @@
       "stem:한국",
       "stem:음식",
       "stem:제일",
-      "stem:좋아하다"
+      "stem:좋아하다",
+      "pattern:object"
     ],
     "note": "한국 음식 = Korean food; 제일 좋아해요 = like the most."
+  },
+  "connector:그리고": {
+    "lemma": "그리고",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:그리고",
+      "wikt:-고"
+    ],
+    "componentIds": [
+      "pattern:-고"
+    ],
+    "note": "Native Korean, from the same root as 그 (that) and 그렇다 (to be so). Wiktionary lists 그리고 among the words derived from the ending -고 (and)."
+  },
+  "connector:-고": {
+    "lemma": "-고",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-고",
+      "nikl:go-ending"
+    ],
+    "componentIds": [
+      "pattern:-고"
+    ],
+    "note": "Inherited from Middle Korean -고 (and). The same ending links a verb to helper verbs: -고 있다 (be doing), -고 나다 (be done)."
+  },
+  "connector:또": {
+    "lemma": "또",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:또",
+      "wikt:또는"
+    ],
+    "componentIds": [
+      "stem:또"
+    ],
+    "note": "Native Korean, inherited from Middle Korean. 또는 (or) is built on it: 또 + 는."
+  },
+  "connector:또는": {
+    "lemma": "또는",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:또는",
+      "wikt:또"
+    ],
+    "componentIds": [
+      "stem:또",
+      "pattern:topic"
+    ],
+    "note": "또 (also) + 는 (the topic marker)."
+  },
+  "connector:아니면": {
+    "lemma": "아니면",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:아니면",
+      "wikt:아니다"
+    ],
+    "componentIds": [
+      "pattern:-면"
+    ],
+    "note": "아니- (from 아니다, to not be) + -면 (if): literally 'if not'."
+  },
+  "connector:-거나": {
+    "lemma": "-거나",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-거나"
+    ],
+    "componentIds": [],
+    "note": "Inherited from Middle Korean -거나."
+  },
+  "connector:하지만": {
+    "lemma": "하지만",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:하지만"
+    ],
+    "componentIds": [
+      "stem:하다",
+      "pattern:-지만"
+    ],
+    "note": "하- (from 하다, to do) + -지만 (but)."
+  },
+  "connector:그렇지만": {
+    "lemma": "그렇지만",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:그렇지만",
+      "wikt:그렇다"
+    ],
+    "componentIds": [
+      "stem:그러하다",
+      "pattern:-지만"
+    ],
+    "note": "그렇- (from 그렇다, to be so) + -지 + -만, which together make the ending -지만 (but)."
+  },
+  "connector:그런데": {
+    "lemma": "그런데",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:그런데",
+      "nikl:geureonde",
+      "wikt:근데"
+    ],
+    "componentIds": [
+      "stem:그러하다",
+      "pattern:-는데"
+    ],
+    "note": "그렇- (to be so) + -은데, the adjective form of -는데; a short form of 그러한데. Casual speech shortens it to 근데."
+  },
+  "connector:-지만": {
+    "lemma": "-지만",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-지만"
+    ],
+    "componentIds": [
+      "pattern:-지만"
+    ],
+    "note": "A contraction of 지마는."
+  },
+  "connector:-는데": {
+    "lemma": "-는데",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:-는데",
+      "wikt:-은데"
+    ],
+    "componentIds": [
+      "pattern:-는데"
+    ],
+    "omissionReason": "Origin not settled: Wiktionary only says it is possibly from -는 (that, which is) + 데 (place), so no breakdown is asserted.",
+    "lookupUrls": [
+      "https://en.wiktionary.org/wiki/-%EB%8A%94%EB%8D%B0#Korean",
+      "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=85135&nation=eng"
+    ]
+  },
+  "connector:그래도": {
+    "lemma": "그래도",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:그래도",
+      "nikl:geuraedo"
+    ],
+    "componentIds": [
+      "stem:그리하다",
+      "stem:그러하다",
+      "pattern:-아도"
+    ],
+    "note": "A short form of 그리하여도 (from 그리하다, to do so) or 그러하여도 (from 그러하다, to be so): 그래 + 도, the ending -아도/어도 (even if)."
+  },
+  "connector:-아도/어도": {
+    "lemma": "-어도",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-어도",
+      "wikt:-아도",
+      "wikt:-도"
+    ],
+    "componentIds": [
+      "pattern:-아도"
+    ],
+    "note": "-어 (the 아/어 linking form) + the particle 도 (also, even). After ㅏ or ㅗ it is -아도."
+  },
+  "connector:그래서": {
+    "lemma": "그래서",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:그래서"
+    ],
+    "componentIds": [
+      "stem:그러하다",
+      "pattern:-아서"
+    ],
+    "note": "그래, a form of 그렇다 (to be so), + -어서 (so, because). Fuller forms: 그러해서, 그러하여서."
+  },
+  "connector:그러니까": {
+    "lemma": "그러니까",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:그러니까",
+      "wikt:-으니까"
+    ],
+    "componentIds": [
+      "stem:그러하다",
+      "pattern:-니까"
+    ],
+    "note": "그러-, a form of 그렇다 (to be so), + -니까 (since, because)."
+  },
+  "connector:왜냐하면": {
+    "lemma": "왜냐하면",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:왜냐하면",
+      "wikt:왜냐면"
+    ],
+    "componentIds": [
+      "stem:하다",
+      "pattern:-면"
+    ],
+    "note": "Literally 'if you want to know why': 왜 (why) + 이- (to be, dropped) + -냐 (question ending) + 하- (to say) + -면 (if). Short form: 왜냐면."
+  },
+  "connector:-아서/어서": {
+    "lemma": "-어서",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-어서",
+      "wikt:-아서"
+    ],
+    "componentIds": [
+      "pattern:-아서"
+    ],
+    "note": "From Middle Korean -어 (the 아/어 linking form) + -셔, a place marker from 이시다 (to be at). -아서 is its form after ㅏ or ㅗ."
+  },
+  "connector:-(으)니까": {
+    "lemma": "-으니까",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:-으니까",
+      "wikt:-니까"
+    ],
+    "componentIds": [
+      "pattern:-니까"
+    ],
+    "omissionReason": "Origin not established: Wiktionary has no etymology yet, only a request for one; it lists -(으)니까 as an emphatic form of -(으)니 (since).",
+    "lookupUrls": [
+      "https://en.wiktionary.org/wiki/-%EC%9C%BC%EB%8B%88%EA%B9%8C#Korean",
+      "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=80137&nation=eng"
+    ]
+  },
+  "connector:-(으)러": {
+    "lemma": "-으러",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-으러",
+      "wikt:-러"
+    ],
+    "componentIds": [],
+    "note": "Inherited from Middle Korean -(으)라."
+  },
+  "connector:그러면": {
+    "lemma": "그러면",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:그러면",
+      "wikt:그러다",
+      "nikl:geureomyeon"
+    ],
+    "componentIds": [
+      "stem:그리하다",
+      "stem:그러하다",
+      "pattern:-면"
+    ],
+    "note": "그러- (from 그러다, to do or be so, itself short for 그리하다) + -면 (if). A short form of 그리하면 or 그러하면."
+  },
+  "connector:-(으)면": {
+    "lemma": "-으면",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-으면",
+      "wikt:-면"
+    ],
+    "componentIds": [
+      "pattern:-면"
+    ],
+    "note": "Inherited from Middle Korean -(으)면 (if, when)."
+  },
+  "connector:그다음에": {
+    "lemma": "그다음",
+    "kind": "native",
+    "sourceIds": [
+      "nikl:geudaeum",
+      "wikt:다음",
+      "wikt:그",
+      "wikt:-에"
+    ],
+    "componentIds": [
+      "pattern:-에"
+    ],
+    "note": "그 (that) + 다음 (next) make the noun 그다음, 'what comes after that'; 에 marks the time."
+  },
+  "connector:-고 나서": {
+    "lemma": "-고 나다",
+    "kind": "native",
+    "sourceIds": [
+      "nikl:go-ending",
+      "nikl:nada-auxiliary",
+      "wikt:-고",
+      "wikt:-어서"
+    ],
+    "componentIds": [
+      "pattern:-고",
+      "pattern:-아서"
+    ],
+    "note": "-고 (and) + 나다, a helper verb meaning the action is done, + -아서 (and then): 나 + 아서 → 나서."
+  },
+  "particle:은/는": {
+    "lemma": "-은",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-은",
+      "wikt:-는"
+    ],
+    "componentIds": [
+      "pattern:topic"
+    ],
+    "note": "From Middle Korean -은; 는, used after vowels, probably formed by reduplication."
+  },
+  "particle:이/가": {
+    "lemma": "-이",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:-이",
+      "wikt:-가",
+      "wikt:제",
+      "wikt:내"
+    ],
+    "componentIds": [
+      "pattern:subject"
+    ],
+    "note": "이 goes back to Middle Korean; 가 first appears in the late 1500s or the 1600s, and its origin is unclear. 제가 and 내가 hold an older 이 (저 + 이 → 제)."
+  },
+  "particle:을/를": {
+    "lemma": "-을",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-을",
+      "wikt:-를"
+    ],
+    "componentIds": [
+      "pattern:object"
+    ],
+    "note": "From Middle Korean -을; 를, used after vowels, probably formed by reduplication."
+  },
+  "particle:의": {
+    "lemma": "-의",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-의",
+      "wikt:제",
+      "wikt:내"
+    ],
+    "componentIds": [],
+    "note": "From Middle Korean -의. As a particle it is usually said [에]; 제 and 내 are contractions of 저 + 의 and 나 + 의."
+  },
+  "particle:에": {
+    "lemma": "-에",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-에"
+    ],
+    "componentIds": [
+      "pattern:-에"
+    ],
+    "note": "From Middle Korean -에, already a place particle in Old Korean."
+  },
+  "particle:에서": {
+    "lemma": "-에서",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-에서",
+      "wikt:-서"
+    ],
+    "componentIds": [
+      "pattern:-에",
+      "pattern:-서"
+    ],
+    "note": "Middle Korean -에셔: -에 (at) + -서, from the old verb 이시다, 'to be at'. 서 alone is now its short form."
+  },
+  "particle:부터": {
+    "lemma": "-부터",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-부터",
+      "nikl:buteo",
+      "wikt:붙다"
+    ],
+    "componentIds": [
+      "stem:붙다"
+    ],
+    "note": "Old 브터: 븥다 (today 붙다, to stick) + -어, like today's 붙어. It began as a verb form and became a particle."
+  },
+  "particle:까지": {
+    "lemma": "-까지",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-까지",
+      "wikt:가장"
+    ],
+    "componentIds": [],
+    "note": "First written in 1447: -ㅅ (of) + an old word for 'very, extremely', the same word that became 가장 (most)."
+  },
+  "particle:(으)로": {
+    "lemma": "-으로",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-으로",
+      "wikt:-로",
+      "wikt:로"
+    ],
+    "componentIds": [
+      "pattern:-로"
+    ],
+    "note": "From Middle Korean -으로. Not related to 路 (road), the 로 of street names."
+  },
+  "particle:에게/한테": {
+    "lemma": "-에게",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:-에게",
+      "wikt:-한테",
+      "wikt:-께"
+    ],
+    "componentIds": [],
+    "omissionReason": "Wiktionary traces 에게 only to Middle Korean 의게 and flags its derivation as an open question; it gives no etymology for 한테 or 께, and Urimalsaem has no history notes for 에게 or 한테.",
+    "lookupUrls": [
+      "https://en.wiktionary.org/wiki/-%EC%97%90%EA%B2%8C#Korean",
+      "https://en.wiktionary.org/wiki/-%ED%95%9C%ED%85%8C#Korean",
+      "https://opendict.korean.go.kr/dictionary/view?sense_no=48728&viewType=confirm",
+      "https://opendict.korean.go.kr/dictionary/view?sense_no=484355&viewType=confirm"
+    ]
+  },
+  "particle:에게서/한테서": {
+    "lemma": "-한테서",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:-한테서",
+      "wikt:-서"
+    ],
+    "componentIds": [
+      "pattern:-서"
+    ],
+    "note": "한테서 = 한테 (to a person) + -서, the short form of 에서 (from)."
+  },
+  "particle:와/과": {
+    "lemma": "-과",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-과",
+      "wikt:-와"
+    ],
+    "componentIds": [],
+    "note": "From Middle Korean -과. After a vowel its k sound softened away, giving 와."
+  },
+  "particle:하고": {
+    "lemma": "-하고",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-하고"
+    ],
+    "componentIds": [
+      "stem:하다",
+      "pattern:-고"
+    ],
+    "note": "From Middle Korean: 하- (to do; to say) + -고 (and)."
+  },
+  "particle:(이)랑": {
+    "lemma": "-이랑",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:-이랑",
+      "wikt:-랑"
+    ],
+    "componentIds": [],
+    "omissionReason": "Wiktionary requests an etymology for both -이랑 and -랑 and gives none; Urimalsaem has no history notes for 이랑.",
+    "lookupUrls": [
+      "https://en.wiktionary.org/wiki/-%EC%9D%B4%EB%9E%91#Korean",
+      "https://en.wiktionary.org/wiki/-%EB%9E%91#Korean",
+      "https://opendict.korean.go.kr/dictionary/view?sense_no=30086&viewType=confirm"
+    ]
+  },
+  "particle:도": {
+    "lemma": "-도",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-도"
+    ],
+    "componentIds": [],
+    "note": "From Middle Korean -도, itself from Old Korean."
+  },
+  "particle:만": {
+    "lemma": "-만",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-만"
+    ],
+    "componentIds": [],
+    "note": "Native; already written -만 in 1447."
+  },
+  "particle:밖에": {
+    "lemma": "-밖에",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-밖에",
+      "wikt:밖"
+    ],
+    "componentIds": [
+      "stem:밖",
+      "pattern:-에"
+    ],
+    "note": "From 밖 (outside) + -에 (at). With a negative verb it means 'other than'."
+  },
+  "particle:보다": {
+    "lemma": "-보다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-보다",
+      "wikt:보다"
+    ],
+    "componentIds": [
+      "stem:보다"
+    ],
+    "note": "From 보- (to see) + -다가 (after): 'after seeing A, B is…' became 'B is more … than A'. First seen in the mid-1700s."
+  },
+  "particle:처럼": {
+    "lemma": "-처럼",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:-처럼",
+      "wikt:體"
+    ],
+    "componentIds": [
+      "hanja:體",
+      "pattern:-로"
+    ],
+    "note": "First written 톄로 (1586): Sino-Korean 톄 (體, manner, way) + the particle -로 (in, by)."
+  },
+  "particle:마다": {
+    "lemma": "-마다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-마다"
+    ],
+    "componentIds": [],
+    "note": "Native; already written -마다 in 1446."
+  },
+  "particle:(이)나": {
+    "lemma": "-이나",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-이나"
+    ],
+    "componentIds": [],
+    "note": "From Middle Korean -이나: the copula 이- (to be) + the ending -나."
   }
 }

@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { expect, test, type Page } from '@playwright/test'
+import { rootParts } from '../src/data/root-anchors'
 import { vocabulary } from '../src/data/vocabulary'
 
 const byWord = (word: string) => vocabulary.find(item => item.korean === word)!
@@ -28,6 +29,41 @@ test('Every card offers three distinct anchor candidates', () => {
   // Five-star anchors are kept verbatim as the default.
   expect(byWord('멀어요').anchors.find(anchor => anchor.preselected)?.text).toContain('MORDOR')
   expect(byWord('밝아요').anchors.find(anchor => anchor.preselected)?.text).toContain('BULB')
+})
+
+test('Words with meaningful parts offer one candidate that explains them, without breaking what was rated', () => {
+  const rootAnchor = (word: string) => byWord(word).anchors.find(anchor => anchor.kind === 'roots' && rootParts(anchor.text))
+  const parted = vocabulary.filter(item => item.anchors.some(anchor => anchor.kind === 'roots' && rootParts(anchor.text)))
+  expect(parted.length).toBeGreaterThanOrEqual(120)
+  // The learner's own example, rated five stars, is the default for 말해요.
+  expect(byWord('말해요').anchors.find(anchor => anchor.preselected)?.text).toBe('말 mal = WORDS + 해요 hae-yo = DO → doing speech: to speak.')
+  expect(rootParts(rootAnchor('공항')!.text)?.parts).toEqual([
+    { korean: '공', hanja: '空', reading: 'gong', meaning: 'AIR' }, { korean: '항', hanja: '港', reading: 'hang', meaning: 'PORT' },
+  ])
+  // Rated anchors stay: five stars as the default, four stars as candidate 1.
+  expect(byWord('형용사').anchors.find(anchor => anchor.preselected)?.text).toContain('HUGE, YOUNG, SAD')
+  expect(byWord('재미없어요').anchors.find(anchor => anchor.preselected)?.text).toContain('OOPS')
+  expect(byWord('재미있어요').anchors[0].text).toContain('JAMMING')
+  expect(byWord('똑같아요').anchors[0].text).toContain('TikTOK')
+  // A shared sound is never a shared root: 공원's 공 is 公, public, not 空 (air) of 공항; 병원's 원 is not 공원's 園.
+  expect(rootAnchor('공원')!.text).toContain('公')
+  expect(rootAnchor('공원')!.text).not.toContain('空')
+  expect(rootAnchor('병원')!.text).toContain('Not 공원\'s 원 (園)')
+  // No breakdown is forced where the record has none.
+  for (const word of ['예뻐요', '사과', '김치', '어머니', '남편']) expect(rootAnchor(word), word).toBeUndefined()
+})
+
+test('A root-based anchor shows each part on its own line, with the same words', async ({ page }) => {
+  const item = await openCard(page, '말해요')
+  const anchor = item.anchors.find(candidate => candidate.preselected)!
+  await page.getByRole('button', { name: 'Show memory anchor' }).click()
+  await expect(page.getByTestId('mnemonic')).toHaveText(anchor.text)
+  await expect(page.getByText('Verified word components')).toBeVisible()
+  await expect(page.getByTestId('mnemonic').locator('.root-korean')).toHaveText(['말', '해요'])
+  await expect(page.getByTestId('mnemonic').locator('.root-meaning')).toHaveText(['WORDS', 'DO'])
+  const lines = await page.getByTestId('mnemonic').locator('.root-part, .root-gloss').evaluateAll(parts => parts.map(part => part.getBoundingClientRect().top))
+  expect(new Set(lines).size).toBe(3)
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
 })
 
 test('All three candidates show until one is chosen; the choice persists and Change brings the others back', async ({ page }) => {

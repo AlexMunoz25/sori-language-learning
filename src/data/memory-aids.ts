@@ -16,10 +16,10 @@ const entries = `
 잘생겼어요|jal-saeng-gyeo-sseo-yo
   1|en|sound|A sharp JAWLINE: the classic handsome look → jaw-l ≈ 잘 jal → jal-saeng-gyeo-sseo-yo.
   2|fr|sound|Un JOLI garçon (fr. a good-looking guy): joli ≈ jal → jal-saeng-gyeo-sseo-yo.
-  3|en|sound|Fresh haircut and hair GEL: looking sharp → jal-saeng-gyeo-sseo-yo.
+  4|ko|roots|잘 jal = WELL + 생겼어요 saeng-gyeo-sseo-yo = LOOKS → looks well: handsome. With 못 (poorly) instead: ugly.
 못생겼어요|mot-ssaeng-gyeo-sseo-yo
   1|fr|sound|MOCHE (fr. ugly) ≈ 못 mot → mot-ssaeng-gyeo-sseo-yo.
-  2|en|sound|NOT good-looking: 못 mot ≈ NOT → mot-ssaeng-gyeo-sseo-yo: ugly.
+  4|ko|roots|못 mot = POORLY + 생겼어요 saeng-gyeo-sseo-yo = LOOKS → looks poorly: ugly. With 잘 (well) instead: handsome.
   3|en|sound|Ugly as a MONSTER: mon-s ≈ mot-ss → mot-ssaeng-gyeo-sseo-yo.
 귀여워요|gwi-yeo-wo-yo
   1|ja|sound|Anime's KAWAII (cute): k-wa-ii ≈ gwi-yeo → gwi-yeo-wo-yo.
@@ -40,7 +40,7 @@ const entries = `
 피곤해요|pi-gon-hae-yo
   1|en|sound|Your PEAK is GONE: tired → pi-gon-hae-yo.
   2|en|sound|The PITCH COUNT hits 100: the pitcher is tired → pi-gon-hae-yo.
-  3|en|sound|Battery at PI percent (3.14%), energy GONE → pi-gon-hae-yo.
+  4|ko|roots|피곤 pi-gon = TIREDNESS + 해요 hae-yo = BE → be tired. The same 해요 makes 행복해요, be happy.
 아파요|a-pa-yo
   1|en|sound|“AH, PA(in)!” → a-pa-yo. Koreans really yell 아파! when something hurts.
   2|en|sound|An UPPERcut to the jaw: it hurts → a-pa-yo.
@@ -52,19 +52,19 @@ const entries = `
 행복해요|haeng-bo-kae-yo
   1|en|sound|Happy: HANGing in a hammock with a BOOK → haeng-bo-kae-yo.
   2|en|sound|A HUG and a gift BOX: happy → haeng-bo-kae-yo.
-  3|en|sound|The happiness HANDBOOK: hand-book ≈ haeng-bok → haeng-bo-kae-yo.
+  4|ko|roots|행복 haeng-bok = HAPPINESS + 해요 hae-yo = BE → be happy. The same 해요 makes 피곤해요, be tired.
 무서워요|mu-seo-wo-yo
   1|es|sound|Night at the MUSEUM (es. el MUSEO), exhibits alive after dark: scary → mu-seo-wo-yo.
   2|en|sound|The JAWS MUSIC (dun-dun…): mu-sic ≈ mu-seo → scary → mu-seo-wo-yo.
   3|en|sound|Even elephants are scared of a MOUSE → mu-seo-wo-yo.
 재미있어요|jae-mi-i-sseo-yo
   1|en|sound|Bob Marley's “JAMMING”: jamming IS SO fun! → jae-mi-i-sseo-yo.
-  2|en|sound|A JAMAICA vacation: so much fun → jae-mi-i-sseo-yo.
+  4|ko|roots|재미 jae-mi = FUN + 있어요 i-sseo-yo = THERE IS → there's fun: fun, interesting. 없어요 (there isn't) makes it boring.
   3|fr|sound|« J'AIME ! » (fr. I love it!): so much fun → jae-mi-i-sseo-yo.
 재미없어요|jae-mi-eop-sseo-yo
   1*|en|sound|JAMMING cancelled? OOPS, no fun → jae-mi-eop-sseo-yo: boring.
   2|en|sound|GAME OVER: the fun is gone → jae-mi-eop-sseo-yo.
-  3|es|sound|“¡YA ME HARTÉ!” (es. I'm fed up): boring → jae-mi-eop-sseo-yo.
+  4|ko|roots|재미 jae-mi = FUN + 없어요 eop-sseo-yo = THERE ISN'T → no fun: boring. 있어요 (there is) makes it fun.
 좋아요|jo-a-yo
   1|en|sound|Good things bring JOY → jo-a-yo (the ㅎ is silent).
   2|en|sound|Korean YouTube's LIKE button literally says 좋아요 → jo-a-yo.
@@ -127,7 +127,7 @@ const entries = `
   3|en|sound|Every airport GATE looks the same → ga-ta-yo.
 똑같아요|ttok-ga-ta-yo
   1|en|sound|TikTOK copycats: everyone does the exact same dance → ttok-ga-ta-yo.
-  2|en|sound|TICK-TOCK: two clocks in perfect sync → ttok-ga-ta-yo.
+  4|ko|roots|똑 ttok = EXACTLY + 같아요 ga-ta-yo = SAME → exactly the same. Without 똑, 같아요 is just same.
   3|es|sound|¡TOCAYO! (es. your exact same name): to-ca ≈ ttok-ga → ttok-ga-ta-yo.
 달라요|dal-la-yo
   1|en|sound|Δ DELTA means difference: del-ta ≈ dal-la → dal-la-yo.
@@ -152,7 +152,7 @@ const entries = `
 힘들어요|him-deu-reo-yo
   1|en|sound|Climbing the HIMalayas: exhausting → him-deu-reo-yo.
   2|en|sound|A HUNDRED burpees: exhausting → him-deu-reo-yo.
-  3|en|sound|HURDLES, lap after lap: exhausting → him-deu-reo-yo.
+  4|ko|roots|힘 him = STRENGTH + 들어요 deu-reo-yo = IT TAKES → it takes strength: hard, tiring.
 깨끗해요|kkae-kkeu-tae-yo
   1|en|sound|Clear the CACHE and COOKIES: a clean browser → kkae-kkeu-tae-yo.
   2|en|sound|Spotless: it CAN'T GET any cleaner → kkae-kkeu-tae-yo.
@@ -215,11 +215,11 @@ const entries = `
   3|en|sound|MY WOK is on fire: a spicy stir-fry → mae-wo-yo.
 맛있어요|ma-si-sseo-yo
   1|es|sound|Delicious? ¡MÁS, SÍ! (es. more, yes!) → ma-si-sseo-yo.
-  2|en|sound|The MASTERCHEF judges: delicious! → ma-si-sseo-yo.
+  4|ko|roots|맛 mat = TASTE + 있어요 i-sseo-yo = THERE IS → it has taste: delicious. 없어요 (there isn't) makes it not delicious.
   3|en|sound|Creamy MASHED potatoes: delicious → ma-si-sseo-yo.
 맛없어요|ma-deop-sseo-yo
   1|en|sound|Gordon Ramsay, MAD and UPSET: “It's bland!” → ma-deop-sseo-yo.
-  2|en|sound|MATT DAMON's potatoes in The Martian: bland → ma-deop-sseo-yo.
+  4|ko|roots|맛 mat = TASTE + 없어요 eop-sseo-yo = THERE ISN'T → no taste: not delicious. 있어요 (there is) makes it delicious.
   3|en|sound|Tastes like MUD: mud ≈ 맛 mat → ma-deop-sseo-yo.
 Verbs:가요|ga-yo
   1|en|sound|Ready, set, GO! Said with an “ah”: 가 ga → ga-yo.
@@ -234,7 +234,7 @@ Verbs:가요|ga-yo
   2|es|sound|Going DE NUEVO, again and again (es.): attending regularly → da-nyeo-yo.
   3|en|sound|The DONUT shop regular, there every single morning → da-nyeo-yo.
 먹어요|meo-geo-yo
-  1|en|sound|MUKBANG, the online eating shows, comes from 먹 meok, “eat” → meo-geo-yo.
+  1|en|roots|MUKBANG, the online eating shows, comes from 먹 meok, “eat” → meo-geo-yo.
   2|en|sound|MUNCH on some snacks: eat → meo-geo-yo.
   3|en|sound|Gremlins rule: never feed the MOGWAI after midnight → meo-geo-yo.
 마셔요|ma-syeo-yo
@@ -270,33 +270,33 @@ Verbs:가요|ga-yo
   2|fr|sound|« ÇA S'ÉCRIT comment ? » (fr. how do you write that?) → sseo-yo.
   3|en|sound|A fountain pen hisses SSSS across the page: writing → sseo-yo.
 쇼핑해요|syo-ping-hae-yo
-  1|en|loanword|SHOPPING + 해요 “do” → syo-ping-hae-yo.
+  1|ko|roots|쇼핑 syo-ping = SHOPPING + 해요 hae-yo = DO → do shopping: to shop.
   2|en|loanword|SHOP till your card goes PING → syo-ping-hae-yo.
   3|en|loanword|Black Friday SHOPPING spree → syo-ping-hae-yo.
 청소해요|cheong-so-hae-yo
   1|en|sound|Grab a CHUNK of SOAP: cleaning time → cheong-so-hae-yo.
   2|en|sound|Weekend CHORES, SO much cleaning → cheong-so-hae-yo.
-  3|fr|sound|“Range ta CHAMBRE !” (fr. tidy your room): cleaning day → cheong-so-hae-yo.
+  4|ko|roots|청소 cheong-so = CLEANING + 해요 hae-yo = DO → do the cleaning: to clean.
 운동해요|un-dong-hae-yo
   1|es|sound|Counting reps: “¡UN, DOS…!” → un-dong-hae-yo.
   2|en|sound|Treadmill ON… workout DONE → un-dong-hae-yo.
-  3|en|sound|Your workout is still UNDONE: go exercise → un-dong-hae-yo.
+  4|ko|roots|운동 un-dong = EXERCISE + 해요 hae-yo = DO → do exercise. Its 동 (動) is the movement in 동사, verb.
 기다려요|gi-da-ryeo-yo
   1|en|sound|The GUITARIST is still tuning… wait → gi-da-ryeo-yo.
   2|es|sound|“¡QUIETO, espera!” (es. hold still, wait!): quie-to ≈ gi-da → gi-da-ryeo-yo.
   3|es|sound|Waiting under her balcony with a GUITARRA (es. guitar) → gi-da-ryeo-yo.
 요리해요|yo-ri-hae-yo
   1|en|sound|Cooking: fry a YOLK over RICE → yo-ri-hae-yo.
-  2|en|sound|“YO, RICE is ready!” Dinner's cooking → yo-ri-hae-yo.
+  4|ko|roots|요리 yo-ri = COOKING + 해요 hae-yo = DO → do the cooking: to cook. A 요리사 is a cook.
   3|ja|sound|Japanese RYŌRI (cooking), as in Iron Chef's “Ryōri no Tetsujin” → yo-ri-hae-yo.
 일해요|il-hae-yo
   1|en|sound|Skipping the party: “Sorry, I'LL HAve to work” → il-hae-yo.
   2|fr|sound|IL travaille (fr. he works) → il-hae-yo.
-  3|en|sound|Working so hard you get ILL → il-hae-yo.
+  4|ko|roots|일 il = WORK + 해요 hae-yo = DO → do work: to work.
 공부해요|gong-bu-hae-yo
   1|en|sound|KUNG FU ≈ gong-bu: hours of disciplined practice → to study.
   2|en|sound|The GONG rings: hit the BOOKS → gong-bu-hae-yo.
-  3|es|sound|Study hard, “¡CON BUENAS notas!” (es. with good grades) → gong-bu-hae-yo.
+  4|ko|roots|공부 gong-bu = STUDY + 해요 hae-yo = DO → do study: to study.
 타요|ta-yo
   1|en|sound|Take a TAXI → ta-yo.
   2|en|sound|Ride the TARDIS through time → ta-yo.
@@ -304,7 +304,7 @@ Verbs:가요|ga-yo
 말해요|mal-hae-yo
   1|en|sound|SMALL TALK: 말 mal, talk → mal-hae-yo, to speak.
   2|es|sound|MALHABLADO (es. foul-mouthed): mal-ha ≈ mal-hae → to speak.
-  3|en|sound|MALCOLM X, the famous speaker → mal-hae-yo.
+  4*|ko|roots|말 mal = WORDS + 해요 hae-yo = DO → doing speech: to speak.
 울어요|u-reo-yo
   1|en|sound|Alice cries a (P)OOL of tears → 울 ul → u-reo-yo.
   2|es|sound|LA LLORONA, the weeping woman: llo-ro ≈ u-reo → u-reo-yo.
@@ -316,21 +316,21 @@ Verbs:가요|ga-yo
 좋아해요|jo-a-hae-yo
   1|en|sound|It SPARKS JOY (Marie Kondo): you like it → jo-a-hae-yo.
   2|en|sound|Smash that LIKE button: 좋아요 (JOY) → jo-a-hae-yo, to like.
-  3|en|sound|Friends' JOEY: “How you doin'?” means I like you → jo-a-hae-yo.
+  4|ko|roots|좋 jo = GOOD + 아해요 a-hae-yo = TO FEEL → to feel good about: to like. 싫어해요 (hate) is built the same way.
 사랑해요|sa-rang-hae-yo
   1|en|sound|Propose to SARAH with a RING → sa-rang-hae-yo, the K-pop “saranghae.”
   2|en|sound|K-pop finger hearts say “SARANGHAE”: I love you → sa-rang-hae-yo.
-  3|en|sound|In love, your heart is SOARING → sa-rang-hae-yo.
+  4|ko|roots|사랑 sa-rang = LOVE + 해요 hae-yo = DO → do love: to love.
 싫어해요|si-reo-hae-yo
   1|en|sound|SHEER disgust → 싫어 shi-reo → si-reo-hae-yo.
-  2|en|sound|SHE RAN from the broccoli: she hates it → si-reo-hae-yo.
+  4|ko|roots|싫 sil = HATEFUL + 어해요 eo-hae-yo = TO FEEL → to feel it's hateful: to hate. 좋아해요 (like) is built the same way.
   3|en|sound|Korean YouTube's DISLIKE button says 싫어요 → si-reo-hae-yo.
 씻어요|ssi-seo-yo
   1|en|sound|Wash the SHEETS → 씻 ssit → ssi-seo-yo.
   2|en|sound|SHE SOAPS up her hands: washing → ssi-seo-yo.
   3|ja|sound|SHISEIDO face wash: shi-sei ≈ ssi-seo → ssi-seo-yo.
 샤워해요|sya-wo-hae-yo
-  1|en|loanword|SHOWER + 해요 “do” → sya-wo-hae-yo.
+  1|ko|roots|샤워 sya-wo = SHOWER + 해요 hae-yo = DO → do a shower: to take a shower.
   2|en|loanword|Singing in the SHOWER → sya-wo-hae-yo.
   3|en|loanword|Reddit's SHOWER THOUGHTS → sya-wo-hae-yo.
 들어요|deu-reo-yo
@@ -376,67 +376,67 @@ Verbs:가요|ga-yo
 내일|nae-il
   1|en|sound|“NAH, I'LL do it tomorrow” → nae-il.
   2|en|sound|“Good NIGHT, I'LL see you tomorrow” → nae-il.
-  3|en|sound|Tomorrow's sunrise over the NILE → nae-il.
+  4|ko|roots|내 (來) nae = COMING + 일 (日) il = DAY → the coming day: tomorrow.
 모레|mo-re
   1|en|sound|Tomorrow, then one MORE day → mo-re.
   2|en|sound|The MORNING after tomorrow → mo-re.
   3|en|sound|MOORE's law, in days: two days out → mo-re.
 월요일|wo-ryo-il
-  1|en|sound|A WOLF howls at the moon (월 wol): MOON-day → Monday, like lunes / lundi.
+  1|en|sound|A WOLF howls at the moon (월 wol) → wo-ryo-il: Monday.
   2|en|sound|Monday blues: WORRY, feel ILL → wo-ryo-il.
-  3|en|sound|Monday WARRIOR, back to the grind → wo-ryo-il.
+  4|ko|roots|월 (月) wol = MOON + 요일 yo-il = DAY → the Moon's day: Monday, like lunes and lundi.
 화요일|hwa-yo-il
-  1|en|sound|Mars, god of WAR, owns martes / mardi: war ≈ hwa → hwa-yo-il, Tuesday.
+  1|en|sound|Mars, god of WAR: war ≈ hwa → hwa-yo-il, Tuesday.
   2|en|sound|Taco Tuesday: “WHOA, YO, spicy!” → hwa-yo-il.
-  3|en|sound|Tuesday's planet Mars glows like fire: WHOA → hwa-yo-il.
+  4|ko|roots|화 (火) hwa = FIRE, MARS + 요일 yo-il = DAY → Mars's day: Tuesday, like martes.
 수요일|su-yo-il
   1|en|sound|Midweek: SO, YOU'LL make it to Friday → su-yo-il, Wednesday.
   2|en|sound|Hump-day SOUP: halfway through the week → su-yo-il.
-  3|en|sound|A SURFER on liquid MERCURY: mercredi / miércoles → su-yo-il.
+  4|ko|roots|수 (水) su = WATER, MERCURY + 요일 yo-il = DAY → Mercury's day: Wednesday, like miércoles.
 목요일|mo-gyo-il
   1|en|sound|THOR's day: Thor MOCKS Loki every Thursday → 목 mok → mo-gyo-il.
   2|en|sound|Throwback Thursday: MOCK your old photos → mo-gyo-il.
-  3|en|sound|Thursday-night MOCKtails: the weekend's almost here → mo-gyo-il.
+  4|ko|roots|목 (木) mok = WOOD, JUPITER + 요일 yo-il = DAY → Jupiter's day: Thursday, like jueves.
 금요일|geu-myo-il
   1|en|sound|TGIF! “COME, YO, payday drinks on me!” → geu-myo-il.
   2|en|sound|Friday night: GAMER mode on → geu-myo-il.
-  3|en|sound|Venus, the brightest GEM in the night sky: viernes / vendredi → geu-myo-il.
+  4|ko|roots|금 (金) geum = GOLD, VENUS + 요일 yo-il = DAY → Venus's day: Friday, like viernes.
 토요일|to-yo-il
   1|en|sound|Saturday gardening: TOEs in the soil (토 to) → to-yo-il.
   2|en|sound|Saturday road trip in the TOYOTA → to-yo-il.
-  3|en|sound|Saturday morning: cartoons and TOYS → to-yo-il.
+  4|ko|roots|토 (土) to = EARTH, SATURN + 요일 yo-il = DAY → Saturn's day: Saturday.
 일요일|i-ryo-il
   1|en|sound|Sunday sunshine ILLUMINATES everything → i-ryo-il.
   2|en|sound|Lazy Sunday: “I REALLY chill” → i-ryo-il.
-  3|en|sound|Sunday alarm? “EARLY? YO, I'LL sleep in” → i-ryo-il.
+  4|ko|roots|일 (日) il = SUN + 요일 yo-il = DAY → the Sun's day: Sunday.
 평일|pyeong-il
   1|en|sound|Weekdays: Slack PINGs all day → pyeong-il.
   2|en|sound|Just a PLAIN, ordinary day: a weekday → pyeong-il.
-  3|en|sound|PAYING the bills: working weekdays → pyeong-il.
+  4|ko|roots|평 (平) pyeong = ORDINARY + 일 (日) il = DAY → an ordinary day: weekday.
 주말|ju-mal
   1|en|sound|Saturday at the MALL: ju-MAL → weekend.
   2|en|sound|A JUMANJI movie marathon all weekend → ju-mal.
-  3|en|sound|No ZOOM ALL weekend, no work calls → ju-mal.
+  4|ko|roots|주 (週) ju = WEEK + 말 (末) mal = END → week-end, word for word.
 농구|nong-gu
   1|en|sound|“NO GOOD!” The shot rims out → nong-gu.
-  2|en|sound|NO GUARD on him: wide-open layup → nong-gu.
+  4|ko|roots|농 (籠) nong = BASKET + 구 (球) gu = BALL → basket-ball, word for word.
   3|en|sound|The Denver NUGGETS: nug ≈ nong → nong-gu.
 축구|chuk-kku
   1|en|sound|CHUCK Norris roundhouse-kicks the ball → chuk-kku.
   2|es|sound|“¡CHUTA!” (es. shoot!) yells the crowd → chuk-kku.
-  3|en|sound|GOAL! The net SHOOK → chuk-kku.
+  4|ko|roots|축 (蹴) chuk = KICK + 구 (球) gu = BALL → kick-ball: soccer, football.
 야구|ya-gu
   1|en|sound|Fans yell “YA, GO!” as the batter sprints → ya-gu.
-  2|en|sound|“YANKEES, GO!”: ya…go → ya-gu.
+  4|ko|roots|야 (野) ya = FIELD + 구 (球) gu = BALL → field ball: baseball. Same 野 as 야채.
   3|ja|sound|Ohtani's sport in Japan is YAKYŪ: ya-kyu ≈ ya-gu.
 수영|su-yeong
   1|en|sound|Swimming keeps you SO YOUNG → su-yeong.
   2|es|sound|“¡SOY UN pez!” (es. I'm a fish!): swimming → su-yeong.
-  3|en|sound|SUIT UP, YOUNG swimmer: into the pool → su-yeong.
+  4|ko|roots|수 (水) su = WATER + 영 (泳) yeong = SWIMMING → swimming in water. Same 水 as 수요일.
 태권도|tae-kkwon-do
-  1|en|sound|TAEKWONDO, Korea's martial art: the same word → tae-kkwon-do (foot + fist + way).
+  1|en|sound|TAEKWONDO, Korea's martial art: the same word → tae-kkwon-do.
   2|en|sound|The DO of judo and aikido means “way”: TAEKWONDO, the way of kicks → tae-kkwon-do.
-  3|en|sound|Say it the Korean way, with a hard kk: TAE-KKWON-DO.
+  4|ko|roots|태권 (跆拳) tae-kkwon = FOOT AND FIST + 도 (道) do = WAY → the way of foot and fist: taekwondo.
 골프|gol-peu
   1|en|loanword|GOLF. Korean has no f, so f → ㅍ p, plus eu → gol-peu.
   2|es|sound|Every swing is a GOLPE (es. stroke): golpe ≈ gol-peu → golf.
@@ -444,7 +444,7 @@ Verbs:가요|ga-yo
 탁구|tak-kku
   1|en|sound|TAK, TAK: the ping-pong ball's click → tak-kku.
   2|fr|sound|Du TAC AU TAC (fr. quick-fire back-and-forth): a ping-pong rally → tak-kku.
-  3|en|sound|Tiny and white like a TIC TAC: the ping-pong ball → tak-kku.
+  4|ko|roots|탁 (卓) tak = TABLE + 구 (球) gu = BALL → table ball: table tennis.
 요가|yo-ga
   1|en|loanword|YOGA → yo-ga, the same word.
   2|en|loanword|Downward dog in YOGA class → yo-ga.
@@ -460,7 +460,7 @@ Verbs:가요|ga-yo
 배구|bae-gu
   1|en|sound|Beach volleyball on the BAY → bae-gu.
   2|ja|sound|HAIKYU!!, the volleyball anime, is the same word (排球) → bae-gu.
-  3|en|sound|BAGGY shorts and beach volleyball → bae-gu.
+  4|ko|roots|배 (排) bae = VOLLEY + 구 (球) gu = BALL → volley-ball. Not the 배 of pear.
 배드민턴|bae-deu-min-teon
   1|en|loanword|BADMINTON → bae-deu-min-teon.
   2|es|loanword|BÁDMINTON (es.) → bae-deu-min-teon.
@@ -468,7 +468,7 @@ Verbs:가요|ga-yo
 달리기|dal-li-gi
   1|en|sound|DALL·E only RUNS on GPUs: 달리 dal-li = run → dal-li-gi, running.
   2|es|sound|“¡DALE, DALE!” (es. go, go!) cheering a runner → dal-li-gi.
-  3|en|sound|Salvador DALÍ running late, his clock melting → dal-li-gi.
+  4|ko|roots|달리 dal-li = RUN + 기 gi = -ING → running.
 복싱|bok-ssing
   1|en|loanword|BOXING → bok-ssing.
   2|en|loanword|Rocky's BOXING → bok-ssing.
@@ -496,57 +496,57 @@ Verbs:가요|ga-yo
 빨간색|ppal-gan-saek
   1|en|sound|The Lady in Red's BALL GOWN → ppal-gan-saek.
   2|es|sound|¡PELIGRO! (es. danger): red warning signs → ppal-gan-saek.
-  3|en|sound|A red PELICAN? No: a red BALLOON… → ppal-gan-saek.
+  4|ko|roots|빨간 ppal-gan = RED + 색 (色) saek = COLOR → red-colored: red. 색 ends every color word.
 주황색|ju-hwang-saek
   1|en|sound|A glass of orange JUICE → ju-hwang-saek.
-  2|en|sound|JUGGLING oranges → ju-hwang-saek.
+  4|ko|roots|주황 (朱黃) ju-hwang = VERMILION-YELLOW + 색 (色) saek = COLOR → red meets yellow: orange.
   3|en|sound|Naruto's orange JUMPSUIT → ju-hwang-saek.
 노란색|no-ran-saek
   1|en|sound|NO RAIN, just yellow sunshine → no-ran-saek.
   2|en|sound|Yellow sun, NO RAINcoat needed → no-ran-saek.
-  3|en|sound|Bright yellow: NO RANT, just sunshine → no-ran-saek.
+  4|ko|roots|노란 no-ran = YELLOW + 색 (色) saek = COLOR → yellow-colored: yellow.
 초록색|cho-rok-saek
   1|en|sound|CHLOROphyll makes leaves green: chlo-ro ≈ cho-rok → cho-rok-saek.
   2|en|sound|SHREK, the green ogre: shrek ≈ cho-rok → cho-rok-saek.
-  3|en|sound|Green frogs CROAK → cho-rok-saek.
+  4|ko|roots|초 (草) cho = GRASS + 록 (綠) rok = GREEN + 색 (色) saek = COLOR → grass-green. Same 綠 as 녹차.
 파란색|pa-ran-saek
   1|en|sound|PARASAIL over the deep blue sea → pa-ran-saek.
   2|en|sound|Avatar's blue Na'vi of PANDORA → pa-ran-saek.
-  3|en|sound|A PARACHUTE drifting down a blue sky → pa-ran-saek.
+  4|ko|roots|파란 pa-ran = BLUE + 색 (色) saek = COLOR → blue-colored: blue.
 남색|nam-saek
   1|en|sound|Every NAVY ship carries a NAMESAKE: name-sake ≈ nam-saek → navy blue.
   2|en|sound|NAvy blue: NAvy ≈ NAM → nam-saek.
-  3|en|sound|NAM-SAEK ≈ NAME-SAKE: navy officers' dress-blue uniforms → nam-saek.
+  4|ko|roots|남 (藍) nam = INDIGO + 색 (色) saek = COLOR → indigo: navy blue. Not 남 (男), male.
 보라색|bo-ra-saek
   1|en|sound|Wonka's Violet BEAUREgarde turns purple: BEAU-RE ≈ bo-ra → bo-ra-saek.
-  2|en|sound|A purple VIOLA flower (v → b, l → r) → bo-ra-saek.
+  4|ko|roots|보라 bo-ra = PURPLE + 색 (色) saek = COLOR → purple-colored: purple.
   3|en|sound|BORA BORA's purple sunsets → bo-ra-saek.
 흰색|huin-saek
   1|en|sound|“WHEE!” Sledding on white snow → huin-saek.
   2|en|sound|WHITE, said with a breathy h: hwi → huin-saek.
-  3|en|sound|A WHEAT-flour white kitchen → huin-saek.
+  4|ko|roots|흰 huin = WHITE + 색 (色) saek = COLOR → white-colored: white.
 검은색|geo-meun-saek
-  1|en|sound|Old GUM on the sidewalk turns black → geo-meun-saek.
+  4|ko|roots|검은 geo-meun = BLACK + 색 (色) saek = COLOR → black-colored: black.
   2|en|sound|GUNMETAL black: gun-me ≈ geo-meun → geo-meun-saek.
   3|en|sound|GOTHAM at night: Batman's black city → geo-meun-saek.
 회색|hoe-saek
   1|en|sound|Gandalf the Grey on the bridge: “No WAY you pass!” → hoe-saek.
   2|en|sound|A big gray WHALE: whale ≈ 회 hoe → hoe-saek.
-  3|en|sound|A dull gray HUE → hoe-saek.
+  4|ko|roots|회 (灰) hoe = ASH + 색 (色) saek = COLOR → ash-colored: gray.
 분홍색|bun-hong-saek
   1|fr|sound|ROSE BONBON is French for candy pink: bonbon ≈ bun-hong → bun-hong-saek.
   2|en|sound|A pink BUNNY → bun-hong-saek.
-  3|en|sound|PINK PONG? A pink ping-pong ball: bun-hong → bun-hong-saek.
+  4|ko|roots|분홍 (粉紅) bun-hong = POWDER-RED + 색 (色) saek = COLOR → powdered red: pink. 紅 is the red of 홍차.
 갈색|gal-saek
   1|es|sound|Brown like a GALLETA (es. cookie) → gal-saek.
   2|en|sound|A GALLON of black coffee… brown → gal-saek.
-  3|en|sound|GALLOPING brown horse → gal-saek.
+  4|ko|roots|갈 (褐) gal = BROWN + 색 (色) saek = COLOR → brown-colored: brown.
 하늘색|ha-neul-saek
   1|en|sound|An empty sky: “HA, NULL!” → 하늘 ha-neul, sky → sky blue, like Spanish CELESTE.
-  2|en|sound|HALLELUJAH, a clear sky: light blue → ha-neul-saek.
+  4|ko|roots|하늘 ha-neul = SKY + 색 (色) saek = COLOR → sky-colored: light blue.
   3|en|sound|HONOLULU skies: light blue → ha-neul-saek.
 베이지색|be-i-ji-saek
-  1|en|loanword|BEIGE + 색 saek, “color” → be-i-ji-saek.
+  1|ko|roots|베이지 be-i-ji = BEIGE + 색 (色) saek = COLOR → beige-colored: beige.
   2|en|loanword|BEIGE office walls → be-i-ji-saek.
   3|fr|loanword|BEIGE, the French word: bèje → be-i-ji-saek.
 사과|sa-gwa
@@ -612,10 +612,10 @@ Verbs:가요|ga-yo
 녹차|nok-cha
   1|en|sound|Old NOKIA screens glowed green + CHAI, tea → nok-cha, green tea.
   2|en|sound|The Hulk KNOCKS back a green tea → nok-cha.
-  3|en|sound|Like MATCHA, NOK-CHA is a green tea → nok-cha.
+  4|ko|roots|녹 (綠) nok = GREEN + 차 (茶) cha = TEA → green tea, word for word. Same 綠 as 초록색.
 홍차|hong-cha
   1|en|sound|HONG Kong milk tea is made with black tea → hong-cha.
-  2|en|sound|HONG Kong milk tea + CHAI (tea): it's brewed from black tea → hong-cha.
+  4|ko|roots|홍 (紅) hong = RED + 차 (茶) cha = TEA → “red tea,” named for its reddish brew: black tea.
   3|en|sound|HONG Kong high tea, CHA in hand → hong-cha.
 오렌지주스|o-ren-ji-ju-seu
   1|en|loanword|ORANGE + JUICE → o-ren-ji-ju-seu.
@@ -631,7 +631,7 @@ Verbs:가요|ga-yo
   3|en|loanword|BUBBLE's u is exactly 어, the cup vowel → beo-beul-ti.
 우유|u-yu
   1|en|sound|Milk mustache: “OOH, YOU got milk!” → u-yu.
-  2|es|sound|A cow's UBRE (es. udder): u ≈ 우 → u-yu, milk.
+  4|ko|roots|우 (牛) u = COW + 유 (乳) yu = MILK → cow's milk: milk.
   3|ko|sound|Korea's iconic BANANA MILK: 바나나 우유 → u-yu.
 스무디|seu-mu-di
   1|en|loanword|SMOOTHIE → seu-mu-di (th → d).
@@ -676,11 +676,11 @@ Verbs:가요|ga-yo
 채소|chae-so
   1|en|sound|Bok CHOY, SO green → chae-so: vegetables.
   2|ko|sound|JAPCHAE, glass noodles with mixed veggies: its CHAE means vegetables → chae-so.
-  3|es|sound|CHAYOTE (es.), the green squash: cha ≈ chae → chae-so.
+  4|ko|roots|채 (菜) chae = VEGETABLE + 소 (蔬) so = VEGETABLE → greens on greens: vegetables. 菜 is also in 야채.
 야채|ya-chae
   1|en|sound|YAMS and CHARD: two vegetables → ya-chae.
   2|ja|sound|Japanese YASAI (vegetables), the same word: ya-sai → ya-chae.
-  3|mixed|sound|YAMS + the CHAE of JAPCHAE (veggies) → ya-chae.
+  4|ko|roots|야 (野) ya = FIELD + 채 (菜) chae = VEGETABLE → field greens: vegetables. Same 野 as 야구.
 면|myeon
   1|en|sound|Chow MEIN, fried noodles: mein ≈ myeon → noodles.
   2|en|sound|Shin RAMYUN noodles: …myun → 면 myeon, noodles.
@@ -708,10 +708,10 @@ Verbs:가요|ga-yo
 계란|gye-ran
   1|en|sound|Hens eat GRAIN, then lay eggs → gye-ran.
   2|fr|sound|QUICHE LORRAINE, the egg tart: quiche ≈ gye, -raine ≈ ran → gye-ran.
-  3|en|sound|GRAIN-fed hens, fresh eggs → gye-ran.
+  4|ko|roots|계 (鷄) gye = CHICKEN + 란 (卵) ran = EGG → a chicken's egg: egg.
 닭고기|dak-kko-gi
   1|en|sound|Chicken thighs are DARK meat: DARK ≈ 닭 dak + 고기 go-gi (bulGOGI) → chicken.
-  2|en|sound|Chicken TACOs: ta-co ≈ dak-ko → dak-kko-gi.
+  4|ko|roots|닭 dak = CHICKEN + 고기 go-gi = MEAT → chicken meat: chicken.
   3|ko|sound|BULDAK noodles = fire + 닭 chicken, like BULGOGI = fire + meat → dak-kko-gi.
 생선|saeng-seon
   1|en|sound|Fresh SALMON on the plate → saeng-seon: fish (as food).
@@ -788,7 +788,7 @@ SF 영화|e-seu-e-peu yeong-hwa
 Music:가요|ga-yo
   1|en|sound|Lady GAGA, YO: pop music → ga-yo. Same sound as 가요, “go.”
   2|en|sound|GAGA-style pop hits on the radio → ga-yo.
-  3|ko|sound|The 가 of 가수 (singer, GAGA SUperstar): songs → ga-yo.
+  3|ko|roots|가 (歌) ga = SONG + 요 (謠) yo = SONG → songs everyone sings: pop. Not 가요, go. Same 歌 as 가수.
 케이팝|ke-i-pap
   1|en|loanword|K-POP → ke-i-pap.
   2|en|loanword|BTS, BLACKPINK: K-POP → ke-i-pap.
@@ -808,14 +808,14 @@ Music:가요|ga-yo
 여자|yeo-ja
   1|en|sound|Tarzan: “Me Tarzan, YOU JANE” → yeo-ja: woman.
   2|ko|sound|K-dramas' YEOJA-CHINGU (여자친구) means girlfriend → yeo-ja: woman.
-  3|ko|sound|Restroom doors: 여자 on one, 남자 (NAM, MAN backwards) on the other → yeo-ja.
+  4|ko|roots|여 (女) yeo = FEMALE + 자 (子) ja = PERSON → a female person: woman. Same 女 as 여동생.
 남자|nam-ja
   1|en|sound|NAM is MAN spelled backwards → nam-ja: man.
   2|ko|sound|K-dramas' NAMJA-CHINGU (남자친구) means boyfriend → nam-ja: man.
-  3|ko|sound|Restroom signs: 남자 on the men's door, 여자 on the women's → nam-ja.
+  4|ko|roots|남 (男) nam = MALE + 자 (子) ja = PERSON → a male person: man. Same 男 as 남동생.
 할아버지|ha-ra-beo-ji
   1|es|sound|“¡HOLA, ABUELO!” (es. hi, grandpa!): hola-abue ≈ ha-ra-beo → ha-ra-beo-ji.
-  2|en|sound|Grandpa is the GRAND ABBA: 할 hal + 아버지 (≈ ABBA, father) → ha-ra-beo-ji.
+  2|ko|roots|할 hal = GRAND + 아버지 a-beo-ji = FATHER → grand-father, word for word.
   3|en|sound|Grandpa's big HAIRY BEARD → ha-ra-beo-ji.
 할머니|hal-meo-ni
   1|en|sound|Grandma keeps the family in HARMONY: har-mo-ny ≈ hal-meo-ni.
@@ -824,11 +824,11 @@ Music:가요|ga-yo
 외할아버지|oe-ha-ra-beo-ji
   1|en|sound|Mom's side is the other WAY (외 oe) + 할아버지, grandpa → maternal grandfather.
   2|mixed|sound|The other WAY (외 oe), mom's side: “¡HOLA, ABUELO!” → oe-ha-ra-beo-ji.
-  3|en|sound|The other WAY (외), mom's side + grandpa's HAIRY BEARD → oe-ha-ra-beo-ji.
+  4|ko|roots|외 (外) oe = OUTSIDE, MOM'S SIDE + 할아버지 ha-ra-beo-ji = GRANDFATHER → maternal grandfather.
 외할머니|oe-hal-meo-ni
   1|en|sound|The other WAY (외 oe), mom's side + HARMONY: grandma → oe-hal-meo-ni.
   2|en|sound|The other WAY (외 oe), mom's side: grandma's MONEY → oe-hal-meo-ni.
-  3|en|sound|WAY out on mom's side: her mother → oe-hal-meo-ni.
+  4|ko|roots|외 (外) oe = OUTSIDE, MOM'S SIDE + 할머니 hal-meo-ni = GRANDMOTHER → maternal grandmother.
 아버지|a-beo-ji
   1|en|sound|ABBA, the Bible's word for “father,” + ji → a-beo-ji.
   2|mixed|sound|Father ABRAHAM (“Padre Abraham”): a-bra ≈ a-beo → a-beo-ji.
@@ -864,15 +864,15 @@ Music:가요|ga-yo
 남동생|nam-dong-saeng
   1|en|sound|NAM (MAN backwards) + 동생, your DOWNSIZED copy → younger brother.
   2|en|sound|NAM (man) + DON'T SNITCH, little bro → nam-dong-saeng.
-  3|ko|sound|남 (male, as in 남자) + 동생 (younger sibling) → younger brother.
+  3|ko|roots|남 (男) nam = MALE + 동생 dong-saeng = YOUNGER SIBLING → younger brother. Same 男 as 남자.
 여동생|yeo-dong-saeng
   1|en|sound|여 (YOU JANE, woman) + 동생, your DOWNSIZED copy → younger sister.
   2|en|sound|여 (YOU JANE, woman) + “DON'T SNITCH!” → yeo-dong-saeng: little sister.
-  3|ko|sound|여 (female, as in 여자) + 동생 (younger sibling) → younger sister.
+  3|ko|roots|여 (女) yeo = FEMALE + 동생 dong-saeng = YOUNGER SIBLING → younger sister. Same 女 as 여자.
 동생|dong-saeng
   1|en|sound|Your DOWNSIZED copy: the younger sibling → dong-saeng.
   2|en|sound|“DON'T SNITCH!”: what you tell your little sibling → dong-saeng.
-  3|en|sound|DONKEY from Shrek, the tag-along who never leaves you alone → dong-saeng.
+  4|ko|roots|동 (同) dong = SAME + 생 (生) saeng = BIRTH → same birth, a sibling; Korean uses it for the younger one.
 남편|nam-pyeon
   1|en|sound|Your MAN, your CHAMPION: NAM (MAN backwards) + (cham)PION → nam-pyeon.
   2|en|sound|“My NUMBER ONE”: num-ber-one ≈ nam-pyeon → husband.
@@ -892,7 +892,7 @@ Music:가요|ga-yo
 부모님|bu-mo-nim
   1|en|sound|Your parents, the BOOMERS (“OK, boomer!”) → bu-mo + 님 for respect → bu-mo-nim.
   2|en|sound|PAPA + MOM: bu-mo ≈ pa-mom → bu-mo-nim.
-  3|en|sound|Like a BOOMERANG, you always come back to your parents → bu-mo-nim.
+  4|ko|roots|부 (父) bu = FATHER + 모 (母) mo = MOTHER + 님 nim = RESPECT → honored father and mother: parents.
 가족|ga-jok
   1|en|sound|Family dinner: Dad's GOT JOKES → ga-jok.
   2|ja|sound|KAZOKU, the Japanese word for family → ga-jok.
@@ -902,7 +902,7 @@ Music:가요|ga-yo
   2|en|sound|Chapter after CHAPTER: a book → chaek.
   3|en|sound|SHAKEspeare's complete works: one big book → chaek.
 공책|gong-chaek
-  1|en|sound|A book with every page GONE blank: 공 gong + 책 chaek (book) → notebook.
+  1|ko|roots|공 (空) gong = EMPTY + 책 (冊) chaek = BOOK → an empty book, ready to fill: notebook.
   2|en|sound|To-do lists: GOING to CHECK it all off in my notebook → gong-chaek.
   3|en|sound|A COMPACT notebook for your bag: com-pact ≈ gong-chaek → gong-chaek.
 핸드폰|haen-deu-pon
@@ -916,19 +916,19 @@ Music:가요|ga-yo
 시계|si-gye
   1|en|sound|A SEIKO watch → si-gye.
   2|en|sound|The CPU clock CYCLE: tick, tick → si-gye.
-  3|es|sound|El reloj SIGUE (es. the clock keeps going): tick-tock → si-gye.
+  4|ko|roots|시 (時) si = TIME + 계 (計) gye = MEASURE → a time measurer: watch, clock. Same 時 as 시간.
 창문|chang-mun
   1|en|sound|CHANG(E) + MOON: watch the moon change through your window → chang-mun.
   2|en|sound|CHANGE the view: open the window → chang-mun.
   3|en|sound|CHANGE the MOOD: open a window → chang-mun.
 칠판|chil-pan
   1|en|sound|A CHALK PANEL → chil-pan: blackboard.
-  2|en|sound|The coach's CHALK PLAN on the board at halftime → chil-pan.
+  4|ko|roots|칠 (漆) chil = LACQUER, PAINT + 판 (板) pan = BOARD → a painted board: blackboard.
   3|en|sound|Nails on a blackboard send a CHILL down your spine → chil-pan.
 책상|chaek-ssang
   1|en|sound|At the studio mixing desk: CHECK the SONG one more time → chaek-ssang.
   2|en|sound|The hotel CHECK-IN desk → chaek-ssang.
-  3|en|sound|CHECK out my new STANDING desk → chaek-ssang.
+  4|ko|roots|책 (冊) chaek = BOOK + 상 (床) ssang = PLATFORM → a platform for books: desk.
 의자|ui-ja
   1|fr|sound|“OUI, JE m'assois” (fr. yes, I'll sit down) → ui-ja.
   2|en|sound|A WHEELCHAIR is still a chair: wee-chair → ui-ja.
@@ -936,7 +936,7 @@ Music:가요|ga-yo
 필통|pil-tong
   1|en|sound|FILL it with a TON of pens → pil-tong: pencil case.
   2|en|sound|Your PILOT pens live in the pencil case → pil-tong.
-  3|en|sound|FILL the TUBE with pencils → pil-tong.
+  4|ko|roots|필 (筆) pil = WRITING TOOL + 통 (筒) tong = TUBE → a tube for pens: pencil case. Same 筆 as 연필.
 펜|pen
   1|en|loanword|PEN → pen, the same word.
   2|en|loanword|A ballpoint PEN → pen.
@@ -944,10 +944,10 @@ Music:가요|ga-yo
 지우개|ji-u-gae
   1|en|sound|“GEE, WHOOPS!” Grab the eraser → ji-u-gae.
   2|en|sound|JIU-jitsu for mistakes: wipe them out → ji-u-gae.
-  3|en|sound|“GEE, YOU GOT it wrong!” Erase it → ji-u-gae.
+  4|ko|roots|지우 ji-u = ERASE + 개 gae = TOOL → an erasing tool: eraser.
 지갑|ji-gap
   1|en|sound|“GEE, a GAP!” My wallet's empty → ji-gap.
-  2|en|sound|ZIP up your wallet: zip ≈ ji → ji-gap.
+  4|ko|roots|지 (紙) ji = PAPER + 갑 (匣) gap = CASE → a case for paper: wallet.
   3|en|sound|G PAY, the wallet on your phone: g-pay ≈ ji-gap → ji-gap.
 돈|don
   1|es|sound|“Poderoso caballero es DON DINERO” (es. money rules) → don.
@@ -956,14 +956,14 @@ Music:가요|ga-yo
 여권|yeo-kkwon
   1|en|sound|“YO, GO ON through!” says passport control → yeo-kkwon.
   2|en|sound|With a passport, YOU CAN go anywhere → yeo-kkwon.
-  3|en|sound|Passport stamped, and YOU'RE GONE → yeo-kkwon.
+  4|ko|roots|여 (旅) yeo = TRAVEL + 권 (券) kkwon = TICKET → a travel document: passport. Same 旅 as 여행.
 가방|ga-bang
   1|fr|sound|Un CABAS (fr. tote bag): ca-bas ≈ ga-bang → ga-bang.
   2|ja|loanword|KABAN, the Japanese word for bag → ga-bang.
   3|en|sound|A Dolce & GABBANA bag: gab-ba ≈ ga-bang → ga-bang.
 연필|yeon-pil
   1|en|sound|Sharpen a pencil and the wood PEELs → yeon-pil, which rhymes with pen-cil.
-  2|en|sound|Rhymes with penCIL: yeon-PIL.
+  4|ko|roots|연 (鉛) yeon = LEAD + 필 (筆) pil = WRITING TOOL → a lead writing tool: pencil. Same 筆 as 필통.
   3|en|sound|A YOUNG PUPIL's first pencil → yeon-pil.
 종이|jong-i
   1|en|sound|Paper comes from JUNGLE trees → jong-i.
@@ -971,16 +971,16 @@ Music:가요|ga-yo
   3|fr|sound|Du papier JAUNI (fr. old yellowed paper): jau-ni ≈ jong-i → jong-i.
 열쇠|yeol-ssoe
   1|en|sound|The key to YOUR SAFE → yeol-ssoe.
-  2|en|sound|YELL “Open SESAME!”: the magic key → yeol-ssoe.
+  4|ko|roots|열 yeol = OPEN + 쇠 ssoe = METAL → metal that opens: key.
   3|en|sound|YALE, the classic lock-and-key brand: yale ≈ yeol → yeol-ssoe.
 안경|an-gyeong
   1|en|sound|Hipster ANGULAR frames: ang-gyu ≈ an-gyeong → glasses.
   2|es|sound|ANTEOJOS (es. glasses) start the same way → an-gyeong.
-  3|en|sound|ANGRY YOUNG man in thick glasses → an-gyeong.
+  4|ko|roots|안 (眼) an = EYE + 경 (鏡) gyeong = MIRROR, LENS → eye lenses: glasses. Not the 경 of 경찰.
 우산|u-san
   1|en|sound|Raining? “USE AN umbrella!” → u-san.
   2|fr|sound|“OÙ SONT les parapluies ?” (fr. where are the umbrellas?) → u-san.
-  3|es|sound|Si llueve, ¡USA paraguas! (es. if it rains, use an umbrella) → u-san.
+  4|ko|roots|우 (雨) u = RAIN + 산 (傘) san = UMBRELLA → a rain umbrella: umbrella.
 선생님|seon-saeng-nim
   1|en|roots|SENSEI → seon-saeng-nim. Same word (先生), plus 님 for respect.
   2|en|sound|Teachers have a SIXTH SENSE for who didn't study → seon-saeng-nim.
@@ -988,18 +988,18 @@ Music:가요|ga-yo
 학생|hak-ssaeng
   1|en|sound|A student HACKing away to become a SENSEI → hak-ssaeng.
   2|en|sound|Students at a HACKathon → hak-ssaeng.
-  3|en|sound|Students kicking a HACKY SACK on campus → hak-ssaeng.
+  4|ko|roots|학 (學) hak = LEARNING + 생 (生) ssaeng = LEARNER → a learner: student. Same 學 as 학교.
 회사원|hoe-sa-won
   1|en|sound|The WAY SAD ONE at the office → hoe-sa-won, office worker.
-  2|mixed|sound|The company (회사, WAY SAD) pays you in WON: office worker → hoe-sa-won.
+  4|ko|roots|회사 (會社) hoe-sa = COMPANY + 원 (員) won = MEMBER → a company member: office worker.
   3|en|sound|A HUAWEI badge, 9-to-5: an office worker → hoe-sa-won.
 의사|ui-sa
   1|en|sound|“WE SAY ‘ahh’” for the doctor → ui-sa.
   2|fr|sound|The doctor presses: “OUI, ÇA fait mal ?” (fr. does that hurt?) → ui-sa.
-  3|en|sound|“WE SAW the doctor” → ui-sa.
+  4|ko|roots|의 (醫) ui = MEDICINE + 사 (師) sa = PROFESSIONAL → a medical professional: doctor. 師 also ends 약사.
 간호사|gan-ho-sa
   1|en|sound|The nurse CAN HOLD the SAline drip → gan-ho-sa.
-  2|en|sound|The nurse hands you a hospital GOWN: gown-hos ≈ gan-ho → gan-ho-sa.
+  4|ko|roots|간호 (看護) gan-ho = CARING FOR PATIENTS + 사 (師) sa = PROFESSIONAL → a care professional: nurse.
   3|fr|sound|Latex GANTS (fr. gloves) on: the nurse is ready → gan-ho-sa.
 배우|bae-u
   1|en|sound|Curtain call: the actors take a BOW → bae-u.
@@ -1012,18 +1012,18 @@ Music:가요|ga-yo
 군인|gu-nin
   1|en|sound|A soldier: GUN IN hand → gu-nin.
   2|en|sound|A Few GOOD MEN: the Marines → gu-nin.
-  3|en|sound|TOP GUN pilots: the military's elite → gu-nin.
+  4|ko|roots|군 (軍) gun = MILITARY + 인 (人) in = PERSON → a military person: soldier.
 가수|ga-su
   1|en|sound|Lady GAGA, SUperstar singer → ga-su.
-  2|en|sound|Sing with GUSTO → ga-su.
+  4|ko|roots|가 (歌) ga = SONG + 수 (手) su = SKILLED PERFORMER → a song performer: singer. Same 歌 as 가요 (pop).
   3|it|sound|Enrico CARUSO, the legendary tenor: ca-ru-so ≈ ga-su → ga-su.
 요리사|yo-ri-sa
   1|en|sound|YOLK, RICE and SAUCE: the chef at work → yo-ri-sa.
   2|en|sound|“Chef, YOUR RISOTTO is perfect!” → yo-ri-sa.
-  3|en|sound|The YOLK over RICE pro: chef → yo-ri-sa.
+  4|ko|roots|요리 yo-ri = COOKING + 사 (師) sa = PROFESSIONAL → a cooking professional: chef. Same 요리 as 요리해요.
 기자|gi-ja
   1|en|sound|A GIZMODO reporter breaks a tech scoop → gi-ja.
-  2|en|sound|GIZMO news: the reporter's scoop → gi-ja.
+  4|ko|roots|기 (記) gi = RECORD + 자 (者) ja = PERSON → a person who records: reporter.
   3|en|sound|A GAZETTE reporter (es. gaceta): ga-zette ≈ gi-ja → gi-ja.
 주부|ju-bu
   1|en|sound|JUGGLING a BUsy home: homemaker → ju-bu.
@@ -1035,23 +1035,23 @@ Music:가요|ga-yo
   3|en|sound|ENGINE + EAR: the engineer listens to the engine → en-ji-ni-eo.
 개발자|gae-bal-jja
   1|en|sound|First command of the day: GIT PULL → gae-bal-jja.
-  2|en|sound|CABLES and JAVA everywhere: a developer → gae-bal-jja.
+  4|ko|roots|개발 (開發) gae-bal = DEVELOPMENT + 자 (者) jja = PERSON → a person who develops: developer. Same 者 as 기자.
   3|en|sound|Shipping the GAME BUILD: developers → gae-bal-jja.
 변호사|byeon-ho-sa
   1|en|sound|Your case is BEYOND HOPE, SIR? Call a lawyer → byeon-ho-sa.
-  2|en|sound|Only a lawyer may “approach the BENCH” → byeon-ho-sa.
+  4|ko|roots|변호 (辯護) byeon-ho = LEGAL DEFENSE + 사 (士) sa = SCHOLAR → a learned defender: lawyer.
   3|en|sound|Divorce: “BYE, HONEY, SEE you in court” → byeon-ho-sa.
 약사|yak-ssa
   1|en|sound|The pharmacist hands you YUCKy medicine → yak-ssa.
-  2|en|sound|“YUCK, SIR!” Pills from the pharmacist → yak-ssa.
+  4|ko|roots|약 (藥) yak = MEDICINE + 사 (師) ssa = PROFESSIONAL → a medicine professional: pharmacist. Same 藥 as 약국.
   3|ko|sound|The pharmacist behind the 약국 (“YUCK! They COOK”) counter → yak-ssa.
 학교|hak-kkyo
   1|en|sound|HOGWARTS, the most famous school: hog ≈ hak → hak-kkyo.
-  2|en|sound|Play HOCKEY after school → hak-kkyo.
+  4|ko|roots|학 (學) hak = LEARNING + 교 (校) kkyo = SCHOOL → a school for learning: school. Same 學 as 학생.
   3|ja|sound|Anime's GAKKŌ (school) is the same word: gak-kō ≈ hak-kkyo.
 교실|gyo-sil
   1|en|sound|“GO SIT!” says the teacher in the classroom → gyo-sil.
-  2|en|sound|The whole class GOES SILENT when the teacher walks in → gyo-sil.
+  4|ko|roots|교 (敎) gyo = TEACHING + 실 (室) sil = ROOM → a teaching room: classroom. Not 학교's 교 (校).
   3|ja|sound|Assassination Classroom, in Japanese Ansatsu KYŌSHITSU: kyo-shi ≈ gyo-sil → gyo-sil.
 집|jip
   1|en|sound|Your home's ZIP code → jip.
@@ -1060,21 +1060,21 @@ Music:가요|ga-yo
 서점|seo-jeom
   1|en|sound|Rows of shelves? SEARCH 'EM: a bookstore → seo-jeom.
   2|en|sound|Dr. SEUSS books on every shelf: seuss ≈ seo → seo-jeom.
-  3|en|sound|I SAW a GEM of a book at the bookstore → seo-jeom.
+  4|ko|roots|서 (書) seo = BOOKS + 점 (店) jeom = SHOP → a book shop: bookstore. Same 書 as 도서관.
 화장실|hwa-jang-sil
   1|en|sound|WASHING up at the sink → hwa-jang-sil, restroom.
   2|en|sound|Halftime rush: WHAT a JAM at the restroom → hwa-jang-sil.
-  3|en|sound|WATCHING videos on the toilet → hwa-jang-sil, restroom.
+  4|ko|roots|화장 (化粧) hwa-jang = MAKEUP + 실 (室) sil = ROOM → the makeup room, like a “powder room”: restroom.
 식당|sik-ttang
   1|en|sound|A SIT-DOWN restaurant: sit-down ≈ sik-ttang → sik-ttang.
   2|en|sound|“Table for SIX, please”: eating out → sik-ttang, restaurant.
-  3|fr|sound|A CHIC little restaurant: chic ≈ 식 sik, as in 음식 (food) → sik-ttang.
+  4|ko|roots|식 (食) sik = EATING + 당 (堂) ttang = HALL → an eating hall: restaurant. Same 食 as 음식.
 편의점|pyeo-ni-jeom
-  1|en|sound|PENNY GUM at the convenience store → pyeo-ni-jeom.
+  4|ko|roots|편의 (便宜) pyeo-ni = CONVENIENCE + 점 (店) jeom = SHOP → convenience store, word for word.
   2|ja|sound|Japan's KONBINI, the 24/7 store: bi-ni ≈ pyeo-ni → pyeo-ni-jeom.
   3|it|sound|Grab a PANINI at the 24/7 convenience store → pyeo-ni-jeom.
 백화점|bae-kwa-jeom
-  1|en|sound|A BIG WArehouse, JAM-packed with goods → bae-kwa-jeom: department store.
+  4|ko|roots|백 (百) baek = HUNDRED + 화 (貨) hwa = GOODS + 점 (店) jeom = SHOP → a hundred-goods shop: department store.
   2|en|sound|BAGS, WATCHES, JEWELRY, all under one roof → bae-kwa-jeom, department store.
   3|en|sound|BLACK FRIDAY sales at the department store → bae-kwa-jeom.
 은행|eun-haeng
@@ -1084,23 +1084,23 @@ Music:가요|ga-yo
 공원|gong-won
   1|en|sound|Let's GO ON a walk in the park → gong-won.
   2|en|sound|Frisbee in the park: “GO LONG!” → gong-won.
-  3|en|sound|Pine CONES all over the park → gong-won.
+  4|ko|roots|공 (公) gong = PUBLIC + 원 (園) won = GARDEN → a public garden: park.
 병원|byeong-won
   1|en|sound|BEEN WOUNDed? Off to the hospital → byeong-won.
   2|es|sound|Get well soon: ¡que te pongas BIEN! (es.) → byeong-won, hospital.
-  3|en|sound|BEING WHEELED into the ER → byeong-won, hospital.
+  4|ko|roots|병 (病) byeong = ILLNESS + 원 (院) won = INSTITUTION → an institution for illness: hospital. Not 공원's 원 (園).
 약국|yak-kkuk
   1|en|sound|“YUCK, COUGH syrup!” → yak-kkuk, pharmacy.
-  2|en|sound|“YUCK!” They COOK up medicine here → yak-kkuk, pharmacy.
+  4|ko|roots|약 (藥) yak = MEDICINE + 국 (局) kkuk = ESTABLISHMENT → a medicine shop: pharmacy. Same 藥 as 약사.
   3|ko|sound|Where the 약사 (pharmacist, YUCKy medicine) works → yak-kkuk, pharmacy.
 공항|gong-hang
   1|en|sound|GONE flying from the HANGAR → gong-hang: airport.
   2|es|sound|¡CON GANAS de volar! (es. itching to fly) → gong-hang, airport.
-  3|en|sound|Flight delayed? GONNA HANG around the gate → gong-hang.
+  4|ko|roots|공 (空) gong = AIR + 항 (港) hang = PORT → air-port, word for word.
 미용실|mi-yong-sil
   1|en|sound|“Make ME look YOUNG!” at the hair salon → mi-yong-sil.
   2|fr|sound|Une coupe MI-LONGUE (fr. mid-length cut) at the salon → mi-yong-sil.
-  3|en|sound|A MILLION-dollar haircut at the salon → mi-yong-sil.
+  4|ko|roots|미용 (美容) mi-yong = BEAUTY CARE + 실 (室) sil = ROOM → a beauty room: hair salon. Same 室 as 교실.
 지하철역|ji-ha-cheol-lyeok
   1|en|sound|Loyal HACHIKŌ waited at the station every day: ha-chi ≈ ha-cheol → ji-ha-cheol-lyeok.
   2|ja|sound|Tokyo's CHIKATETSU (subway) is the same word: chi-ka-te ≈ ji-ha-cheol → ji-ha-cheol-lyeok.
@@ -1115,7 +1115,7 @@ Music:가요|ga-yo
   3|es|sound|HUELGA (es. strike) at the company → hoe-sa.
 도서관|do-seo-gwan
   1|fr|sound|Pull an old DOSSIER from the library archives → do-seo-gwan.
-  2|en|sound|Studying in the library, you DOZE… GONE → do-seo-gwan.
+  4|ko|roots|도서 (圖書) do-seo = BOOKS + 관 (館) gwan = BUILDING → a building of books: library. Same 書 as 서점.
   3|en|sound|DOSTOEVSKY lines every library shelf → do-seo-gwan.
 마트|ma-teu
   1|en|loanword|MART, plus a final eu → ma-teu: supermarket.
@@ -1124,47 +1124,47 @@ Music:가요|ga-yo
 시장|si-jang
   1|en|sound|CHEAP JUNK at the flea market → si-jang.
   2|en|sound|CHIANG MAI's famous night markets → si-jang.
-  3|en|sound|SHE JANGLES her coins at the market → si-jang.
+  4|ko|roots|시 (市) si = MARKET + 장 (場) jang = PLACE → a market place: market. Not 시계's 시 (時).
 헬스장|hel-sseu-jang
   1|en|sound|The gym: a HEALTH JUNGLE → hel-sseu-jang.
   2|en|sound|Leg day is HELL at the gym → hel-sseu-jang.
-  3|en|loanword|From HEALTH club: 헬스 + 장 (place, as in 시장) → hel-sseu-jang, gym.
+  3|ko|roots|헬스 hel-sseu = WORKOUT, FROM HEALTH + 장 (場) jang = PLACE → a workout place: gym. Same 場 as 시장.
 무슨|mu-seun
   1|en|sound|“What kind of MOOSE is that?” → mu-seun.
   2|en|sound|What kind of MUSHROOM: Mario's red one or the green 1-UP? → mu-seun.
   3|fr|sound|MOUSSEUX or still? (fr. sparkling wine): what kind? → mu-seun.
 제일|je-il
   1|en|sound|The MOST wanted end up in JAIL → je-il: the most.
-  2|en|sound|The crown JEWEL: the very best → je-il, the most.
+  4|ko|roots|제 (第) je = ORDER + 일 (一) il = ONE → number one: the most.
   3|fr|sound|J'AI LE meilleur (fr. I've got the best) → je-il, the most.
 많이|ma-ni
   1|en|sound|MANY → ma-ni: a lot.
-  2|en|sound|MANIA: way too much of something → ma-ni, a lot.
+  4|ko|roots|많 man = MANY, MUCH + 이 i = -LY → 많다 (many) as an adverb: a lot.
   3|es|sound|Un MONTÓN (es. a heap, loads) → ma-ni: a lot.
 여행|yeo-haeng
   1|en|sound|Backpacking from YOUTH HOSTEL to hostel → yeo-haeng.
   2|ja|sound|A night in a Japanese RYOKAN (travelers' inn): ryo ≈ yeo → yeo-haeng.
-  3|en|sound|Trip vibes: “YO, HANG loose!” → yeo-haeng, travel.
+  4|ko|roots|여 (旅) yeo = TRAVEL + 행 (行) haeng = GOING → going traveling: travel, trip. Same 旅 as 여권.
 한국|han-guk
   1|en|sound|HAN-COOK: the land of Korean BBQ → han-guk, Korea.
   2|en|sound|HANGUL, Korea's own alphabet → han-guk.
-  3|en|sound|HANBOK, Korea's traditional dress → han-guk.
+  4|ko|roots|한 (韓) han = KOREA + 국 (國) guk = COUNTRY → the Korean country: Korea. Same 國 as 중국 (China).
 커피숍|keo-pi-syop
   1|en|loanword|COFFEE SHOP → keo-pi-syop.
   2|en|loanword|Central Perk, the Friends COFFEE SHOP → keo-pi-syop.
   3|en|loanword|A Starbucks COFFEE SHOP → keo-pi-syop.
 형용사|hyeong-yong-sa
   1*|en|sound|HUGE, YOUNG, SAD: three adjectives → hyeong-yong-sa, adjective.
-  2|en|sound|HUNGRY, YOUNG, SALTY: three more adjectives → hyeong-yong-sa.
+  4|ko|roots|형용 (形容) hyeong-yong = APPEARANCE + 사 (詞) sa = WORD → a describing word: adjective. Same 詞 as 동사.
   3|es|sound|JOVEN, LLENO, SANO (es. young, full, healthy): adjectives → hyeong-yong-sa.
 동사|dong-sa
   1|en|sound|Verbs are for DOING STUFF → dong-sa.
   2|en|sound|DON'T SAY it, DO it → dong-sa, verb.
-  3|en|sound|A DANCER's day is all verbs: jump, spin, leap → dong-sa.
+  4|ko|roots|동 (動) dong = ACTION + 사 (詞) sa = WORD → an action word: verb. Same 動 as 운동.
 시간|si-gan
   1|en|sound|Time flies: SEE it, GONE! → si-gan.
   2|mixed|sound|One SECOND (es. SEGUNDO), the unit of time → si-gan.
-  3|es|sound|El tiempo SIGUE (es. time keeps going) → si-gan.
+  4|ko|roots|시 (時) si = TIME + 간 (間) gan = INTERVAL → a span of time: time. Same 時 as 시계.
 요일|yo-il
   1|en|sound|“YO, I'LL see you Monday!” → yo-il, day of the week (월요일, 화요일…).
   2|en|roots|The -DAY of MonDAY, TuesDAY: every Korean weekday ends in 요일 → yo-il.
@@ -1176,11 +1176,11 @@ Music:가요|ga-yo
 계절|gye-jeol
   1|fr|sound|Quel JOLI printemps ! (fr. what a lovely spring): a season → gye-jeol.
   2|en|sound|Nature's yearly SCHEDULE: spring, summer, fall, winter → gye-jeol.
-  3|en|sound|GAZELLES migrate with the seasons → gye-jeol.
+  4|ko|roots|계 (季) gye = SEASON + 절 (節) jeol = PERIOD → a period of the year: season.
 색깔|saek-kkal
   1|en|sound|A color SCALE → saek-kkal: color.
   2|en|sound|SKITTLES: taste the rainbow of colors → saek-kkal.
-  3|en|sound|A SACK of COLORED pencils → saek-kkal, color.
+  4|ko|roots|색 (色) saek = COLOR + 깔 kkal = LOOK, QUALITY → color. 色 ends every color word, like 회색.
 과일|gwa-il
   1|en|sound|A GUAVA is a fruit → gwa-il.
   2|en|sound|GUACAMOLE: the avocado is a fruit → gwa-il.
@@ -1188,19 +1188,19 @@ Music:가요|ga-yo
 음료|eum-nyo
   1|en|sound|Ice-cold Coca-Cola: ENJOY! → eum-nyo, drink.
   2|es|sound|¡UN MOJITO, por favor! (es.) → eum-nyo, a drink.
-  3|es|sound|Ron AÑEJO (es. aged rum), served neat → eum-nyo.
+  4|ko|roots|음 (飮) eum = DRINKING + 료 (料) nyo = MATERIAL → drinking material: beverage. Same 飮 as 음식.
 음식|eum-sik
   1|en|sound|“MMM… CHIC!” An elegant plate of food → eum-sik.
   2|en|sound|HUMMUS and pita: food → eum-sik.
-  3|fr|sound|An AMUSE-BOUCHE (fr. a bite before the meal) → eum-sik, food.
+  4|ko|roots|음 (飮) eum = DRINKING + 식 (食) sik = EATING → drinking and eating: food.
 영화|yeong-hwa
   1|en|sound|“YOU WANNA see a movie?” → yeong-hwa.
   2|fr|sound|« ON VA au ciné ? » (fr. shall we go to the movies?): on-va ≈ yeong-hwa.
-  3|en|sound|JOHN WAYNE westerns at the movies → yeong-hwa.
+  4|ko|roots|영 (映) yeong = PROJECT + 화 (畫) hwa = PICTURE → a projected picture: movie.
 음악|eu-mak
   1|en|sound|Music is what YOU MAKE → eu-mak.
   2|es|sound|“¡Eh, MACARENA!”: the song everyone knows → eu-mak, music.
-  3|en|sound|Producing beats in Logic on an iMAC → eu-mak, music.
+  4|ko|roots|음 (音) eum = SOUND + 악 (樂) ak = MUSIC → sound made into music: music. Not 음식's 음 (飮).
 물건|mul-geon
   1|en|sound|A MULTI-TOOL: one object, many uses → mul-geon.
   2|en|sound|A MILLION little things → mul-geon, objects.
@@ -1211,7 +1211,7 @@ Music:가요|ga-yo
   3|en|sound|Writing ad JINGLES for a living → ji-geop.
 장소|jang-so
   1|en|sound|Musical chairs: CHANGE SPOTS! → jang-so, place.
-  2|en|sound|Meet me at the JUNCTION → jang-so, place.
+  4|ko|roots|장 (場) jang = PLACE + 소 (所) so = PLACE → a place, said twice: place. Same 場 as 시장.
   3|en|sound|SHANGRI-LA, the dream place: shang ≈ jang → jang-so.
 날씨가 더워요|nal-ssi-ga deo-wo-yo
   1|en|roots|날씨 ≈ NASTY weather + 가 + 더워요 ≈ hot DEHORS → The weather is hot.
@@ -1311,6 +1311,187 @@ Music:가요|ga-yo
   3|en|roots|Your answer: “한국 음식을 제일 좋아해요”: Korean food is my favorite.
 `
 
+// Connectors and particles, keyed by card id. A root-based candidate appears only where the card's Roots record
+// derives the item from its parts (그래 + 도, 밖 + 에); where it doesn't (그리고, 은/는), all three are sound hooks.
+const grammarEntries = `
+connector:그리고|geu-ri-go
+  1|es|sound|The letter Y GRIEGA: in Spanish, Y means AND → geu-ri-go.
+  2|en|sound|AGGREGATE: add this AND that together → geu-ri-go.
+  3|en|sound|GRAB-'N'-GO: the 'N' is AND → geu-ri-go.
+connector:-고|-go
+  1|en|sound|LEGO bricks: snap one action onto the next → -go.
+  2|en|sound|It takes two to TANGO: this one AND that one → -go.
+  3|en|sound|GOSSIP: 'and then… and then…', one thing after another → -go.
+connector:또|tto
+  1|en|sound|BASIC's GOTO: jump back and run it AGAIN: go-to ≈ 또 → tto.
+  2|en|sound|DITTO: the same again, me too → tto.
+  3|en|sound|An OSTINATO: the same figure again and again → tto.
+connector:또는|tto-neun
+  1|ko|roots|또 tto = ALSO + 는 neun = AS FOR (TOPIC) → word for word ‘also, as for’: or.
+  2|fr|sound|TÔT OU TARD (fr. sooner OR later): tôt ou ≈ 또는 → tto-neun.
+  3|en|sound|TOGGLE: flip between this option or that one → tto-neun.
+connector:아니면|a-ni-myeon
+  1|ko|roots|아니 a-ni = NOT (BE) + 면 myeon = IF → if not this: or.
+  2|en|sound|20 Questions: ANIMAL, vegetable, OR mineral? → a-ni-myeon.
+  3|en|sound|Pick ANY one: this OR that → a-ni-myeon.
+connector:-거나|-geo-na
+  1|en|sound|Flip a COIN: heads OR tails → -geo-na.
+  2|es|sound|GANAR O PERDER (es. win or lose) → -geo-na.
+  3|ja|sound|Japanese KANA: hiragana OR katakana → -geo-na.
+connector:하지만|ha-ji-man
+  1|ko|roots|하 ha = DO + 지만 ji-man = BUT → does, but…: but, however.
+  2|en|sound|HOWEVER starts with the same 'ha' → ha-ji-man.
+  3|en|sound|Just one HITCH: yes, BUT… → ha-ji-man.
+connector:그렇지만|geu-reo-chi-man
+  1|ko|roots|그렇 geu-reo = BE SO + 지만 chi-man = BUT → that is so, but…: nevertheless.
+  2|en|sound|GRANTED, BUT…: you admit the point, then push back → geu-reo-chi-man.
+  3|es|sound|CLARO, PERO… (es. sure, but…) → geu-reo-chi-man.
+connector:그런데|geu-reon-de
+  1|ko|roots|그렇 geu-reo = BE SO + 은데 eun-de = BUT → that is so, but…: but, by the way.
+  2|fr|sound|Le GRAND DÉTOUR (fr. the big detour): the talk changes course → geu-reon-de.
+  3|en|sound|Around the CORNER: a twist, or a new topic → geu-reon-de.
+connector:-지만|-ji-man
+  1|en|sound|JIMINY Cricket, Pinocchio's conscience: 'yes, BUT…' → -ji-man.
+  2|en|sound|The GYM membership: paid for it, BUT never go → -ji-man.
+  3|en|sound|GEMINI, the twins: one face, two opposite sides → -ji-man.
+connector:-는데|-neun-de / -eun-de / -n-de
+  1|en|sound|'I WONDER…': a soft lead-in before the real question → -neun-de.
+  2|en|sound|The UNDERSCORE: background music under a scene → -neun-de.
+  3|es|sound|Música de FONDO (es. background music) → -neun-de.
+connector:그래도|geu-rae-do
+  1|ko|roots|그래 geu-rae = BE SO + 도 do = EVEN → even so: still, anyway.
+  2|fr|sound|MALGRÉ TOUT (fr. despite it all): still, anyway → geu-rae-do.
+  3|en|sound|REGARDLESS: you do it anyway → geu-rae-do.
+connector:-아도/어도|-a-do / -eo-do
+  1|ko|roots|-어 eo = LINKING FORM + 도 do = EVEN → even when…: even if, even though.
+  2|en|sound|Even THOUGH: though ≈ do, and that's the meaning → -a-do / -eo-do.
+  3|en|sound|Nike's JUST DO IT: do it even if it's hard → -a-do / -eo-do.
+connector:그래서|geu-rae-seo
+  1|ko|roots|그래 geu-rae = BE SO + 서 seo = AND SO → it's like that, and so: therefore.
+  2|fr|sound|GRÂCE À ÇA (fr. thanks to that): the result follows → geu-rae-seo.
+  3|en|sound|GRAVITY: that's why the apple falls → geu-rae-seo.
+connector:그러니까|geu-reo-ni-kka
+  1|ko|roots|그러 geu-reo = BE SO + 니까 ni-kka = SINCE → since it's so: so, that's why.
+  2|en|sound|On the GROUNDS that…: here's the reason → geu-reo-ni-kka.
+  3|en|sound|A CRON job: the clock hits midnight, so it runs → geu-reo-ni-kka.
+connector:왜냐하면|wae-nya-ha-myeon
+  1|ko|roots|왜 wae = WHY + 냐 nya = QUESTION + 하 ha = SAY + 면 myeon = IF → if you ask why: because.
+  2|en|sound|WHY NOT? Because… here comes the reason → wae-nya-ha-myeon.
+  3|en|sound|Because I'm only HUMAN → wae-nya-ha-myeon.
+connector:-아서/어서|-a-seo / -eo-seo
+  1|en|sound|Its last syllable, seo, sounds like SO, and so is its job → -a-seo / -eo-seo.
+  2|es|sound|ASÍ QUE (es. so, therefore): a-sí ≈ a-seo → -a-seo / -eo-seo.
+  3|en|sound|An ASSIST: one move sets up the next → -a-seo / -eo-seo.
+connector:-(으)니까|-eu-ni-kka / -ni-kka
+  1|fr|sound|Its kka ≈ CAR, French for because → -eu-ni-kka / -ni-kka.
+  2|en|sound|Down for TECHNICAL reasons: tech-ni-cal ≈ ni-kka → -eu-ni-kka / -ni-kka.
+  3|en|sound|'CUZ, the casual because: kka ≈ 'cuz → -eu-ni-kka / -ni-kka.
+connector:-(으)러|-eu-reo / -reo
+  1|en|sound|Run an ERRAND: head out to get something done → -eu-reo / -reo.
+  2|es|sound|PARA (es. in order to) ends in ra ≈ reo → -eu-reo / -reo.
+  3|en|sound|A coffee RUN: going out to get coffee → -eu-reo / -reo.
+connector:그러면|geu-reo-myeon
+  1|ko|roots|그러 geu-reo = DO OR BE SO + 면 myeon = IF → if so: then, in that case.
+  2|en|sound|GREMLINS rules: feed them after midnight? Then trouble → geu-reo-myeon.
+  3|en|sound|proGRAMMING logic: IF this, THEN that → geu-reo-myeon.
+connector:-(으)면|-eu-myeon / -myeon
+  1|en|sound|John Lennon's IMAGINE: picture an 'if…' → -eu-myeon / -myeon.
+  2|en|sound|Python's if __name__ == '__MAIN__': main ≈ myeon, and it's an if → -eu-myeon / -myeon.
+  3|en|sound|It rhymes with WHEN, one of its meanings → -eu-myeon / -myeon.
+connector:그다음에|geu-da-eu-me
+  1|ko|roots|그 geu = THAT + 다음 da-eum = NEXT + 에 e = AT (TIME) → at the next thing after that: then.
+  2|en|sound|The CODA: the part that comes after → geu-da-eu-me.
+  3|en|sound|The PODIUM: first place, then the next, then the next → geu-da-eu-me.
+connector:-고 나서|-go na-seo
+  1|ko|roots|-고 go = AND + 나 na = DONE + 서 seo = THEN → and, once done, then: after.
+  2|en|sound|NASA: countdown done, then liftoff → -go na-seo.
+  3|en|sound|Dinner first, then I'm GONNA SEE a movie → -go na-seo.
+particle:은/는|eun / neun
+  1|en|sound|The topic is something already KNOWN: known ≈ 는 → eun / neun.
+  2|en|sound|UNLIKE the others: un ≈ 은, the contrast marker → eun / neun.
+  3|en|sound|First ANNOUNCE what you're talking about: -nounce ≈ 는 → eun / neun.
+particle:이/가|i / ga
+  1|en|sound|The EGO, the 'I' who acts: e-go ≈ i-ga, the subject marker → i / ga.
+  2|en|sound|Who ate my NOUGAT? 누가 is who + 가, the subject marker → i / ga.
+  3|en|sound|Who's IT? In tag, IT is the one who chases: it ≈ 이, the doer → i / ga.
+particle:을/를|eul / reul
+  1|fr|sound|Je LE prends (fr. I take it): le ≈ 를, the object of the verb → eul / reul.
+  2|en|sound|Fishing: REEL in the catch, the thing acted on: reel ≈ 를 → eul / reul.
+  3|en|sound|ROLL the dice: the dice are what you roll, the object: roll ≈ 를 → eul / reul.
+particle:의|ui / e
+  1|fr|sound|C'est à LUI (fr. it's his): lui ≈ 의, the 's of Korean → ui / e.
+  2|en|sound|LUIGI'S Mansion: u-i ≈ 의, the 's that marks the owner → ui / e.
+  3|en|sound|WEALTH, what someone owns: wea ≈ 의 → ui / e.
+particle:에|e
+  1|es|sound|EN casa (es. at home): en ≈ 에, at a place or time → e.
+  2|en|sound|AIM at the target: aim ≈ 에, at / to → e.
+  3|en|sound|See you at EIGHT: eight ≈ 에, at a time → e.
+particle:에서|e-seo
+  1|en|sound|An ESPORTS arena, where the action happens: e-s ≈ 에서 → e-seo.
+  2|en|sound|ESCAPE FROM Alcatraz: es ≈ 에서, from a place → e-seo.
+  3|ko|roots|에 e = AT + 서 seo = BEING AT → being at a place: where an action happens, or from.
+particle:부터|bu-teo
+  1|en|sound|Computers BOOT up: everything starts from there: boot ≈ 부터 → bu-teo.
+  2|en|sound|Press the START BUTTON: from here on: but-ton ≈ 부터 → bu-teo.
+  3|ko|roots|붙 but = STICK + 어 eo = -ING → 'sticking', today's 붙어, said just like 부터: from.
+particle:까지|kka-ji
+  1|fr|sound|JUSQU'À (fr. until): -squ'à ≈ 까 → kka-ji.
+  2|en|sound|Up to the CAP, the limit: cap ≈ 까 → kka-ji.
+  3|en|sound|Fill the power GAUGE up to the top: gauge ≈ 까지 → kka-ji.
+particle:(으)로|eu-ro / ro
+  1|en|sound|A ROUTER sends data toward its destination: rou ≈ 로 → eu-ro / ro.
+  2|en|sound|ROW toward the shore: row ≈ 로, direction and means → eu-ro / ro.
+  3|fr|sound|Tous les chemins mènent à ROME (fr.): ro ≈ 로, the way toward → eu-ro / ro.
+particle:에게/한테|e-ge / han-te
+  1|en|sound|HAND it TO him: hand-to ≈ 한테, giving to a person → e-ge / han-te.
+  2|es|sound|ENTREGAR (es. to hand over to someone): en-tre ≈ 한테 → e-ge / han-te.
+  3|en|sound|Send it to your AGENT: a-gen ≈ 에게, to a person → e-ge / han-te.
+particle:에게서/한테서|e-ge-seo / han-te-seo
+  1|en|sound|Fresh EGGS from the hen: eggs ≈ 에게서, from an animal → e-ge-seo / han-te-seo.
+  2|en|sound|Cookies from AUNTIE'S: auntie's ≈ 한테서, from a person → e-ge-seo / han-te-seo.
+  3|ko|roots|한테 han-te = TO A PERSON + 서 seo = FROM → 'from' a person.
+particle:와/과|wa / gwa
+  1|en|sound|Holmes and WATSON, always together: wat ≈ 와 → wa / gwa.
+  2|en|sound|A GUARDIAN always goes with you: gua ≈ 과 → wa / gwa.
+  3|en|sound|A WALTZ is danced with a partner: wal ≈ 와 → wa / gwa.
+particle:하고|ha-go
+  1|en|sound|HALF-AND-HALF pizza: this and that together: half ≈ 하 → ha-go.
+  2|en|sound|HAGRID always tags along with Harry: hag ≈ 하고 → ha-go.
+  3|ko|roots|하 ha = DO, SAY + 고 go = AND → literally 'doing… and': and, with.
+particle:(이)랑|i-rang / rang
+  1|en|sound|The POWER RANGERS always team up: rang ≈ 랑, together → i-rang / rang.
+  2|en|sound|HANG out with friends: hang ≈ 랑, the casual 'with' → i-rang / rang.
+  3|en|sound|Come ALONG, you're with me: long ≈ 랑 → i-rang / rang.
+particle:도|do
+  1|en|sound|Me TOO: too ≈ 도 → do.
+  2|en|sound|A DUET: you sing, and I sing too: du ≈ 도 → do.
+  3|en|sound|A DOUBLE scoop: chocolate, and vanilla too: dou ≈ 도 → do.
+particle:만|man
+  1|en|sound|A ONE-MAN band: only one player: man ≈ 만 → man.
+  2|fr|sound|SEULEMENT (fr. only): -ment ≈ 만 → man.
+  3|en|sound|A MONOPOLY: only one company sells it: mon ≈ 만 → man.
+particle:밖에|ba-kke
+  1|en|sound|Travel with only a BACKPACK, nothing else: back ≈ 밖 → ba-kke.
+  2|fr|sound|Une BAGATELLE (fr. a trifle): just that little, nothing more → ba-kke.
+  3|ko|roots|밖 bak = OUTSIDE + 에 e = AT → 'outside of this', with a negative: only this.
+particle:보다|bo-da
+  1|en|sound|BETTER than: bet-ter ≈ 보다 → bo-da.
+  2|en|sound|A speed BOOST: faster than before: boo ≈ 보 → bo-da.
+  3|ko|roots|보 bo = SEE + 다가 da-ga = AFTER → after seeing A, B is more…: than.
+particle:처럼|cheo-reom
+  1|en|sound|CHARADES: act like a cat or a robot: cha-ra ≈ 처러 → cheo-reom.
+  2|en|sound|A CHAMELEON looks just like its background: cha ≈ 처 → cheo-reom.
+  3|en|sound|A CHORUS sings as one, all alike: cho-ru ≈ 처러 → cheo-reom.
+particle:마다|ma-da
+  1|es|sound|CADA día (es. every day): cada rhymes with 마다 → ma-da.
+  2|en|sound|MAP() runs on every item in a list: map ≈ 마 → ma-da.
+  3|en|sound|Every MONDAY, like clockwork: mon-day ≈ 마다 → ma-da.
+particle:(이)나|i-na / na
+  1|en|sound|EENIE, MEENIE… pick one or the other: ee-nie ≈ 이나 → i-na / na.
+  2|en|sound|ANNA or Elsa? Pick one sister: an-na ≈ 이나 → i-na / na.
+  3|fr|sound|SINON (fr. or else): si-non ≈ 이나 → i-na / na.
+`
+
 const languages = ['en', 'es', 'fr', 'pt', 'it', 'de', 'ja', 'zh', 'ko', 'mixed']
 const kinds = ['sound', 'reading', 'roots', 'loanword']
 
@@ -1339,4 +1520,4 @@ function parseAids(text: string): Record<string, MemoryAid> {
   return result
 }
 
-export const memoryAids = parseAids(entries)
+export const memoryAids = parseAids(`${entries.trim()}\n${grammarEntries.trim()}`)

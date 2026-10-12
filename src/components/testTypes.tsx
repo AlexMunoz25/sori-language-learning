@@ -1,8 +1,10 @@
 import type { ComponentType } from 'react'
+import { spokenText } from '../data/cards'
 import { distinctiveSpeaker } from '../recall/answers'
-import { questionRules } from '../recall/questionRules'
-import type { AnswerKey, QuestionRule, TestQuestion } from '../recall/types'
+import { gapExample, questionRules } from '../recall/questionRules'
+import type { Answer, AnswerKey, QuestionRule, TestQuestion } from '../recall/types'
 import type { VocabularyItem } from '../types/vocabulary'
+import { plainSentence, Sentence } from './GrammarContent'
 import { KoreanWord } from './KoreanWord'
 
 /** How a test mode looks. TestView wraps the prompt for focus and descriptions, and adds the answer field and review. */
@@ -17,10 +19,12 @@ export interface QuestionView {
   fieldLabel?: string
   /** Which word notes the review adds after the solution; both default to shown. */
   notes?: { forms?: boolean; speaker?: boolean }
-  /** The question. Must not give the answer away. */
-  Prompt: ComponentType<{ item: VocabularyItem; question: TestQuestion }>
+  /** The question. Must not give the answer away. `answer`: the learner's answer so far. */
+  Prompt: ComponentType<{ item: VocabularyItem; question: TestQuestion; answer: Answer }>
   /** The answer key, revealed after checking. */
   Solution: ComponentType<{ item: VocabularyItem; question: TestQuestion; answerKey: AnswerKey }>
+  /** What Hear it says after the answer; the card's own audio unless set. */
+  speech?: (item: VocabularyItem, question: TestQuestion) => string
 }
 export type QuestionType = QuestionRule & QuestionView
 
@@ -62,12 +66,36 @@ const views: Record<string, QuestionView> = {
       <Alternatives answerKey={answerKey} lang="ko" />
     </div>,
   },
+  'complete-sentence': {
+    label: 'Complete the sentence',
+    shortLabel: 'Sentence',
+    instruction: 'Pick the piece that fits',
+    notes: { forms: false, speaker: false },
+    // The blank shows the option picked, so the whole sentence can be read before checking.
+    Prompt: ({ item, question, answer }) => {
+      const example = gapExample(item, question.data)
+      return <div className="test-stage gap-stage">
+        <p className="test-sentence" data-testid="test-sentence"><Sentence korean={example.korean} blank filled={answer.kind === 'choice' && answer.choice ? answer.choice : undefined} /></p>
+        <p className="test-translation" data-testid="test-translation">{example.english}</p>
+      </div>
+    },
+    Solution: ({ item, question }) => {
+      const example = gapExample(item, question.data)
+      return <div className="test-solution" data-testid="test-solution">
+        <p className="test-label">Answer</p>
+        <p className="test-sentence"><Sentence korean={example.korean} /></p>
+        <p className="test-explanation">{example.why}</p>
+        <p className="test-studied"><span lang="ko">{item.korean}</span>{item.meaning}</p>
+      </div>
+    },
+    speech: (item, question) => plainSentence(gapExample(item, question.data).korean),
+  },
 }
 
 export const questionTypes: QuestionType[] = questionRules.map(rule => {
   const view = views[rule.id]
   if (!view) throw new Error(`Test mode “${rule.id}” needs a view in components/testTypes.tsx`)
-  return { ...rule, ...view }
+  return { speech: spokenText, ...rule, ...view }
 })
 
 export const questionTypeById = new Map(questionTypes.map(type => [type.id, type]))

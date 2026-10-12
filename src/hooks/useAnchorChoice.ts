@@ -80,6 +80,16 @@ export function anchorFor(item: VocabularyItem, record: AnchorRecord): AnchorCan
   return item.anchors.find(anchor => anchor.id === record.selected)
 }
 
+/** The learner's pick, or the five-star default until they pick. A stored id that no longer exists means choosing again. */
+export const selectedAnchor = (item: VocabularyItem, record: AnchorRecord) =>
+  anchorFor(item, record) ?? (record.selected ? undefined : item.anchors.find(anchor => anchor.preselected))
+
+/** The anchor a test hint may draw on, read fresh from storage. */
+export function savedAnchor(item: VocabularyItem) {
+  const anchor = selectedAnchor(item, readAnchorRecords()[item.id] ?? {})
+  return anchor && { text: anchor.text, kind: anchor.kind, own: anchor.id === customAnchorId }
+}
+
 export function useAnchorChoice(item: VocabularyItem) {
   const [record, setRecord] = useState<AnchorRecord>(() => readAnchorRecords()[item.id] ?? {})
   const [saved, setSaved] = useState(true)
@@ -91,8 +101,7 @@ export function useAnchorChoice(item: VocabularyItem) {
   }
   // A stored id that no longer exists (content changed) falls back to the five-star default or to choosing.
   const stored = anchorFor(item, record)
-  const fallback = item.anchors.find(anchor => anchor.preselected)
-  const selected = stored ?? (record.selected ? undefined : fallback)
+  const selected = selectedAnchor(item, record)
   return {
     record, saved, selected,
     due: stored ? dueCheckpoint(record) : undefined,

@@ -53,7 +53,7 @@ The ★ anchors share the failure modes to avoid: filler words chosen only for s
 5. **Domains earn their place through meaning.** Science, engineering, programming, music, sports, gaming, and pop culture are welcome when the concept itself carries the meaning (tungsten, error, Mordor), not just because the domain is familiar (neural ≠ slow).
 6. **Bonus structure.** Hooks that map the parts of the word (JAMMING + OOPS → fun + none) or words that are examples of the meaning (HUGE, YOUNG, SAD → adjective) are especially strong.
 7. **Keep what worked.** In a partly successful anchor, preserve the working element and rebuild the rest.
-8. **Never** Hanja or grammar explanations as the hook (they live in Roots), childish or exaggerated phrasing, stereotypes, or references that need to be learned first.
+8. **Never** childish or exaggerated phrasing, stereotypes, or references that need to be learned first. A sound hook never smuggles in a Hanja or grammar explanation; since the next round (October 2026, rated ★★★★★ on 말해요: MAL = WORDS + HAEYO = DO), a word with genuine meaningful parts gets one separate, root-based candidate instead (see [Writing Memory Anchors](memory-anchors.md)).
 
 ## Three candidates per word
 

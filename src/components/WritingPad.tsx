@@ -64,8 +64,8 @@ export function WritingPad({ children, initialStrokes, onChange, readOnly = fals
   children?: ReactNode
   /** Read once, when the pad mounts: e.g. a draft restored after a reload. */
   initialStrokes?: InkStroke[]
-  /** Called after every change: a stroke, an erase, Clear all, or Undo. */
-  onChange?: (strokes: InkStroke[]) => void
+  /** Called after every change: a stroke, an erase, Clear all, or Undo. `aspect` is the pad's width ÷ height. */
+  onChange?: (strokes: InkStroke[], aspect: number) => void
   /** Shows the ink but accepts no input, e.g. an answer under review. */
   readOnly?: boolean
   hint?: string
@@ -81,19 +81,20 @@ export function WritingPad({ children, initialStrokes, onChange, readOnly = fals
   const notify = useRef(onChange)
   useEffect(() => { notify.current = onChange })
 
+  const aspect = () => canvas.current && canvas.current.clientHeight ? canvas.current.clientWidth / canvas.current.clientHeight : 2.3
   /** Every change goes through here, so Undo steps back through drawing, erasing, and clearing alike. */
   function change(strokes: InkStroke[], record = true) {
     const { strokes: before, past } = model.current
     model.current = { strokes, past: record ? [...past, before] : past }
     setInk(model.current)
-    notify.current?.(strokes)
+    notify.current?.(strokes, aspect())
   }
   function undo() {
     const { past } = model.current
     if (!past.length) return
     model.current = { strokes: past[past.length - 1], past: past.slice(0, -1) }
     setInk(model.current)
-    notify.current?.(model.current.strokes)
+    notify.current?.(model.current.strokes, aspect())
   }
   function redraw() {
     const element = canvas.current
