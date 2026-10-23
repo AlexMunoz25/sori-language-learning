@@ -222,7 +222,7 @@ test.describe('Generation, answer keys, grading, hints, and scoring', () => {
       expect(enToKo.hints(item, {}).length, item.id).toBeGreaterThan(0)
       const checked = new Set<string>()
       for (const anchor of item.anchors) {
-        const context = { anchor: { text: anchor.text, kind: anchor.kind, own: false } }
+        const context = { anchor: { text: anchor.text, kind: anchor.kind, own: false, source: anchor.source } }
         for (const hint of koToEn.hints(item, context)) {
           const said = terms.filter(term => new RegExp(`\\b${term}`, 'i').test(hint.text))
           expect(said, `${item.id} #${anchor.id} KO→EN ${hint.kind}: ${hint.text}`).toEqual([])
@@ -245,6 +245,7 @@ async function openTest(page: Page, options: Seed = {}) {
   const { category = 'Verbs', filter = 'all', difficult = [], only, mode = 'test', index = 0, anchors = {} } = options
   const order = options.order ?? (category === 'Verbs' ? ['Verbs:배워요'] : [])
   await page.addInitScript(({ category, filter, progress, disabledTypes, mode, order, index, anchors }) => {
+    localStorage.setItem('sori.guideSeen.v1', 'true')
     if (sessionStorage.getItem('test.seeded')) return
     sessionStorage.setItem('test.seeded', 'true')
     localStorage.setItem('sori.progress.v1', JSON.stringify(progress))
@@ -285,9 +286,14 @@ const settle = (page: Page) => page.waitForTimeout(350)
 
 /** Which card of the test's pool the current question is about, read from what is on screen. */
 async function currentItem(page: Page, pool: typeof vocabulary) {
-  if (await question(page).getAttribute('data-type') === 'korean-to-english') {
+  const type = await question(page).getAttribute('data-type')
+  if (type === 'korean-to-english') {
     const korean = await question(page).getByTestId('korean-word').textContent()
     return pool.find(item => item.korean === korean)!
+  }
+  if (type === 'complete-sentence') {
+    const english = await page.getByTestId('test-translation').textContent()
+    return pool.find(item => item.example?.english === english)!
   }
   const meaning = await page.getByTestId('test-meaning').textContent()
   return pool.find(item => item.meaning === meaning)!
@@ -322,32 +328,39 @@ async function proceed(page: Page) {
   await page.locator('#test-next').click()
 }
 
-test('Test sits beside Standard and Listening, draws from the chosen words, and leaves the deck alone', async ({ page }) => {
+const main = (page: Page) => page.getByRole('navigation', { name: 'Main' })
+const go = (page: Page, destination: 'Learn' | 'Library' | 'Review') => main(page).getByRole('button', { name: new RegExp(`^${destination}`) }).click()
+
+test('Review builds tests from the Library selection, and a test leaves the deck alone', async ({ page }) => {
   await openTest(page, { mode: 'standard' })
   await expect(page.getByTestId('korean-word')).toHaveText('배워요')
-  await page.getByRole('button', { name: 'Test', exact: true }).click()
+  await go(page, 'Review')
   await expect(page.getByTestId('test-pool')).toHaveText('Verbs · 36 words')
   const lengths = page.getByRole('group', { name: 'Questions' }).getByRole('button')
   await expect(lengths).toHaveText(['10', '20', 'All 36'])
   await expect(lengths.first()).toHaveAttribute('aria-pressed', 'true')
+  // Words have sentences too, so they can also be asked in context.
   const types = page.getByRole('group', { name: 'Question types' }).getByRole('button')
-  await expect(types).toHaveCount(2)
+  await expect(types).toHaveText([/Korean → English/, /English → Korean/, /Complete the sentence/])
   for (const type of await types.all()) await expect(type).toHaveAttribute('aria-pressed', 'true')
   // Handwriting leaves the device to be read, so setup says so.
   await expect(page.getByText(/Handwriting is read by Google handwriting recognition/)).toBeVisible()
   await page.getByRole('button', { name: 'Start test' }).click()
   await expect(count(page)).toHaveText('Question 1 of 10')
   await expect(page.getByTestId('running-score')).toHaveText('0/0 pts')
-  // Nothing that changes the words or the deck is available mid-test.
-  await expect(page.getByRole('navigation', { name: 'Word collection' })).toHaveCount(0)
+  // Nothing that changes the test's words is there mid-test, and arrow keys don't move it.
   await expect(page.getByRole('button', { name: 'Choose category' })).toHaveCount(0)
+  await expect(page.getByRole('button', { name: 'Choose what to test' })).toHaveCount(0)
   await expect(page.getByRole('button', { name: 'Next word' })).toHaveCount(0)
   await page.evaluate(() => (document.activeElement as HTMLElement | null)?.blur())
   for (const key of ['ArrowRight', 'ArrowRight', 'ArrowLeft', 'ArrowRight']) await page.keyboard.press(key)
   await expect(count(page)).toHaveText('Question 1 of 10')
-  await page.getByRole('button', { name: 'Standard', exact: true }).click()
+  // The Library is one tap away, on the same card, and the test waits.
+  await go(page, 'Library')
   await expect(page.getByTestId('korean-word')).toHaveText('배워요')
   await expect(page.getByTestId('deck-count')).toHaveText('1 / 36')
+  await go(page, 'Review')
+  await expect(count(page)).toHaveText('Question 1 of 10')
 })
 
 test('Korean → English: Enter checks once, the answer is graded at once, and Enter continues', async ({ page }) => {
@@ -431,7 +444,9 @@ test('Hints: one at a time from your anchor, then a clue; any hint makes the ans
     if (item.korean === '예뻐요') {
       // Your saved anchor, with the meaning blanked out; then the card's clue.
       await hint.click()
-      await expect(page.getByTestId('test-hints')).toContainText('Your anchorAudrey HEPBURN, the icon of ___')
+      await expect(page.getByTestId('test-hints')).toContainText('Your anchor')
+      await expect(page.getByTestId('test-hints')).toContainText('Audrey HEPBURN')
+      await expect(page.getByTestId('test-hints')).toContainText('___')
       await expect(page.getByRole('button', { name: 'Another hint' })).toHaveAccessibleDescription('no extra cost')
       await page.getByRole('button', { name: 'Another hint' }).click()
       await expect(page.getByTestId('test-hints').locator('.test-hint')).toHaveCount(2)
@@ -703,18 +718,20 @@ test('Results: score, percentage, breakdown, review; forgotten words go to Diffi
   await expect(row(page, forgotten.korean)).toContainText('Incorrect · 0 points')
   // Only the two answered words count as tested.
   expect((await saved(page)).history).toEqual([[forgotten.id, remembered.id]])
-  const collections = page.getByRole('navigation', { name: 'Word collection' })
-  await expect(collections.getByRole('button', { name: 'Difficult 0' })).toBeVisible()
+  // Graded answers reschedule their words: the forgotten one tomorrow, the remembered one later. Nothing is due today yet.
+  const review = main(page).getByRole('button', { name: /^Review/ })
+  await expect(review).toHaveAccessibleName('Review')
   await page.getByRole('button', { name: 'Add 1 incorrect word to Difficult' }).click()
   await expect(page.getByRole('heading', { name: 'Test ended' })).toBeFocused()
-  await expect(collections.getByRole('button', { name: 'Difficult 1' })).toBeVisible()
+  // Difficult words come back in today's review.
+  await expect(review).toHaveAccessibleName('Review 1 due')
   await expect(page.getByRole('button', { name: /incorrect word/ })).toHaveCount(0)
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('sori.progress.v1')!))).toEqual({ [forgotten.id]: 'difficult' })
   const star = page.getByRole('button', { name: `Mark ${remembered.korean} as difficult` })
   await expect(star).toHaveAttribute('aria-pressed', 'false')
   await star.click()
   await expect(star).toHaveAttribute('aria-pressed', 'true')
-  await expect(collections.getByRole('button', { name: 'Difficult 2' })).toBeVisible()
+  await expect(review).toHaveAccessibleName('Review 2 due')
   await page.getByRole('button', { name: 'Change settings' }).click()
   await expect(page.getByRole('heading', { name: 'How much do you remember?' })).toBeFocused()
 })
@@ -750,7 +767,7 @@ test('From the Difficult pile, words recalled without help can be marked Known, 
   const colors = ['빨간색', '주황색', '노란색', '초록색', '파란색']
   await openTest(page, { category: 'Colors', filter: 'difficult', difficult: colors, mode: 'standard', only: 'korean-to-english', order: colors.map(word => byWord(word).id), index: 3 })
   await expect(page.getByTestId('korean-word')).toHaveText('초록색')
-  await page.getByRole('button', { name: 'Test', exact: true }).click()
+  await go(page, 'Review')
   await page.getByRole('button', { name: 'Start test' }).click()
   for (let index = 1; index <= 5; index++) {
     const item = await currentItem(page, words(...colors))
@@ -764,13 +781,14 @@ test('From the Difficult pile, words recalled without help can be marked Known, 
   await expect(page.getByRole('button', { name: 'Mark 4 correct without hints as Known' })).toBeVisible()
   // Take the first two off the pile: the study deck stays on 초록색.
   for (const word of colors.slice(0, 2)) await page.getByRole('button', { name: `Mark ${word} as difficult` }).click()
-  await page.getByRole('button', { name: 'Standard', exact: true }).click()
+  await go(page, 'Library')
   await expect(page.getByTestId('korean-word')).toHaveText('초록색')
   await expect(page.getByTestId('deck-count')).toHaveText('2 / 3')
-  await page.getByRole('button', { name: 'Test', exact: true }).click()
+  await go(page, 'Review')
   await page.getByRole('button', { name: /^Mark \d correct without hints as Known$/ }).click()
   const left = await page.evaluate(() => Object.values(JSON.parse(localStorage.getItem('sori.progress.v1')!)).filter(status => status === 'difficult').length)
-  await expect(page.getByRole('navigation', { name: 'Word collection' }).getByRole('button', { name: `Difficult ${left}` })).toBeVisible()
+  await go(page, 'Library')
+  await expect(page.getByTestId('deck-count')).toHaveText(`${left ? 1 : 0} / ${left}`)
 })
 
 test('New test prefers words the last test didn’t ask, and settings are remembered', async ({ page }) => {
@@ -792,13 +810,13 @@ test('New test prefers words the last test didn’t ask, and settings are rememb
   expect(latest.filter((id: string) => earlier.includes(id))).toEqual([])
 })
 
-test('A test survives switching modes and reloading, unchecked drafts included', async ({ page }) => {
+test('A test survives leaving Review and reloading, unchecked drafts included', async ({ page }) => {
   await openTest(page, { only: 'korean-to-english' })
   await page.getByRole('button', { name: 'Start test' }).click()
   await answerField(page).fill('to g')
-  await page.getByRole('button', { name: 'Standard', exact: true }).click()
+  await go(page, 'Library')
   await expect(page.getByTestId('deck-count')).toHaveText('1 / 36')
-  await page.getByRole('button', { name: 'Test', exact: true }).click()
+  await go(page, 'Review')
   await expect(count(page)).toHaveText('Question 1 of 10')
   await expect(answerField(page)).toHaveValue('to g')
   await page.reload()

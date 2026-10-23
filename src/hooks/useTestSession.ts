@@ -4,10 +4,13 @@ import { emptyAnswer, isBlank, parseAnswer, verdictOf } from '../recall/answers'
 import { buildTest, recencyOf } from '../recall/generate'
 import { compactStrokes, previewStrokes } from '../recall/ink'
 import { questionRuleById, questionRules } from '../recall/questionRules'
-import { scoreTest } from '../recall/scoring'
+import type { RecallEntry, RecallSource } from '../recall/review'
+import { outcomeOf, scoreTest } from '../recall/scoring'
 import type { Answer, AnswerRecord, Evaluation, QuestionRule, TestQuestion, Verdict } from '../recall/types'
 import type { VocabularyItem } from '../types/vocabulary'
 import { isRecord, readStorage, writeStorage } from './storage'
+import { selectedAnchorId } from './useAnchorChoice'
+import { recordAnswers } from './useReview'
 import { validCategory, type StudyFilter } from './useStudySession'
 
 export type TestLength = 10 | 20 | 'all'
@@ -25,8 +28,8 @@ export function rulesFor(pool: VocabularyItem[], disabledTypes: string[]) {
   const enabled = relevant.filter(rule => !disabledTypes.includes(rule.id))
   return enabled.length ? enabled : relevant
 }
-/** Which words a test drew from, kept for its label while it runs. */
-export interface TestPool { category: string; filter: StudyFilter }
+/** Which words a test drew from, kept for its label while it runs. A review asks the cards due today instead. */
+export interface TestPool { category: string; filter: StudyFilter; review?: true }
 /**
  * answering → checking (the answer is being read) → confirming (only when the app isn't sure: the learner
  * decides before anything is graded) → reviewing (graded) → the next question, or complete.
@@ -42,11 +45,24 @@ export interface ActiveTest {
   draft: Answer | null
   /** Hints shown so far for the current question. */
   hints: number
+  /** Questions whose grade is already in the recall log, so none is counted twice. */
+  logged: string[]
 }
 interface Store { test: ActiveTest | null; history: string[][]; preferences: TestPreferences }
 
 export const testStorageKey = 'sori.test.v1'
 const preferencesKey = 'sori.testPreferences.v1'
+
+/** Graded answers not yet logged, as recall entries: each card's schedule and its anchor's evidence learn from them. */
+function unlogged(test: ActiveTest, source: RecallSource, upTo = test.questions.length): Array<{ question: string; entry: RecallEntry }> {
+  return test.questions.slice(0, upTo).flatMap(question => {
+    const record = test.answers[question.id]
+    const outcome = outcomeOf(record)
+    if (!record || outcome === 'pending' || test.logged.includes(question.id)) return []
+    const via: RecallSource = test.pool.review ? 'review' : source
+    return [{ question: question.id, entry: { id: question.itemId, at: record.answeredAt, via, type: question.type, outcome, ...record.anchor ? { anchor: record.anchor } : {} } }]
+  })
+}
 const verdicts = ['correct', 'incorrect'] as const
 const isVerdict = (value: unknown): value is Verdict => verdicts.includes(value as Verdict)
 const shortText = (value: unknown, max = 200) => typeof value === 'string' && value.length <= max ? value : undefined
@@ -83,7 +99,9 @@ function parseRecord(value: unknown, rule: QuestionRule): AnswerRecord | null {
   const hints = typeof value.hints === 'number' && Number.isInteger(value.hints) && value.hints >= 0 && value.hints <= 9 ? value.hints : 0
   const auto = parseEvaluation(value.auto)
   const corrected = shortText(value.corrected, 100)
-  return { answer, answeredAt: value.answeredAt, hints, ...auto ? { auto } : {}, ...isVerdict(value.self) ? { self: value.self } : {}, ...corrected !== undefined ? { corrected } : {} }
+  const anchor = shortText(value.anchor, 40)
+  return { answer, answeredAt: value.answeredAt, hints, ...auto ? { auto } : {}, ...isVerdict(value.self) ? { self: value.self } : {},
+    ...corrected !== undefined ? { corrected } : {}, ...anchor !== undefined ? { anchor } : {} }
 }
 
 /** All or nothing: a saved test that doesn't fully check out returns to setup instead of resuming wrongly. */
@@ -118,16 +136,27 @@ function parseTest(value: unknown): ActiveTest | null {
   const draft = value.draft == null || !currentRule ? null : parseAnswer(value.draft, currentRule.answer)
   const category = isRecord(value.pool) ? value.pool.category : undefined
   const filter = isRecord(value.pool) ? value.pool.filter : undefined
+  const review = isRecord(value.pool) && value.pool.review === true
   const pool: TestPool = validCategory(category) && (filter === 'all' || filter === 'difficult') ? { category, filter } : { category: 'All words', filter: 'all' }
   const hints = typeof value.hints === 'number' && Number.isInteger(value.hints) && value.hints >= 0 && value.hints <= 9 ? value.hints : 0
-  return { pool, questions, answers, current, ended: value.ended === true, draft, hints }
+  const logged = Array.isArray(value.logged) ? value.logged.filter((id): id is string => typeof id === 'string' && questions.some(question => question.id === id)) : []
+  return { pool: review ? { ...pool, review: true } : pool, questions, answers, current, ended: value.ended === true, draft, hints, logged }
 }
 
-function initialStore(): Store {
-  const saved = readStorage('sessionStorage', testStorageKey)
+function initialStore(storageKey: string): Store {
+  const saved = readStorage('sessionStorage', storageKey)
   const history = isRecord(saved) && Array.isArray(saved.history)
     ? saved.history.filter(Array.isArray).map(ids => ids.filter((id: unknown): id is string => typeof id === 'string' && cardById.has(id))).slice(-20) : []
   return { test: isRecord(saved) ? parseTest(saved.test) : null, history, preferences: parsePreferences(readStorage('localStorage', preferencesKey)) }
+}
+
+export interface TestSessionOptions {
+  /** Where the running test is kept; a lesson's practice has its own, so it never replaces a test in Review. */
+  storageKey?: string
+  /** What its answers count as in the recall log. */
+  source?: RecallSource
+  /** Whether it owns the test preferences (length, question types); a lesson's practice only reads them. */
+  savePreferences?: boolean
 }
 
 /** Keeps the save small: full handwriting only for the current question; earlier ones keep a light preview. */
@@ -150,15 +179,22 @@ function evaluate(question: TestQuestion, answer: Answer): Evaluation | Promise<
   } catch { return unreadable }
 }
 
-export function useTestSession() {
-  const [store, setStore] = useState(initialStore)
+export function useTestSession({ storageKey = testStorageKey, source = 'test', savePreferences = true }: TestSessionOptions = {}) {
+  const [store, setStore] = useState(() => initialStore(storageKey))
   const [storageAvailable, setStorageAvailable] = useState(true)
   useEffect(() => {
-    const saved = writeStorage('sessionStorage', testStorageKey, serialize(store))
+    const saved = writeStorage('sessionStorage', storageKey, serialize(store))
     // A failed write must not leave an older snapshot behind to resume from.
-    if (!saved) try { window.sessionStorage.removeItem(testStorageKey) } catch { /* storage is blocked entirely */ }
-    setStorageAvailable(writeStorage('localStorage', preferencesKey, store.preferences) && saved)
+    if (!saved) try { window.sessionStorage.removeItem(storageKey) } catch { /* storage is blocked entirely */ }
+    setStorageAvailable((!savePreferences || writeStorage('localStorage', preferencesKey, store.preferences)) && saved)
   }, [store])
+  /** Logs graded answers up to a question (all of them by default) once, and remembers that it did. */
+  function log(test: ActiveTest, upTo?: number) {
+    const pending = unlogged(test, source, upTo)
+    if (!pending.length) return test.logged
+    recordAnswers(pending.map(({ entry }) => entry))
+    return [...test.logged, ...pending.map(({ question }) => question)]
+  }
 
   const { test, preferences } = store
   const question = test && !test.ended ? test.questions[test.current] : undefined
@@ -195,11 +231,15 @@ export function useTestSession() {
   }, [unread?.question.id, unread?.record.answeredAt])
 
   /** A new test from these words; returns how many questions it has. Randomness stays out of state updaters. */
-  function begin(pool: VocabularyItem[], info: TestPool, length: number, recent?: ReadonlyMap<string, number>) {
-    const questions = buildTest(pool, { length, rules: rulesFor(pool, preferences.disabledTypes), recent })
+  function begin(pool: VocabularyItem[], info: TestPool, length: number, recent?: ReadonlyMap<string, number>, rules = rulesFor(pool, preferences.disabledTypes)) {
+    return beginWith(buildTest(pool, { length, rules, recent }), info)
+  }
+  function beginWith(questions: TestQuestion[], info: TestPool) {
     if (!questions.length) return 0
+    // A test replaced before it finished still counts what was graded.
+    if (store.test) log(store.test)
     setStore(previous => ({ ...previous, history: [...previous.history, questions.map(item => item.itemId)].slice(-20),
-      test: { pool: info, questions, answers: {}, current: 0, ended: false, draft: null, hints: 0 } }))
+      test: { pool: info, questions, answers: {}, current: 0, ended: false, draft: null, hints: 0, logged: [] } }))
     return questions.length
   }
 
@@ -210,6 +250,10 @@ export function useTestSession() {
     score: test ? scoreTest(test.questions, test.answers) : undefined,
     start: (pool: VocabularyItem[], info: TestPool) =>
       begin(pool, info, preferences.length === 'all' ? pool.length : preferences.length, recencyOf(store.history)),
+    /** Exactly these cards, each asked once, with these question types (a review). */
+    startWith: (pool: VocabularyItem[], info: TestPool, rules?: QuestionRule[]) => begin(pool, info, pool.length, undefined, rules),
+    /** Questions built elsewhere (a lesson's practice). */
+    startQuestions: (questions: TestQuestion[], info: TestPool) => beginWith(questions, info),
     /** The same words again, in a new order and with new directions; the score, hints, and answers start over. */
     retake: () => {
       if (!test) return 0
@@ -232,8 +276,10 @@ export function useTestSession() {
         else auto = result
       }
       const hints = test.hints
+      // The anchor in use when it was answered: evidence for (or against) that anchor.
+      const anchor = selectedAnchorId(cardById.get(question.itemId)!)
       update(current => current.answers[question.id] ? current
-        : { ...current, draft: null, answers: { ...current.answers, [question.id]: { answer, answeredAt, hints, ...auto ? { auto } : {} } } })
+        : { ...current, draft: null, answers: { ...current.answers, [question.id]: { answer, answeredAt, hints, ...auto ? { auto } : {}, ...anchor ? { anchor } : {} } } })
     },
     /** The learner's own judgement: when the app wasn't sure, couldn't read the answer, or got it wrong. */
     decide: (verdict: Verdict) => { if (question) setRecord(question.id, current => ({ ...current, self: verdict })) },
@@ -252,20 +298,24 @@ export function useTestSession() {
     recheck: () => {
       if (question) setRecord(question.id, current => current.auto?.by === 'unavailable' && !current.self ? { answer: current.answer, answeredAt: current.answeredAt, hints: current.hints } : current)
     },
-    /** Moves on only once the question is graded, so every question is scored exactly once. */
-    next: () => update(current => {
-      const id = current.questions[current.current]?.id
-      return id && verdictOf(current.answers[id]) ? { ...current, current: current.current + 1, draft: null, hints: 0 } : current
-    }),
+    /** Moves on only once the question is graded, so every question is scored exactly once, and logged then. */
+    next: () => {
+      if (!test || !question || !verdictOf(test.answers[question.id])) return
+      const logged = log(test, test.current + 1)
+      update(current => current.questions[current.current]?.id === question.id ? { ...current, current: current.current + 1, draft: null, hints: 0, logged } : current)
+    },
     /** Ends early: results for what was answered, or back to setup if nothing was. Only answered words count as tested. */
-    end: () => setStore(previous => {
-      if (!previous.test) return previous
-      const answered = previous.test.questions.filter(entry => previous.test!.answers[entry.id]).map(entry => entry.itemId)
-      const history = previous.history.slice(0, -1)
-      return answered.length
-        ? { ...previous, history: [...history, answered], test: { ...previous.test, ended: true, draft: null } }
-        : { ...previous, history, test: null }
-    }),
+    end: () => {
+      const logged = test ? log(test) : []
+      setStore(previous => {
+        if (!previous.test) return previous
+        const answered = previous.test.questions.filter(entry => previous.test!.answers[entry.id]).map(entry => entry.itemId)
+        const history = previous.history.slice(0, -1)
+        return answered.length
+          ? { ...previous, history: [...history, answered], test: { ...previous.test, ended: true, draft: null, logged } }
+          : { ...previous, history, test: null }
+      })
+    },
     reset: () => update(() => null),
     setLength: (length: TestLength) => setStore(previous => ({ ...previous, preferences: { ...previous.preferences, length } })),
     /** Switches a mode on or off for every test; the last one these words can use stays on. */

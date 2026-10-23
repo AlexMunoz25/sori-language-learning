@@ -1,7 +1,8 @@
 import type { ComponentType } from 'react'
 import { spokenText } from '../data/cards'
 import { distinctiveSpeaker } from '../recall/answers'
-import { gapExample, questionRules } from '../recall/questionRules'
+import { endingLabels, explain } from '../recall/conjugate'
+import { formQuestion, gapExample, questionRules } from '../recall/questionRules'
 import type { Answer, AnswerKey, QuestionRule, TestQuestion } from '../recall/types'
 import type { VocabularyItem } from '../types/vocabulary'
 import { plainSentence, Sentence } from './GrammarContent'
@@ -84,11 +85,36 @@ const views: Record<string, QuestionView> = {
       return <div className="test-solution" data-testid="test-solution">
         <p className="test-label">Answer</p>
         <p className="test-sentence"><Sentence korean={example.korean} /></p>
-        <p className="test-explanation">{example.why}</p>
+        {'why' in example && <p className="test-explanation">{example.why}</p>}
         <p className="test-studied"><span lang="ko">{item.korean}</span>{item.meaning}</p>
       </div>
     },
     speech: (item, question) => plainSentence(gapExample(item, question.data).korean),
+  },
+  'conjugate': {
+    label: 'Build the form',
+    shortLabel: 'Form',
+    instruction: 'Pick the right form',
+    notes: { forms: false, speaker: false },
+    // One of the learner's words in its dictionary form, and the form wanted: 먹다 → Past · polite.
+    Prompt: ({ item, question }) => {
+      const { spec, word, base } = formQuestion(item, question.data)
+      return <div className="test-stage form-stage">
+        <p className="form-target" data-testid="form-target">{endingLabels[spec.ending]}</p>
+        <KoreanWord word={base} />
+        <p className="test-translation" data-testid="test-translation">{word.meaning}</p>
+      </div>
+    },
+    Solution: ({ item, question, answerKey }) => {
+      const { spec, base } = formQuestion(item, question.data)
+      return <div className="test-solution" data-testid="test-solution">
+        <p className="test-label">Answer</p>
+        <p className="test-sentence" lang="ko">{answerKey.expected}</p>
+        <p className="test-explanation">{explain(base, spec.ending)}</p>
+        <p className="test-studied"><span lang="ko">{item.korean}</span>{item.meaning}</p>
+      </div>
+    },
+    speech: (item, question) => formQuestion(item, question.data).expected,
   },
 }
 

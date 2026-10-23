@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { flushSync } from 'react-dom'
 import { ArrowRight, Check, Eye, Lightbulb, LoaderCircle, RefreshCw, RotateCcw, Star, Undo2, Volume2, X } from 'lucide-react'
-import { cardById, countOf, sectionInfo, sectionOf } from '../data/cards'
+import { cardById, countOf, nounsFor, sectionOf } from '../data/cards'
 import { savedAnchor } from '../hooks/useAnchorChoice'
 import type { TestPool, TestSession } from '../hooks/useTestSession'
 import { useSpeech } from '../hooks/useSpeech'
@@ -12,7 +12,7 @@ import { googleHandwriting } from '../recall/handwriting'
 import type { Hint } from '../recall/hints'
 import { formatPoints, outcomeOf, pointsFor, type Outcome } from '../recall/scoring'
 import type { Answer, AnswerKey, AnswerRecord, Evaluation, TestQuestion, Verdict } from '../recall/types'
-import type { Progress, Section, VocabularyItem, WordStatus } from '../types/vocabulary'
+import type { Progress, VocabularyItem, WordStatus } from '../types/vocabulary'
 import { EmptyCollection } from './EmptyCollection'
 import { InkPreview } from './InkPreview'
 import { questionTypeById, questionTypes, type QuestionType } from './testTypes'
@@ -20,7 +20,7 @@ import { WordNotes } from './WordNotes'
 import { WritingPad } from './WritingPad'
 
 /** Moves focus to where the next step happens. Called right after a synchronous render, so the text field also opens the phone keyboard. */
-function focusStep() {
+export function focusQuestion() {
   const target = document.getElementById('test-answer') ?? document.querySelector<HTMLElement>('[data-test-prompt]')
   target?.focus({ preventScroll: true })
 }
@@ -33,22 +33,22 @@ function bring(element: HTMLElement | null) {
 
 export const outcomeLabels: Record<Outcome, string> = { correct: 'Correct', hinted: 'Correct with a hint', incorrect: 'Incorrect', pending: 'Not graded' }
 const pointsLabel = (value: number) => `${value > 0 ? '+' : ''}${formatPoints(value)} ${value === 1 ? 'point' : 'points'}`
-const hintLabels: Record<Hint['kind'], string> = { anchor: 'Your anchor', meaning: 'Clue', form: 'Shape', narrow: 'Fewer options' }
+const hintLabels: Record<Hint['kind'], string> = { anchor: 'Your anchor', meaning: 'Clue', form: 'Shape', narrow: 'Fewer options', rule: 'Rule' }
 const blankLabels: Record<Answer['kind'], string> = { text: 'Left blank', ink: 'Nothing written', choice: 'Nothing chosen' }
 const doubts: Record<string, string> = { 'close spelling': 'Close, but spelled differently.', 'partly right': 'Partly right.', 'extra words': 'Right, with extra words.' }
 const capitalize = (text: string) => text.charAt(0).toUpperCase() + text.slice(1)
 
 interface Props {
   test: TestSession
-  /** The section the study deck is in: new tests draw from it. */
-  section: Section
-  /** Words in the current collection and category. */
+  /** Cards in the current selection: new tests draw from them. */
   pool: VocabularyItem[]
   poolInfo: TestPool
   poolLabel: string
   progress: Progress
   difficultCount: number
   onSelect: (category: string, filter: 'all' | 'difficult') => void
+  /** Opens the selection sheet, to test other cards. */
+  onChoose: () => void
   onSetStatus: (ids: string[], status: WordStatus | null) => void
   announce: (message: string) => void
 }
@@ -67,7 +67,7 @@ export function TestView(props: Props) {
     if (!count) return
     window.scrollTo({ top: 0 })
     announce(`Question 1 of ${count}`)
-    focusStep()
+    focusQuestion()
   }
   function begin() {
     let count = 0
@@ -84,18 +84,21 @@ export function TestView(props: Props) {
   return <QuestionCard key={test.question!.id} test={test} announce={announce} />
 }
 
-function TestSetup({ test, section, pool, poolLabel, difficultCount, onSelect, usable, questionCount, onStart }: Props & { usable: VocabularyItem[]; questionCount: number; onStart: () => void }) {
-  if (!pool.length) return <EmptyCollection section={section} difficultCount={difficultCount} onSelect={onSelect} />
+function TestSetup({ test, pool, poolInfo, poolLabel, difficultCount, onSelect, onChoose, usable, questionCount, onStart }: Props & { usable: VocabularyItem[]; questionCount: number; onStart: () => void }) {
+  if (!pool.length) return <EmptyCollection section={sectionOf(poolInfo.category) ?? 'vocabulary'} difficultCount={difficultCount} onSelect={onSelect} />
   const sizes = ([10, 20] as const).filter(size => size < questionCount)
   const length = test.preferences.length !== 'all' && sizes.some(size => size === test.preferences.length) ? test.preferences.length : 'all'
   const enabled = new Set(test.rulesFor(pool).map(rule => rule.id))
-  // Only the modes that can ask these words: Complete the sentence for connectors and particles, English → Korean for words.
+  // Only the modes that can ask these cards: English → Korean for words, Build the form for endings and tenses.
   const types = questionTypes.filter(type => pool.some(item => type.supports(item)))
   return <section className="study-card test-card" aria-labelledby="test-setup-title">
     <div className="card-kicker flex items-center justify-between gap-3"><span>TEST YOUR RECALL</span><span className="tiny-dot" /></div>
     <h2 id="test-setup-title" tabIndex={-1} className="test-title">How much do you remember?</h2>
     <p className="test-lead">Checked for you: 1 point each, ½ with a hint.</p>
-    <p className="test-pool-line" data-testid="test-pool">{poolLabel} · {countOf(section, usable.length)}</p>
+    <div className="test-pool-row flex items-baseline justify-between gap-3">
+      <p className="test-pool-line" data-testid="test-pool">{poolLabel} · {countOf(poolInfo.category, usable.length)}</p>
+      <button className="test-link" aria-label="Choose what to test" aria-haspopup="dialog" onClick={onChoose}>Change</button>
+    </div>
     <div className="test-option">
       <p className="test-label" id="test-length-label">Questions</p>
       <div className="segmented" role="group" aria-labelledby="test-length-label">
@@ -257,7 +260,7 @@ function ChoiceField({ options, removed, picked, expected, answered, label, desc
   </form>
 }
 
-function QuestionCard({ test, announce }: { test: TestSession; announce: (message: string) => void }) {
+export function QuestionCard({ test, announce }: { test: TestSession; announce: (message: string) => void }) {
   const active = test.test!
   const question = test.question!
   const type = questionTypeById.get(question.type)!
@@ -339,7 +342,7 @@ function QuestionCard({ test, announce }: { test: TestSession; announce: (messag
     if (last) { focusById('test-results-title'); return }
     window.scrollTo({ top: 0 })
     announce(`Question ${position + 1} of ${active.questions.length}`)
-    focusStep()
+    focusQuestion()
   }
   const checkLabel = blank ? 'Show answer' : 'Check answer'
   const solution = <type.Solution item={item} question={question} answerKey={answerKey} />
@@ -418,7 +421,7 @@ function ResultRow({ question, record, difficult, onToggle }: { question: TestQu
   </li>
 }
 
-function TestResults({ test, section, progress, poolLabel, onSetStatus, announce, usable, onStart, onRetake }: Props & { usable: VocabularyItem[]; onStart: () => void; onRetake: () => void }) {
+function TestResults({ test, progress, poolInfo, poolLabel, onSetStatus, announce, usable, onStart, onRetake }: Props & { usable: VocabularyItem[]; onStart: () => void; onRetake: () => void }) {
   // The pressed button disappears once used, so focus returns to the results heading.
   function setMarks(ids: string[], status: 'difficult' | 'known', message: string) {
     flushSync(() => onSetStatus(ids, status))
@@ -436,15 +439,18 @@ function TestResults({ test, section, progress, poolLabel, onSetStatus, announce
   const toDifficult = fromDifficult ? [] : ids('incorrect').filter(id => progress[id] !== 'difficult')
   const toKnown = fromDifficult ? ids('correct').filter(id => progress[id] === 'difficult') : []
   const total = `${formatPoints(score.earned)} of ${score.possible} ${score.possible === 1 ? 'point' : 'points'}`
-  useEffect(() => { announce(`Test ${endedEarly ? 'ended' : 'complete'}. ${total}, ${score.percent}%.`) }, [])
-  // The words this test asked, and the ones a new test would ask: they differ once the learner switches sections.
-  const tested = sectionOf(active.pool.category) ?? section
-  const plural = (count: number) => countOf(tested, count)
-  const retakeCount = new Set(active.questions.map(question => question.itemId)).size
+  // A review asks the cards due today: it ends with Review again, not with a retake.
+  const review = !!active.pool.review
+  const kind = review ? 'Review' : 'Test'
+  useEffect(() => { announce(`${kind} ${endedEarly ? 'ended' : 'complete'}. ${total}, ${score.percent}%.`) }, [])
+  // What this test asked, and what a new test would ask: they differ once the learner changes the selection.
+  const asked = [...new Set(active.questions.map(question => question.itemId))].map(id => cardById.get(id)!)
+  const [one, many] = nounsFor(asked)
+  const plural = (count: number) => `${count} ${count === 1 ? one : many}`
 
   return <section className="study-card test-card" aria-labelledby="test-results-title" data-testid="test-results">
     <div className="card-kicker flex items-center justify-between gap-3"><span>RESULTS</span><span className="tiny-dot" /></div>
-    <h2 id="test-results-title" tabIndex={-1} className="test-title">{endedEarly ? 'Test ended' : 'Test complete'}</h2>
+    <h2 id="test-results-title" tabIndex={-1} className="test-title">{kind} {endedEarly ? 'ended' : 'complete'}</h2>
     <p className="test-score" data-testid="test-score"><strong>{formatPoints(score.earned)}</strong> / {score.possible} {score.possible === 1 ? 'point' : 'points'}<span className="test-percent">{score.percent}%</span></p>
     <ul className="test-breakdown" aria-label="Breakdown" data-testid="test-breakdown">
       <li className="correct"><strong>{score.correct}</strong> correct</li>
@@ -453,14 +459,17 @@ function TestResults({ test, section, progress, poolLabel, onSetStatus, announce
       {score.pending > 0 && <li><strong>{score.pending}</strong> not graded</li>}
     </ul>
     {endedEarly && <p className="test-lead">You answered {answered.length} of {active.questions.length} questions.</p>}
-    <div className="test-actions">
+    {review ? <div className="test-actions">
+      <button className="primary-button" onClick={() => { flushSync(() => test.reset()); focusById('due-title') }}>Back to Review<ArrowRight size={17} /></button>
+    </div> : <div className="test-actions">
       <button className="primary-button" onClick={onRetake}><RotateCcw size={17} />Retake test</button>
       <button className="secondary-button" disabled={!usable.length} onClick={onStart}>New test<ArrowRight size={17} /></button>
       <button className="test-link" onClick={() => { flushSync(() => test.reset()); focusById('test-setup-title') }}>Change settings</button>
-    </div>
-    <p className="test-next-pool">Retake asks the same {plural(retakeCount)} again in a new order. {usable.length ? `New tests use ${poolLabel} · ${countOf(section, usable.length)}.` : `No ${sectionInfo[section].noun[1]} in ${poolLabel} for a new test. Pick another collection or category.`}</p>
+    </div>}
+    <p className="test-next-pool">{review ? 'Each card comes back when it’s due: tomorrow if you missed it, a little later each time you knew it.'
+      : <>Retake asks the same {plural(asked.length)} again in a new order. {usable.length ? `New tests use ${poolLabel} · ${countOf(poolInfo.category, usable.length)}.` : `Nothing in ${poolLabel} for a new test. Pick another collection or category.`}</>}</p>
     {toDifficult.length > 0 && <button className="test-bulk" onClick={() => setMarks(toDifficult, 'difficult', `Added ${plural(toDifficult.length)} to Difficult`)}>
-      <Star size={16} />Add {toDifficult.length} incorrect {sectionInfo[tested].noun[toDifficult.length === 1 ? 0 : 1]} to Difficult</button>}
+      <Star size={16} />Add {toDifficult.length} incorrect {toDifficult.length === 1 ? one : many} to Difficult</button>}
     {toKnown.length > 0 && <button className="test-bulk known" onClick={() => setMarks(toKnown, 'known', `Marked ${plural(toKnown.length)} as known`)}>
       <Check size={16} />Mark {toKnown.length} correct without hints as Known</button>}
     <ul className="test-review-list" aria-label="Your answers">

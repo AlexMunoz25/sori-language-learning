@@ -7,6 +7,9 @@
     "dev": "vite --host 0.0.0.0",
     "data:generate": "node --import tsx scripts/generate-vocabulary.ts",
     "data:validate": "node --import tsx scripts/validate-vocabulary.ts",
+    "anchors:packets": "node --import tsx scripts/anchors/packets.ts",
+    "anchors:apply": "node --import tsx scripts/anchors/apply.ts",
+    "anchors:culture": "node --import tsx scripts/anchors/culture.ts",
     "build": "npm run data:validate && tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "test": "playwright test"

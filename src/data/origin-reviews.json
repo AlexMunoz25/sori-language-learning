@@ -4258,5 +4258,392 @@
     ],
     "componentIds": [],
     "note": "From Middle Korean -이나: the copula 이- (to be) + the ending -나."
+  },
+  "ending:-이에요/예요": {
+    "lemma": "-이다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-이다",
+      "wikt:-에요",
+      "wikt:-야",
+      "wikt:-요"
+    ],
+    "componentIds": [
+      "stem:이다",
+      "pattern:-요"
+    ],
+    "note": "The copula 이다 (to be) + -에요, the polite ending -어요 in the shape it takes after 이다. After a vowel, 이 + 에요 shrinks to 예요."
+  },
+  "ending:아니에요": {
+    "lemma": "아니다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:아니다",
+      "wikt:아니",
+      "wikt:-에요"
+    ],
+    "componentIds": [
+      "stem:아니다",
+      "stem:아니",
+      "stem:이다",
+      "pattern:-요"
+    ],
+    "note": "아니다 (to not be), first written in 1447: 아니 (that which is not) + 이다 (to be). + -에요, the polite ending used after 이다 and 아니다."
+  },
+  "ending:-고 싶어요": {
+    "lemma": "-고 싶다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-고",
+      "wikt:싶다"
+    ],
+    "componentIds": [
+      "stem:싶다",
+      "pattern:-요"
+    ],
+    "note": "-고, shortened from Middle Korean -고져 (intent), not the -고 of 'and', + 싶다 (to want; it first meant 'to seem about to do') + -어요."
+  },
+  "ending:-(으)ㄹ 수 있어요/없어요": {
+    "lemma": "-을 수 있다",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:-을 수 있다",
+      "wikt:-을 수 없다",
+      "wikt:수",
+      "wikt:-을",
+      "nikl:su-bound"
+    ],
+    "componentIds": [
+      "pattern:-ㄹ",
+      "hanja:手",
+      "stem:있다",
+      "stem:없다",
+      "pattern:-요"
+    ],
+    "note": "-을 (not yet done) + 수 (手, way, means) + 있어요 (there is) or 없어요 (there isn't): 'a way to do it exists', or not."
+  },
+  "ending:-아야/어야 해요": {
+    "lemma": "-어야 하다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-어야 하다",
+      "wikt:-어야",
+      "wikt:-아야",
+      "wikt:-어"
+    ],
+    "componentIds": [
+      "pattern:-어",
+      "stem:하다",
+      "pattern:-요"
+    ],
+    "note": "-어야 (only if: the 아/어 linking form + the particle -야) + 하다 (to do). Followed by 하다 (해요) or 되다 (돼요), the 'only if' becomes a must."
+  },
+  "ending:안": {
+    "lemma": "안",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:안",
+      "wikt:아니",
+      "wikt:않다",
+      "wikt:아니하다",
+      "nikl:an-adverb",
+      "nikl:ji-anta"
+    ],
+    "componentIds": [
+      "stem:아니",
+      "stem:하다",
+      "pattern:-지"
+    ],
+    "note": "A contraction of 아니 (not), the old word that also gave 아니다 (to not be). The long form uses 않다, short for 아니하다: 아니 (not) + 하다 (to do)."
+  },
+  "ending:못": {
+    "lemma": "못",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:못",
+      "wikt:못하다",
+      "wikt:-지"
+    ],
+    "componentIds": [
+      "stem:못",
+      "stem:하다",
+      "pattern:-지"
+    ],
+    "note": "From Middle Korean 몯 (cannot). The long form uses 못하다 = 못 (cannot; poorly) + 하다 (to do): 먹지 못해요. The same 못 is in 못생겼어요 (ugly)."
+  },
+  "ending:-(으)세요": {
+    "lemma": "-으세요",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-으세요",
+      "wikt:-으시-",
+      "wikt:-요"
+    ],
+    "componentIds": [
+      "pattern:-시-",
+      "pattern:-요"
+    ],
+    "note": "A contraction of -시어요: the respect marker -(으)시- + the polite ending -어요."
+  },
+  "ending:-지 마세요": {
+    "lemma": "-지 말다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-지",
+      "wikt:말다",
+      "wikt:-으세요"
+    ],
+    "componentIds": [
+      "pattern:-지",
+      "stem:말다",
+      "pattern:-시-",
+      "pattern:-요"
+    ],
+    "note": "-지 (the form a verb takes before a negating verb) + 말다 (to not do, to stop) + -(으)세요. 말 loses its ㄹ before 세요: 마세요."
+  },
+  "ending:-아/어 주세요": {
+    "lemma": "-어 주다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:주다",
+      "wikt:-어",
+      "wikt:-으세요"
+    ],
+    "componentIds": [
+      "pattern:-어",
+      "stem:주다",
+      "pattern:-시-",
+      "pattern:-요"
+    ],
+    "note": "The 아/어 linking form + 주다 (to give), which after another verb means doing it for someone, + -(으)세요 (please)."
+  },
+  "ending:-(으)ㄹ까요?": {
+    "lemma": "-을까",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-을까",
+      "wikt:-ㄹ까",
+      "wikt:-까",
+      "wikt:-요"
+    ],
+    "componentIds": [
+      "pattern:-ㄹ",
+      "pattern:-까",
+      "pattern:-요"
+    ],
+    "note": "From Middle Korean: -을 (not yet done) + -가, an old question particle that is today's 까 (also in -습니까), + -요 (polite)."
+  },
+  "tense:-아요/어요": {
+    "lemma": "-어요",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-어요",
+      "wikt:-아요",
+      "wikt:-어",
+      "wikt:-요"
+    ],
+    "componentIds": [
+      "pattern:-어",
+      "pattern:-요"
+    ],
+    "note": "-어 (the 아/어 linking form, which can also end a casual sentence) + -요, the particle that makes it polite. -아요 is its form after ㅏ or ㅗ."
+  },
+  "tense:-았/었어요": {
+    "lemma": "-었-",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-었-",
+      "wikt:-았-",
+      "wikt:있다"
+    ],
+    "componentIds": [
+      "pattern:-어",
+      "stem:있다"
+    ],
+    "note": "-어 (linking form) + 잇-, the old 있다 (to exist), contracted in the 1400s into -엇-, today's -었-: 'exists, having done it'. A 1600s shift made it simply 'did'."
+  },
+  "tense:-(으)ㄹ 거예요": {
+    "lemma": "-을 것이다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-을 것이다",
+      "wikt:-을",
+      "wikt:것"
+    ],
+    "componentIds": [
+      "pattern:-ㄹ",
+      "stem:것",
+      "stem:이다"
+    ],
+    "note": "-을 (the 'that will' form) + 것, in speech 거 (thing), + 이다 (to be): literally 'it is a thing that will…'. 거예요 is 거 + 이에요."
+  },
+  "tense:-고 있어요": {
+    "lemma": "-고 있다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-고",
+      "wikt:있다",
+      "nikl:go-itda"
+    ],
+    "componentIds": [
+      "pattern:-고",
+      "stem:있다"
+    ],
+    "note": "-고 (and), which also links a verb to helper verbs, + 있다 (to be, exist) as a helper: 'be in the process of'."
+  },
+  "speech:해요체": {
+    "lemma": "해요체",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:해요체",
+      "wikt:-요",
+      "nikl:haeyoche"
+    ],
+    "componentIds": [
+      "stem:하다",
+      "pattern:-요",
+      "hanja:體"
+    ],
+    "note": "해요 (the polite form of 하다, to do) + 체 (體, style). Its 요 comes from 이- (to be) + -오, an older polite ending."
+  },
+  "speech:합니다체": {
+    "lemma": "하십시오체",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:하십시오체",
+      "wikt:-습니다",
+      "wikt:-습니까",
+      "wikt:-ㅂ니다"
+    ],
+    "componentIds": [
+      "hanja:體"
+    ],
+    "note": "Dictionaries call it 하십시오체 (하십시오, please do, + 체 (體), style). Its -습니다 fuses four Middle Korean endings: respect, present, respect for the listener, and -다 (statement)."
+  },
+  "speech:반말": {
+    "lemma": "반말",
+    "kind": "mixed",
+    "sourceIds": [
+      "wikt:반말",
+      "nikl:banmal"
+    ],
+    "componentIds": [
+      "hanja:半",
+      "stem:말"
+    ],
+    "note": "Sino-Korean 반 (半, half) + native 말 (speech): 'half speech', which the Standard Korean Dictionary defines as speech that neither raises nor lowers the listener."
+  },
+  "honorific:-(으)시-": {
+    "lemma": "-으시-",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:-으시-",
+      "wikt:-시-"
+    ],
+    "componentIds": [
+      "pattern:-시-"
+    ],
+    "note": "Inherited from Middle Korean -(으)시-, itself from Old Korean *-si; where it came from before that is unknown."
+  },
+  "honorific:께서/께": {
+    "lemma": "께서",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:-께서",
+      "wikt:-께",
+      "nikl:kkeseo"
+    ],
+    "componentIds": [],
+    "omissionReason": "No sourced origin: Wiktionary only marks 께서 as native and asks for an etymology of 께; the NIKL dictionaries give none for either.",
+    "lookupUrls": [
+      "https://en.wiktionary.org/wiki/-%EA%BB%98%EC%84%9C#Korean",
+      "https://en.wiktionary.org/wiki/-%EA%BB%98#Korean",
+      "https://stdict.korean.go.kr/search/searchResult.do?pageSize=10&searchKeyword=%EA%BB%98%EC%84%9C",
+      "https://opendict.korean.go.kr/dictionary/view?sense_no=110058&viewType=confirm"
+    ]
+  },
+  "honorific:드리다": {
+    "lemma": "드리다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:드리다",
+      "wikt:들이다",
+      "nikl:deurida"
+    ],
+    "componentIds": [
+      "stem:들다:enter"
+    ],
+    "note": "Native: 들- (to enter) + -이- (to make, causative), the same build as 들이다 (to let in). Written 드리다 since the 1400s."
+  },
+  "honorific:드시다": {
+    "lemma": "드시다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:드시다",
+      "wikt:들다"
+    ],
+    "componentIds": [
+      "stem:들다:hold",
+      "pattern:-시-"
+    ],
+    "note": "들- (to hold, lift; also a polite 'to eat') + -시- (respect for the doer)."
+  },
+  "honorific:주무시다": {
+    "lemma": "주무시다",
+    "kind": "uncertain",
+    "sourceIds": [
+      "wikt:주무시다",
+      "nikl:jumusida"
+    ],
+    "componentIds": [],
+    "omissionReason": "Origin unsure: Wiktionary only says 'perhaps' from an old verb for 'to sink' + the honorific -시-, first written 즘으시다 in 1755; NIKL gives no origin.",
+    "lookupUrls": [
+      "https://en.wiktionary.org/wiki/%EC%A3%BC%EB%AC%B4%EC%8B%9C%EB%8B%A4#Korean",
+      "https://stdict.korean.go.kr/search/searchResult.do?pageSize=10&searchKeyword=%EC%A3%BC%EB%AC%B4%EC%8B%9C%EB%8B%A4",
+      "https://opendict.korean.go.kr/dictionary/view?sense_no=434634&viewType=confirm"
+    ]
+  },
+  "honorific:계시다": {
+    "lemma": "계시다",
+    "kind": "native",
+    "sourceIds": [
+      "wikt:계시다",
+      "nikl:gyesida"
+    ],
+    "componentIds": [
+      "pattern:-시-"
+    ],
+    "note": "Written 겨시다 in 1447; it became 계시다 in the 1500s. Its 시 is believed to be the honorific -시-."
+  },
+  "honorific:성함": {
+    "lemma": "성함",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:성함",
+      "wikt:姓",
+      "wikt:銜",
+      "wikt:명함",
+      "nikl:seongham"
+    ],
+    "componentIds": [
+      "hanja:姓",
+      "hanja:銜"
+    ],
+    "note": "Sino-Korean 姓銜: 姓 (성, family name) + 銜 (함, title or rank). The same 銜 is in 명함 (名銜, business card)."
+  },
+  "honorific:연세": {
+    "lemma": "연세",
+    "kind": "sino-korean",
+    "sourceIds": [
+      "wikt:연세",
+      "wikt:年",
+      "wikt:歲",
+      "nikl:yeonse"
+    ],
+    "componentIds": [
+      "hanja:年",
+      "hanja:歲"
+    ],
+    "note": "Sino-Korean 年歲: 年 (연, year) + 歲 (세, year of age)."
   }
 }

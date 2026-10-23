@@ -31,7 +31,7 @@ a { color: inherit; text-decoration: none; }
 h1 { font-size: 27px; font-weight: 500; letter-spacing: -.95px; line-height: 1.2; }
 .intro-leaf { display: grid; place-items: center; width: 45px; height: 45px; border: 1px solid #dce3d5; border-radius: 50%; color: #849774; transform: rotate(-15deg); }
 .app-header { flex-wrap: wrap; }
-.section-tabs { display: grid; grid-template-columns: repeat(3, auto); gap: 6px; }
+.section-tabs { display: grid; grid-template-columns: repeat(2, auto); gap: 6px; }
 .section-tabs button { position: relative; display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 0 12px; font-size: 13px; font-weight: 500; color: #87917f; white-space: nowrap; }
 .section-tabs button > svg { flex-shrink: 0; color: #a5ae9a; }
 .section-tabs button.selected { color: #2c4a3b; font-weight: 600; }
@@ -104,6 +104,7 @@ h1 { font-size: 27px; font-weight: 500; letter-spacing: -.95px; line-height: 1.2
 .compare-reveal .reveal-content { background: #f3f4ee; }
 .grammar-mark { padding: 0 2px; border-radius: 4px; background: #f4e7c3; color: #5c4a26; font-weight: 600; }
 .grammar-examples { display: grid; gap: 10px; }
+.word-example { display: flex; align-items: flex-start; gap: 6px; margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: #f4f6ef; }
 .grammar-examples > li { display: flex; align-items: flex-start; gap: 6px; }
 .grammar-example-text { flex: 1; min-width: 0; }
 .grammar-sentence { font-size: 16px; line-height: 1.55; color: #2f4d39; word-break: keep-all; overflow-wrap: anywhere; }
@@ -155,6 +156,24 @@ h1 { font-size: 27px; font-weight: 500; letter-spacing: -.95px; line-height: 1.2
 .anchor-write { display: grid; gap: 6px; margin-top: 10px; }
 .anchor-write textarea { width: 100%; min-height: 64px; resize: vertical; padding: 9px 11px; border: 1px solid #e5dabd; border-radius: 10px; background: #fff; color: #3e5641; font: inherit; font-size: 16px; line-height: 1.4; }
 .anchor-write button { justify-self: start; min-height: 40px; padding: 0 14px; border-radius: 10px; background: #8a7347; color: #fff; font-size: 11px; }
+/* The chooser's groups: how it sounds, how Korean builds it, where it's heard. */
+.anchor-group + .anchor-group { margin-top: 12px; }
+.anchor-group-title { font-size: 9px; color: #a3916b; letter-spacing: .6px; text-transform: uppercase; margin-top: 2px; }
+/* A cultural anchor: the line as heard, its English, and the moment one tap away. */
+.culture-line { display: grid; gap: 2px; }
+.culture-quote { font-size: 14px; color: #3e5641; line-height: 1.45; }
+.culture-quote .grammar-mark { padding: 0 2px; }
+.culture-translation { font-size: 11.5px; color: #6f7c68; font-style: italic; }
+.culture-title { font-size: 10.5px; color: #8a7a55; margin-top: 3px; }
+.culture-why { font-size: 11.5px; color: #5d6b57; margin-top: 2px; }
+.culture-player { margin-top: 8px; }
+.anchor-culture-option .culture-player { margin: 4px 0 2px 2px; }
+.culture-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; margin-bottom: 8px; border-radius: 10px; overflow: hidden; background: #1f2a20; }
+.culture-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.culture-actions { min-height: 32px; }
+.culture-play { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; padding: 0 11px; border-radius: 9px; background: #f4eddc; color: #7a6540; font-size: 11px; font-weight: 600; }
+.culture-play[aria-pressed="true"] { background: #ecdfbd; }
+.culture-link { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; padding: 0 4px; font-size: 11px; color: #8f7a52; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #dccfae; }
 .recall-check { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: #fbf8ef; color: #806a45; font-size: 12px; }
 .recall-check button { display: inline-flex; align-items: center; gap: 5px; min-height: 40px; margin-top: 7px; padding: 0 12px; border: 1px solid #ece2c8; border-radius: 10px; background: #fff; color: #6f5d3b; font-size: 11px; }
 .feedback-summary { font-size: 11px; color: #6f7f60; }
@@ -388,6 +407,9 @@ h1 { font-size: 27px; font-weight: 500; letter-spacing: -.95px; line-height: 1.2
 .sheet-footnote { font-size: 10px; color: #98a189; padding-top: 16px; text-align: center; }
 .empty-search { color: #8e987e; padding: 24px; text-align: center; font-size: 13px; }
 .guide-content { font-size: 13px; line-height: 1.7; color: #77846b; }
+.guide-welcome { margin: 14px 0 18px; padding-bottom: 18px; border-bottom: 1px solid #e1e6d9; }
+.guide-welcome p + p { margin-top: 8px; }
+.guide-welcome a { text-decoration: underline; text-underline-offset: 3px; }
 .guide-lead { margin: 8px 0 20px; }
 .guide-content ol { list-style: decimal; padding-left: 20px; }
 .guide-content li { padding: 0 0 14px 4px; }
@@ -396,13 +418,87 @@ h1 { font-size: 27px; font-weight: 500; letter-spacing: -.95px; line-height: 1.2
 .guide-note > svg { flex-shrink: 0; margin-top: 3px; color: #80946f; }
 .guide-note p { margin-top: 5px; }
 .guide-small { font-size: 11px; margin-top: 18px; }
+/* Learn, Library, Review */
+.form-target { font-size: 11px; font-weight: 550; letter-spacing: .4px; text-transform: uppercase; color: #8a7a55; text-align: center; }
+.header-actions { margin-right: -6px; }
+.review-panel { margin-bottom: 14px; }
+.review-panel .primary-button { margin-top: 16px; }
+.review-panel + .test-card { margin-bottom: 14px; }
+.review-caught-up { margin: 0 2px 8px; }
+.review-caught-up h2 { font-size: 15px; font-weight: 550; color: #3b5a42; }
+.review-caught-up h2:focus { outline: none; }
+.review-caught-up p { font-size: 12px; color: #7d897c; margin-top: 2px; line-height: 1.5; }
+.due-preview { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.due-preview > span { padding: 3px 9px; border-radius: 8px; background: #f1f4ec; color: #3d5a42; font-size: 13px; }
+.difficult-list { display: grid; gap: 8px; margin-top: 12px; }
+.difficult-list > li { display: flex; align-items: center; gap: 8px; }
+.difficult-count { flex: 1; font-size: 13px; font-weight: 550; color: #4f6a43; }
+.difficult-list .secondary-button { min-height: 44px; padding: 0 12px; }
+.test-pool-row { margin-top: 4px; }
+.test-pool-row .test-pool-line { margin-top: 10px; min-width: 0; }
+.test-pool-row .test-link { flex-shrink: 0; }
+.sheet-filter { margin-bottom: 4px; }
+.category-option.collection { font-weight: 550; color: #3b5a42; }
+.category-list .collection ~ .category { padding-left: 26px; }
+.anchor-evidence { font-size: 10.5px; color: #8a7a55; margin-top: 10px; }
+.anchor-more { display: block; margin-top: 4px; }
+.search-results { margin: 12px -5px 0; max-height: 52dvh; overflow-y: auto; overscroll-behavior: contain; }
+.search-result { width: 100%; display: grid; grid-template-columns: auto 1fr; grid-template-areas: "korean kind" "meaning meaning"; gap: 1px 10px; align-items: baseline; min-height: 52px; padding: 8px 13px; text-align: left; border-radius: 10px; }
+.search-result:active { background: #f0f3e9; }
+.search-korean { grid-area: korean; font-size: 17px; font-weight: 550; color: #2f4d39; }
+.search-kind { grid-area: kind; justify-self: end; font-size: 9px; color: #98a08d; text-transform: uppercase; letter-spacing: .6px; }
+.search-meaning { grid-area: meaning; font-size: 12px; color: #6f7f66; }
+.language-list { display: grid; gap: 6px; }
+.language-option { display: flex; align-items: center; gap: 12px; min-height: 50px; padding: 6px 12px; border: 1px solid #e5e8df; border-radius: 12px; font-size: 14px; color: #3e5641; }
+.language-option[aria-pressed="true"] { border-color: #c6d5b5; background: #f5f9ef; }
+.language-option[aria-pressed="true"] .test-type-check { background: #4f7a4a; border-color: #4f7a4a; }
+.language-option:disabled { opacity: 1; cursor: default; }
+.language-note { font-size: 10px; color: #8a9480; }
+.learn-intro { padding: 2px 2px 14px; }
+.learn-intro .test-title { margin-top: 0; }
+.learn-languages { display: flex; flex-wrap: wrap; align-items: center; gap: 0 4px; margin-top: 6px; font-size: 11px; color: #7d897c; }
+.learn-languages .test-link { min-height: 36px; font-size: 11px; }
+.unit-list { display: grid; gap: 12px; }
+.unit-card { background: #fff; border: 1px solid #e5e8df; border-radius: 18px; padding: 15px 18px 16px; }
+.unit-card.next { border-color: #c6d5b5; box-shadow: 0 4px 14px #29352208; }
+.unit-card.done { background: #fbfcf8; }
+.unit-number { display: flex; align-items: center; gap: 10px; font-size: 9px; letter-spacing: 1.2px; text-transform: uppercase; color: #8c978a; font-weight: 550; }
+.unit-done { display: inline-flex; align-items: center; gap: 3px; color: #4f7a4a; }
+.unit-next { color: #9a7a3c; }
+.unit-title { font-size: 18px; font-weight: 550; letter-spacing: -.3px; margin-top: 4px; color: #2c4a3b; }
+.unit-goal { font-size: 12px; color: #6f7f66; margin-top: 2px; line-height: 1.5; }
+.unit-cards { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+.unit-cards > span { padding: 2px 8px; border-radius: 7px; background: #f1f4ec; color: #3d5a42; font-size: 12.5px; }
+.unit-card .primary-button { margin-top: 12px; }
+.unit-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.unit-go { flex-shrink: 0; min-height: 44px; margin-top: 2px; }
+.unit-card:not(.next) { padding: 13px 16px 14px; }
+.learn-due { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; margin-bottom: 12px; padding: 10px 16px; border-radius: 14px; background: #eef3e6; color: #33593e; text-align: left; }
+.learn-due strong { display: block; font-size: 14px; font-weight: 600; }
+.learn-due span { font-size: 11px; color: #5f7454; }
+.lesson-bar { min-height: 52px; }
+.lesson-leave { display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0; }
+.lesson-title { flex: 1; min-width: 0; text-align: center; font-size: 14px; font-weight: 550; color: #3b5a42; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lesson-title:focus, .lesson-meaning:focus { outline: none; }
+.lesson-stage { min-height: 0; padding: 4px 0 0; }
+.lesson-reading { text-align: center; font-size: 13px; color: #6f7f66; margin-bottom: 10px; }
+.lesson-meaning { text-align: center; font-size: 17px; font-weight: 550; color: #2f4d39; margin: 14px 0 2px; }
+.lesson-section { border-top: 1px solid #edf0e9; padding: 12px 0 4px; margin-top: 12px; }
+.lesson-label { display: flex; align-items: center; gap: 7px; margin-bottom: 8px; font-size: 11px; font-weight: 550; letter-spacing: .2px; color: #7a8a6c; }
+.anchor-section { margin: 12px -12px 0; padding: 12px 12px 8px; border-top: 0; border-radius: 12px; background: #fbf8ef; }
+.anchor-section .lesson-label { color: #9a8150; }
+.lesson-preview { display: grid; gap: 4px; margin-top: 12px; }
+.lesson-preview > li { display: flex; align-items: baseline; gap: 10px; font-size: 12px; color: #6f7f66; }
+.lesson-preview [lang="ko"] { min-width: 72px; font-size: 15px; font-weight: 550; color: #2f4d39; }
+.lesson-next { width: 100%; justify-content: center; }
+.lesson-practice { margin: 2px 0 8px; text-align: center; font-size: 11px; color: #7d897c; }
 @keyframes reveal { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes pulse { 50% { opacity: .2; } }
 @keyframes spin { to { transform: rotate(360deg); } }
 @media (min-width: 700px) {
   /* Brand, section tabs, and help: the tabs sit centered over the card. */
   .app-header { display: grid; grid-template-columns: 1fr auto 1fr; }
-  .app-header > :last-child { justify-self: end; }
+  .app-header > :last-child { justify-self: end; grid-column: 3; }
   .study-main { padding-top: 18px; padding-bottom: 10px; }
   .app-header { margin-top: 6px; }
   .app-footer { border-top: 0; background: transparent; margin-top: 7px; padding-bottom: 16px; }
@@ -412,7 +508,7 @@ h1 { font-size: 27px; font-weight: 500; letter-spacing: -.95px; line-height: 1.2
 @media (max-width: 699px) {
   /* On phones the section tabs take the intro's place, as the header's second row; the heading stays for screen readers. */
   .page-intro { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-  .section-tabs { order: 3; flex-basis: calc(100% + 4px); grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin: 2px -2px 4px; border-bottom: 1px solid #e4e8dd; }
+  .section-tabs { order: 3; flex-basis: calc(100% + 4px); grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; margin: 2px -2px 4px; border-bottom: 1px solid #e4e8dd; }
   .section-tabs button { padding: 0 2px; }
   .app-header { min-height: 64px; padding: 8px 22px; }
   .study-main { padding: 6px 20px 0; }

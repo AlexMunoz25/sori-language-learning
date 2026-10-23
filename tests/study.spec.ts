@@ -1,8 +1,10 @@
 import { expect, test, type Page } from '@playwright/test'
 import { vocabulary, categories } from '../src/data/vocabulary'
+import { defaultLanguages, fitsLanguages } from '../src/hooks/useLanguages'
 
 async function seed(page: Page, mode = 'standard') {
   await page.addInitScript(({ mode }) => {
+    localStorage.setItem('sori.guideSeen.v1', 'true')
     if (!sessionStorage.getItem('test.seeded')) {
       sessionStorage.setItem('sori.session.v1', JSON.stringify({ category: 'Verbs', mode, filter: 'all', order: ['Verbs:배워요'], index: 0 }))
       sessionStorage.setItem('test.seeded', 'true')
@@ -46,7 +48,8 @@ test('Standard: each reveal is independent and resets on navigation', async ({ p
   await expect(page.getByTestId('meaning')).toHaveCount(0)
   await expect(page.getByTestId('pronunciation')).toHaveCount(0)
   await page.getByRole('button', { name: 'Show memory anchor' }).click()
-  await expect(page.getByTestId('anchor-option')).toHaveCount(3)
+  const learn = vocabulary.find(item => item.id === 'Verbs:배워요')!
+  await expect(page.getByTestId('anchor-option')).toHaveCount(learn.anchors.filter(anchor => fitsLanguages(anchor, defaultLanguages)).length)
   await page.getByTestId('anchor-option').first().click()
   await expect(page.getByTestId('mnemonic')).toHaveText(vocabulary.find(item => item.id === 'Verbs:배워요')!.anchors[0].text)
   await expect(page.getByTestId('meaning')).toHaveCount(0)
@@ -115,7 +118,15 @@ test('Difficult and known marks persist, stay exclusive, and update the practice
   await page.getByRole('button', { name: 'Mark as difficult' }).click()
   await page.reload()
   await expect(page.getByRole('button', { name: 'Mark as difficult' })).toHaveAttribute('aria-pressed', 'true')
-  await page.getByRole('navigation', { name: 'Word collection' }).getByRole('button', { name: 'Difficult 1' }).click()
+  // Difficult also brings the word back in today's review.
+  const today = await page.evaluate(() => { const now = new Date(); return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}` })
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('sori.review.v1')!).cards['Verbs:배워요'].due)).toBe(today)
+  await page.getByRole('button', { name: 'Choose category' }).click()
+  const sheet = page.getByRole('dialog', { name: 'Choose your words' })
+  await sheet.getByRole('group', { name: 'Collection' }).getByRole('button', { name: 'Difficult only' }).click()
+  await expect(sheet.getByRole('button', { name: /^Verbs 1/ })).toBeVisible()
+  await sheet.getByRole('button', { name: 'Close choose your words' }).click()
+  await expect(page.getByRole('button', { name: 'Choose category' })).toHaveText('Difficult · Verbs')
   await expect(page.getByTestId('deck-count')).toHaveText('1 / 1')
   await expect(page.getByTestId('korean-word')).toHaveText('배워요')
   await page.getByRole('button', { name: 'Mark as known' }).click()
@@ -178,6 +189,7 @@ test('Phone layout fits with usable touch targets and no horizontal overflow', a
 
 test('Malformed storage and unavailable speech do not break study', async ({ page }) => {
   await page.addInitScript(() => {
+    localStorage.setItem('sori.guideSeen.v1', 'true')
     localStorage.setItem('sori.progress.v1', '{broken')
     sessionStorage.setItem('sori.session.v1', JSON.stringify({ category: 99, order: [null, false, '__proto__'], index: -44 }))
     Object.defineProperty(window, 'speechSynthesis', { value: undefined })

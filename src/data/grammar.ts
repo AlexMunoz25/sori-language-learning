@@ -7,7 +7,7 @@ import type { GrammarSource } from '../types/vocabulary'
  */
 export const grammarSources: GrammarSource[] = [
   {
-    id: 'connector:그리고', section: 'connectors', category: 'Adding & choosing',
+    id: 'connector:그리고', section: 'grammar', collection: 'connectors', category: 'Adding & choosing',
     korean: '그리고', meaning: 'and (between sentences)',
     grammar: {
       speech: '그리고',
@@ -48,7 +48,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:-고', section: 'connectors', category: 'Adding & choosing',
+    id: 'connector:-고', section: 'grammar', collection: 'connectors', category: 'Adding & choosing',
     korean: '-고', meaning: 'and (inside one sentence)',
     grammar: {
       speech: '먹고',
@@ -92,7 +92,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:또', section: 'connectors', category: 'Adding & choosing',
+    id: 'connector:또', section: 'grammar', collection: 'connectors', category: 'Adding & choosing',
     korean: '또', meaning: 'also / again',
     grammar: {
       speech: '또',
@@ -135,7 +135,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:또는', section: 'connectors', category: 'Adding & choosing',
+    id: 'connector:또는', section: 'grammar', collection: 'connectors', category: 'Adding & choosing',
     korean: '또는', meaning: 'or (between options)',
     grammar: {
       speech: '또는',
@@ -176,7 +176,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:아니면', section: 'connectors', category: 'Adding & choosing',
+    id: 'connector:아니면', section: 'grammar', collection: 'connectors', category: 'Adding & choosing',
     korean: '아니면', meaning: 'or (between questions) / if not',
     grammar: {
       speech: '아니면',
@@ -217,7 +217,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:-거나', section: 'connectors', category: 'Adding & choosing',
+    id: 'connector:-거나', section: 'grammar', collection: 'connectors', category: 'Adding & choosing',
     korean: '-거나', meaning: 'or (after a verb or adjective)',
     grammar: {
       speech: '먹거나',
@@ -258,7 +258,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:하지만', section: 'connectors', category: 'Contrast',
+    id: 'connector:하지만', section: 'grammar', collection: 'connectors', category: 'Contrast',
     korean: '하지만', meaning: 'but / however',
     grammar: {
       speech: '하지만',
@@ -298,7 +298,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:그렇지만', section: 'connectors', category: 'Contrast',
+    id: 'connector:그렇지만', section: 'grammar', collection: 'connectors', category: 'Contrast',
     korean: '그렇지만', meaning: 'but / nevertheless',
     grammar: {
       speech: '그렇지만',
@@ -339,7 +339,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:그런데', section: 'connectors', category: 'Contrast',
+    id: 'connector:그런데', section: 'grammar', collection: 'connectors', category: 'Contrast',
     korean: '그런데', meaning: 'but / by the way',
     grammar: {
       speech: '그런데',
@@ -381,7 +381,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:-지만', section: 'connectors', category: 'Contrast',
+    id: 'connector:-지만', section: 'grammar', collection: 'connectors', category: 'Contrast',
     korean: '-지만', meaning: 'but / although',
     grammar: {
       speech: '비싸지만',
@@ -423,7 +423,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:-는데', section: 'connectors', category: 'Contrast',
+    id: 'connector:-는데', section: 'grammar', collection: 'connectors', category: 'Contrast',
     korean: '-는데', meaning: 'but / and (background)',
     grammar: {
       speech: '가는데, 좋은데, 비싼데',
@@ -467,7 +467,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:그래도', section: 'connectors', category: 'Contrast',
+    id: 'connector:그래도', section: 'grammar', collection: 'connectors', category: 'Contrast',
     korean: '그래도', meaning: 'still / even so',
     grammar: {
       speech: '그래도',
@@ -507,7 +507,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:-아도/어도', section: 'connectors', category: 'Contrast',
+    id: 'connector:-아도/어도', section: 'grammar', collection: 'connectors', category: 'Contrast',
     korean: '-아도/어도', meaning: 'even if / even though',
     grammar: {
       speech: '좋아도, 먹어도',
@@ -551,7 +551,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:그래서', section: 'connectors', category: 'Reason & purpose',
+    id: 'connector:그래서', section: 'grammar', collection: 'connectors', category: 'Reason & purpose',
     korean: '그래서', meaning: 'so (that\'s why) / therefore',
     grammar: {
       speech: '그래서',
@@ -592,7 +592,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:그러니까', section: 'connectors', category: 'Reason & purpose',
+    id: 'connector:그러니까', section: 'grammar', collection: 'connectors', category: 'Reason & purpose',
     korean: '그러니까', meaning: 'so (that\'s why) / I mean',
     grammar: {
       speech: '그러니까',
@@ -633,7 +633,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:왜냐하면', section: 'connectors', category: 'Reason & purpose',
+    id: 'connector:왜냐하면', section: 'grammar', collection: 'connectors', category: 'Reason & purpose',
     korean: '왜냐하면', meaning: 'because (the reason follows)',
     grammar: {
       speech: '왜냐하면',
@@ -675,7 +675,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:-아서/어서', section: 'connectors', category: 'Reason & purpose',
+    id: 'connector:-아서/어서', section: 'grammar', collection: 'connectors', category: 'Reason & purpose',
     korean: '-아서/어서', meaning: 'so / because / and then',
     grammar: {
       speech: '좋아서, 먹어서',
@@ -719,7 +719,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:-(으)니까', section: 'connectors', category: 'Reason & purpose',
+    id: 'connector:-(으)니까', section: 'grammar', collection: 'connectors', category: 'Reason & purpose',
     korean: '-(으)니까', meaning: 'because / since',
     grammar: {
       speech: '가니까, 먹으니까',
@@ -761,7 +761,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:-(으)러', section: 'connectors', category: 'Reason & purpose',
+    id: 'connector:-(으)러', section: 'grammar', collection: 'connectors', category: 'Reason & purpose',
     korean: '-(으)러', meaning: 'in order to (before verbs of motion)',
     grammar: {
       speech: '사러, 먹으러',
@@ -803,7 +803,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:그러면', section: 'connectors', category: 'Condition & sequence',
+    id: 'connector:그러면', section: 'grammar', collection: 'connectors', category: 'Condition & sequence',
     korean: '그러면', meaning: 'then / if so (in that case)',
     grammar: {
       speech: '그러면',
@@ -844,7 +844,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:-(으)면', section: 'connectors', category: 'Condition & sequence',
+    id: 'connector:-(으)면', section: 'grammar', collection: 'connectors', category: 'Condition & sequence',
     korean: '-(으)면', meaning: 'if / when',
     grammar: {
       speech: '가면, 먹으면',
@@ -887,7 +887,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:그다음에', section: 'connectors', category: 'Condition & sequence',
+    id: 'connector:그다음에', section: 'grammar', collection: 'connectors', category: 'Condition & sequence',
     korean: '그다음에', meaning: 'then / after that / next',
     grammar: {
       speech: '그다음에',
@@ -927,7 +927,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'connector:-고 나서', section: 'connectors', category: 'Condition & sequence',
+    id: 'connector:-고 나서', section: 'grammar', collection: 'connectors', category: 'Condition & sequence',
     korean: '-고 나서', meaning: 'after (finishing)',
     grammar: {
       speech: '먹고 나서',
@@ -968,7 +968,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:은/는', section: 'particles', category: 'Sentence roles',
+    id: 'particle:은/는', section: 'grammar', collection: 'particles', category: 'Sentence roles',
     korean: '은/는', meaning: 'topic marker / as for',
     grammar: {
       speech: '은, 는',
@@ -1013,7 +1013,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:이/가', section: 'particles', category: 'Sentence roles',
+    id: 'particle:이/가', section: 'grammar', collection: 'particles', category: 'Sentence roles',
     korean: '이/가', meaning: 'subject marker',
     grammar: {
       speech: '이, 가',
@@ -1058,7 +1058,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:을/를', section: 'particles', category: 'Sentence roles',
+    id: 'particle:을/를', section: 'grammar', collection: 'particles', category: 'Sentence roles',
     korean: '을/를', meaning: 'object marker',
     grammar: {
       speech: '을, 를',
@@ -1101,7 +1101,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:의', section: 'particles', category: 'Sentence roles',
+    id: 'particle:의', section: 'grammar', collection: 'particles', category: 'Sentence roles',
     korean: '의', meaning: '\'s / of (possessive)',
     grammar: {
       speech: '의',
@@ -1143,7 +1143,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:에', section: 'particles', category: 'Place & time',
+    id: 'particle:에', section: 'grammar', collection: 'particles', category: 'Place & time',
     korean: '에', meaning: 'at / in / to (place, time)',
     grammar: {
       speech: '에',
@@ -1185,7 +1185,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:에서', section: 'particles', category: 'Place & time',
+    id: 'particle:에서', section: 'grammar', collection: 'particles', category: 'Place & time',
     korean: '에서', meaning: 'at / in (place of action) / from',
     grammar: {
       speech: '에서',
@@ -1227,7 +1227,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:부터', section: 'particles', category: 'Place & time',
+    id: 'particle:부터', section: 'grammar', collection: 'particles', category: 'Place & time',
     korean: '부터', meaning: 'from (a time) / starting with',
     grammar: {
       speech: '부터',
@@ -1268,7 +1268,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:까지', section: 'particles', category: 'Place & time',
+    id: 'particle:까지', section: 'grammar', collection: 'particles', category: 'Place & time',
     korean: '까지', meaning: 'until / up to / by (a deadline)',
     grammar: {
       speech: '까지',
@@ -1309,7 +1309,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:(으)로', section: 'particles', category: 'Place & time',
+    id: 'particle:(으)로', section: 'grammar', collection: 'particles', category: 'Place & time',
     korean: '(으)로', meaning: 'toward / by (means of) / with (a tool)',
     grammar: {
       speech: '으로, 로',
@@ -1352,7 +1352,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:에게/한테', section: 'particles', category: 'People & together',
+    id: 'particle:에게/한테', section: 'grammar', collection: 'particles', category: 'People & together',
     korean: '에게/한테', meaning: 'to (a person or animal)',
     grammar: {
       speech: '에게, 한테',
@@ -1395,7 +1395,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:에게서/한테서', section: 'particles', category: 'People & together',
+    id: 'particle:에게서/한테서', section: 'grammar', collection: 'particles', category: 'People & together',
     korean: '에게서/한테서', meaning: 'from (a person or animal)',
     grammar: {
       speech: '에게서, 한테서',
@@ -1436,7 +1436,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:와/과', section: 'particles', category: 'People & together',
+    id: 'particle:와/과', section: 'grammar', collection: 'particles', category: 'People & together',
     korean: '와/과', meaning: 'and / with (written, formal)',
     grammar: {
       speech: '와, 과',
@@ -1478,7 +1478,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:하고', section: 'particles', category: 'People & together',
+    id: 'particle:하고', section: 'grammar', collection: 'particles', category: 'People & together',
     korean: '하고', meaning: 'and / with (spoken)',
     grammar: {
       speech: '하고',
@@ -1519,7 +1519,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:(이)랑', section: 'particles', category: 'People & together',
+    id: 'particle:(이)랑', section: 'grammar', collection: 'particles', category: 'People & together',
     korean: '(이)랑', meaning: 'and / with (casual)',
     grammar: {
       speech: '이랑, 랑',
@@ -1561,7 +1561,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:도', section: 'particles', category: 'Focus & comparison',
+    id: 'particle:도', section: 'grammar', collection: 'particles', category: 'Focus & comparison',
     korean: '도', meaning: 'also / too / even',
     grammar: {
       speech: '도',
@@ -1603,7 +1603,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:만', section: 'particles', category: 'Focus & comparison',
+    id: 'particle:만', section: 'grammar', collection: 'particles', category: 'Focus & comparison',
     korean: '만', meaning: 'only / just',
     grammar: {
       speech: '만',
@@ -1646,7 +1646,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:밖에', section: 'particles', category: 'Focus & comparison',
+    id: 'particle:밖에', section: 'grammar', collection: 'particles', category: 'Focus & comparison',
     korean: '밖에', meaning: 'only (with a negative) / nothing but',
     grammar: {
       speech: '밖에',
@@ -1687,7 +1687,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:보다', section: 'particles', category: 'Focus & comparison',
+    id: 'particle:보다', section: 'grammar', collection: 'particles', category: 'Focus & comparison',
     korean: '보다', meaning: 'than (comparison)',
     grammar: {
       speech: '보다',
@@ -1728,7 +1728,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:처럼', section: 'particles', category: 'Focus & comparison',
+    id: 'particle:처럼', section: 'grammar', collection: 'particles', category: 'Focus & comparison',
     korean: '처럼', meaning: 'like / as (similar to)',
     grammar: {
       speech: '처럼',
@@ -1768,7 +1768,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:마다', section: 'particles', category: 'Focus & comparison',
+    id: 'particle:마다', section: 'grammar', collection: 'particles', category: 'Focus & comparison',
     korean: '마다', meaning: 'every / each',
     grammar: {
       speech: '마다',
@@ -1809,7 +1809,7 @@ export const grammarSources: GrammarSource[] = [
     },
   },
   {
-    id: 'particle:(이)나', section: 'particles', category: 'Focus & comparison',
+    id: 'particle:(이)나', section: 'grammar', collection: 'particles', category: 'Focus & comparison',
     korean: '(이)나', meaning: 'or / or something',
     grammar: {
       speech: '이나, 나',
@@ -1846,6 +1846,1129 @@ export const grammarSources: GrammarSource[] = [
         { with: ['particle:(이)랑'], title: '(이)나 vs (이)랑', points: [
           '커피나 차 = coffee OR tea (one). 커피랑 차 = coffee AND tea (both).',
           'Same attachment: 빵이나 / 빵이랑 after a consonant, 커피나 / 커피랑 after a vowel.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:-이에요/예요', section: 'grammar', collection: 'endings', category: 'To be',
+    korean: '-이에요/예요', meaning: 'to be (A is B)',
+    grammar: {
+      speech: '학생이에요, 의사예요',
+      forms: [
+        { form: '이에요', when: 'after a consonant: 학생이에요, 책이에요' },
+        { form: '예요', when: 'after a vowel: 의사예요, 커피예요 (이 + 에요 shrinks to 예요)' },
+        { form: '이었어요 / 였어요', when: 'past: 학생이었어요, 의사였어요' },
+      ],
+      examples: [
+        { korean: '저는 개발자[예요].', english: 'I\'m a developer.',
+          gap: ['이에요', '가 있어요', '였어요'],
+          why: '개발자 ends in a vowel, so 예요. 가 있어요 would mean \'there is a developer\', not what you are.' },
+        { korean: '제 동생은 학생[이에요].', english: 'My younger sibling is a student.',
+          gap: ['예요', '이 아니에요', '이 있어요'],
+          why: '학생 ends in a consonant, so 이에요. 예요 only follows a vowel, as in 의사예요.' },
+        { korean: '여기가 도서관[이에요]?', english: 'Is this the library?',
+          gap: ['이었어요', '에 있어요', '이 아니에요'],
+          why: 'Asking what this place is: 이에요? 도서관에 있어요? would ask whether it is inside the library.' },
+      ],
+      rules: [
+        'Sticks straight onto a noun, no space: 이에요 after a consonant (학생이에요), 예요 after a vowel (의사예요).',
+        'It says what something is (A is B). Where something is, or what you have, takes 있어요: 학교에 있어요, 돈이 있어요.',
+        'The same form asks a question with a rising tone: 학생이에요? The negative is 아니에요: 학생이 아니에요.',
+        'In texts you\'ll often see 의사에요, but the standard spelling after a vowel is 예요.',
+      ],
+      tricks: [
+        'After a vowel, 이 + 에요 shrinks to 예요: 커피 + 이에요 → 커피예요.',
+        'You already know it: 뭐예요? (what is it?) and 얼마예요? (how much is it?).',
+      ],
+      comparisons: [
+        { with: ['ending:아니에요'], title: '-이에요/예요 vs 아니에요', points: [
+          '학생이에요 = I\'m a student. 학생이 아니에요 = I\'m not a student.',
+          '이에요/예요 sticks to the noun; 아니에요 is its own word, after 이/가 and a space.',
+        ] },
+        { with: ['tense:-아요/어요'], title: '-이에요/예요 vs -아요/어요', points: [
+          'Nouns end in 이에요/예요: 학생이에요, 커피예요.',
+          'Verbs and adjectives end in -아요/어요: 먹어요, 좋아요. Both are the same polite 해요 style.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:아니에요', section: 'grammar', collection: 'endings', category: 'To be',
+    korean: '아니에요', meaning: 'is not / am not (A is not B)',
+    grammar: {
+      speech: '아니에요',
+      forms: [
+        { form: '이 아니에요', when: 'after a consonant: 학생이 아니에요 (이 marks the noun)' },
+        { form: '가 아니에요', when: 'after a vowel: 의사가 아니에요, 커피가 아니에요' },
+        { form: '아니었어요', when: 'past: 학생이 아니었어요 (wasn\'t a student)' },
+        { form: '아니에요', when: 'alone, a polite \'no, not at all\': the usual reply to thanks' },
+      ],
+      examples: [
+        { korean: '저는 학생[이 아니에요]. 회사원이에요.', english: 'I\'m not a student. I\'m an office worker.',
+          gap: ['이에요', '이 없어요', '가 아니에요'],
+          why: 'Not a student: 이 아니에요. 학생이 없어요 would mean you have no students.' },
+        { korean: '이건 커피[가 아니에요]. 녹차예요.', english: 'This isn\'t coffee. It\'s green tea.',
+          gap: ['예요', '가 없어요', '이 아니에요'],
+          why: '커피 ends in a vowel, so 가 아니에요. 커피예요 would say it is coffee.' },
+        { korean: '도와줘서 고마워요. [아니에요].', english: 'Thanks for helping. Oh, not at all.',
+          gap: ['없어요', '안 돼요', '있어요'],
+          why: 'Alone, 아니에요 is the polite \'not at all\' reply to thanks. 없어요 means \'there isn\'t any\'.' },
+      ],
+      rules: [
+        'Mark the noun with 이/가, then write 아니에요 after a space: 학생이 아니에요, 의사가 아니에요.',
+        'It only denies \'A is B\'. For verbs and adjectives, use 안: 안 가요, 안 비싸요.',
+        'Not having something, or it not being there, is 없어요: 돈이 없어요. 아니에요 never means \'there isn\'t\'.',
+        'Alone, 아니에요 is a polite \'no, not at all\': the usual reply to thanks or to an apology.',
+      ],
+      tricks: [
+        'Yes/no pair: 학생이에요 ↔ 학생이 아니에요. Same 에요 at the end; just add 이/가 and 아니.',
+        '아니에요, 안 (not) and 아니 (no) all grow from one old word, 아니: the \'no\' family.',
+      ],
+      comparisons: [
+        { with: ['ending:-이에요/예요'], title: '아니에요 vs -이에요/예요', points: [
+          '학생이에요 = I\'m a student. 학생이 아니에요 = I\'m not a student.',
+          '이에요/예요 sticks to the noun; 아니에요 needs 이/가 on the noun, then a space.',
+        ] },
+        { with: ['ending:안'], title: '아니에요 vs 안', points: [
+          'Nouns: 학생이 아니에요 (not a student).',
+          'Verbs and adjectives: 안 먹어요, 안 바빠요. Never 안 학생이에요.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:-고 싶어요', section: 'grammar', collection: 'endings', category: 'Want, can, must',
+    korean: '-고 싶어요', meaning: 'want to (do)',
+    grammar: {
+      speech: '먹고 싶어요',
+      forms: [
+        { form: '-고 싶어요', when: 'after any verb stem, no change: 가고 싶어요, 먹고 싶어요, 공부하고 싶어요' },
+        { form: '-고 싶었어요', when: 'past, wanted to: 가고 싶었어요' },
+        { form: '-고 싶어 해요', when: 'for someone else\'s wish: 친구가 가고 싶어 해요' },
+      ],
+      examples: [
+        { korean: '커피를 마시[고 싶어요].', english: 'I want to drink coffee.',
+          gap: ['고 있어요', '고 싶었어요', '지 마세요'],
+          why: 'A wish right now: -고 싶어요. 마시고 있어요 would mean you\'re already drinking it.' },
+        { korean: '한국어를 배우[고 싶어요].', english: 'I want to learn Korean.',
+          gap: ['고 싶었어요', '세요', '지 않아요'],
+          why: 'You want it now: 싶어요. 배우고 싶었어요 is past: you wanted to.' },
+        { korean: '뭐 먹[고 싶어요]?', english: 'What do you want to eat?',
+          gap: ['고 있어요', '었어요', '을 거예요'],
+          why: 'Asking about a wish: 먹고 싶어요? 먹었어요? would ask what they already ate.' },
+      ],
+      rules: [
+        'Attaches to any verb stem with no change: 가고 싶어요, 먹고 싶어요, 공부하고 싶어요.',
+        'Only after verbs. To want a thing, add a verb: 새 가방을 갖고 싶어요 (I want to have a new bag).',
+        'It says what I want, or asks what you want. For someone else, use -고 싶어 해요: 동생이 자고 싶어 해요.',
+        'For the past, change only the end: 가고 싶었어요 (I wanted to go).',
+      ],
+      tricks: [
+        '보고 싶어요 = \'I want to see you\', which is how Koreans say \'I miss you\'.',
+        'Dictionary form minus 다, plus 고 싶어요: 먹다 → 먹고 싶어요, 공부하다 → 공부하고 싶어요.',
+      ],
+      comparisons: [
+        { with: ['tense:-고 있어요'], title: '-고 싶어요 vs -고 있어요', points: [
+          'Both start with 고. 먹고 싶어요 = I want to eat; 먹고 있어요 = I\'m eating now.',
+          'The word after 고 decides: 싶어요 wants it, 있어요 is doing it.',
+        ] },
+        { with: ['ending:-아야/어야 해요'], title: '-고 싶어요 vs -아야/어야 해요', points: [
+          '가고 싶어요: I want to go (a wish).',
+          '가야 해요: I have to go (a duty), whether I want to or not.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:-(으)ㄹ 수 있어요/없어요', section: 'grammar', collection: 'endings', category: 'Want, can, must',
+    korean: '-(으)ㄹ 수 있어요/없어요', meaning: 'can / can\'t',
+    grammar: {
+      speech: '갈 수 있어요, 먹을 수 없어요',
+      forms: [
+        { form: '-을 수 있어요', when: 'after a consonant: 먹을 수 있어요, 읽을 수 있어요' },
+        { form: '-ㄹ 수 있어요', when: 'after a vowel: 갈 수 있어요, 할 수 있어요; ㄹ-stems just add 수: 만들 수 있어요' },
+        { form: '-(으)ㄹ 수 없어요', when: 'can\'t: 있어요 becomes 없어요: 갈 수 없어요, 먹을 수 없어요' },
+        { form: '들을 수 있어요', when: 'ㄷ-irregular stems change first: 듣다 → 들을 수, 걷다 → 걸을 수' },
+      ],
+      examples: [
+        { korean: '저는 매운 음식을 먹[을 수 있어요].', english: 'I can eat spicy food.',
+          gap: ['을 수 없어요', '고 싶어요', '어야 해요'],
+          why: 'Able to: 먹을 수 있어요. 먹을 수 없어요 is the opposite: can\'t.' },
+        { korean: '오늘은 바빠서 [갈 수 없어요].', english: 'I\'m busy today, so I can\'t go.',
+          gap: ['갈 수 있어요', '가고 싶어요', '가야 해요'],
+          why: 'Busy, so unable: 갈 수 없어요. 가야 해요 would mean you have to go.' },
+        { korean: '한국어를 읽[을 수 있어요]?', english: 'Can you read Korean?',
+          gap: ['고 있어요', '었어요', '을 수 없어요'],
+          why: 'Asking about ability: 읽을 수 있어요? 읽고 있어요? asks if they\'re reading it right now.' },
+      ],
+      rules: [
+        '을 수 after a consonant (먹을 수), ㄹ 수 after a vowel (갈 수). ㄹ-stems just add 수: 만들 수 있어요.',
+        '있어요 = can, 없어요 = can\'t. 수 means \'a way\': literally \'there is / isn\'t a way to …\'.',
+        'It can also mean might: 늦을 수 있어요 (I might be late).',
+        '수 is said [쑤] after the ㄹ: 갈 수 → gal-ssu, 먹을 수 → meo-geul-ssu.',
+      ],
+      tricks: [
+        'Read it literally: 갈 수 있어요 = \'a way to go exists\', so: I can go.',
+        'Flip only the last word, like 맛있어요 ↔ 맛없어요: 갈 수 있어요 ↔ 갈 수 없어요.',
+      ],
+      comparisons: [
+        { with: ['ending:못'], title: '-(으)ㄹ 수 없어요 vs 못', points: [
+          'Both mean can\'t: 갈 수 없어요 = 못 가요 (I can\'t go).',
+          '못 is short and everyday; -(으)ㄹ 수 없어요 sounds more formal and also states rules: 여기서 먹을 수 없어요.',
+        ] },
+        { with: ['ending:-고 싶어요'], title: '-(으)ㄹ 수 있어요 vs -고 싶어요', points: [
+          '수영할 수 있어요: I can swim (ability).',
+          '수영하고 싶어요: I want to swim (a wish).',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:-아야/어야 해요', section: 'grammar', collection: 'endings', category: 'Want, can, must',
+    korean: '-아야/어야 해요', meaning: 'have to / must',
+    grammar: {
+      speech: '가야 해요, 먹어야 해요',
+      forms: [
+        { form: '-아야 해요', when: 'last vowel ㅏ or ㅗ: 받아야 해요; 가 + 아야 → 가야 해요, 오 + 아야 → 와야 해요' },
+        { form: '-어야 해요', when: 'any other vowel: 먹어야 해요, 씻어야 해요; 마시 + 어야 → 마셔야 해요' },
+        { form: '해야 해요', when: '하다 → 해야 해요: 공부해야 해요, 일해야 해요' },
+        { form: '-아야/어야 돼요', when: 'same meaning, very common in speech: 가야 돼요, 먹어야 돼요' },
+      ],
+      examples: [
+        { korean: '내일까지 돈을 받[아야 해요].', english: 'I have to get the money by tomorrow.',
+          gap: ['어야 해요', '고 싶어요', '을 수 없어요'],
+          why: '받 has ㅏ, so 아야. 받고 싶어요 is only a wish, not a must.' },
+        { korean: '손을 씻[어야 해요].', english: 'You have to wash your hands.',
+          gap: ['아야 해요', '지 마세요', '고 있어요'],
+          why: '씻 has ㅣ, so 어야. 씻고 있어요 only says it\'s happening now.' },
+        { korean: '내일 시험이 있어요. 오늘 공부[해야 해요].', english: 'I have a test tomorrow. I have to study today.',
+          gap: ['하고 싶어요', '할 수 없어요', '하지 마세요'],
+          why: 'The test makes studying a must: 공부해야 해요. 공부하고 싶어요 is only a wish.' },
+      ],
+      rules: [
+        'Same vowel rule as 해요 forms: ㅏ/ㅗ → 아야 (받아야, 가야), other vowels → 어야 (먹어야, 마셔야), 하다 → 해야.',
+        'Put the tense on 해요 only: 가야 했어요 (had to go). In speech, 돼요 often replaces 해요: 가야 돼요.',
+        '-아야/어야 alone means \'only if\': 먹어야 살아요 (you live only if you eat). With 해요 it becomes a must.',
+      ],
+      tricks: [
+        'Take the 해요 form, drop 요, add 야 해요: 먹어요 → 먹어야 해요, 가요 → 가야 해요, 해요 → 해야 해요.',
+        'Leaving a party? 이제 가야 해요 (I have to go now) is the polite way out.',
+      ],
+      comparisons: [
+        { with: ['ending:-고 싶어요'], title: '-아야/어야 해요 vs -고 싶어요', points: [
+          '가야 해요: I have to go (a duty).',
+          '가고 싶어요: I want to go (a wish).',
+        ] },
+        { with: ['tense:-아요/어요'], title: '-아야/어야 해요 vs -아요/어요', points: [
+          'Same vowel rule: 먹어요 → 먹어야 해요, 가요 → 가야 해요.',
+          '-아요/어요 says what happens; -아야/어야 해요 says it must happen.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:안', section: 'grammar', collection: 'endings', category: 'Saying no',
+    korean: '안', meaning: 'not / don\'t',
+    grammar: {
+      speech: '안 가요',
+      forms: [
+        { form: '안', when: 'right before a verb or adjective: 안 가요, 안 먹어요, 안 비싸요' },
+        { form: '안 해요', when: 'noun + 하다 verbs: 안 goes before 해요: 공부 안 해요, 운동 안 해요' },
+        { form: '-지 않아요', when: 'long form, after the stem: 가지 않아요, 먹지 않아요 (a little more formal)' },
+      ],
+      examples: [
+        { korean: '저는 커피를 [안] 마셔요.', english: 'I don\'t drink coffee.',
+          gap: ['못', '잘', '또'],
+          why: 'By choice, or just a fact: 안. 못 마셔요 would mean you can\'t drink it.' },
+        { korean: '오늘은 [안] 바빠요.', english: 'I\'m not busy today.',
+          gap: ['못', '많이', '또'],
+          why: 'Adjectives take 안: 안 바빠요. 못 doesn\'t go with adjectives like 바빠요.' },
+        { korean: '저는 고기를 먹[지 않아요].', english: 'I don\'t eat meat.',
+          gap: ['지 못해요', '고 싶어요', '어야 해요'],
+          why: 'The long form of 안: 먹지 않아요 = 안 먹어요. 먹지 못해요 would mean you can\'t eat it.' },
+      ],
+      rules: [
+        'Put 안 right before the verb or adjective: 안 가요, 안 먹어요, 안 비싸요.',
+        'If 하다 follows a noun (공부하다, 운동하다), 안 goes before 해요: 공부 안 해요, never 안 공부해요. 좋아해요 just takes 안 in front.',
+        'Long form: stem + 지 않아요 (가지 않아요). Same meaning, a little more formal.',
+        'For \'don\'t have\', say 없어요; for \'don\'t know\', say 몰라요 (never 안 알아요).',
+      ],
+      tricks: [
+        '안 = don\'t (a choice or a fact); 못 = can\'t. Ask: could I if I wanted to? If yes, it\'s 안.',
+        '안 is 아니 squeezed: the same old \'not\' that\'s in 아니에요 (is not).',
+      ],
+      comparisons: [
+        { with: ['ending:못'], title: '안 vs 못', points: [
+          '안 먹어요: I don\'t eat it (my choice, or just a fact).',
+          '못 먹어요: I can\'t eat it (I\'m unable, or something stops me).',
+          'Adjectives take 안: 안 바빠요. 못 바빠요 is wrong.',
+        ] },
+        { with: ['ending:아니에요'], title: '안 vs 아니에요', points: [
+          'Verbs and adjectives: 안 가요, 안 비싸요.',
+          'Nouns: 학생이 아니에요. Never 안 학생이에요.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:못', section: 'grammar', collection: 'endings', category: 'Saying no',
+    korean: '못', meaning: 'can\'t / unable to',
+    grammar: {
+      speech: '못 가요',
+      forms: [
+        { form: '못', when: 'right before the verb: 못 가요, 못 먹어요' },
+        { form: '못 해요', when: 'noun + 하다 verbs: 못 goes before 해요: 운동 못 해요, 수영 못 해요' },
+        { form: '-지 못해요', when: 'long form, after the stem: 가지 못해요, 먹지 못해요 (more formal)' },
+      ],
+      examples: [
+        { korean: '배가 아파서 [못] 먹어요.', english: 'My stomach hurts, so I can\'t eat.',
+          gap: ['안', '잘', '많이'],
+          why: 'Pain stops you: 못. 안 먹어요 would sound like you choose not to eat.' },
+        { korean: '저는 수영을 [못] 해요.', english: 'I can\'t swim.',
+          gap: ['안', '잘', '또'],
+          why: 'Unable: 못 해요. 안 해요 would only mean you don\'t swim.' },
+        { korean: '저는 매운 음식을 먹[지 못해요].', english: 'I can\'t eat spicy food.',
+          gap: ['지 않아요', '고 싶어요', '을 수 있어요'],
+          why: '-지 못해요 = 못 먹어요: can\'t. 먹지 않아요 would only say you don\'t eat it.' },
+      ],
+      rules: [
+        'Put 못 right before the verb: 못 가요, 못 먹어요. With noun + 하다 verbs: 운동 못 해요.',
+        '못 means can\'t: you\'d like to, but you\'re unable or something stops you. For a simple \'don\'t\', use 안.',
+        'Long form: stem + 지 못해요 (가지 못해요). Same meaning, more formal.',
+        '못 goes with verbs. Adjectives take 안: 안 바빠요, never 못 바빠요.',
+      ],
+      tricks: [
+        'The same 못 is in 못생겼어요 (ugly): \'turned out poorly\'.',
+        'Sound tip: 못 해요 is said 모태요 (mo-tae-yo), and 못 먹어요 is said 몬머거요 (mon-meo-geo-yo).',
+      ],
+      comparisons: [
+        { with: ['ending:안'], title: '못 vs 안', points: [
+          '못 먹어요: I can\'t eat it (I\'m unable, or something stops me).',
+          '안 먹어요: I don\'t eat it (my choice, or just a fact).',
+        ] },
+        { with: ['ending:-(으)ㄹ 수 있어요/없어요'], title: '못 vs -(으)ㄹ 수 없어요', points: [
+          'Same meaning: 못 가요 = 갈 수 없어요 (I can\'t go).',
+          '못 is short and everyday; -(으)ㄹ 수 없어요 is more formal and states rules: 여기서 먹을 수 없어요.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:-(으)세요', section: 'grammar', collection: 'endings', category: 'Asking and suggesting',
+    korean: '-(으)세요', meaning: 'please (do) / polite request',
+    grammar: {
+      speech: '가세요, 앉으세요',
+      forms: [
+        { form: '-으세요', when: 'after a consonant: 앉으세요, 읽으세요' },
+        { form: '-세요', when: 'after a vowel: 가세요, 오세요, 공부하세요' },
+        { form: '-세요 (ㄹ drops)', when: 'ㄹ-stems lose the ㄹ: 만들다 → 만드세요, 살다 → 사세요' },
+        { form: '드세요, 계세요', when: 'some verbs swap in a respectful verb: 먹다/마시다 → 드세요, 있다 → 계세요' },
+      ],
+      examples: [
+        { korean: '여기 앉[으세요].', english: 'Please sit here.',
+          gap: ['고 있어요', '지 마세요', '았어요'],
+          why: 'A polite \'please sit\': 앉으세요. 앉지 마세요 asks the opposite: please don\'t sit.' },
+        { korean: '내일 또 오[세요].', english: 'Please come again tomorrow.',
+          gap: ['고 싶어요', '지 않아요', '았어요'],
+          why: '오 ends in a vowel, so just 세요. 오고 싶어요 says what you want; it isn\'t a request.' },
+        { korean: '할머니, 이거 받[으세요].', english: 'Grandma, please take this. (respectful)',
+          gap: ['아요', '세요', '았어요'],
+          why: 'To an elder: 받으세요, with the respect marker. 받아요 is polite but plain.' },
+      ],
+      rules: [
+        '으세요 after a consonant (앉으세요), 세요 after a vowel (가세요). ㄹ-stems drop the ㄹ: 만들다 → 만드세요.',
+        'It\'s -(으)시- (respect) + -어요: a polite, respectful \'please do\'. Use it with strangers, staff, teachers, elders.',
+        'The same form also asks or states politely about the listener: 어디 가세요? (Where are you going?)',
+        'Some verbs use a special respectful verb: 드세요 (eat, drink), 계세요 (stay), 주무세요 (sleep).',
+      ],
+      tricks: [
+        'You already say it: 안녕하세요 is 안녕하 + 세요, literally \'have you been in peace?\'',
+        'Goodbye to someone who is leaving: 안녕히 가세요 (go in peace).',
+      ],
+      comparisons: [
+        { with: ['honorific:-(으)시-'], title: '-(으)세요 vs -(으)시-', points: [
+          '-(으)세요 is -(으)시- + -어요: the respect marker plus the polite ending.',
+          '-(으)시- also builds other forms, like the past: 가셨어요 (went, respectful). -(으)세요 is the present: 가세요.',
+        ] },
+        { with: ['ending:-아/어 주세요'], title: '-(으)세요 vs -아/어 주세요', points: [
+          '앉으세요: please sit (it\'s for the listener\'s own sake).',
+          '도와주세요: please help me. -아/어 주세요 asks a favor for the speaker.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:-지 마세요', section: 'grammar', collection: 'endings', category: 'Asking and suggesting',
+    korean: '-지 마세요', meaning: 'please don\'t',
+    grammar: {
+      speech: '가지 마세요',
+      forms: [
+        { form: '-지 마세요', when: 'after any verb stem, no change: 가지 마세요, 먹지 마세요, 걱정하지 마세요' },
+        { form: '-지 마요 / -지 말아요', when: 'softer and more casual: 가지 마요' },
+        { form: '-지 마십시오', when: 'formal, on signs and in announcements: 들어가지 마십시오' },
+      ],
+      examples: [
+        { korean: '수업 시간에 핸드폰을 보[지 마세요].', english: 'Please don\'t look at your phone in class.',
+          gap: ['세요', '고 싶어요', '지 않아요'],
+          why: 'A polite \'don\'t\': 보지 마세요. 보세요 would ask them to look at it.' },
+        { korean: '울[지 마세요].', english: 'Please don\'t cry.',
+          gap: ['으세요', '고 있어요', '지 않아요'],
+          why: 'Asking someone not to: 울지 마세요. 울지 않아요 only states that you don\'t cry.' },
+        { korean: '할머니, 아직 가[지 마세요].', english: 'Grandma, please don\'t go yet. (respectful)',
+          gap: ['지 마', '세요', '지 않아요'],
+          why: 'To an elder: 가지 마세요. 가지 마 is casual, for close friends only.' },
+      ],
+      rules: [
+        'Attaches to any verb stem with no change: 가지 마세요, 먹지 마세요, 걱정하지 마세요.',
+        'Only for asking someone not to do something. To say \'I don\'t\', use 안 or -지 않아요: 안 가요.',
+        '\'Don\'t go\' is never 안 가세요: that means \'(you) aren\'t going\'.',
+        '마세요 is 말다 (to not do, to stop) + -(으)세요; the ㄹ drops before 세요.',
+      ],
+      tricks: [
+        'Turn a request around: 가세요 (please go) → 가지 마세요 (please don\'t go).',
+        'Two you\'ll hear a lot: 걱정하지 마세요 (don\'t worry) and 울지 마세요 (don\'t cry).',
+      ],
+      comparisons: [
+        { with: ['ending:-(으)세요'], title: '-지 마세요 vs -(으)세요', points: [
+          '가세요 = please go; 가지 마세요 = please don\'t go.',
+          'Both are polite requests; 지 마 turns the request into a \'don\'t\'.',
+        ] },
+        { with: ['ending:안'], title: '-지 마세요 vs 안', points: [
+          '안 먹어요 / 먹지 않아요: I don\'t eat it (a statement).',
+          '먹지 마세요: please don\'t eat it (a request).',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:-아/어 주세요', section: 'grammar', collection: 'endings', category: 'Asking and suggesting',
+    korean: '-아/어 주세요', meaning: 'please (do it for me)',
+    grammar: {
+      speech: '도와주세요, 읽어 주세요',
+      forms: [
+        { form: '-아 주세요', when: 'last vowel ㅏ or ㅗ: 닫아 주세요; 사 + 아 → 사 주세요, 오 + 아 → 와 주세요' },
+        { form: '-어 주세요', when: 'any other vowel: 읽어 주세요; 기다리 + 어 → 기다려 주세요' },
+        { form: '해 주세요', when: '하다 → 해 주세요: 전화해 주세요, 말해 주세요' },
+      ],
+      examples: [
+        { korean: '창문 좀 닫[아 주세요].', english: 'Could you close the window, please?',
+          gap: ['어 주세요', '고 싶어요', '지 마세요'],
+          why: '닫 has ㅏ, so 아 주세요. 닫지 마세요 would ask them not to close it.' },
+        { korean: '이 책 좀 읽[어 주세요].', english: 'Please read this book to me.',
+          gap: ['고 싶어요', '었어요', '지 마세요'],
+          why: 'A favor for you: 읽어 주세요. 읽고 싶어요 says you want to read it yourself.' },
+        { korean: '천천히 말[해 주세요].', english: 'Please speak slowly for me.',
+          gap: ['하고 싶어요', '할 수 있어요', '했어요'],
+          why: 'Asking a favor: 말해 주세요. 말할 수 있어요 only says someone is able to.' },
+      ],
+      rules: [
+        'Vowel rule as in 해요 forms: ㅏ/ㅗ → 아 주세요 (닫아 주세요), other vowels → 어 주세요 (읽어 주세요), 하다 → 해 주세요.',
+        'It asks someone to do something for you (or for someone else): a favor. -(으)세요 alone just tells them to do it.',
+        'With a noun, 주세요 alone means \'please give me\': 커피 주세요, 물 주세요.',
+        'Add 좀 to sound softer: 좀 도와주세요 (please help me a bit).',
+      ],
+      tricks: [
+        'Take the 해요 form, drop 요, add 주세요: 읽어요 → 읽어 주세요, 해요 → 해 주세요.',
+        '주 is \'give\', as in 줘요: you ask them to give you the action.',
+      ],
+      comparisons: [
+        { with: ['ending:-(으)세요'], title: '-아/어 주세요 vs -(으)세요', points: [
+          '기다려 주세요: please wait (for me), asked as a favor.',
+          '기다리세요: please wait, more like an instruction.',
+        ] },
+        { with: ['Verbs:줘요'], title: '-아/어 주세요 vs 줘요', points: [
+          '줘요 alone is to give: 친구에게 책을 줘요.',
+          'After another verb, 주세요 means \'for me\': 읽어 주세요 (please read it for me).',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'ending:-(으)ㄹ까요?', section: 'grammar', collection: 'endings', category: 'Asking and suggesting',
+    korean: '-(으)ㄹ까요?', meaning: 'shall we? / shall I?',
+    grammar: {
+      speech: '갈까요, 먹을까요',
+      forms: [
+        { form: '-을까요?', when: 'after a consonant: 먹을까요?, 앉을까요?' },
+        { form: '-ㄹ까요?', when: 'after a vowel: 갈까요?, 볼까요?; ㄹ-stems just add 까요: 만들까요?' },
+        { form: '들을까요?', when: 'ㄷ-irregular stems: 듣다 → 들을까요?, 걷다 → 걸을까요?' },
+        { form: '-았/었을까요?', when: 'a guess about the past: 벌써 도착했을까요? (has he arrived yet, do you think?)' },
+      ],
+      examples: [
+        { korean: '같이 점심 먹[을까요]?', english: 'Shall we have lunch together?',
+          gap: ['었어요', '을 거예요', '고 있어요'],
+          why: 'A suggestion: 먹을까요? 먹었어요? would ask whether you already ate together.' },
+        { korean: '추워요? 제가 창문을 닫[을까요]?', english: 'Are you cold? Shall I close the window?',
+          gap: ['았어요', '아야 해요', '을 수 없어요'],
+          why: 'Offering to do it: 닫을까요? 닫아야 해요? would ask if you have to close it.' },
+        { korean: '주말에 같이 영화 [볼까요]?', english: 'Shall we watch a movie together this weekend?',
+          gap: ['봤어요', '볼 거예요', '보을까요'],
+          why: '보 ends in a vowel: 볼까요, with the ㄹ inside. 볼 거예요? asks about a plan, not a suggestion.' },
+      ],
+      rules: [
+        '을까요 after a consonant (먹을까요?), ㄹ까요 after a vowel (갈까요?). ㄹ-stems just add 까요: 만들까요?',
+        'With 우리 or 같이 it suggests: shall we? With 제가 it offers: shall I?',
+        'Say yes with 좋아요, or with the verb in -아요/어요: 네, 같이 먹어요 (yes, let\'s eat together).',
+        'It also asks what someone thinks will happen: 내일 비가 올까요? (Will it rain tomorrow, do you think?)',
+      ],
+      tricks: [
+        '까 marks a question: the same 까 ends formal questions like 합니까?',
+        'Waiters use it to offer: 포장해 드릴까요? (Shall I pack it to go?)',
+      ],
+      comparisons: [
+        { with: ['tense:-(으)ㄹ 거예요'], title: '-(으)ㄹ까요? vs -(으)ㄹ 거예요', points: [
+          '갈까요? asks the listener: shall we go?',
+          '갈 거예요 states a plan: I\'m going to go.',
+          'Same ㄹ in both: something not done yet.',
+        ] },
+        { with: ['ending:-(으)세요'], title: '-(으)ㄹ까요? vs -(으)세요', points: [
+          '앉을까요? asks: shall we sit? / shall I sit?',
+          '앉으세요 tells the listener politely: please sit.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'tense:-아요/어요', section: 'grammar', collection: 'tenses', category: 'Present and past',
+    korean: '-아요/어요', meaning: 'present tense (polite)',
+    grammar: {
+      speech: '좋아요, 먹어요',
+      forms: [
+        { form: '-아요', when: 'last vowel ㅏ or ㅗ: 좋아요, 작아요; 가 + 아요 → 가요, 오 + 아요 → 와요' },
+        { form: '-어요', when: 'any other vowel: 먹어요, 읽어요; 마시 + 어요 → 마셔요, 배우 + 어요 → 배워요' },
+        { form: '해요', when: 'every 하다 verb: 공부하다 → 공부해요, 피곤하다 → 피곤해요' },
+      ],
+      examples: [
+        { korean: '저는 아침에 빵을 먹[어요].', english: 'I eat bread in the morning.',
+          gap: ['아요', '었어요', '으세요'],
+          why: '먹 has ㅓ, so 어요; 아요 only follows ㅏ or ㅗ. 었어요 would mean ate, and 으세요 is never for yourself.' },
+        { korean: '이 가방은 정말 작[아요].', english: 'This bag is really small.',
+          gap: ['어요', '았어요', '을 거예요'],
+          why: '작 has ㅏ, so 아요. 어요 breaks the vowel rule; 았어요 would mean it was small.' },
+        { korean: '저는 매일 한국어를 공부[해요].', english: 'I study Korean every day.',
+          gap: ['하요', '했어요', '할 거예요'],
+          why: 'Every 하다 verb becomes 해요; 하요 doesn\'t exist. 했어요 would mean studied.' },
+      ],
+      rules: [
+        'Drop 다 from the dictionary form. Last vowel ㅏ or ㅗ → 아요 (좋다 → 좋아요); any other vowel → 어요 (먹다 → 먹어요).',
+        'Every 하다 verb becomes 해요: 공부하다 → 공부해요, 피곤하다 → 피곤해요.',
+        'A stem ending in a vowel merges with it: 가요, 와요, 마셔요, 배워요. A final 으 drops out: 쓰다 → 써요, 바쁘다 → 바빠요.',
+        'Irregular stems change first: 덥다 → 더워요 (ㅂ → 워), 듣다 → 들어요 (ㄷ → ㄹ), 빠르다 → 빨라요 (르 → ㄹ라).',
+      ],
+      tricks: [
+        'Same form for every person: 저는 가요, 친구도 가요, 우리도 가요. No \'I go / he goes\' changes.',
+        'Your deck already shows the rule: 좋아요, 작아요 (ㅏ, ㅗ) vs 먹어요, 맛있어요 (others) vs 공부해요 (하다).',
+        'It covers now, habits and near plans: 지금 가요, 매일 가요, 내일 가요.',
+      ],
+      comparisons: [
+        { with: ['speech:해요체'], title: '-아요/어요 vs 해요체', points: [
+          '-아요/어요 is how you build the present form: 먹 + 어요 → 먹어요.',
+          '해요체 is the polite everyday style that uses it, in every tense: 먹어요, 먹었어요, 먹을 거예요.',
+        ] },
+        { with: ['tense:-고 있어요'], title: '-아요/어요 vs -고 있어요', points: [
+          '공부해요: I study (a habit), or I\'m studying; context decides.',
+          '공부하고 있어요: I\'m studying right now, in the middle of it.',
+          'Adjectives only take the plain form: 바빠요, never 바쁘고 있어요.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'tense:-았/었어요', section: 'grammar', collection: 'tenses', category: 'Present and past',
+    korean: '-았/었어요', meaning: 'past tense',
+    grammar: {
+      speech: '좋았어요, 먹었어요',
+      forms: [
+        { form: '-았어요', when: 'last vowel ㅏ or ㅗ: 좋았어요, 작았어요; 가 → 갔어요, 오 → 왔어요' },
+        { form: '-었어요', when: 'any other vowel: 먹었어요, 읽었어요; 마시 → 마셨어요, 배우 → 배웠어요' },
+        { form: '했어요', when: 'every 하다 verb: 공부했어요, 피곤했어요' },
+        { form: '였어요 / 이었어요', when: 'after a noun (이다): 의사였어요, 학생이었어요' },
+      ],
+      examples: [
+        { korean: '어제 김치를 먹[었어요].', english: 'I ate kimchi yesterday.',
+          gap: ['았어요', '어요', '으셨어요'],
+          why: 'Yesterday, so the past: 었어요, because 먹 has ㅓ. 았어요 is only for ㅏ or ㅗ, and 으셨어요 is never for yourself.' },
+        { korean: '지난 주말에 부산에 [갔어요].', english: 'I went to Busan last weekend.',
+          gap: ['가았어요', '가요', '갈 거예요'],
+          why: '가 + 았어요 shrinks to 갔어요; 가았어요 is never written. 가요 would mean I go.' },
+        { korean: '어제는 날씨가 정말 [더웠어요].', english: 'The weather was really hot yesterday.',
+          gap: ['덥었어요', '더워요', '더울 거예요'],
+          why: '덥다 is irregular: ㅂ turns into 우, so 더웠어요. 더워요 would mean it is hot now.' },
+      ],
+      rules: [
+        'Same vowel rule as the present: ㅏ/ㅗ → 았어요 (좋았어요), other vowels → 었어요 (먹었어요), 하다 → 했어요 (공부했어요).',
+        'Vowel stems merge: 갔어요, 왔어요, 마셨어요, 배웠어요. Irregular stems change as in the present: 더웠어요, 들었어요, 빨랐어요.',
+        'The respect marker comes first: 가 + 시 + 었어요 → 가셨어요 (she went, said with respect).',
+        'It often means the result still holds: 부산에 갔어요 = went to Busan (and may still be there).',
+      ],
+      tricks: [
+        'Verbs and adjectives: take the present, drop 요, add ㅆ어요: 가요 → 갔어요, 먹어요 → 먹었어요, 해요 → 했어요, 더워요 → 더웠어요.',
+        'Listen for the double s in the middle: 갔어요 (ga-sseo-yo), 먹었어요 (meo-geo-sseo-yo). That ㅆ marks the past.',
+      ],
+      comparisons: [
+        { with: ['tense:-아요/어요'], title: '-았/었어요 vs -아요/어요', points: [
+          '먹어요 = I eat (now, usually). 먹었어요 = I ate.',
+          'Same vowel rule in both: 좋아요 → 좋았어요, 먹어요 → 먹었어요, 해요 → 했어요.',
+        ] },
+        { with: ['tense:-(으)ㄹ 거예요'], title: '-았/었어요 vs -(으)ㄹ 거예요', points: [
+          '어제 영화를 봤어요: I watched a movie yesterday (done).',
+          '내일 영화를 볼 거예요: I\'m going to watch a movie tomorrow (not yet).',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'tense:-(으)ㄹ 거예요', section: 'grammar', collection: 'tenses', category: 'Future and ongoing',
+    korean: '-(으)ㄹ 거예요', meaning: 'will / going to',
+    grammar: {
+      speech: '먹을 거예요, 갈 거예요',
+      forms: [
+        { form: '-을 거예요', when: 'after a consonant: 먹을 거예요, 읽을 거예요' },
+        { form: '-ㄹ 거예요', when: 'after a vowel: 갈 거예요, 공부할 거예요; stems in ㄹ just add 거예요: 만들 거예요' },
+        { form: '-(으)ㄹ 겁니다', when: 'formal style: 갈 겁니다, 먹을 겁니다' },
+        { form: '-(으)ㄹ 거야', when: 'casual (반말): 갈 거야, 먹을 거야' },
+      ],
+      examples: [
+        { korean: '주말에 이 책을 읽[을 거예요].', english: 'I\'m going to read this book on the weekend.',
+          gap: ['었어요', '고 있어요', '고 싶어요'],
+          why: 'A plan for the weekend: 을 거예요. 읽고 있어요 would mean you\'re reading it right now.' },
+        { korean: '다음 주에 부산에 [갈 거예요].', english: 'I\'m going to go to Busan next week.',
+          gap: ['가을 거예요', '갔어요', '가야 해요'],
+          why: '가 ends in a vowel, so ㄹ joins it: 갈 거예요 (가을 means autumn!). 갔어요 would mean you already went.' },
+        { korean: '내일은 날씨가 [추울 거예요].', english: 'It will be cold tomorrow.',
+          gap: ['춥을 거예요', '추웠어요', '춥지 않아요'],
+          why: 'A forecast: 을 거예요. 춥다 is irregular, so ㅂ becomes 우: 추울. 추웠어요 would mean it was cold.' },
+      ],
+      rules: [
+        '을 거예요 after a consonant (먹을 거예요), ㄹ 거예요 after a vowel (갈 거예요). Stems ending in ㄹ just add 거예요: 만들 거예요.',
+        'Two jobs: your plan (주말에 쉴 거예요, I\'m going to rest) and a confident guess (비가 올 거예요, it\'ll rain).',
+        'Spelled 거예요 (거 + 이에요). You\'ll often see 거에요, but that counts as a misspelling.',
+        'Irregular stems change first: 춥다 → 추울 거예요, 듣다 → 들을 거예요. For a fixed near plan the present also works: 내일 가요.',
+      ],
+      tricks: [
+        'Hear the ㄹ before 거: 갈 거예요, 먹을 거예요. That ㄹ is the \'not yet\' sound.',
+        'The same ㄹ is in 갈 수 있어요 (can go) and 갈까요? (shall we go?): all about what hasn\'t happened yet.',
+        'Literally \'it\'s a thing that will…\': 거 is the everyday form of 것 (thing).',
+      ],
+      comparisons: [
+        { with: ['tense:-아요/어요'], title: '-(으)ㄹ 거예요 vs the present for the future', points: [
+          'With a time word the present can already mean future: 내일 가요 (I\'m going tomorrow).',
+          '갈 거예요 stresses the plan, or a guess: 내일 비가 올 거예요 (it\'ll rain tomorrow).',
+        ] },
+        { with: ['ending:-(으)ㄹ까요?'], title: '-(으)ㄹ 거예요 vs -(으)ㄹ까요?', points: [
+          '주말에 영화 볼 거예요: I\'m going to watch a movie this weekend (your plan).',
+          '주말에 영화 볼까요?: Shall we watch a movie this weekend? (a suggestion).',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'tense:-고 있어요', section: 'grammar', collection: 'tenses', category: 'Future and ongoing',
+    korean: '-고 있어요', meaning: '-ing / in progress',
+    grammar: {
+      speech: '먹고 있어요',
+      forms: [
+        { form: '-고 있어요', when: 'after any action verb stem, no change: 먹고 있어요, 가고 있어요, 공부하고 있어요' },
+        { form: '-고 있었어요', when: 'past: was doing: 자고 있었어요' },
+        { form: '-고 계세요', when: 'for a respected person: 할머니가 주무시고 계세요' },
+      ],
+      examples: [
+        { korean: '지금 친구하고 밥을 먹[고 있어요].', english: 'I\'m having a meal with a friend right now.',
+          gap: ['었어요', '을 거예요', '고 싶어요'],
+          why: '지금 + an action going on: 고 있어요. 먹었어요 would mean the meal is already over.' },
+        { korean: '동생은 방에서 책을 읽[고 있어요].', english: 'My younger brother is reading a book in his room.',
+          gap: ['고 있었어요', '지 않아요', '으세요'],
+          why: 'Happening now: 고 있어요. 고 있었어요 means was reading; 으세요 is for respected people, not a younger brother.' },
+        { korean: '민수 씨는 오늘 파란색 셔츠를 입[고 있어요].', english: 'Minsu is wearing a blue shirt today.',
+          gap: ['을 거예요', '지 않아요', '고 있었어요'],
+          why: 'With clothes, 고 있어요 means is wearing. 입을 거예요 would mean he\'ll put it on later.' },
+      ],
+      rules: [
+        'Add -고 있어요 to any action verb stem, no change: 먹고 있어요, 가고 있어요, 공부하고 있어요.',
+        'It shows an action in progress, now or these days: 요즘 한국어를 배우고 있어요 (I\'m learning Korean these days).',
+        'Only for actions: adjectives can\'t take it. 바빠요 (I\'m busy), never 바쁘고 있어요.',
+        'With wearing verbs it means \'is wearing\': 안경을 쓰고 있어요. For a respected person, use -고 계세요.',
+      ],
+      tricks: [
+        'The plain present often works too (지금 먹어요); -고 있어요 makes \'right now, mid-action\' clear.',
+        'Past: swap 있어요 for 있었어요: 자고 있었어요 (I was sleeping).',
+      ],
+      comparisons: [
+        { with: ['tense:-아요/어요'], title: '-고 있어요 vs the plain present', points: [
+          '먹어요: I eat (a habit), or I\'m eating; context decides.',
+          '먹고 있어요: I\'m eating right now, in the middle of it.',
+          'Adjectives only take the plain form: 피곤해요, never 피곤하고 있어요.',
+        ] },
+        { with: ['honorific:계시다'], title: '-고 있어요 vs -고 계세요', points: [
+          '친구가 기다리고 있어요: my friend is waiting.',
+          '할머니가 기다리고 계세요: Grandma is waiting (respectful).',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'speech:해요체', section: 'grammar', collection: 'speech-levels', category: 'Speech levels',
+    korean: '해요체', meaning: 'polite style (everyday)',
+    grammar: {
+      speech: '해요',
+      forms: [
+        { form: '-아요', when: 'after ㅏ or ㅗ: 앉아요, 가요; the same form states, asks and suggests: 가요. 가요? 같이 가요!' },
+        { form: '-어요', when: 'after other vowels: 먹어요, 읽어요; 하다 → 해요. Past and future too: 먹었어요, 먹을 거예요' },
+        { form: '-(으)세요', when: 'when the doer deserves respect: 할머니가 가세요; also please do: 앉으세요' },
+        { form: '이에요 / 예요', when: 'after a noun: 학생이에요, 의사예요' },
+      ],
+      examples: [
+        { korean: '이 김치 정말 맛있[어요].', english: 'This kimchi is really tasty. (polite, everyday)',
+          gap: ['어', '습니다', '었어요'],
+          why: 'Everyday polite: 어요. 맛있어 is casual, 맛있습니다 formal; 맛있었어요 would mean it was tasty.' },
+        { korean: '지금 뭐 읽[어요]?', english: 'What are you reading now? (polite, everyday)',
+          gap: ['어', '습니까', '었어요'],
+          why: 'Same 읽어요 as a statement, said with a rising tone. 읽어? is casual, 읽습니까? formal; 읽었어요 is past.' },
+        { korean: '우리 여기 앉[아요]!', english: 'Let\'s sit here! (polite, everyday)',
+          gap: ['아', '읍시다', '았어요'],
+          why: 'In 해요체 the same form also suggests: 앉아요! 앉아 is casual, 앉읍시다 formal; 앉았어요 is past.' },
+      ],
+      rules: [
+        'The safe default: strangers, shop staff, coworkers, people older than you, new friends. In daily life it sounds more natural than 합니다체.',
+        'Every sentence ends in 요: 가요, 갔어요, 갈 거예요, 학생이에요. Drop the 요 and you get casual 반말.',
+        'One form states, asks, requests and suggests: 가요. / 가요? / 같이 가요! Only the tone (or the punctuation) changes.',
+        'It\'s about the listener; -(으)시- is about the doer. They combine: 할머니가 오세요 (polite to you, respectful to Grandma).',
+      ],
+      tricks: [
+        'Named after 해요, the polite form of 하다 (to do): 해요 + 체 (style).',
+        '요 makes almost anything polite, even one word: 커피요! 왜요? 저요?',
+        'You already use it: 안녕하세요 and 감사해요 are 해요체; 안녕하십니까 is the formal version.',
+      ],
+      comparisons: [
+        { with: ['speech:합니다체'], title: '해요체 vs 합니다체', points: [
+          '해요체 is warm, everyday polite: 감사해요, 어디 가요?',
+          '합니다체 is formal: news, speeches, interviews, customer service: 감사합니다, 어디 갑니까?',
+          'Some fixed phrases stay formal even in a 해요 conversation: 감사합니다, 죄송합니다.',
+        ] },
+        { with: ['speech:반말'], title: '해요체 vs 반말', points: [
+          '반말 is 해요체 minus 요: 뭐 해요? → 뭐 해?',
+          'Use 반말 only with close friends and younger people; 해요체 with everyone else.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'speech:합니다체', section: 'grammar', collection: 'speech-levels', category: 'Speech levels',
+    korean: '합니다체', meaning: 'formal style',
+    grammar: {
+      speech: '갑니다, 먹습니다',
+      forms: [
+        { form: '-ㅂ니다', when: 'after a vowel: 갑니다, 공부합니다; a final ㄹ drops: 만들다 → 만듭니다' },
+        { form: '-습니다', when: 'after a consonant: 먹습니다, 있습니다, 좋습니다' },
+        { form: '-ㅂ니까 / -습니까', when: 'questions: 갑니까? 먹습니까?' },
+        { form: '입니다 / 입니까', when: 'after a noun (이다): 학생입니다, 의사입니까?' },
+      ],
+      examples: [
+        { korean: '오늘은 날씨가 좋[습니다].', english: 'The weather is nice today. (formal speech)',
+          gap: ['아요', '아', '았습니다'],
+          why: 'A formal statement after a consonant: 습니다. 좋아요 is everyday polite, 좋아 casual; 좋았습니다 is past.' },
+        { korean: '이 근처에 은행이 있[습니까]?', english: 'Is there a bank near here? (formal speech)',
+          gap: ['어요', '어', '습니다'],
+          why: 'A formal question ends in 까: 있습니까? 있습니다 is the statement; 있어요 is everyday polite.' },
+        { korean: '저는 매일 회사에 [갑니다].', english: 'I go to work every day. (formal speech)',
+          gap: ['가요', '가', '가습니다'],
+          why: 'After a vowel the ㅂ joins the stem: 갑니다. 가습니다 is never used; 가요 is everyday polite.' },
+      ],
+      rules: [
+        '-ㅂ니다 after a vowel (갑니다), -습니다 after a consonant (먹습니다). Questions: -ㅂ니까? / -습니까? Stems in ㄹ drop it: 만듭니다.',
+        'For formal settings: news, speeches, presentations, meetings, interviews, and staff speaking to customers.',
+        'Requests add the respect marker: -(으)십시오, as in 앉으십시오 (please be seated).',
+        'Everyday talk mixes styles: 감사합니다 and 죄송합니다 are used all the time, even in a 해요 conversation.',
+      ],
+      tricks: [
+        'Statement ends in 다, question in 까: 갑니다. / 갑니까?',
+        'The ㅂ is said like m before 니: 갑니다 = gam-ni-da, 합니다 = ham-ni-da.',
+        'You already know it: 감사합니다 (thank you) is 합니다체. Dictionaries call the style 하십시오체.',
+      ],
+      comparisons: [
+        { with: ['speech:해요체'], title: '합니다체 vs 해요체', points: [
+          'Both are polite. 합니다체 is formal and a step more respectful: 갑니다, 갑니까?',
+          '해요체 is the friendly everyday polite: 가요, 가요?',
+          'Interview, presentation, news: 합니다. Café, lunch with coworkers, new friends: 해요.',
+        ] },
+        { with: ['honorific:-(으)시-'], title: '합니다체 vs -(으)시-', points: [
+          '-습니다 shows respect to the person you\'re talking to.',
+          '-(으)시- shows respect to the person doing it. Together: 선생님이 오십니다 (The teacher is coming, formal).',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'speech:반말', section: 'grammar', collection: 'speech-levels', category: 'Speech levels',
+    korean: '반말', meaning: 'casual speech (informal)',
+    grammar: {
+      speech: '먹어, 가',
+      forms: [
+        { form: '-어 / -아', when: 'the 해요 form minus 요: 먹어요 → 먹어, 가요 → 가, 해요 → 해' },
+        { form: '-았어 / -었어', when: 'past: 갔어, 먹었어, 했어' },
+        { form: '-(으)ㄹ 거야', when: 'future: 갈 거야, 먹을 거야' },
+        { form: '야 / 이야', when: 'after a noun, instead of 예요 / 이에요: 친구야, 학생이야' },
+      ],
+      examples: [
+        { korean: '밥 먹[었어]?', english: 'Did you eat? (to a close friend)',
+          gap: ['었어요', '었습니까', '어'],
+          why: 'With a close friend, drop the 요: 먹었어? 먹었어요 is polite; 먹어? would ask \'are you eating?\'.' },
+        { korean: '이 노래 정말 좋[아].', english: 'This song is really good. (to a close friend)',
+          gap: ['아요', '습니다', '어'],
+          why: 'Casual: 좋아, the 해요 form without 요. 좋어 breaks the vowel rule: 좋 has ㅗ, so 아.' },
+        { korean: '이거 내 가방[이야].', english: 'This is my bag. (to a close friend)',
+          gap: ['이에요', '입니다', '야'],
+          why: 'After a noun ending in a consonant, casual 이야. 가방야 is missing the 이; 이에요 is polite.' },
+      ],
+      rules: [
+        'Take the 해요 form and drop 요: 가요 → 가, 먹었어요 → 먹었어, 갈 거예요 → 갈 거야. Nouns: 예요 / 이에요 → 야 / 이야.',
+        'Use it with close friends your age, children, and younger siblings. With anyone older or new, wait until they offer it.',
+        'Even if you\'re older, 반말 with someone you\'ve just met sounds rude: it can mean talking down to them.',
+        'One form states, asks and orders: 먹어. / 먹어? / 먹어! Only the tone changes.',
+      ],
+      tricks: [
+        '반 = half: speech that neither raises nor lowers the listener. In practice, drop the 요: 가요 → 가.',
+        'Calling a friend? Add 아 or 야 to the name: 민수야! 지은아!',
+      ],
+      comparisons: [
+        { with: ['speech:해요체'], title: '반말 vs 해요체', points: [
+          'Same sentence, minus 요: 뭐 해요? → 뭐 해?',
+          '반말 for close friends and younger people; 해요체 for everyone else, including strangers your age.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'honorific:-(으)시-', section: 'grammar', collection: 'honorifics', category: 'Respect in grammar',
+    korean: '-(으)시-', meaning: 'honorific (respect for the doer)',
+    grammar: {
+      speech: '가세요, 가셨어요',
+      forms: [
+        { form: '-으시-', when: 'after a consonant: 읽으세요, 읽으셨어요, 앉으세요' },
+        { form: '-시-', when: 'after a vowel: 가세요, 가셨어요; a final ㄹ drops: 살다 → 사세요, 만들다 → 만드세요' },
+        { form: '-(으)세요', when: 'polite present: 시 + 어요 → 세요 (가세요, 읽으세요)' },
+        { form: '-(으)셨어요', when: 'past: 시 + 었어요 → 셨어요 (가셨어요, 읽으셨어요)' },
+      ],
+      examples: [
+        { korean: '할머니가 신문을 읽[으세요].', english: 'My grandmother is reading the newspaper. (respectful)',
+          gap: ['어요', '세요', '으셨어요'],
+          why: 'Respect for Grandma: 으세요, with 으 because 읽 ends in a consonant. 읽어요 shows no respect.' },
+        { korean: '아버지가 선물을 받[으셨어요].', english: 'My father received a present. (respectful)',
+          gap: ['았어요', '셨어요', '으세요'],
+          why: 'Respect + past: 으셨어요 (시 + 었어요). 받았어요 drops the respect; 으세요 would be present.' },
+        { korean: '선생님, 어디 가[세요]?', english: 'Where are you going, teacher? (respectful)',
+          gap: ['요', '셨어요', '니'],
+          why: 'Asking your teacher: 가세요? 가요? is polite but shows no respect for them; 가니? is for kids.' },
+      ],
+      rules: [
+        'Right after the stem, before tense and 요: 가 + 시 + 었어요 → 가셨어요. 으시 after a consonant (읽으세요), 시 after a vowel (가세요).',
+        'Use it when the doer deserves respect: elders, teachers, your boss, customers. Never for yourself: 제가 가요, not 제가 가세요.',
+        'It also honors what belongs to them: 할머니 손이 예쁘세요 (Grandma\'s hands are pretty).',
+        'A few verbs use their own respect word instead: 먹다 → 드시다, 자다 → 주무시다, 있다 → 계시다.',
+      ],
+      tricks: [
+        '세요 or 셨어요 after a stem signal respect: 가세요, 읽으셨어요. But 마셨어요 is just 마시다 (drink) + 었어요.',
+        '안녕하세요 has it too: 안녕하 + 시 + 어요, \'are you (respected) well?\'',
+      ],
+      comparisons: [
+        { with: ['ending:-(으)세요'], title: '-(으)시- vs -(으)세요', points: [
+          '-(으)세요 is -(으)시- + -어요: 가 + 시 + 어요 → 가세요.',
+          'As a request it means please do: 앉으세요. As a statement, a respected person does it: 할머니가 가세요.',
+        ] },
+        { with: ['honorific:께서/께'], title: '-(으)시- vs 께서', points: [
+          '께서 marks a respected subject, and the verb then takes -(으)시-: 할아버지께서 오셨어요.',
+          'In everyday talk -(으)시- alone is enough: 할아버지가 오셨어요.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'honorific:께서/께', section: 'grammar', collection: 'honorifics', category: 'Respect in grammar',
+    korean: '께서/께', meaning: 'honorific subject marker / honorific to',
+    grammar: {
+      speech: '께서, 께',
+      forms: [
+        { form: '께서', when: 'instead of 이/가, after a respected person: 할머니께서, 선생님께서' },
+        { form: '께서는', when: 'instead of 은/는: 아버지께서는' },
+        { form: '께', when: 'instead of 에게/한테 (to): 부모님께, 선생님께' },
+      ],
+      examples: [
+        { korean: '할머니[께서] 저에게 선물을 주셨어요.', english: 'My grandmother gave me a present.',
+          gap: ['께', '에게', '를'],
+          why: 'Grandma is the giver, the subject: 께서. 께 and 에게 would make her the one receiving.' },
+        { korean: '저는 선생님[께] 이메일을 보냈어요.', english: 'I sent an email to my teacher.',
+          gap: ['께서', '한테서', '하고'],
+          why: 'The teacher receives it: 께, the respectful 에게. 께서 would make the teacher the sender.' },
+        { korean: '아버지[께서는] 지금 회사에 계세요.', english: 'My father is at the office now.',
+          gap: ['께', '께서도', '에게는'],
+          why: 'Respectful topic: 께서는, the polite 은/는. 께서도 would add \'too\', and 께 means to.' },
+      ],
+      rules: [
+        '께서 replaces 이/가 for a respected subject: 할머니께서 오셨어요. The verb then takes -(으)시-.',
+        '께 replaces 에게/한테 (to) for a respected receiver, often with 드리다: 할머니께 선물을 드렸어요.',
+        'Topic form: 께서는. In everyday talk many people just use 이/가 + -(으)시-: 할머니가 오셨어요.',
+        'Only for people you look up to, never for yourself or for things.',
+      ],
+      tricks: [
+        'Spot the 서: 께서 = who does it, 께 = who receives it.',
+        'A matched pair: 할머니께서 주셨어요 (Grandma gave it) / 할머니께 드렸어요 (I gave it to Grandma).',
+      ],
+      comparisons: [
+        { with: ['particle:이/가'], title: '께서 vs 이/가', points: [
+          '이/가 marks any subject: 친구가 왔어요.',
+          '께서 marks a respected one, with -(으)시- on the verb: 선생님께서 오셨어요.',
+        ] },
+        { with: ['particle:에게/한테'], title: '께 vs 에게/한테', points: [
+          '친구에게, 친구한테 줬어요: gave it to a friend.',
+          '할머니께 드렸어요: gave it to Grandma. Respectful particle, humble verb.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'honorific:드리다', section: 'grammar', collection: 'honorifics', category: 'Respectful words',
+    korean: '드리다', meaning: 'to give (humble)',
+    grammar: {
+      speech: '드리다',
+      forms: [
+        { form: '드려요 / 드렸어요', when: 'polite present and past: 드리 + 어요 → 드려요' },
+        { form: '-아/어 드려요', when: 'after another verb: do it for someone you respect: 도와 드려요, 사 드렸어요' },
+        { form: 'noun + 드리다', when: 'with a few nouns, a humble action: 말씀드렸어요 (I told you)' },
+      ],
+      examples: [
+        { korean: '사장님께 커피를 [드렸어요].', english: 'I gave my boss a coffee. (respectful)',
+          gap: ['줬어요', '주셨어요', '드려요'],
+          why: 'Giving up to your boss: 드렸어요. 줬어요 is plain; 주셨어요 would mean someone respected gave it.' },
+        { korean: '제가 도와 [드릴까요]?', english: 'Shall I help you? (to a customer)',
+          gap: ['줄까요', '주실까요', '드렸어요'],
+          why: 'Offering a favor to a customer: 도와 드릴까요? 도와 주실까요? would ask them to help.' },
+        { korean: '부모님께 용돈을 [드려요].', english: 'I give my parents pocket money. (respectful)',
+          gap: ['줘요', '주세요', '드리세요'],
+          why: 'You give to your parents: 드려요. 주세요 asks someone to give; 드리세요 tells someone else to give.' },
+      ],
+      rules: [
+        'Use it when you give to someone above you: parents, grandparents, teachers, your boss, customers. They take 께.',
+        'A respected person giving to you? Use 주시다: 할머니가 주셨어요.',
+        'After another verb (-아/어 드리다) it means doing a favor for them: 도와 드릴까요? (Shall I help you?)',
+        'With a few nouns it makes a humble action: 말씀드렸어요 (I told you). As a full verb: 인사를 드려요 (I greet them).',
+      ],
+      tricks: [
+        '주다 goes down or sideways, 드리다 goes up: 동생에게 줘요 / 할머니께 드려요.',
+        'Shop staff say it all day: 뭘 도와 드릴까요? (How can I help you?)',
+      ],
+      comparisons: [
+        { with: ['Verbs:줘요'], title: '드리다 vs 주다', points: [
+          '줘요: give to a friend or someone younger: 친구에게 줘요.',
+          '드려요: give to someone you respect: 할머니께 드려요.',
+          'A respected person gives to you: 주세요, 주셨어요.',
+        ] },
+        { with: ['ending:-아/어 주세요'], title: '-아/어 드리다 vs -아/어 주세요', points: [
+          '도와 주세요: please help me (they do it for you).',
+          '도와 드릴까요?: shall I help you? (you do it for them, humbly).',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'honorific:드시다', section: 'grammar', collection: 'honorifics', category: 'Respectful words',
+    korean: '드시다', meaning: 'to eat, to drink (honorific)',
+    grammar: {
+      speech: '드세요',
+      forms: [
+        { form: '드세요', when: 'present, and please eat or drink: 맛있게 드세요' },
+        { form: '드셨어요', when: 'past: 점심 드셨어요? (Did you have lunch?)' },
+        { form: '드실 거예요', when: 'future: 뭐 드실 거예요? (What will you have?)' },
+      ],
+      examples: [
+        { korean: '할아버지, 저녁 [드세요].', english: 'Grandpa, please have dinner. (respectful)',
+          gap: ['먹어요', '드려요', '주무세요'],
+          why: 'Asking Grandpa to eat: 드세요. 먹어요 shows no respect; 드려요 means I give.' },
+        { korean: '아버지는 커피를 안 [드세요].', english: 'My father doesn\'t drink coffee. (respectful)',
+          gap: ['마셔요', '드려요', '드셨어요'],
+          why: '드시다 covers drinking too. 마셔요 shows no respect; 안 드셨어요 would mean he didn\'t drink it.' },
+        { korean: '사장님, 점심 [드셨어요]?', english: 'Did you have lunch, boss? (respectful)',
+          gap: ['먹었어요', '드실 거예요', '드렸어요'],
+          why: 'Past + respect: 드셨어요? 먹었어요 is too plain for your boss; 드실 거예요 asks about later.' },
+      ],
+      rules: [
+        'Use it instead of 먹다 or 마시다 when a respected person eats or drinks: 할머니가 점심을 드세요.',
+        '드세요 is also a polite \'please eat / drink\': 맛있게 드세요! (Enjoy your meal!)',
+        'Never for yourself: 저는 먹었어요, not 저는 드셨어요.',
+        '잡수시다 (잡수세요) is an even more respectful word for eating.',
+      ],
+      tricks: [
+        'One respect word for two verbs: 먹다 and 마시다 both become 드시다.',
+        'Keep them apart: 드세요 = they eat (respect, 드시다); 드려요 = I give (humble, 드리다).',
+      ],
+      comparisons: [
+        { with: ['Verbs:먹어요'], title: '드시다 vs 먹다', points: [
+          '먹어요: for you and your friends: 저는 김치를 먹어요.',
+          '드세요: for people you respect: 할머니가 김치를 드세요.',
+          'Same with drinks: 마셔요 → 드세요.',
+        ] },
+        { with: ['honorific:-(으)시-'], title: '드시다 vs adding -(으)시-', points: [
+          'Most verbs just add -(으)시-: 읽다 → 읽으세요.',
+          '먹다 and 마시다 switch to their own respect word instead: 드세요.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'honorific:주무시다', section: 'grammar', collection: 'honorifics', category: 'Respectful words',
+    korean: '주무시다', meaning: 'to sleep (honorific)',
+    grammar: {
+      speech: '주무세요',
+      forms: [
+        { form: '주무세요', when: 'present, and please sleep: 안녕히 주무세요 (good night)' },
+        { form: '주무셨어요', when: 'past: 안녕히 주무셨어요? (Did you sleep well?)' },
+        { form: '주무시고 계세요', when: 'is sleeping: the respectful 자고 있어요' },
+      ],
+      examples: [
+        { korean: '할머니는 지금 [주무세요].', english: 'My grandmother is sleeping now. (respectful)',
+          gap: ['자요', '주무셨어요', '드세요'],
+          why: 'A respected person sleeping: 주무세요. 자요 is the plain verb; 주무셨어요 means she slept.' },
+        { korean: '할아버지, 어제 잘 [주무셨어요]?', english: 'Grandpa, did you sleep well last night? (respectful)',
+          gap: ['잤어요', '주무세요', '드셨어요'],
+          why: 'Past + respect: 주무셨어요? 잤어요 is fine for a friend, not for Grandpa.' },
+        { korean: '안녕히 [주무세요].', english: 'Good night. (to your parents)',
+          gap: ['주무셨어요', '가세요', '계세요'],
+          why: 'Good night to elders: 안녕히 주무세요. 가세요 and 계세요 are goodbyes, not good night.' },
+      ],
+      rules: [
+        'Use it instead of 자다 when a respected person sleeps: 할아버지가 주무세요.',
+        'Good night to elders: 안녕히 주무세요. Next morning: 안녕히 주무셨어요?',
+        'Never for yourself or friends: 저는 일찍 자요; to a friend, 잘 자!',
+        'In progress: 주무시고 계세요 (is sleeping), the respectful version of 자고 있어요.',
+      ],
+      tricks: [
+        'It conjugates like any -(으)시- verb: 주무세요, 주무셨어요, just like 가세요, 가셨어요.',
+        'Bedtime words for parents and grandparents: 안녕히 주무세요, literally \'sleep in peace\'.',
+      ],
+      comparisons: [
+        { with: ['Verbs:자요'], title: '주무시다 vs 자다', points: [
+          '자요: I sleep, my friend sleeps.',
+          '주무세요: Grandma sleeps, my boss sleeps.',
+          'Good night: 잘 자! to a friend, 안녕히 주무세요 to elders.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'honorific:계시다', section: 'grammar', collection: 'honorifics', category: 'Respectful words',
+    korean: '계시다', meaning: 'to be / to stay (honorific)',
+    grammar: {
+      speech: '계세요',
+      forms: [
+        { form: '계세요', when: 'present: 집에 계세요 (is at home); also 안녕히 계세요 (goodbye, to someone staying)' },
+        { form: '계셨어요', when: 'past: 어디 계셨어요? (Where were you?)' },
+        { form: '-고 계세요', when: 'after a verb: is doing (the respectful -고 있어요): 읽고 계세요' },
+        { form: '있으세요', when: 'for \'have\', not for being somewhere: 시간 있으세요?' },
+      ],
+      examples: [
+        { korean: '할머니는 지금 집에 [계세요].', english: 'My grandmother is at home now. (respectful)',
+          gap: ['있어요', '있으세요', '계셨어요'],
+          why: 'A respected person somewhere: 계세요. 있으세요 is for what they have; 계셨어요 means she was.' },
+        { korean: '안녕히 [계세요].', english: 'Goodbye. (you leave, they stay)',
+          gap: ['가세요', '주무세요', '계셨어요'],
+          why: 'You\'re leaving and they stay: 계세요 (stay well). 가세요 is what you say to the one leaving.' },
+        { korean: '선생님은 교실에서 기다리고 [계세요].', english: 'The teacher is waiting in the classroom. (respectful)',
+          gap: ['있어요', '계셨어요', '계실 거예요'],
+          why: 'The respectful -고 있어요 is -고 계세요. 있어요 shows no respect; 계셨어요 means was waiting.' },
+      ],
+      rules: [
+        'Use it instead of 있다 when a respected person is somewhere: 아버지는 회사에 계세요.',
+        'For \'have\', keep 있다 with -(으)시-: 시간 있으세요? (Do you have time?). 계세요 is only for being somewhere.',
+        'Goodbyes: 안녕히 계세요 to someone who stays, 안녕히 가세요 to someone who leaves.',
+        'After -고 it makes a respectful \'is doing\': 일하고 계세요 (is working).',
+      ],
+      tricks: [
+        'Leaving? Say 계세요 (stay well). Staying? Say 가세요 (go well).',
+        'A person somewhere → 계세요; something they have → 있으세요.',
+      ],
+      comparisons: [
+        { with: ['tense:-고 있어요'], title: '-고 있어요 vs -고 계세요', points: [
+          '친구가 자고 있어요: my friend is sleeping.',
+          '할머니가 주무시고 계세요: Grandma is sleeping (respect word + 계세요).',
+        ] },
+        { with: ['honorific:-(으)시-'], title: '계세요 vs 있으세요', points: [
+          '계세요: a respected person is somewhere: 선생님이 교실에 계세요.',
+          '있으세요 (있다 + -(으)시-): they have something: 선생님은 시간이 있으세요.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'honorific:성함', section: 'grammar', collection: 'honorifics', category: 'Respectful words',
+    korean: '성함', meaning: 'name (honorific)',
+    grammar: {
+      speech: '성함',
+      forms: [
+        { form: '성함', when: 'a respected person\'s name; for your own or a friend\'s: 이름' },
+        { form: '성함이 어떻게 되세요?', when: 'the polite way to ask someone\'s name' },
+      ],
+      examples: [
+        { korean: '손님, [성함]이 어떻게 되세요?', english: 'What\'s your name, please? (to a customer)',
+          gap: ['이름', '직업', '생일'],
+          why: 'A customer\'s name, asked with respect: 성함. 이름 is the everyday word, fine for friends or kids.' },
+        { korean: '선생님 [성함] 알아요?', english: 'Do you know the teacher\'s name? (respectful)',
+          gap: ['이름', '연세', '나이'],
+          why: 'The teacher\'s name, said with respect: 성함. 연세 and 나이 mean age.' },
+        { korean: '그분 [성함]을 몰라요.', english: 'I don\'t know that person\'s name. (respectful)',
+          gap: ['이름', '직업', '고향'],
+          why: '그분 shows respect, so their name is 성함. 이름 is the everyday word; 직업 would mean job.' },
+      ],
+      rules: [
+        'Use it for the name of someone you respect: customers, elders, teachers. Ask with 성함이 어떻게 되세요?',
+        'Never for your own name: 제 이름은 민수예요.',
+        'The verb usually carries respect too: 성함이 어떻게 되세요? (되 + 시 + 어요).',
+      ],
+      tricks: [
+        'Same 함 (銜) as 명함, a business card: your name and title on one card.',
+        'Your name: 이름. Their name: 성함.',
+      ],
+      comparisons: [
+        { with: ['honorific:연세'], title: '성함 vs 연세', points: [
+          '성함 = name: 성함이 어떻게 되세요? (What\'s your name?)',
+          '연세 = age: 연세가 어떻게 되세요? (How old are you?) Same polite frame.',
+        ] },
+      ],
+    },
+  },
+  {
+    id: 'honorific:연세', section: 'grammar', collection: 'honorifics', category: 'Respectful words',
+    korean: '연세', meaning: 'age (honorific)',
+    grammar: {
+      speech: '연세',
+      forms: [
+        { form: '연세', when: 'an older or respected person\'s age; for yourself or friends: 나이' },
+        { form: '연세가 어떻게 되세요?', when: 'the polite way to ask someone\'s age' },
+        { form: '연세가 많으세요', when: 'is elderly (literally: has many years)' },
+      ],
+      examples: [
+        { korean: '할머니, [연세]가 어떻게 되세요?', english: 'Grandma, how old are you? (respectful)',
+          gap: ['나이', '주소', '키'],
+          why: 'An elder\'s age, asked with respect: 연세. 나이 is the everyday word, for your own or a friend\'s age.' },
+        { korean: '할아버지는 [연세]가 많으세요.', english: 'My grandfather is quite old. (respectful)',
+          gap: ['나이', '아이', '숙제'],
+          why: 'Respect for Grandpa\'s age: 연세가 많으세요. 아이가 많으세요 would mean he has many children.' },
+        { korean: '실례지만 [연세]가 어떻게 되십니까?', english: 'Excuse me, may I ask your age? (respectful)',
+          gap: ['나이', '취미', '주소'],
+          why: 'Formal and respectful: 연세. 취미 asks about hobbies, 주소 about the address.' },
+      ],
+      rules: [
+        'Use it for the age of someone older or respected: 연세가 어떻게 되세요? For yourself and friends: 나이.',
+        'For an elderly person: 연세가 많으세요, politer than 나이가 많아요.',
+        'Spelled 연세, never 년세: 年 is written 연 at the start of a word.',
+      ],
+      tricks: [
+        'Both halves mean year: 年 (연) + 歲 (세). Many years → age.',
+        'Same frame as 성함: 연세가 어떻게 되세요? / 성함이 어떻게 되세요?',
+      ],
+      comparisons: [
+        { with: ['honorific:성함'], title: '연세 vs 성함', points: [
+          '연세 = age: 연세가 어떻게 되세요?',
+          '성함 = name: 성함이 어떻게 되세요? Both pair the respectful noun with 되세요.',
         ] },
       ],
     },

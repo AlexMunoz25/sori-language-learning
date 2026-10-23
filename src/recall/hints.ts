@@ -1,14 +1,24 @@
-import type { VocabularyItem } from '../types/vocabulary'
+import type { CultureSource, VocabularyItem } from '../types/vocabulary'
 
 /** A nudge toward the answer that never states it. Any hint caps the question at half a point. */
 export interface Hint {
   /** narrow: takes two wrong options away from a choice question. */
-  kind: 'anchor' | 'meaning' | 'form' | 'narrow'
+  kind: 'anchor' | 'meaning' | 'form' | 'narrow' | 'rule'
   text: string
 }
 
 const hangulRun = /[ᄀ-ᇿ㄰-㆏가-힯][ᄀ-ᇿ㄰-㆏가-힯\s?!.,·-]*/g
-const capsWord = /[A-ZÁÉÍÓÚÑÀÈÊÎÔÛÇÄÖÜ][A-ZÁÉÍÓÚÑÀÈÊÎÔÛÇÄÖÜ'’-]*[A-ZÁÉÍÓÚÑÀÈÊÎÔÛÇÄÖÜ]/g
+const capsWord = /\p{Lu}[\p{Lu}'’-]*\p{Lu}/gu
+/**
+ * An anchor's hook words: whole words in capitals, in any language (BULB, MÃE, ÜBERMORGEN, I'LL), never Korean, which
+ * has no capitals. They make two candidates the same idea, and a keyword one card's own.
+ */
+export const hookWords = (text: string) => (text.match(/\p{L}(?:\p{L}|['’-](?=\p{L}))*/gu) ?? [])
+  // A capitalized compound is one keyword (NAIL-THIN, TO-GO); in a mixed one only the capital part counts (Go-go-GADGET).
+  .flatMap(word => capital(word) ? [word] : word.split('-'))
+  .filter(word => word.replace(/['’-]/g, '').length >= 2 && capital(word))
+const capital = (word: string) => word === word.toUpperCase() && word !== word.toLowerCase()
+
 /** Words that only hold an answer together; "like", "most", or "what" can be the answer itself, so they are masked. */
 const functionWords = new Set(['a', 'an', 'the', 'to', 'of', 'and', 'or', 'in', 'on', 'at', 'for', 'with', 'is', 'be', 'do', 'you', 'your', 'it'])
 
@@ -117,6 +127,24 @@ export function anchorPrompt(text: string, syllables: string[] = [], own = false
     masked = words.length > 3 ? `${words.slice(0, Math.ceil(words.length / 2)).join(' ')}…` : undefined
   }
   return masked && useful(masked) && !leaks(masked, syllables) ? masked : undefined
+}
+
+/** Korean → English, from a song or show: its line in English with the meaning blanked, and whose it is. */
+export function cultureCloze(source: CultureSource, terms: string[], syllables: string[] = []) {
+  const line = tidy(source.translation.replace(/[A-Za-zÀ-ÿ'’]+/g, word => terms.some(term => sameWord(word, term)) ? '___' : word)).replace(/___(\s*,?\s*___)+/g, '___')
+  const cue = `“${line}” (${source.by})`
+  return useful(line) && !leaks(cue, syllables) ? cue : undefined
+}
+
+/** English → Korean, from a song or show: what it is and its English title, never its Korean or a reading. */
+export function cultureCue(source: CultureSource, syllables: string[] = []) {
+  const english = tidy(source.title.replace(hangulRun, ' ').replace(/[()]/g, ' '))
+  const kind = { song: 'song', drama: 'drama', film: 'film', show: 'show', animation: 'cartoon' }[source.media]
+  // An English title can spell the Korean itself (Bom Bom Bom, Tayo): then only what it is and whose.
+  const reading = syllables.join('')
+  const spells = english.toLowerCase().split(/[^a-z]+/).some(word => word.length >= 2 && (syllables.includes(word) || (reading.length >= 3 && word.includes(reading))))
+  const cue = useful(english) && !spells ? `${source.by}’s ${kind} “${english}”` : `a ${kind} by ${source.by}`
+  return leaks(cue, syllables) ? undefined : `Heard in ${cue}`
 }
 
 const syllables = (korean: string) => [...korean].filter(char => /[가-힯]/.test(char)).length

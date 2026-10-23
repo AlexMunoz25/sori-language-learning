@@ -1,18 +1,34 @@
 import { useEffect, useState } from 'react'
 import { ArrowLeftRight, Check, PenLine, Sparkles, Star } from 'lucide-react'
-import type { AnchorCandidate, VocabularyItem } from '../types/vocabulary'
+import type { AnchorCandidate, AnchorKind, VocabularyItem } from '../types/vocabulary'
 import { customAnchorId, type AnchorChoice } from '../hooks/useAnchorChoice'
+import { fitsLanguages, useLanguages } from '../hooks/useLanguages'
+import { useRecallLog } from '../hooks/useReview'
 import { rootParts } from '../data/root-anchors'
+import { anchorEvidence, type AnchorEvidence } from '../recall/review'
+import { CultureLine, CulturePlayer, mediaLabels } from './CultureMoment'
 
-const kindLabels = { sound: 'Phonetic mnemonic', reading: 'Reading cue', roots: 'Verified word components', loanword: 'Borrowed word' }
+/** “3 of 4 recalled”: how the card did in tests, reviews, and lessons while this anchor was the learner's choice. */
+const evidenceText = ({ asked, correct, hinted }: AnchorEvidence) => `${correct} of ${asked} recalled${hinted ? ` · ${hinted} with a hint` : ''}`
+
+const kindLabels: Record<AnchorKind, string> = {
+  sound: 'Phonetic mnemonic', reading: 'Reading cue', roots: 'Verified word components', loanword: 'Borrowed word', pattern: 'Korean pattern', culture: 'Heard in Korean media',
+}
 
 function label(anchor: AnchorCandidate) {
   if (anchor.id === customAnchorId) return 'Your own anchor'
+  if (anchor.source) return `${mediaLabels[anchor.source.media]} · ${anchor.source.by}`
   return kindLabels[anchor.kind] + (anchor.kind === 'sound' ? ` · ${anchor.language.toUpperCase()}` : '')
 }
 
+/** The chooser's three groups: how it sounds, how Korean builds it, where you've heard it. */
+type Group = 'sound' | 'korean' | 'culture'
+const groupOf = (anchor: AnchorCandidate): Group => anchor.kind === 'culture' ? 'culture' : anchor.kind === 'roots' || anchor.kind === 'pattern' ? 'korean' : 'sound'
+const groupTitles: Record<Group, string> = { sound: 'Sounds like', korean: 'Korean roots', culture: 'Heard in Korean media' }
+
 /** An anchor's words. A root-based one is laid out part by part, Korean, Hanja, reading, meaning, with the same text. */
-function AnchorText({ anchor }: { anchor: AnchorCandidate }) {
+function AnchorText({ anchor, full = false }: { anchor: AnchorCandidate; full?: boolean }) {
+  if (anchor.source) return <CultureLine source={anchor.source} full={full} />
   const parsed = anchor.kind === 'roots' ? rootParts(anchor.text) : undefined
   if (!parsed) return <>{anchor.text}</>
   return <span className="root-parts">
@@ -26,9 +42,11 @@ function AnchorText({ anchor }: { anchor: AnchorCandidate }) {
   </span>
 }
 
-function AnchorNote({ anchor }: { anchor: AnchorCandidate }) {
+function AnchorNote({ anchor, roots }: { anchor: AnchorCandidate; roots: boolean }) {
   if (anchor.id === customAnchorId) return null
   if (anchor.kind === 'sound') return <p className="reading-note">Approximate sound association, not the word’s origin</p>
+  if (anchor.kind === 'culture') return <p className="reading-note">A real moment, not an invented association · checked {anchor.source?.checked}</p>
+  if (anchor.kind === 'pattern') return <p className="reading-note">How Korean builds the word{roots && ' · related words in Roots'}</p>
   if (anchor.kind === 'roots' || anchor.kind === 'loanword') {
     return <p className="reading-note">Evidence & related words in Roots{anchor.text.includes('≈') && ' · ≈ marks a sound-alike'}</p>
   }
@@ -40,6 +58,9 @@ export function MemoryAnchor({ item, choice }: { item: VocabularyItem; choice: A
   const [choosing, setChoosing] = useState(false)
   const [fallback, setFallback] = useState<'closed' | 'open' | 'write'>('closed')
   const [draft, setDraft] = useState(record.custom ?? '')
+  const [otherLanguages, setOtherLanguages] = useState(false)
+  const languages = useLanguages()
+  const evidence = anchorEvidence(useRecallLog(), item.id)
   // A five-star default counts as chosen once it is actually seen, so recall checks can start.
   useEffect(() => { choice.adoptDefault() }, [])
 
@@ -53,32 +74,48 @@ export function MemoryAnchor({ item, choice }: { item: VocabularyItem; choice: A
         <button className="anchor-change" aria-label="Change memory anchor" onClick={() => setChoosing(true)}><ArrowLeftRight size={12} aria-hidden="true" />Change</button>
       </div>
       <p className="anchor-meaning">{item.meaning}<span aria-hidden="true"> →</span></p>
-      <p data-testid="mnemonic"><AnchorText anchor={selected} /></p>
-      <AnchorNote anchor={selected} />
+      <p data-testid="mnemonic"><AnchorText anchor={selected} full /></p>
+      {selected.source && <CulturePlayer source={selected.source} />}
+      <AnchorNote anchor={selected} roots={!!item.roots} />
       <div className="anchor-rating flex items-center" role="group" aria-label="How well does this anchor stick?">
         {[1, 2, 3, 4, 5].map(stars => <button key={stars} aria-label={`Rate ${stars} of 5`} aria-pressed={rating === stars} onClick={() => choice.rate(selected.id, stars)}>
           <Star size={13} fill={rating >= stars ? 'currentColor' : 'none'} aria-hidden="true" />
         </button>)}
       </div>
+      {evidence[selected.id] && <p className="anchor-evidence" data-testid="anchor-evidence">In tests and reviews: {evidenceText(evidence[selected.id])}</p>}
       {choice.struggling && <p className="anchor-nudge" data-testid="anchor-nudge">This one hasn’t stuck in recent checks. <button onClick={() => setChoosing(true)}>Try another?</button></p>}
     </div>
   }
 
-  const options = record.custom ? [...item.anchors, { id: customAnchorId, text: record.custom, kind: 'sound' as const, language: 'mixed' as const }] : item.anchors
+  // Hooks in the learner's languages first; the rest one tap away. The current choice always shows.
+  const fitting = item.anchors.filter(anchor => fitsLanguages(anchor, languages) || anchor.id === selected?.id)
+  const others = fitting.length ? item.anchors.filter(anchor => !fitting.includes(anchor)) : []
+  const custom = record.custom ? [{ id: customAnchorId, text: record.custom, kind: 'sound' as const, language: 'mixed' as const }] : []
+  const option = (anchor: AnchorCandidate) => {
+    const current = anchor.id === selected?.id
+    const tally = evidence[anchor.id]
+    return <li key={anchor.id} className={anchor.source ? 'anchor-culture-option' : undefined}>
+      <button className={`anchor-option${current ? ' current' : ''}`} aria-pressed={current} data-testid="anchor-option" onClick={() => { choice.select(anchor.id); close() }}>
+        <span className="anchor-option-text"><AnchorText anchor={anchor} /></span>
+        <span className="anchor-option-tag">{current && <Check size={11} aria-hidden="true" />}{current ? 'Current · ' : ''}{label(anchor)}{tally && ` · ${tally.correct}/${tally.asked} recalled`}</span>
+      </button>
+      {/* Hearing the moment before choosing it: outside the button, so it never selects. */}
+      {anchor.source && <CulturePlayer source={anchor.source} />}
+    </li>
+  }
+  // Grouped by route to the meaning, in the learner's languages first; your own anchor joins how it sounds.
+  const shown = [...fitting.length ? fitting : item.anchors, ...custom]
+  const groups = (['sound', 'korean', 'culture'] as const).map(group => ({ group, anchors: shown.filter(anchor => groupOf(anchor) === group) })).filter(({ group, anchors }) => anchors.length || (group === 'sound' && others.length))
   return <div className="anchor-chooser" data-testid="anchor-chooser">
     <p className="aid-kind">{selected ? 'Choose another anchor' : 'Pick the one that sticks'}</p>
     <p className="anchor-meaning">{item.meaning}<span aria-hidden="true"> →</span></p>
-    <ul className="anchor-options">
-      {options.map(anchor => {
-        const current = anchor.id === selected?.id
-        return <li key={anchor.id}>
-          <button className={`anchor-option${current ? ' current' : ''}`} aria-pressed={current} data-testid="anchor-option" onClick={() => { choice.select(anchor.id); close() }}>
-            <span className="anchor-option-text"><AnchorText anchor={anchor} /></span>
-            <span className="anchor-option-tag">{current && <Check size={11} aria-hidden="true" />}{current ? 'Current · ' : ''}{label(anchor)}</span>
-          </button>
-        </li>
-      })}
-    </ul>
+    {groups.map(({ group, anchors }) => <section key={group} className="anchor-group" aria-label={groupTitles[group]} data-testid={`anchor-group-${group}`}>
+      {groups.length > 1 && <p className="anchor-group-title">{groupTitles[group]}</p>}
+      {anchors.length > 0 && <ul className="anchor-options">{anchors.map(option)}</ul>}
+      {group === 'sound' && others.length > 0 && <button className="anchor-link anchor-more" aria-expanded={otherLanguages} onClick={() => setOtherLanguages(!otherLanguages)}>
+        {otherLanguages ? 'Hide other languages' : `More ideas in other languages (${others.length})`}</button>}
+      {group === 'sound' && otherLanguages && <ul className="anchor-options" data-testid="other-language-anchors">{others.map(option)}</ul>}
+    </section>)}
     <div className="anchor-footer flex items-center justify-between gap-2">
       <button className="anchor-link" aria-expanded={fallback !== 'closed'} onClick={() => setFallback(fallback === 'closed' ? 'open' : 'closed')}>None of these work?</button>
       {selected && <button className="anchor-link" onClick={close}>Keep current</button>}

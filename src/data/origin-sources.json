@@ -1766,5 +1766,261 @@
   "wikt:-이나": {
     "title": "Wiktionary · -이나",
     "url": "https://en.wiktionary.org/wiki/-%EC%9D%B4%EB%82%98#Korean"
+  },
+  "wikt:-에요": {
+    "title": "Wiktionary · -에요",
+    "url": "https://en.wiktionary.org/wiki/-%EC%97%90%EC%9A%94#Korean"
+  },
+  "wikt:-야": {
+    "title": "Wiktionary · -야",
+    "url": "https://en.wiktionary.org/wiki/-%EC%95%BC#Korean"
+  },
+  "wikt:-요": {
+    "title": "Wiktionary · -요",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9A%94#Korean"
+  },
+  "wikt:아니": {
+    "title": "Wiktionary · 아니",
+    "url": "https://en.wiktionary.org/wiki/%EC%95%84%EB%8B%88#Korean"
+  },
+  "wikt:싶다": {
+    "title": "Wiktionary · 싶다",
+    "url": "https://en.wiktionary.org/wiki/%EC%8B%B6%EB%8B%A4#Korean"
+  },
+  "wikt:-을 수 있다": {
+    "title": "Wiktionary · -을 수 있다",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9D%84_%EC%88%98_%EC%9E%88%EB%8B%A4#Korean"
+  },
+  "wikt:-을 수 없다": {
+    "title": "Wiktionary · -을 수 없다",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9D%84_%EC%88%98_%EC%97%86%EB%8B%A4#Korean"
+  },
+  "wikt:수": {
+    "title": "Wiktionary · 수",
+    "url": "https://en.wiktionary.org/wiki/%EC%88%98#Korean"
+  },
+  "wikt:-어야 하다": {
+    "title": "Wiktionary · -어야 하다",
+    "url": "https://en.wiktionary.org/wiki/-%EC%96%B4%EC%95%BC_%ED%95%98%EB%8B%A4#Korean"
+  },
+  "wikt:-어야": {
+    "title": "Wiktionary · -어야",
+    "url": "https://en.wiktionary.org/wiki/-%EC%96%B4%EC%95%BC#Korean"
+  },
+  "wikt:-아야": {
+    "title": "Wiktionary · -아야",
+    "url": "https://en.wiktionary.org/wiki/-%EC%95%84%EC%95%BC#Korean"
+  },
+  "wikt:-어": {
+    "title": "Wiktionary · -어",
+    "url": "https://en.wiktionary.org/wiki/-%EC%96%B4#Korean"
+  },
+  "wikt:안": {
+    "title": "Wiktionary · 안",
+    "url": "https://en.wiktionary.org/wiki/%EC%95%88#Korean"
+  },
+  "wikt:않다": {
+    "title": "Wiktionary · 않다",
+    "url": "https://en.wiktionary.org/wiki/%EC%95%8A%EB%8B%A4#Korean"
+  },
+  "wikt:아니하다": {
+    "title": "Wiktionary · 아니하다",
+    "url": "https://en.wiktionary.org/wiki/%EC%95%84%EB%8B%88%ED%95%98%EB%8B%A4#Korean"
+  },
+  "wikt:못": {
+    "title": "Wiktionary · 못",
+    "url": "https://en.wiktionary.org/wiki/%EB%AA%BB#Korean"
+  },
+  "wikt:못하다": {
+    "title": "Wiktionary · 못하다",
+    "url": "https://en.wiktionary.org/wiki/%EB%AA%BB%ED%95%98%EB%8B%A4#Korean"
+  },
+  "wikt:-지": {
+    "title": "Wiktionary · -지",
+    "url": "https://en.wiktionary.org/wiki/-%EC%A7%80#Korean"
+  },
+  "wikt:-으세요": {
+    "title": "Wiktionary · -으세요",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9C%BC%EC%84%B8%EC%9A%94#Korean"
+  },
+  "wikt:-으시-": {
+    "title": "Wiktionary · -으시-",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9C%BC%EC%8B%9C-#Korean"
+  },
+  "wikt:말다": {
+    "title": "Wiktionary · 말다",
+    "url": "https://en.wiktionary.org/wiki/%EB%A7%90%EB%8B%A4#Korean"
+  },
+  "wikt:-을까": {
+    "title": "Wiktionary · -을까",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9D%84%EA%B9%8C#Korean"
+  },
+  "wikt:-ㄹ까": {
+    "title": "Wiktionary · -ㄹ까",
+    "url": "https://en.wiktionary.org/wiki/-%E3%84%B9%EA%B9%8C#Korean"
+  },
+  "wikt:-까": {
+    "title": "Wiktionary · -까",
+    "url": "https://en.wiktionary.org/wiki/-%EA%B9%8C#Korean"
+  },
+  "nikl:su-bound": {
+    "title": "NIKL Urimalsaem · 수 (bound noun; origin 手)",
+    "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=390085&viewType=confirm"
+  },
+  "nikl:an-adverb": {
+    "title": "NIKL Korean Basic Dictionary · 안 (adverb; original form 아니)",
+    "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=71372&nation=eng"
+  },
+  "nikl:ji-anta": {
+    "title": "NIKL Korean Basic Dictionary · -지 않다 (short for -지 아니하다)",
+    "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=72587&nation=eng"
+  },
+  "wikt:-어요": {
+    "title": "Wiktionary · -어요",
+    "url": "https://en.wiktionary.org/wiki/-%EC%96%B4%EC%9A%94#Korean"
+  },
+  "wikt:-아요": {
+    "title": "Wiktionary · -아요",
+    "url": "https://en.wiktionary.org/wiki/-%EC%95%84%EC%9A%94#Korean"
+  },
+  "wikt:-었-": {
+    "title": "Wiktionary · -었-",
+    "url": "https://en.wiktionary.org/wiki/-%EC%97%88-#Korean"
+  },
+  "wikt:-았-": {
+    "title": "Wiktionary · -았-",
+    "url": "https://en.wiktionary.org/wiki/-%EC%95%98-#Korean"
+  },
+  "wikt:있다": {
+    "title": "Wiktionary · 있다",
+    "url": "https://en.wiktionary.org/wiki/%EC%9E%88%EB%8B%A4#Korean"
+  },
+  "wikt:-을 것이다": {
+    "title": "Wiktionary · -을 것이다",
+    "url": "https://en.wiktionary.org/wiki/-%EC%9D%84_%EA%B2%83%EC%9D%B4%EB%8B%A4#Korean"
+  },
+  "wikt:것": {
+    "title": "Wiktionary · 것",
+    "url": "https://en.wiktionary.org/wiki/%EA%B2%83#Korean"
+  },
+  "wikt:해요체": {
+    "title": "Wiktionary · 해요체",
+    "url": "https://en.wiktionary.org/wiki/%ED%95%B4%EC%9A%94%EC%B2%B4#Korean"
+  },
+  "wikt:하십시오체": {
+    "title": "Wiktionary · 하십시오체",
+    "url": "https://en.wiktionary.org/wiki/%ED%95%98%EC%8B%AD%EC%8B%9C%EC%98%A4%EC%B2%B4#Korean"
+  },
+  "wikt:-습니다": {
+    "title": "Wiktionary · -습니다",
+    "url": "https://en.wiktionary.org/wiki/-%EC%8A%B5%EB%8B%88%EB%8B%A4#Korean"
+  },
+  "wikt:-습니까": {
+    "title": "Wiktionary · -습니까",
+    "url": "https://en.wiktionary.org/wiki/-%EC%8A%B5%EB%8B%88%EA%B9%8C#Korean"
+  },
+  "wikt:-ㅂ니다": {
+    "title": "Wiktionary · -ㅂ니다",
+    "url": "https://en.wiktionary.org/wiki/-%E3%85%82%EB%8B%88%EB%8B%A4#Korean"
+  },
+  "wikt:반말": {
+    "title": "Wiktionary · 반말",
+    "url": "https://en.wiktionary.org/wiki/%EB%B0%98%EB%A7%90#Korean"
+  },
+  "wikt:-시-": {
+    "title": "Wiktionary · -시-",
+    "url": "https://en.wiktionary.org/wiki/-%EC%8B%9C-#Korean"
+  },
+  "wikt:-께서": {
+    "title": "Wiktionary · -께서",
+    "url": "https://en.wiktionary.org/wiki/-%EA%BB%98%EC%84%9C#Korean"
+  },
+  "wikt:드리다": {
+    "title": "Wiktionary · 드리다",
+    "url": "https://en.wiktionary.org/wiki/%EB%93%9C%EB%A6%AC%EB%8B%A4#Korean"
+  },
+  "wikt:들이다": {
+    "title": "Wiktionary · 들이다",
+    "url": "https://en.wiktionary.org/wiki/%EB%93%A4%EC%9D%B4%EB%8B%A4#Korean"
+  },
+  "wikt:드시다": {
+    "title": "Wiktionary · 드시다",
+    "url": "https://en.wiktionary.org/wiki/%EB%93%9C%EC%8B%9C%EB%8B%A4#Korean"
+  },
+  "wikt:들다": {
+    "title": "Wiktionary · 들다",
+    "url": "https://en.wiktionary.org/wiki/%EB%93%A4%EB%8B%A4#Korean"
+  },
+  "wikt:주무시다": {
+    "title": "Wiktionary · 주무시다",
+    "url": "https://en.wiktionary.org/wiki/%EC%A3%BC%EB%AC%B4%EC%8B%9C%EB%8B%A4#Korean"
+  },
+  "wikt:계시다": {
+    "title": "Wiktionary · 계시다",
+    "url": "https://en.wiktionary.org/wiki/%EA%B3%84%EC%8B%9C%EB%8B%A4#Korean"
+  },
+  "wikt:성함": {
+    "title": "Wiktionary · 성함",
+    "url": "https://en.wiktionary.org/wiki/%EC%84%B1%ED%95%A8#Korean"
+  },
+  "wikt:姓": {
+    "title": "Wiktionary · 姓",
+    "url": "https://en.wiktionary.org/wiki/%E5%A7%93#Korean"
+  },
+  "wikt:銜": {
+    "title": "Wiktionary · 銜",
+    "url": "https://en.wiktionary.org/wiki/%E9%8A%9C#Korean"
+  },
+  "wikt:명함": {
+    "title": "Wiktionary · 명함",
+    "url": "https://en.wiktionary.org/wiki/%EB%AA%85%ED%95%A8#Korean"
+  },
+  "wikt:연세": {
+    "title": "Wiktionary · 연세",
+    "url": "https://en.wiktionary.org/wiki/%EC%97%B0%EC%84%B8#Korean"
+  },
+  "wikt:年": {
+    "title": "Wiktionary · 年",
+    "url": "https://en.wiktionary.org/wiki/%E5%B9%B4#Korean"
+  },
+  "wikt:歲": {
+    "title": "Wiktionary · 歲",
+    "url": "https://en.wiktionary.org/wiki/%E6%AD%B2#Korean"
+  },
+  "nikl:go-itda": {
+    "title": "NIKL Korean Basic Dictionary · -고 있다",
+    "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=72238&nation=eng"
+  },
+  "nikl:haeyoche": {
+    "title": "NIKL Korean Basic Dictionary · 해요체 (해요體)",
+    "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=84691&nation=eng"
+  },
+  "nikl:banmal": {
+    "title": "NIKL Korean Basic Dictionary · 반말 (半말)",
+    "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15843&nation=eng"
+  },
+  "nikl:kkeseo": {
+    "title": "NIKL Standard Korean Dictionary · 께서",
+    "url": "https://stdict.korean.go.kr/search/searchResult.do?pageSize=10&searchKeyword=%EA%BB%98%EC%84%9C"
+  },
+  "nikl:deurida": {
+    "title": "NIKL Urimalsaem · 드리다 (history: 15th century to now)",
+    "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=2962&viewType=confirm"
+  },
+  "nikl:jumusida": {
+    "title": "NIKL Standard Korean Dictionary · 주무시다",
+    "url": "https://stdict.korean.go.kr/search/searchResult.do?pageSize=10&searchKeyword=%EC%A3%BC%EB%AC%B4%EC%8B%9C%EB%8B%A4"
+  },
+  "nikl:gyesida": {
+    "title": "NIKL Urimalsaem · 계시다 (history: 겨시다 > 계시다)",
+    "url": "https://opendict.korean.go.kr/dictionary/view?sense_no=487488&viewType=confirm"
+  },
+  "nikl:seongham": {
+    "title": "NIKL Standard Korean Dictionary · 성함 (姓銜)",
+    "url": "https://stdict.korean.go.kr/search/searchResult.do?pageSize=10&searchKeyword=%EC%84%B1%ED%95%A8"
+  },
+  "nikl:yeonse": {
+    "title": "NIKL Standard Korean Dictionary · 연세 (年歲)",
+    "url": "https://stdict.korean.go.kr/search/searchResult.do?pageSize=10&searchKeyword=%EC%97%B0%EC%84%B8"
   }
 }

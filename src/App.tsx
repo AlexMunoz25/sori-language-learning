@@ -1,25 +1,33 @@
-import { useEffect, useMemo, useState } from 'react'
-import { flushSync } from 'react-dom'
-import { ArrowLeft, ArrowRight, AudioLines, BookOpen, Check, ChevronDown, ClipboardCheck, Download, Headphones, HelpCircle, Layers, Leaf, Lightbulb, Link2, Shuffle, Star } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { AudioLines, Check, ClipboardCheck, Download, GraduationCap, HelpCircle, Languages, Leaf, Library, Lightbulb, Repeat } from 'lucide-react'
+import { BottomNav } from './components/BottomNav'
 import { CategorySelector } from './components/CategorySelector'
-import { EmptyCollection } from './components/EmptyCollection'
+import { LanguagesSheet } from './components/LanguagesSheet'
+import { LearnView } from './components/LearnView'
+import { LibraryView } from './components/LibraryView'
 import { Modal } from './components/Modal'
+import { ReviewView } from './components/ReviewView'
+import { SearchSheet } from './components/SearchSheet'
 import { SectionTabs } from './components/SectionTabs'
-import { StudyCard } from './components/StudyCard'
-import { TestView } from './components/TestView'
-import { cardById, cards, countOf, sectionInfo } from './data/cards'
+import { cardById, cards, sectionInfo } from './data/cards'
+import { unitById } from './data/units'
 import { anchorFeedback } from './hooks/useAnchorChoice'
-import { eligible, useStudySession, type StudyFilter } from './hooks/useStudySession'
+import { readStorage, writeStorage } from './hooks/storage'
+import { useLanguages } from './hooks/useLanguages'
+import { useLearn } from './hooks/useLearn'
+import { useReview } from './hooks/useReview'
+import { useStudySession, type Destination } from './hooks/useStudySession'
 import { useTestSession } from './hooks/useTestSession'
-import { formatPoints } from './recall/scoring'
+import type { RecallEntry } from './recall/review'
 
-const poolLabel = ({ category, filter }: { category: string; filter: StudyFilter }) => filter === 'difficult' ? `Difficult · ${category}` : category
-const capitalize = (text: string) => text.charAt(0).toUpperCase() + text.slice(1)
+type Sheet = 'category' | 'search' | 'languages' | 'guide'
+const guideSeenKey = 'sori.guideSeen.v1'
+const titles: Record<Destination, string> = { learn: 'Learn', library: 'Library', review: 'Review' }
 /** Korean inside an announcement is marked as Korean, so screen readers switch voice for it. */
 const spoken = (text: string) => text.split(/([가-힣]+(?:\s+[가-힣]+)*\??)/).map((part, index) => index % 2 ? <span key={index} lang="ko">{part}</span> : part)
 
-function downloadAnchorFeedback() {
-  const feedback = anchorFeedback(cards)
+function downloadAnchorFeedback(entries: RecallEntry[], languages: string[]) {
+  const feedback = anchorFeedback(cards, entries, languages)
   const url = URL.createObjectURL(new Blob([JSON.stringify(feedback, null, 2)], { type: 'application/json' }))
   const link = Object.assign(document.createElement('a'), { href: url, download: `sori-anchor-feedback-${feedback.exportedAt.slice(0, 10)}.json` })
   document.body.append(link)
@@ -30,112 +38,75 @@ function downloadAnchorFeedback() {
 
 export default function App() {
   const session = useStudySession()
-  const [categoryOpen, setCategoryOpen] = useState(false)
-  const [guideOpen, setGuideOpen] = useState(false)
-  const [announcement, setAnnouncement] = useState('')
-  // Learn opens this card (same word, same position) in Standard mode with its Memory Anchor showing.
-  const [learning, setLearning] = useState<{ id: string; revision: number }>()
-  const { item, mode, total, index, filter, section } = session
-  // “word” and “words”, “particle” and “particles”: labels follow the section.
-  const [noun, nouns] = sectionInfo[section].noun
   const test = useTestSession()
-  const testing = mode === 'test'
-  // While a test runs (answering, being read, awaiting the learner, reviewed), nothing may change its words or move the hidden deck.
-  const testRunning = testing && test.phase !== 'setup' && test.phase !== 'complete'
-  const pool = useMemo(() => eligible(session.category, filter, session.progress).map(id => cardById.get(id)!), [session.category, filter, session.progress])
-  const feedback = guideOpen ? anchorFeedback(cards).summary : undefined
+  // A lesson's practice runs apart from Review's tests, so neither ever replaces the other.
+  const practice = useTestSession({ storageKey: 'sori.learnTest.v1', source: 'learn', savePreferences: false })
+  const review = useReview()
+  const learn = useLearn()
+  const languages = useLanguages()
+  const [sheet, setSheet] = useState<Sheet | null>(() => readStorage('localStorage', guideSeenKey) === true ? null : 'guide')
   useEffect(() => {
-    function handleKey(event: KeyboardEvent) {
-      if (testing || categoryOpen || guideOpen || event.altKey || event.ctrlKey || event.metaKey || (event.target as HTMLElement).closest('input, textarea, select, [contenteditable]')) return
-      if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); session.navigate(event.key === 'ArrowRight' ? 1 : -1) }
-    }
-    window.addEventListener('keydown', handleKey)
-    return () => window.removeEventListener('keydown', handleKey)
-  }, [testing, categoryOpen, guideOpen, session.navigate])
-  useEffect(() => { if (!testing) setAnnouncement(total ? `Card ${index + 1} of ${total}` : `No ${nouns} in this selection`) }, [index, total, item?.id, testing, nouns])
-  const answeredCount = Object.keys(test.test?.answers ?? {}).length
-  const questionCount = test.test?.questions.length ?? 0
+    if (sheet === 'guide') writeStorage('localStorage', guideSeenKey, true)
+  }, [sheet])
+  const [announcement, setAnnouncement] = useState('')
+  const { destination } = session
+  const feedback = sheet === 'guide' ? anchorFeedback(cards, review.entries, languages).summary : undefined
+  const close = () => setSheet(null)
 
-  return <div className="app-shell">
+  return <div className="app-shell" data-destination={destination}>
     <header className="app-header flex items-center justify-between">
       <a className="brand flex items-center gap-2.5" href="/" aria-label="Sori home"><span className="brand-mark"><AudioLines size={23} strokeWidth={1.7} /></span><span>sori<span className="brand-period">.</span></span></a>
-      {/* In the header's middle on wide screens; on phones, a row of its own under the brand. */}
-      <SectionTabs section={section} disabled={testRunning} onSelect={next => {
+      {/* The Library's halves: in the header's middle on wide screens; on phones, a row of their own under the brand. */}
+      {destination === 'library' && <SectionTabs section={session.section} onSelect={next => {
         session.switchSection(next)
         setAnnouncement(sectionInfo[next].label)
-      }} />
-      <div className="flex items-center gap-3"><span className="saved-label"><span />On your own rhythm</span><button className="icon-button help-button" aria-label="How to study" onClick={() => setGuideOpen(true)}><HelpCircle size={21} strokeWidth={1.6} /></button></div>
+      }} />}
+      <div className="header-actions flex items-center gap-1">
+        <span className="saved-label"><span />On your own rhythm</span>
+        <button className="icon-button" aria-label="Languages you know" aria-haspopup="dialog" onClick={() => setSheet('languages')}><Languages size={20} strokeWidth={1.6} /></button>
+        <button className="icon-button help-button" aria-label="How to study" aria-haspopup="dialog" onClick={() => setSheet('guide')}><HelpCircle size={21} strokeWidth={1.6} /></button>
+      </div>
     </header>
     <main className="study-main">
       <div className="page-intro flex items-center justify-between gap-4">
-        <div><p className="eyebrow">YOUR DAILY KOREAN</p><h1>A little, every day.</h1></div>
+        <div><p className="eyebrow">{titles[destination].toUpperCase()} · YOUR DAILY KOREAN</p><h1>A little, every day.</h1></div>
         <span className="intro-leaf" aria-hidden="true"><Leaf size={25} strokeWidth={1.4} /></span>
       </div>
-      <div className="mode-selector grid grid-cols-3 gap-1" role="group" aria-label="Study mode">
-        <button className={mode === 'standard' ? 'selected' : ''} aria-pressed={mode === 'standard'} onClick={() => session.setMode('standard')}><BookOpen size={17} />Standard</button>
-        <button className={mode === 'listening' ? 'selected' : ''} aria-pressed={mode === 'listening'} onClick={() => session.setMode('listening')}><Headphones size={18} />Listening</button>
-        <button className={testing ? 'selected' : ''} aria-pressed={testing} onClick={() => session.setMode('test')}><ClipboardCheck size={17} />Test</button>
-      </div>
-      <div className="deck-toolbar flex items-center justify-between gap-3">
-        {testRunning && test.test
-          ? <span className="test-pool flex items-center gap-2"><Layers size={17} /><span>{poolLabel(test.test.pool)}</span></span>
-          : <button className="category-trigger flex items-center gap-2" onClick={() => setCategoryOpen(true)} aria-label="Choose category" aria-haspopup="dialog"><Layers size={17} /><span>{session.category}</span><ChevronDown size={16} /></button>}
-        {testing
-          ? testRunning ? <div className="flex items-center gap-1"><span className="deck-count" data-testid="test-count">Question {test.test!.current + 1} of {questionCount}</span>
-            <span className="running-score" data-testid="running-score" aria-label={`Score: ${formatPoints(test.score!.earned)} of ${test.score!.possible} points`}>{formatPoints(test.score!.earned)}<span>/{test.score!.possible} pts</span></span>
-            <button className="end-test" onClick={() => {
-              // The button disappears with the test, so focus moves to what replaces it.
-              flushSync(() => test.end())
-              setAnnouncement(answeredCount ? 'Test ended' : 'Test cancelled')
-              document.getElementById(answeredCount ? 'test-results-title' : 'test-setup-title')?.focus()
-            }}>End test</button></div>
-            : <span className="deck-count">{countOf(section, pool.length)}</span>
-          : <div className="flex items-center gap-1"><span className="deck-count" data-testid="deck-count">{total ? index + 1 : 0}<span> / {total}</span></span><button className="icon-button shuffle-button" aria-label={`Shuffle ${nouns}`} disabled={total < 2} onClick={() => { session.reshuffle(); setAnnouncement(`${capitalize(nouns)} shuffled`) }}><Shuffle size={18} /></button></div>}
-      </div>
-      {testing
-        ? <div className="deck-progress" role="progressbar" aria-label="Test progress" aria-valuenow={answeredCount} aria-valuemin={0} aria-valuemax={questionCount || 1}
-          aria-valuetext={testRunning ? `Question ${test.test!.current + 1} of ${questionCount}` : test.phase === 'complete' ? `${answeredCount} answered` : 'Not started'}>
-          <span style={{ width: `${questionCount ? answeredCount / questionCount * 100 : 0}%` }} /></div>
-        : <div className="deck-progress" role="progressbar" aria-label="Position in deck" aria-valuenow={total ? index + 1 : 0} aria-valuemin={0} aria-valuemax={total || 1}><span style={{ width: `${total ? (index + 1) / total * 100 : 0}%` }} /></div>}
-      {testing ? <TestView test={test} section={section} pool={pool} poolInfo={{ category: session.category, filter }} poolLabel={poolLabel({ category: session.category, filter })}
-        progress={session.progress} difficultCount={session.difficultCount} onSelect={(category, nextFilter) => session.select(category, nextFilter)}
-        onSetStatus={session.setStatus} announce={setAnnouncement} />
-        : item ? <StudyCard key={`${item.id}:${mode}:${session.revision}`} item={item} mode={mode} status={session.progress[item.id]} onMark={status => {
-        session.mark(status)
-        setAnnouncement(session.progress[item.id] === status ? 'Mark removed' : `Marked as ${status}`)
-      }} onNavigate={session.navigate} openAnchor={learning?.id === item.id && learning.revision === session.revision} onLearn={() => {
-        setLearning({ id: item.id, revision: session.revision })
-        session.setMode('standard')
-        setAnnouncement(`Learning ${item.korean}`)
-        window.scrollTo({ top: 0 })
-      }} /> : <EmptyCollection section={section} difficultCount={session.difficultCount} onSelect={(category, nextFilter) => session.select(category, nextFilter)} />}
-      {!testing && item && <nav className="card-navigation flex items-center justify-between gap-3" aria-label={`${capitalize(noun)} navigation`}>
-        <button className="previous-button" aria-label={`Previous ${noun}`} disabled={total < 2} onClick={() => session.navigate(-1)}><ArrowLeft size={20} /><span>Previous</span></button>
-        <span className="swipe-note">Swipe to explore</span>
-        <button className="next-button" aria-label={`Next ${noun}`} disabled={total < 2} onClick={() => session.navigate(1)}><span>Next</span><ArrowRight size={20} /></button>
-      </nav>}
-      <div className="session-note flex items-center justify-center gap-1.5"><Check size={13} />{session.storageAvailable && test.storageAvailable ? <span>{session.knownCount} known · Progress saved on this device</span> : <span>Storage unavailable · progress lasts until you close this page</span>}</div>
+      {destination === 'learn' && <LearnView practice={practice} due={review.due.length} announce={setAnnouncement} onLanguages={() => setSheet('languages')}
+        onReview={() => { session.go('review'); setAnnouncement(titles.review); window.scrollTo({ top: 0 }) }} />}
+      {destination === 'library' && <LibraryView session={session} announce={setAnnouncement} onChoose={() => setSheet('category')} onSearch={() => setSheet('search')} blocked={!!sheet} />}
+      {destination === 'review' && <ReviewView session={session} test={test} announce={setAnnouncement} onChoose={() => setSheet('category')} />}
+      <div className="session-note flex items-center justify-center gap-1.5"><Check size={13} />{session.storageAvailable && test.storageAvailable && review.saved
+        ? <span>{session.knownCount} known · Progress saved on this device</span> : <span>Storage unavailable · progress lasts until you close this page</span>}</div>
     </main>
-    {!testRunning && <footer className="app-footer">
-      <nav className="bottom-nav grid grid-cols-2" aria-label="Word collection">
-        <button className={filter === 'all' ? 'selected' : ''} aria-pressed={filter === 'all'} onClick={() => { if (filter !== 'all') session.select(session.category, 'all') }}><BookOpen size={20} strokeWidth={1.7} /><span>Study</span></button>
-        <button className={filter === 'difficult' ? 'selected' : ''} aria-pressed={filter === 'difficult'} onClick={() => { if (filter !== 'difficult') session.select(sectionInfo[section].all, 'difficult') }}><Star size={20} strokeWidth={1.7} /><span>Difficult</span><span className="nav-badge">{session.difficultCount}</span></button>
-      </nav>
-    </footer>}
+    {/* Always there: a test or a lesson left half-way waits, exactly as it was, until you come back. */}
+    <footer className="app-footer"><BottomNav destination={destination} due={review.due.length} onGo={next => {
+      session.go(next)
+      setAnnouncement(learn.open && next === 'learn' ? `Learn: ${unitById.get(learn.open)?.title ?? ''}` : titles[next])
+      window.scrollTo({ top: 0 })
+    }} /></footer>
     <div className="sr-only" role="status" aria-live="polite">{spoken(announcement)}</div>
-    <CategorySelector open={categoryOpen} onClose={() => setCategoryOpen(false)} section={section} selected={session.category} onSelect={category => session.select(category)} difficult={filter === 'difficult'} progress={session.progress} />
-    <Modal open={guideOpen} onClose={() => setGuideOpen(false)} title="Make the sound stick">
+    <CategorySelector open={sheet === 'category'} onClose={close} section={session.section} selected={session.category} filter={session.filter}
+      onSelect={(category, filter) => session.select(category, filter)} progress={session.progress} />
+    <SearchSheet open={sheet === 'search'} onClose={close} onOpen={id => { session.open(id); setAnnouncement(`Opened ${cardById.get(id)?.korean ?? ''}`) }} />
+    <LanguagesSheet open={sheet === 'languages'} onClose={close} />
+    <Modal open={sheet === 'guide'} onClose={close} title="Make the sound stick">
       <div className="guide-content">
-        <p className="guide-lead">A few words. A little curiosity. As often as you like.</p>
-        <ol><li><strong>Listen first.</strong> Play at a natural or slower pace. Try to recognize the sound before revealing anything.</li><li><strong>Find your hook.</strong> Memory Anchor offers three ways to hear the word as something you already know. Pick the one that sticks; only your pick shows from then on, and Change brings the others back. Roots shows researched word origins and related words.</li><li><strong>Check the meaning.</strong> Reveal it when you’re ready. Dictionary forms and useful notes appear here too.</li><li><strong>Come back to the tricky ones.</strong> Mark Difficult to build a personal practice pile. Mark Known when it sticks.</li></ol>
-        <div className="guide-note"><Headphones size={20} /><div><strong>A little help with listening</strong><p>Listening mode hides the Korean. Play the word, or show just its meaning, write what you recall on the pad, then reveal the word below your writing to compare. Learn opens the word in Standard mode with its Memory Anchor. Audio only plays when you tap. Your browser uses an available Korean voice; voice quality and offline availability depend on your device.</p></div></div>
-        <div className="guide-note"><Link2 size={20} /><div><strong>Connectors and particles</strong><p>The Connectors and Particles tabs work like Vocabulary: listen, find your anchor, check Roots and the meaning. Each card adds Examples (play any sentence; the piece you're studying is highlighted), Usage rules (its forms and how it attaches), Memory tricks, and Comparisons with look-alikes such as <span lang="ko">은/는</span> and <span lang="ko">이/가</span>. Each section keeps its own place, categories, and Difficult pile.</p></div></div>
-        <div className="guide-note"><ClipboardCheck size={20} /><div><strong>Test what you remember</strong><p>Test asks one question at a time from the words you've chosen: type the English for a Korean word, or write the Korean for an English meaning. Answers are checked for you. Typed meanings may use a synonym or have a small typo; handwriting is read by Google's handwriting recognition (only your strokes are sent), and when it isn't sure what you wrote, you say. A correct answer earns 1 point, or ½ if you asked for a hint (from your anchor, a clue, or the word's shape). Results show your score, let you review every answer, retake the same words, and add incorrect ones to Difficult.</p></div></div>
-        <div className="guide-note"><Lightbulb size={20} /><div><strong>Is your anchor working?</strong><p>One, three, and seven days after you pick an anchor, Meaning asks whether you remembered the word. If an anchor keeps failing, you'll get a gentle nudge to try another; it never changes on its own.</p>
-          {feedback && <p className="feedback-summary">{feedback.chosen} chosen · {feedback.rated} rated · {feedback.recallChecks} recall checks · {feedback.wantNewIdeas} asking for new ideas</p>}
-          <button className="feedback-download" onClick={downloadAnchorFeedback}><Download size={14} aria-hidden="true" />Download anchor feedback</button></div></div>
-        <p className="guide-small">Reading guides approximate pronunciation: eo ≈ 어, eu ≈ 으. Sound anchors are approximate too; let the audio guide your pronunciation. Use ← → keys or swipe across the word to navigate.</p>
-        <p className="guide-small">Your marks, anchor choices, and ratings stay in this browser. No account, tracking, or sync. Clearing browser storage also clears your progress.</p>
+        <div className="guide-welcome">
+          <p><strong>Hi, I’m Alex Marin (<a href="https://github.com/AlexMunoz25" target="_blank" rel="noopener noreferrer">EigenAlex</a>).</strong></p>
+          <p>I’m a robotics and aerospace engineer learning Korean. It’s been a real challenge, so I built Sori to help myself learn, one small step at a time. If it makes your journey a little easier too, that’s even better.</p>
+          <p>Thanks for being here. Let’s keep learning together!</p>
+        </div>
+        <p className="guide-lead">Hear it, anchor it, see it at work, recall it, use it, and come back to it.</p>
+        <div className="guide-note"><GraduationCap size={20} /><div><strong>Learn</strong><p>Guided units, a few cards at a time. Hear each one, pick the Memory Anchor that makes it stick (or write your own), see it in a sentence, then recall its meaning and use it. Finished cards go to Review.</p></div></div>
+        <div className="guide-note"><Library size={20} /><div><strong>Library</strong><p>Every word and grammar point, to explore at your pace. Vocabulary and Grammar each keep their place; Grammar holds particles, connectors, and more. Standard reveals pronunciation, anchors, Roots, examples, and meaning one at a time; Listening hides the Korean so you can write what you hear. Search finds anything by Korean, English, or how it sounds.</p></div></div>
+        <div className="guide-note"><Repeat size={20} /><div><strong>Review</strong><p>Cards come back just before you’d forget them: tomorrow if you missed one, a little later each time you knew it. Test yourself on any selection, and practise your Difficult pile. Answers are checked for you; a hint makes a correct answer worth ½ point.</p></div></div>
+        <div className="guide-note"><Lightbulb size={20} /><div><strong>Is your anchor working?</strong><p>Each word offers anchors of three kinds: how it sounds, how Korean builds it, and real moments from Korean songs and shows, which play from YouTube only when you press play. An invented sound-alike is labelled as one; an anchor built from verified roots says so, with the evidence in Roots. Each anchor shows how often you recalled the card while using it, and one, three, and seven days after you pick one, Meaning asks whether you remembered. A failing anchor gets a gentle nudge; it never changes on its own. Anchors in the languages you know come first.</p>
+          {feedback && <p className="feedback-summary">{feedback.chosen} chosen · {feedback.rated} rated · {feedback.recallChecks} recall checks · {feedback.tested} tested with an anchor · {feedback.wantNewIdeas} asking for new ideas</p>}
+          <button className="feedback-download" onClick={() => downloadAnchorFeedback(review.entries, languages)}><Download size={14} aria-hidden="true" />Download anchor feedback</button></div></div>
+        <div className="guide-note"><ClipboardCheck size={20} /><div><strong>Handwriting</strong><p>English → Korean questions ask you to write the word. Google's handwriting recognition reads it (only your strokes are sent), and when it isn't sure, you say what you wrote.</p></div></div>
+        <p className="guide-small">Reading guides approximate pronunciation: eo ≈ 어, eu ≈ 으. Let the audio lead. Use ← → keys or swipe to move between cards.</p>
+        <p className="guide-small">Your marks, anchors, ratings, lessons, and reviews stay in this browser. No account, tracking, or sync. Clearing browser storage also clears your progress.</p>
       </div>
     </Modal>
   </div>

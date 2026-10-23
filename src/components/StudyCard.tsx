@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { AudioLines, BookOpen, Check, ChevronDown, Eye, EyeOff, Lightbulb, MessageSquareQuote, MessageSquareText, Network, RotateCcw, Ruler, Scale, Sparkles, Star, Turtle, Volume2, X } from 'lucide-react'
-import { sectionInfo, spokenText } from '../data/cards'
+import { nounOf, spokenText } from '../data/cards'
 import type { StudyMode, VocabularyItem, WordStatus } from '../types/vocabulary'
 import { useAnchorChoice } from '../hooks/useAnchorChoice'
 import { useSpeech } from '../hooks/useSpeech'
-import { GrammarComparisons, GrammarExamples, GrammarTricks, GrammarUsage } from './GrammarContent'
+import { ExampleSentence, GrammarComparisons, GrammarExamples, GrammarTricks, GrammarUsage } from './GrammarContent'
 import { KoreanWord } from './KoreanWord'
 import { MemoryAnchor } from './MemoryAnchor'
 import { RootsContent } from './RootsContent'
@@ -22,15 +22,15 @@ function Reveal({ label, icon, children, tone = '', compact = false, defaultOpen
   </section>
 }
 
-export function StudyCard({ item, mode, status, onMark, onNavigate, onLearn, openAnchor = false }: {
+export function StudyCard({ item, mode, status, onMark, onNavigate, onStudy, openAnchor = false }: {
   item: VocabularyItem; mode: StudyMode; status?: WordStatus; onMark: (status: WordStatus) => void; onNavigate: (direction: 1 | -1) => void
-  /** Listening only: open this word in Standard mode. */
-  onLearn?: () => void
+  /** Listening only: open this card in Standard mode. */
+  onStudy?: () => void
   /** Arrived from Learn: start with the Memory Anchor open. */
   openAnchor?: boolean
 }) {
   const listening = mode === 'listening'
-  const [noun] = sectionInfo[item.section].noun
+  const noun = nounOf(item)
   const [wordVisible, setWordVisible] = useState(false)
   const [reset, setReset] = useState(0)
   const speech = useSpeech()
@@ -41,7 +41,7 @@ export function StudyCard({ item, mode, status, onMark, onNavigate, onLearn, ope
   useEffect(() => () => cancel(), [cancel])
   useEffect(() => { if (openAnchor) card.current?.focus({ preventScroll: true }) }, [])
   const koreanWord = <KoreanWord word={item.korean} />
-  return <article ref={card} tabIndex={-1} className={`study-card ${listening ? 'listening-card' : ''} ${item.grammar ? 'grammar-card' : ''}`} aria-label={item.grammar ? `${item.section === 'connectors' ? 'Connector' : 'Particle'} study card` : 'Vocabulary study card'}
+  return <article ref={card} tabIndex={-1} className={`study-card ${listening ? 'listening-card' : ''} ${item.grammar ? 'grammar-card' : ''}`} aria-label={item.section === 'vocabulary' ? 'Vocabulary study card' : `${noun.charAt(0).toUpperCase()}${noun.slice(1)} study card`}
     onTouchStart={event => {
       // Writing on the pad must never turn the page.
       if (event.touches.length !== 1 || (event.target as HTMLElement).closest('button, a, input, .writing-pad')) { touch.current = null; return }
@@ -121,13 +121,14 @@ export function StudyCard({ item, mode, status, onMark, onNavigate, onLearn, ope
           </div>
         </div>}
         <WordNotes item={item} />
+        {item.example && <ExampleSentence example={item.example} speech={speech} />}
         <button className="try-again" onClick={() => { setReset(reset + 1); speech.cancel() }}><RotateCcw size={14} />Hide & try again</button>
       </Reveal>
     </div>}
     <div className={`progress-controls grid gap-2 ${listening ? 'grid-cols-3' : 'grid-cols-2'}`}>
       <button className={`mark-button difficult ${status === 'difficult' ? 'active' : ''}`} aria-label="Mark as difficult" aria-pressed={status === 'difficult'} onClick={() => onMark('difficult')}><Star size={18} fill={status === 'difficult' ? 'currentColor' : 'none'} />Difficult</button>
       <button className={`mark-button known ${status === 'known' ? 'active' : ''}`} aria-label="Mark as known" aria-pressed={status === 'known'} onClick={() => onMark('known')}><Check size={19} />Known</button>
-      {listening && <button className="mark-button learn" aria-label={`Learn this ${noun}`} onClick={onLearn}><BookOpen size={18} />Learn</button>}
+      {listening && <button className="mark-button learn" aria-label={`Study this ${noun}`} onClick={onStudy}><BookOpen size={18} />Study</button>}
     </div>
   </article>
 }

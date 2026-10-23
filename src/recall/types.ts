@@ -1,4 +1,4 @@
-import type { AnchorKind, VocabularyItem } from '../types/vocabulary'
+import type { AnchorKind, CultureSource, VocabularyItem } from '../types/vocabulary'
 import type { Hint } from './hints'
 import type { InkStroke } from './ink'
 
@@ -45,7 +45,7 @@ export interface HintContext {
   /** The question's payload from `prepare`. */
   data?: unknown
   /** The learner's saved Memory Anchor for the card, if any. `own`: one they wrote, so it may lack the usual CAPITAL keywords. */
-  anchor?: { text: string; kind: AnchorKind; own: boolean }
+  anchor?: { text: string; kind: AnchorKind; own: boolean; source?: CultureSource }
 }
 
 export interface TestQuestion {
@@ -84,4 +84,6 @@ export interface AnswerRecord {
   self?: Verdict
   /** The learner's correction of what their handwriting says. */
   corrected?: string
+  /** Id of the Memory Anchor the learner had chosen for the card when answering. */
+  anchor?: string
 }

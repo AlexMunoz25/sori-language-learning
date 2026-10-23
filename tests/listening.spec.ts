@@ -7,6 +7,7 @@ async function openListening(page: Page, word: string) {
   const item = byWord(word)
   // Seed once per test, so reloads keep whatever the page saved.
   await page.addInitScript(({ id, category }) => {
+    localStorage.setItem('sori.guideSeen.v1', 'true')
     if (sessionStorage.getItem('test.seeded')) return
     sessionStorage.setItem('test.seeded', 'true')
     sessionStorage.setItem('sori.session.v1', JSON.stringify({ category, mode: 'listening', filter: 'all', order: [id], index: 0 }))
@@ -160,12 +161,12 @@ test('The meaning names who says the word when that tells similar words apart', 
   await expect(page.getByRole('article', { name: 'Vocabulary study card' })).toContainText(`Used by: ${item.speaker}`)
 })
 
-test('Learn opens the same word in Standard mode with its Memory Anchor showing', async ({ page }) => {
+test('Study opens the same word in Standard mode with its Memory Anchor showing', async ({ page }) => {
   await openListening(page, '배워요')
   await page.getByRole('button', { name: 'Next word' }).click()
   await page.getByRole('button', { name: 'Reveal word' }).click()
   const word = await page.getByTestId('korean-word').textContent()
-  await page.getByRole('button', { name: 'Learn this word' }).click()
+  await page.getByRole('button', { name: 'Study this word' }).click()
   await expect(page.getByRole('button', { name: 'Standard', exact: true })).toHaveAttribute('aria-pressed', 'true')
   await expect(page.getByTestId('korean-word')).toHaveText(word!)
   await expect(page.getByTestId('deck-count')).toHaveText(/^2 \//)
@@ -223,7 +224,7 @@ test('Writing never swipes to another word, ignores a second finger, and is clea
 test('The listening card fits phone widths with usable touch targets, even for a long phrase', async ({ page }, testInfo) => {
   await openListening(page, '무슨 음식을 제일 좋아해요?')
   await draw(page, [.1, .4], [.3, .6])
-  for (const name of ['Play pronunciation', 'Show meaning', 'Reveal word', 'Pen', 'Eraser', 'Undo', 'Clear all', 'Learn this word']) {
+  for (const name of ['Play pronunciation', 'Show meaning', 'Reveal word', 'Pen', 'Eraser', 'Undo', 'Clear all', 'Study this word']) {
     const box = await page.getByRole('button', { name, exact: true }).boundingBox()
     expect(box!.height, name).toBeGreaterThanOrEqual(44)
   }

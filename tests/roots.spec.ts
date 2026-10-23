@@ -1,6 +1,7 @@
 import { expect, test, type Page } from '@playwright/test'
 import { vocabulary } from '../src/data/vocabulary'
 import { originReviews } from '../src/data/roots'
+import { defaultLanguages, fitsLanguages } from '../src/hooks/useLanguages'
 
 const byWord = (word: string) => vocabulary.find(item => item.korean === word)!
 const related = (word: string) => byWord(word).roots?.related ?? []
@@ -8,6 +9,7 @@ const related = (word: string) => byWord(word).roots?.related ?? []
 async function openCard(page: Page, word: string, mode = 'standard') {
   const item = byWord(word)
   await page.addInitScript(({ id, category, mode }) => {
+    localStorage.setItem('sori.guideSeen.v1', 'true')
     sessionStorage.setItem('sori.session.v1', JSON.stringify({ category, mode, filter: 'all', order: [id], index: 0 }))
   }, { id: item.id, category: item.category, mode })
   await page.goto('/')
@@ -62,14 +64,14 @@ test('Roots, Memory Anchor, pronunciation, and meaning reveal independently', as
   await expect(page.getByTestId('mnemonic')).toHaveCount(0)
 })
 
-test('Listening leaves both memory layers to Learn, which opens them on the same word', async ({ page }) => {
+test('Listening leaves both memory layers to Study, which opens them on the same word', async ({ page }) => {
   await openCard(page, '도서관', 'listening')
   await page.getByRole('button', { name: 'Reveal word' }).click()
   await expect(page.getByRole('button', { name: 'Show roots' })).toHaveCount(0)
   await expect(page.getByRole('button', { name: 'Show memory anchor' })).toHaveCount(0)
-  await page.getByRole('button', { name: 'Learn this word' }).click()
+  await page.getByRole('button', { name: 'Study this word' }).click()
   await expect(page.getByTestId('korean-word')).toHaveText('도서관')
-  await expect(page.getByTestId('anchor-option')).toHaveCount(3)
+  await expect(page.getByTestId('anchor-option')).toHaveCount(byWord('도서관').anchors.filter(anchor => fitsLanguages(anchor, defaultLanguages)).length)
   await expect(page.getByTestId('roots')).toHaveCount(0)
   await page.getByRole('button', { name: 'Show roots' }).click()
   await expect(page.getByTestId('related-words')).toContainText('서점')
@@ -81,15 +83,15 @@ test('Listening leaves both memory layers to Learn, which opens them on the same
 
 test('Every anchor candidate names its evidence type', () => {
   for (const item of vocabulary) for (const anchor of item.anchors) {
-    expect(['sound', 'roots', 'loanword', 'reading'], `${item.id}#${anchor.id}`).toContain(anchor.kind)
+    expect(['sound', 'roots', 'loanword', 'reading', 'pattern', 'culture'], `${item.id}#${anchor.id}`).toContain(anchor.kind)
   }
 })
 
 test('Word-part anchors are labelled as verified and explain the sound-alike marker', async ({ page }) => {
-  await openCard(page, '날씨가 더워요')
+  await openCard(page, '액션 영화')
   await page.getByRole('button', { name: 'Show memory anchor' }).click()
-  const index = byWord('날씨가 더워요').anchors.findIndex(anchor => anchor.kind === 'roots' && anchor.text.includes('≈'))
-  await page.getByTestId('anchor-option').nth(index).click()
+  expect(byWord('액션 영화').anchors.some(anchor => anchor.kind === 'roots' && anchor.text.includes('≈'))).toBe(true)
+  await page.getByTestId('anchor-group-korean').getByTestId('anchor-option').filter({ hasText: '≈' }).click()
   await expect(page.getByText('Verified word components')).toBeVisible()
   await expect(page.getByTestId('mnemonic')).toContainText('≈')
   await expect(page.getByText('≈ marks a sound-alike', { exact: false })).toBeVisible()
@@ -99,7 +101,7 @@ test('Unhelpful origins can be omitted without breaking study', async ({ page })
   await openCard(page, '겨울')
   await expect(page.getByRole('button', { name: 'Show roots' })).toHaveCount(0)
   await page.getByRole('button', { name: 'Show memory anchor' }).click()
-  await expect(page.getByTestId('anchor-option')).toHaveCount(3)
+  await expect(page.getByTestId('anchor-option')).toHaveCount(byWord('겨울').anchors.filter(anchor => fitsLanguages(anchor, defaultLanguages)).length)
   await page.getByRole('button', { name: 'Show pronunciation' }).click()
   await expect(page.getByTestId('pronunciation')).toHaveText('gyeo-ul')
   await page.getByRole('button', { name: 'Show meaning' }).click()

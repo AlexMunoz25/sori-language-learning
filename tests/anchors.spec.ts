@@ -2,6 +2,8 @@ import { readFileSync } from 'node:fs'
 import { expect, test, type Page } from '@playwright/test'
 import { rootParts } from '../src/data/root-anchors'
 import { vocabulary } from '../src/data/vocabulary'
+import { defaultLanguages, fitsLanguages } from '../src/hooks/useLanguages'
+import type { VocabularyItem } from '../src/types/vocabulary'
 
 const byWord = (word: string) => vocabulary.find(item => item.korean === word)!
 const daysAgo = (days: number) => new Date(Date.now() - days * 86_400_000).toISOString()
@@ -10,6 +12,7 @@ async function openCard(page: Page, word: string, anchors?: unknown) {
   const item = byWord(word)
   // Seed once per test, so reloads keep whatever the page saved.
   await page.addInitScript(({ id, category, anchors }) => {
+    localStorage.setItem('sori.guideSeen.v1', 'true')
     if (sessionStorage.getItem('test.seeded')) return
     sessionStorage.setItem('test.seeded', 'true')
     sessionStorage.setItem('sori.session.v1', JSON.stringify({ category, mode: 'standard', filter: 'all', order: [id], index: 0 }))
@@ -19,13 +22,26 @@ async function openCard(page: Page, word: string, anchors?: unknown) {
   return item
 }
 const stored = (page: Page) => page.evaluate(() => JSON.parse(localStorage.getItem('sori.anchors.v1') ?? '{}'))
+/** What the chooser lists for a learner of English, Spanish, and French; other languages wait one tap away. */
+const shown = (item: VocabularyItem) => item.anchors.filter(anchor => fitsLanguages(anchor, defaultLanguages))
 
-test('Every card offers three distinct anchor candidates', () => {
+test('Every word offers three ways it sounds (two when a third would be weak), one way Korean builds it, and up to two real moments', () => {
   for (const item of vocabulary) {
-    expect(item.anchors, item.id).toHaveLength(3)
-    expect(new Set(item.anchors.map(anchor => anchor.id)).size, item.id).toBe(3)
-    expect(new Set(item.anchors.map(anchor => anchor.text)).size, item.id).toBe(3)
+    // Italian, Portuguese, and German speakers get one more hook on some cards (it1, pt1, de1).
+    const extra = item.anchors.filter(anchor => /^(it|pt|de)\d$/.test(anchor.id))
+    const own = item.anchors.filter(anchor => !extra.includes(anchor))
+    const sounds = own.filter(anchor => ['sound', 'reading', 'loanword'].includes(anchor.kind))
+    expect(sounds.length, item.id).toBeGreaterThanOrEqual(2)
+    expect(sounds.length, item.id).toBeLessThanOrEqual(3)
+    expect(own.filter(anchor => anchor.kind === 'roots' || anchor.kind === 'pattern'), item.id).toHaveLength(1)
+    expect(own.filter(anchor => anchor.kind === 'culture').length, item.id).toBeLessThanOrEqual(2)
+    expect(new Set(item.anchors.map(anchor => anchor.id)).size, item.id).toBe(item.anchors.length)
+    expect(new Set(item.anchors.map(anchor => anchor.text)).size, item.id).toBe(item.anchors.length)
+    for (const anchor of extra) expect(anchor.id, item.id).toBe(`${anchor.language}1`)
   }
+  // Most words have all three sound hooks.
+  const three = vocabulary.filter(item => item.anchors.filter(anchor => !/^(it|pt|de)\d$/.test(anchor.id) && ['sound', 'reading', 'loanword'].includes(anchor.kind)).length === 3)
+  expect(three.length).toBeGreaterThan(vocabulary.length * 0.45)
   // Five-star anchors are kept verbatim as the default.
   expect(byWord('멀어요').anchors.find(anchor => anchor.preselected)?.text).toContain('MORDOR')
   expect(byWord('밝아요').anchors.find(anchor => anchor.preselected)?.text).toContain('BULB')
@@ -66,24 +82,26 @@ test('A root-based anchor shows each part on its own line, with the same words',
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
 })
 
-test('All three candidates show until one is chosen; the choice persists and Change brings the others back', async ({ page }) => {
+test('The candidates show until one is chosen; the choice persists and Change brings the others back', async ({ page }) => {
   const item = await openCard(page, '배워요')
+  const pick = shown(item).filter(anchor => anchor.kind === 'sound')[1]
+  const option = () => page.getByTestId('anchor-option').filter({ hasText: pick.text })
   await page.getByRole('button', { name: 'Show memory anchor' }).click()
-  await expect(page.getByTestId('anchor-option')).toHaveCount(3)
+  await expect(page.getByTestId('anchor-option')).toHaveCount(shown(item).length)
   await expect(page.getByTestId('anchor-chooser').getByText('Pick the one that sticks')).toBeVisible()
-  await page.getByTestId('anchor-option').nth(1).click()
+  await option().click()
   await expect(page.getByTestId('anchor-option')).toHaveCount(0)
-  await expect(page.getByTestId('mnemonic')).toHaveText(item.anchors[1].text)
-  expect((await stored(page))[item.id]).toMatchObject({ selected: item.anchors[1].id })
+  await expect(page.getByTestId('mnemonic')).toHaveText(pick.text)
+  expect((await stored(page))[item.id]).toMatchObject({ selected: pick.id })
 
   await page.reload()
   await page.getByRole('button', { name: 'Show memory anchor' }).click()
-  await expect(page.getByTestId('mnemonic')).toHaveText(item.anchors[1].text)
+  await expect(page.getByTestId('mnemonic')).toHaveText(pick.text)
   await page.getByRole('button', { name: 'Change memory anchor' }).click()
-  await expect(page.getByTestId('anchor-option')).toHaveCount(3)
-  await expect(page.getByTestId('anchor-option').nth(1)).toHaveAttribute('aria-pressed', 'true')
+  await expect(page.getByTestId('anchor-option')).toHaveCount(shown(item).length)
+  await expect(option()).toHaveAttribute('aria-pressed', 'true')
   await page.getByRole('button', { name: 'Keep current' }).click()
-  await expect(page.getByTestId('mnemonic')).toHaveText(item.anchors[1].text)
+  await expect(page.getByTestId('mnemonic')).toHaveText(pick.text)
 })
 
 test('A five-star anchor starts selected and can still be changed', async ({ page }) => {
@@ -136,7 +154,7 @@ test('Recall checks come after 1, 3, and 7 days and nudge, never switch, when an
   expect(record.selected).toBe(item.anchors[0].id)
   expect(record.checks.map((check: { day: number; recalled: boolean }) => [check.day, check.recalled])).toEqual([[1, false], [3, false]])
   await page.getByRole('button', { name: 'Try another?' }).click()
-  await expect(page.getByTestId('anchor-option')).toHaveCount(3)
+  await expect(page.getByTestId('anchor-option')).toHaveCount(shown(item).length)
 })
 
 test('No recall check before the first day, and none twice for the same checkpoint', async ({ page }) => {
@@ -151,19 +169,19 @@ test('Anchor feedback downloads as JSON for the next round of improvements', asy
   const item = byWord('달라요')
   await openCard(page, '달라요', { [item.id]: { selected: item.anchors[1].id, selectedAt: daysAgo(2), ratings: { [item.anchors[1].id]: 5 }, wantsNew: true } })
   await page.getByRole('button', { name: 'How to study' }).click()
-  await expect(page.getByText('1 chosen · 1 rated · 0 recall checks · 1 asking for new ideas')).toBeVisible()
+  await expect(page.getByText('1 chosen · 1 rated · 0 recall checks · 0 tested with an anchor · 1 asking for new ideas')).toBeVisible()
   const download = page.waitForEvent('download')
   await page.getByRole('button', { name: 'Download anchor feedback' }).click()
   const file = await (await download).path()
   const feedback = JSON.parse(readFileSync(file, 'utf8'))
-  expect(feedback).toMatchObject({ kind: 'memory-anchor-feedback', summary: { chosen: 1, rated: 1, wantNewIdeas: 1 } })
+  expect(feedback).toMatchObject({ kind: 'memory-anchor-feedback', languages: ['en', 'es', 'fr'], summary: { chosen: 1, rated: 1, wantNewIdeas: 1 } })
   expect(feedback.cards[0]).toMatchObject({ id: item.id, selected: item.anchors[1].id, selectedText: item.anchors[1].text, ratings: { [item.anchors[1].id]: 5 } })
 })
 
 test('Corrupted anchor storage falls back to choosing', async ({ page }) => {
-  await openCard(page, '배워요', '{broken')
+  const item = await openCard(page, '배워요', '{broken')
   await page.getByRole('button', { name: 'Show memory anchor' }).click()
-  await expect(page.getByTestId('anchor-option')).toHaveCount(3)
+  await expect(page.getByTestId('anchor-option')).toHaveCount(shown(item).length)
   await page.getByTestId('anchor-option').first().click()
   await expect(page.getByTestId('mnemonic')).toBeVisible()
 })

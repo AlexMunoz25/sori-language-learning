@@ -1,0 +1,6657 @@
+{
+ "Adjectives:가까워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "눈의 꽃 (Snow Flower)",
+   "by": "Park Hyo Shin",
+   "year": 2004,
+   "quote": "겨울은 [가까워] 오네요",
+   "translation": "Winter is drawing near",
+   "why": "Park Hyo Shin's famous winter ballad: winter comes near.",
+   "url": "https://www.youtube.com/watch?v=AqwyuF0Rp8k",
+   "start": 67,
+   "embed": true,
+   "evidence": [
+    "lrclib:11334977@69.38",
+    "length:340"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "취향저격 (My Type)",
+   "by": "iKON",
+   "year": 2015,
+   "quote": "oh oh [가까워지는] 우리",
+   "translation": "Oh oh, the two of us getting closer",
+   "why": "iKON's debut hit: the two get closer in the pre-chorus.",
+   "url": "https://www.youtube.com/watch?v=TJLF8hetwEQ",
+   "video": "https://www.youtube.com/watch?v=ZS6vfv4sszg",
+   "start": 54,
+   "embed": true,
+   "evidence": [
+    "lrclib:12137078@56.85",
+    "length:211"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:가벼워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "여행 (Travel)",
+   "by": "BOL4",
+   "year": 2018,
+   "quote": "[가볍게] 손을 흔들며 bye bye",
+   "translation": "Waving lightly, bye bye",
+   "why": "BOL4's Travel waves goodbye lightly, twice.",
+   "url": "https://www.youtube.com/watch?v=DMcRIihAq9Q",
+   "video": "https://www.youtube.com/watch?v=xRbPAVnqtcs",
+   "start": 28,
+   "embed": true,
+   "evidence": [
+    "lrclib:35325893@30.4",
+    "length:221"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "도망가자 (Run With Me)",
+   "by": "Sunwoojunga",
+   "year": 2019,
+   "quote": "대신 [가볍게] 짐을 챙기자",
+   "translation": "Instead, let's pack light",
+   "why": "Sunwoojunga's escape song: pack light and run away for a while.",
+   "url": "https://www.youtube.com/watch?v=0q6DR6EiPPo",
+   "start": 33,
+   "embed": true,
+   "evidence": [
+    "lrclib:24445592@35.42",
+    "length:271"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:같아요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "비올레타 (Violeta)",
+   "by": "IZ*ONE",
+   "year": 2019,
+   "quote": "[같은] 꿈을 꾸게 될 테니까",
+   "translation": "Because we'll dream the same dream",
+   "why": "IZ*ONE's Violeta: 같은 꿈, the same dream.",
+   "url": "https://www.youtube.com/watch?v=AfeV_OZmHvM",
+   "video": "https://www.youtube.com/watch?v=6eEZ7DJMzuk",
+   "start": 36,
+   "embed": true,
+   "evidence": [
+    "lrclib:3000054@38.53",
+    "length:201"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "누구 없소 (NO ONE)",
+   "by": "LEE HI",
+   "year": 2019,
+   "quote": "똑같은 거리 [같은] 달빛 속에서",
+   "translation": "On the very same street, in the same moonlight",
+   "why": "LEE HI's hit pairs 같은 with 똑같은: the same moonlight, the very same street.",
+   "url": "https://www.youtube.com/watch?v=HzI31KhV9WU",
+   "video": "https://www.youtube.com/watch?v=GQqyCeKf8rw",
+   "start": 29,
+   "embed": true,
+   "evidence": [
+    "lrclib:24547924@31.31",
+    "length:195"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:귀여워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "기대해 (Expectation)",
+   "by": "Girl's Day",
+   "year": 2013,
+   "quote": "ooh, [귀엽게]",
+   "translation": "Ooh, cutely",
+   "why": "Girl's Day open their hit with it, then answer with 예쁘게, prettily.",
+   "url": "https://www.youtube.com/watch?v=hjZyGLlNvuc",
+   "video": "https://www.youtube.com/watch?v=t8YXut6_56c",
+   "start": 0,
+   "embed": true,
+   "evidence": [
+    "lrclib:23169858@1.33",
+    "length:197"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "내 여자라니까 (Because You're My Woman)",
+   "by": "Lee Seung Gi",
+   "year": 2004,
+   "quote": "[귀엽다고] 하지만 누난 내게 여자야",
+   "translation": "You say I'm cute, but noona, to me you're a woman",
+   "why": "Lee Seung Gi's debut hit: she calls him cute, he wants to be more.",
+   "url": "https://www.youtube.com/watch?v=l8vtZb2WpQ0",
+   "video": "https://www.youtube.com/watch?v=az2P1AP-zjw",
+   "start": 28,
+   "embed": true,
+   "evidence": [
+    "lrclib:13082940@30.48",
+    "length:241"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:길어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "그라데이션 (Gradation)",
+   "by": "10CM",
+   "year": 2022,
+   "quote": "밤은 다시 [길고] 깊어졌네",
+   "translation": "The night grew long and deep again",
+   "why": "10CM's hit opens on it: the night is long again.",
+   "url": "https://www.youtube.com/watch?v=e7_1cqOtVsc",
+   "video": "https://www.youtube.com/watch?v=VQZXXciZb_c",
+   "start": 7,
+   "embed": true,
+   "evidence": [
+    "lrclib:7724112@9.59",
+    "length:202"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:깨끗해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "가을 아침 (Autumn Morning)",
+   "by": "IU",
+   "year": 2017,
+   "quote": "상큼하고 [깨끗한] 아침의 향기와",
+   "translation": "With the fresh, clean scent of the morning",
+   "why": "IU's remake of an old folk song: a fresh, clean autumn morning.",
+   "url": "https://www.youtube.com/watch?v=ZDoH5dQ58ps",
+   "start": 67,
+   "embed": true,
+   "evidence": [
+    "lrclib:35084148@69.99",
+    "length:219"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:나빠요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "나빠 (NAPPA)",
+   "by": "Crush",
+   "year": 2019,
+   "quote": "내가 [나빠] 나빠",
+   "translation": "I'm the bad one, bad",
+   "why": "Crush's song is titled with the casual form, 나빠 (NAPPA), and chants it.",
+   "url": "https://www.youtube.com/watch?v=BfCGk-9MvzY",
+   "video": "https://www.youtube.com/watch?v=OoMIAo0a2TA",
+   "start": 90,
+   "embed": true,
+   "evidence": [
+    "lrclib:31287529@92.38",
+    "length:195"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Sugar Rush Ride",
+   "by": "TOMORROW X TOGETHER",
+   "year": 2023,
+   "quote": "[나빠] 넌, liar",
+   "translation": "You're bad, liar",
+   "why": "TXT's hit snaps it near the end: you're bad, liar.",
+   "url": "https://www.youtube.com/watch?v=m03cEHNh3k4",
+   "video": "https://www.youtube.com/watch?v=P9tKTxbgdkk",
+   "start": 161,
+   "embed": true,
+   "evidence": [
+    "lrclib:34706610@163.8",
+    "length:187"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:넓어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "달팽이",
+   "by": "Panic",
+   "year": 1995,
+   "quote": "저 [넓고] 거칠은 세상 끝",
+   "translation": "To the end of that wide, rough world",
+   "why": "Panic's classic: a snail dreams of crossing the wide world to the sea.",
+   "url": "https://www.youtube.com/watch?v=gsLeCGz5j7s",
+   "start": 58,
+   "embed": true,
+   "evidence": [
+    "lrclib:16946981@60.08",
+    "length:296"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "비올레타 (Violeta)",
+   "by": "IZ*ONE",
+   "year": 2019,
+   "quote": "저 [넓은] 세상을",
+   "translation": "That wide world",
+   "why": "IZ*ONE's Violeta looks out at the wide world.",
+   "url": "https://www.youtube.com/watch?v=AfeV_OZmHvM",
+   "video": "https://www.youtube.com/watch?v=6eEZ7DJMzuk",
+   "start": 39,
+   "embed": true,
+   "evidence": [
+    "lrclib:3000054@41.89",
+    "length:201"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:느려요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "거북이 (Turtle)",
+   "by": "DAVICHI",
+   "year": 2013,
+   "quote": "[느린] 너의 걸음마",
+   "translation": "Your slow little steps",
+   "why": "DAVICHI's Turtle: slow steps, like a turtle's.",
+   "url": "https://www.youtube.com/watch?v=12u5oZpowzs",
+   "video": "https://www.youtube.com/watch?v=ykAoxJCZG8w",
+   "start": 39,
+   "embed": true,
+   "evidence": [
+    "lrclib:2464793@41.23",
+    "length:224"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Celebrity",
+   "by": "IU",
+   "year": 2021,
+   "quote": "[느려도] 좋으니 결국 알게 되길",
+   "translation": "Even if it's slow, I hope you'll see it in the end",
+   "why": "IU's Celebrity: it's fine if it comes slowly.",
+   "url": "https://www.youtube.com/watch?v=ZThVobEtp_o",
+   "video": "https://www.youtube.com/watch?v=0-q1KafFCLU",
+   "start": 27,
+   "embed": true,
+   "evidence": [
+    "lrclib:13459938@29.77",
+    "length:196"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:달라요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "달라달라 (DALLA DALLA)",
+   "by": "ITZY",
+   "year": 2019,
+   "quote": "애들과 난 [달라], 달라, 달라",
+   "translation": "I'm different from the others, different, different",
+   "why": "ITZY's debut is named after the word and chants it again and again.",
+   "url": "https://www.youtube.com/watch?v=miqQAzOXPBo",
+   "video": "https://www.youtube.com/watch?v=pNfTK39k55U",
+   "start": 50,
+   "embed": true,
+   "evidence": [
+    "lrclib:2701072@52.53",
+    "length:200"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "10 Minutes",
+   "by": "Lee Hyori",
+   "year": 2003,
+   "quote": "나는 [달라], 그녀와 날 비교하지 말아줘",
+   "translation": "I'm different, don't compare me with her",
+   "why": "Lee Hyori's 2003 hit: I'm different.",
+   "url": "https://www.youtube.com/watch?v=91MtbP4HFPE",
+   "video": "https://www.youtube.com/watch?v=iKdr44yEBQU",
+   "start": 82,
+   "embed": true,
+   "evidence": [
+    "lrclib:17829233@84.5",
+    "length:237"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:더러워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "에너제틱 (Energetic)",
+   "by": "WANNA ONE",
+   "year": 2017,
+   "quote": "[더러워지더라도]",
+   "translation": "Even if they get dirty",
+   "why": "Wanna One's debut: wear your best shoes and move, even if they get dirty.",
+   "url": "https://www.youtube.com/watch?v=-Oif1zcHV-4",
+   "video": "https://www.youtube.com/watch?v=EVaV7AwqBWg",
+   "start": 161,
+   "embed": true,
+   "evidence": [
+    "lrclib:36598328@163.18",
+    "length:190"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:더워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Hot Summer",
+   "by": "f(x)",
+   "year": 2011,
+   "quote": "hot, hot, 너무 [더워]",
+   "translation": "Hot, hot, it's too hot",
+   "why": "f(x)'s summer hit says it in both languages: hot summer, 너무 더워.",
+   "url": "https://www.youtube.com/watch?v=xTfbMYBoFik",
+   "video": "https://www.youtube.com/watch?v=z-rftpZ7kCY",
+   "start": 69,
+   "embed": true,
+   "evidence": [
+    "lrclib:19524@71.06",
+    "length:226"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "다시 여기 바닷가 (Beach Again)",
+   "by": "SSAK3",
+   "year": 2020,
+   "quote": "다들 [덥다고] 막 짜증내",
+   "translation": "Everyone grumbles that it is hot",
+   "why": "SSAK3's 2020 summer hit: everyone complains about the heat.",
+   "url": "https://www.youtube.com/watch?v=vIfIzA9xHxI",
+   "video": "https://www.youtube.com/watch?v=JAy88PDxMIM",
+   "start": 107,
+   "embed": true,
+   "evidence": [
+    "lrclib:38189184@109.19",
+    "length:234"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:두꺼워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "나팔바지 (Napal Baji)",
+   "by": "PSY",
+   "year": 2015,
+   "quote": "얼굴 두껍지만 지갑도 [두껍지] 나",
+   "translation": "My face is thick, but my wallet's thick too",
+   "why": "PSY's pun: a thick face means shameless, a thick wallet means rich.",
+   "url": "https://www.youtube.com/watch?v=ewba14Qt6iM",
+   "video": "https://www.youtube.com/watch?v=tF27TNC_4pc",
+   "start": 40,
+   "embed": true,
+   "evidence": [
+    "lrclib:22895121@42.22",
+    "length:224"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:따뜻해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "이 사랑 (This Love)",
+   "by": "DAVICHI",
+   "year": 2016,
+   "quote": "[따뜻하게] 나를 안아줘",
+   "translation": "Hold me warmly",
+   "why": "DAVICHI's Descendants of the Sun ballad asks it in every chorus.",
+   "url": "https://www.youtube.com/watch?v=-tCUWBHihu4",
+   "start": 70,
+   "embed": true,
+   "evidence": [
+    "lrclib:34725066@72.64",
+    "length:226"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "컴백홈 (Come Back Home)",
+   "by": "Seo Taiji and Boys",
+   "year": 1995,
+   "quote": "떠나간 마음보다 [따뜻한]",
+   "translation": "Warmer than the heart that ran away",
+   "why": "Seo Taiji's 1995 classic about coming back home, the warm place.",
+   "url": "https://www.youtube.com/watch?v=dAbtOwBljAw",
+   "video": "https://www.youtube.com/watch?v=q3xy4p2JTfU",
+   "start": 67,
+   "embed": true,
+   "evidence": [
+    "lrclib:33361496@69.53",
+    "length:236"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:똑같아요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "죽어도 못 보내 (Can't Let You Go Even If I Die)",
+   "by": "2AM",
+   "year": 2010,
+   "quote": "어려도 아픈 건 [똑같아]",
+   "translation": "Young or not, the pain is the same",
+   "why": "2AM's famous ballad opens on it: being young doesn't make it hurt less.",
+   "url": "https://www.youtube.com/watch?v=OsBpvf_4Jm8",
+   "video": "https://www.youtube.com/watch?v=hOREkPq1aVQ",
+   "start": 1,
+   "embed": true,
+   "evidence": [
+    "lrclib:33341415@3.83",
+    "length:196"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "ASAP",
+   "by": "STAYC",
+   "year": 2021,
+   "quote": "나와 [똑같아], 내 맘 잘 알아줄",
+   "translation": "Just like me, someone who gets how I feel",
+   "why": "STAYC sing about a perfect copy of themselves: 나와 똑같아, exactly like me.",
+   "url": "https://www.youtube.com/watch?v=aHR8zak8Xsc",
+   "video": "https://www.youtube.com/watch?v=NsY-9MCOIAQ",
+   "start": 44,
+   "embed": true,
+   "evidence": [
+    "lrclib:23068109@46.93",
+    "length:195"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:뜨거워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "뚜두뚜두 (DDU-DU DDU-DU)",
+   "by": "BLACKPINK",
+   "year": 2018,
+   "quote": "[뜨거워], 뜨거워, 뜨거워 like fire",
+   "translation": "Hot, hot, hot like fire",
+   "why": "BLACKPINK's mega-hit chants it in the bridge: hot like fire.",
+   "url": "https://www.youtube.com/watch?v=IPzouyj7FLA",
+   "video": "https://www.youtube.com/watch?v=IHNzOHi8sJs",
+   "start": 159,
+   "embed": true,
+   "evidence": [
+    "lrclib:33631648@161.56",
+    "length:210"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "HOT",
+   "by": "SEVENTEEN",
+   "year": 2022,
+   "quote": "Say ah ([뜨거워] 뜨거워 뜨거워)",
+   "translation": "Say ah (hot, hot, hot)",
+   "why": "SEVENTEEN's HOT answers its English title in Korean: 뜨거워.",
+   "url": "https://www.youtube.com/watch?v=jAk2WBAjzlI",
+   "start": 33,
+   "embed": true,
+   "evidence": [
+    "lrclib:36149647@35.75",
+    "length:198"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:맛없어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "MIC Drop",
+   "by": "BTS",
+   "year": 2017,
+   "quote": "넌 [맛없는] 라따뚜이",
+   "translation": "You're a ratatouille that tastes bad",
+   "why": "BTS mock their critics: a ratatouille with no taste.",
+   "url": "https://www.youtube.com/watch?v=e95-Gaj2iXM",
+   "video": "https://www.youtube.com/watch?v=c5_LROaHGtw",
+   "start": 65,
+   "embed": true,
+   "evidence": [
+    "lrclib:21100471@67.57",
+    "length:239"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:맛있어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "썸 탈꺼야 (Some)",
+   "by": "BOL4",
+   "year": 2017,
+   "quote": "[맛있는] 걸 먹으러 다닐 거야",
+   "translation": "I'll go around eating delicious things",
+   "why": "BOL4's crush song: she'll go out for delicious food with him.",
+   "url": "https://www.youtube.com/watch?v=krpfUwaftPs",
+   "video": "https://www.youtube.com/watch?v=hZmoMyFXDoI",
+   "start": 50,
+   "embed": true,
+   "evidence": [
+    "lrclib:12464770@52.26",
+    "length:182"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "어머님께 (To Mother)",
+   "by": "g.o.d",
+   "year": 1999,
+   "quote": "[맛있는] 것좀 먹자고 대들었었어",
+   "translation": "I talked back, asking for something delicious",
+   "why": "g.o.d's famous song for mothers: the boy begs for something tasty.",
+   "url": "https://www.youtube.com/watch?v=6H_IilsR6Fo",
+   "start": 37,
+   "embed": true,
+   "evidence": [
+    "lrclib:16979309@39.46",
+    "length:256"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:매워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "어떤X (What Type of X)",
+   "by": "Jessi",
+   "year": 2021,
+   "quote": "너에 비해 난 [매워]",
+   "translation": "Compared to you, I'm spicy",
+   "why": "Jessi brags that she's spicy, then rhymes 매워 with 배워.",
+   "url": "https://www.youtube.com/watch?v=FCKEtGcrBJQ",
+   "video": "https://www.youtube.com/watch?v=OEu1OWf8ezU",
+   "start": 82,
+   "embed": true,
+   "evidence": [
+    "lrclib:11635359@84.32",
+    "length:199"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:멀어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Ditto",
+   "by": "NewJeans",
+   "year": 2022,
+   "quote": "아침은 너무 [멀어]",
+   "translation": "Morning is so far away",
+   "why": "NewJeans' Ditto hook uses the exact form: morning is too far.",
+   "url": "https://www.youtube.com/watch?v=V6TEcoNUmc8",
+   "video": "https://www.youtube.com/watch?v=pSUydWEqKwE",
+   "start": 19,
+   "embed": true,
+   "evidence": [
+    "lrclib:34661088@21.73",
+    "length:186"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "봄날 (Spring Day)",
+   "by": "BTS",
+   "year": 2017,
+   "quote": "또 조금씩 [멀어져요]",
+   "translation": "And little by little, we drift apart",
+   "why": "BTS's Spring Day: little by little, farther away.",
+   "url": "https://www.youtube.com/watch?v=ZO1xdXOXarc",
+   "video": "https://www.youtube.com/watch?v=xEeFrLSkMm8",
+   "start": 72,
+   "embed": true,
+   "evidence": [
+    "lrclib:15846963@74.7",
+    "length:275"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:무거워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "공허해 (Empty)",
+   "by": "WINNER",
+   "year": 2014,
+   "quote": "공기 조차 [무거워]",
+   "translation": "Even the air is heavy",
+   "why": "WINNER's debut song: without her, even the air feels heavy.",
+   "url": "https://www.youtube.com/watch?v=zTAUu-B0k80",
+   "video": "https://www.youtube.com/watch?v=gEqlF5N8UMs",
+   "start": 182,
+   "embed": true,
+   "evidence": [
+    "lrclib:4779103@184.21",
+    "length:221"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "We don't talk together",
+   "by": "Heize",
+   "year": 2019,
+   "quote": "점점 발걸음이 [무거워]",
+   "translation": "My steps get heavier and heavier",
+   "why": "Heize's breakup song: each step gets heavier, until she can't walk.",
+   "url": "https://www.youtube.com/watch?v=RCNV7gPI7Zc",
+   "video": "https://www.youtube.com/watch?v=ByHNlfmmT-w",
+   "start": 57,
+   "embed": true,
+   "evidence": [
+    "lrclib:25295345@59.64",
+    "length:200"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:무서워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "난 사람이 제일 무서워 (People Scare Me)",
+   "by": "Epik High",
+   "year": 2017,
+   "quote": "난 사람이 제일 [무서워]",
+   "translation": "People scare me the most",
+   "why": "Epik High's title line, repeated ten times: what scares him most is people.",
+   "url": "https://www.youtube.com/watch?v=jq0Ry86D_38",
+   "start": 8,
+   "embed": true,
+   "evidence": [
+    "lrclib:5278691@10.86",
+    "length:190"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "OMG",
+   "by": "NewJeans",
+   "year": 2023,
+   "quote": "너랑만 있으면 [무서울] 게 없어",
+   "translation": "When I'm with you, nothing scares me",
+   "why": "A line from NewJeans' hit: with you, there's nothing to fear.",
+   "url": "https://www.youtube.com/watch?v=2Kff0U8w-aU",
+   "video": "https://www.youtube.com/watch?v=_ZAgIHmHLdc",
+   "start": 152,
+   "embed": true,
+   "evidence": [
+    "lrclib:34300927@154.54",
+    "length:213"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:바빠요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "MIC Drop",
+   "by": "BTS",
+   "year": 2017,
+   "quote": "아 너무 [바빠]",
+   "translation": "Ah, I'm so busy",
+   "why": "BTS brag about their schedule; the next line says it in English: so busy.",
+   "url": "https://www.youtube.com/watch?v=e95-Gaj2iXM",
+   "video": "https://www.youtube.com/watch?v=c5_LROaHGtw",
+   "start": 105,
+   "embed": true,
+   "evidence": [
+    "lrclib:21100471@107.09",
+    "length:239"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "크레용 (Crayon)",
+   "by": "G-DRAGON",
+   "year": 2012,
+   "quote": "월화수목금토일 난 [바빠]",
+   "translation": "Monday to Sunday, I'm busy",
+   "why": "G-Dragon runs through all seven weekdays, 월화수목금토일, to say he is busy.",
+   "url": "https://www.youtube.com/watch?v=FsaNbCp-Yq8",
+   "start": 20,
+   "embed": true,
+   "evidence": [
+    "lrclib:9018121@22.07",
+    "length:197"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:밝아요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "SOLO",
+   "by": "JENNIE",
+   "year": 2018,
+   "quote": "멀리 가고 싶어, [밝게] 빛나고 싶어",
+   "translation": "I want to go far, I want to shine bright",
+   "why": "JENNIE's solo debut: she wants to go far and shine bright.",
+   "url": "https://www.youtube.com/watch?v=b73BI9eUkjM",
+   "embed": true,
+   "evidence": [
+    "lrclib:21590568@138.99"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Fly",
+   "by": "Epik High",
+   "year": 2005,
+   "quote": "어두운 밤일수록 [밝은] 별은 더 빛나",
+   "translation": "The darker the night, the more the bright stars shine",
+   "why": "Epik High's anthem pairs it with its opposite, 어두운, dark.",
+   "url": "https://www.youtube.com/watch?v=sHqLlyBlmQI",
+   "start": 162,
+   "embed": true,
+   "evidence": [
+    "lrclib:24804021@164.92",
+    "length:202"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:비싸요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "대취타 (Daechwita)",
+   "by": "Agust D",
+   "year": 2020,
+   "quote": "내 시간은 더 [비싼]데",
+   "translation": "But my time is more expensive",
+   "why": "Suga's Daechwita: who says time is gold? His time costs more.",
+   "url": "https://www.youtube.com/watch?v=65XIZDJ24_s",
+   "video": "https://www.youtube.com/watch?v=qGjAWJ2zWWI",
+   "start": 140,
+   "embed": true,
+   "evidence": [
+    "lrclib:2914147@142.67",
+    "length:226"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "폰서트 (phonecert)",
+   "by": "10CM",
+   "year": 2017,
+   "quote": "이건 세상에서 제일 [비싼] 단독 공연",
+   "translation": "This is the world's most expensive solo concert",
+   "why": "10CM's song opens on it: a private show over the phone, the priciest there is.",
+   "url": "https://www.youtube.com/watch?v=txi3VEdStJ4",
+   "video": "https://www.youtube.com/watch?v=mOo8bVzN9M8",
+   "start": 9,
+   "embed": true,
+   "evidence": [
+    "lrclib:6159969@11.49",
+    "length:198"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:빨라요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "휘파람 (WHISTLE)",
+   "by": "BLACKPINK",
+   "year": 2016,
+   "quote": "내 심장이 [빠르게] 뛰잖아",
+   "translation": "My heart is beating fast",
+   "why": "BLACKPINK's debut: her heart beats fast.",
+   "url": "https://www.youtube.com/watch?v=4lQvwoiIXPQ",
+   "video": "https://www.youtube.com/watch?v=dISNgvVpWlo",
+   "start": 68,
+   "embed": true,
+   "evidence": [
+    "lrclib:33503710@70.25",
+    "length:212"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "미친 폼 (Crazy Form)",
+   "by": "ATEEZ",
+   "year": 2023,
+   "quote": "Time is tickin', 너무 [빨라]",
+   "translation": "Time is ticking, it's too fast",
+   "why": "ATEEZ use the exact casual form, 빨라: time moves too fast.",
+   "url": "https://www.youtube.com/watch?v=_db-mfu8y1k",
+   "start": 44,
+   "embed": true,
+   "evidence": [
+    "lrclib:36131297@46.43",
+    "length:199"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:쉬워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "KNOCK KNOCK",
+   "by": "TWICE",
+   "year": 2017,
+   "quote": "[쉽게] 열리지는 않을 거야",
+   "translation": "It won't open easily",
+   "why": "TWICE's KNOCK KNOCK: her door won't open easily, in every chorus.",
+   "url": "https://www.youtube.com/watch?v=mYBpyKEcAa8",
+   "video": "https://www.youtube.com/watch?v=8A2t_tAjMz8",
+   "start": 51,
+   "embed": true,
+   "evidence": [
+    "lrclib:19828940@53.33",
+    "length:196"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "IF YOU",
+   "by": "BIGBANG",
+   "year": 2015,
+   "quote": "그댈 잊어야 하지만 [쉽지가] 않네요",
+   "translation": "I have to forget you, but it isn't easy",
+   "why": "BIGBANG's ballad: forgetting her isn't easy.",
+   "url": "https://www.youtube.com/watch?v=h9hdorPqukU",
+   "start": 121,
+   "embed": true,
+   "evidence": [
+    "lrclib:35637518@123.3",
+    "length:265"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:슬퍼요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "NoNoNo",
+   "by": "Apink",
+   "year": 2013,
+   "quote": "[슬퍼하지] 마, no, no, no",
+   "translation": "Don't be sad, no, no, no",
+   "why": "Apink's hit opens with it and repeats it in every chorus.",
+   "url": "https://www.youtube.com/watch?v=G7idV3W77X0",
+   "video": "https://www.youtube.com/watch?v=hspqQuuuGIw",
+   "start": 6,
+   "embed": true,
+   "evidence": [
+    "lrclib:23530593@8.47",
+    "length:221"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "둘! 셋! (그래도 좋은 날이 더 많기를) (2! 3!)",
+   "by": "BTS",
+   "year": 2016,
+   "quote": "[슬픈] 기억 모두 지워",
+   "translation": "Erase all the sad memories",
+   "why": "BTS's song for their fans: count one, two, three, and the sad memories go.",
+   "url": "https://www.youtube.com/watch?v=Dh6cPGNsVoU",
+   "start": 69,
+   "embed": true,
+   "evidence": [
+    "lrclib:2465045@71.8",
+    "length:273"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:시끄러워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "여행 (Travel)",
+   "by": "BOL4",
+   "year": 2018,
+   "quote": "[시끄럽게] 소리를 질러도",
+   "translation": "Even if you scream and shout",
+   "why": "BOL4's Travel: she's leaving, however noisily you shout.",
+   "url": "https://www.youtube.com/watch?v=DMcRIihAq9Q",
+   "video": "https://www.youtube.com/watch?v=xRbPAVnqtcs",
+   "start": 24,
+   "embed": true,
+   "evidence": [
+    "lrclib:35325893@26",
+    "length:221"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "하드캐리 (Hard Carry)",
+   "by": "GOT7",
+   "year": 2016,
+   "quote": "비행기 밖은 너무 [시끄러워]",
+   "translation": "Outside the plane, it is so noisy",
+   "why": "GOT7's Hard Carry: outside the plane it's too noisy, in the exact casual form.",
+   "url": "https://www.youtube.com/watch?v=A_Ebw4Ml3kI",
+   "video": "https://www.youtube.com/watch?v=O57jr1oZDIw",
+   "start": 24,
+   "embed": true,
+   "evidence": [
+    "lrclib:5258311@26.52",
+    "length:194"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:시원해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "팥빙수 (Patbingsu)",
+   "by": "Yoon Jong Shin",
+   "year": 2001,
+   "quote": "아이쿠 너무 [시원해]",
+   "translation": "Oh my, so refreshing",
+   "why": "Yoon Jong Shin's shaved-ice song: the exact moment Koreans say 시원해.",
+   "url": "https://www.youtube.com/watch?v=6G3lqpPavck",
+   "embed": true,
+   "evidence": [
+    "lrclib:10316454@162"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:싸요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "싸구려 커피 (Cheap Coffee)",
+   "by": "Kiha & The Faces",
+   "year": 2008,
+   "quote": "[싸구려] 커피를 마신다",
+   "translation": "I drink cheap coffee",
+   "why": "Kiha's indie classic opens on it: 싸구려, cheap stuff, is built on 싸다.",
+   "url": "https://www.youtube.com/watch?v=bL-ueHzY2yM",
+   "start": 5,
+   "embed": true,
+   "evidence": [
+    "lrclib:33388440@7.68",
+    "length:258"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:아파요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "아파 (It Hurts)",
+   "by": "2NE1",
+   "year": 2010,
+   "quote": "오늘밤 나 많이 [아파요]",
+   "translation": "Tonight I'm hurting so much",
+   "why": "2NE1's ballad is titled 아파 and sings the exact polite form, 아파요.",
+   "url": "https://www.youtube.com/watch?v=QOlf7o26oOE",
+   "video": "https://www.youtube.com/watch?v=aUiMaz4BNKw",
+   "start": 52,
+   "embed": true,
+   "evidence": [
+    "lrclib:9116913@54.12",
+    "length:257"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "양화대교 (Yanghwa BRDG)",
+   "by": "Zion.T",
+   "year": 2014,
+   "quote": "[아프지] 말고 아프지 말고",
+   "translation": "Don't get sick, don't get hurt",
+   "why": "Zion.T's song for his family repeats it like a wish: don't be sick.",
+   "url": "https://www.youtube.com/watch?v=yP459cBS4f0",
+   "video": "https://www.youtube.com/watch?v=uLUvHUzd4UA",
+   "start": 68,
+   "embed": true,
+   "evidence": [
+    "lrclib:4847914@70.93",
+    "length:230"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:얇아요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "피노키오 (Danger)",
+   "by": "f(x)",
+   "year": 2011,
+   "quote": "한 겹 두 겹 페스츄리처럼 [얇게]요",
+   "translation": "Layer by layer, thin like pastry",
+   "why": "f(x) picture thin pastry layers: the flat kind of thin that 얇다 means.",
+   "url": "https://www.youtube.com/watch?v=t9RfM62xm5Q",
+   "video": "https://www.youtube.com/watch?v=kKS12iGFyEA",
+   "start": 25,
+   "embed": true,
+   "evidence": [
+    "lrclib:5191100@27.32",
+    "length:192"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "봄인가 봐 (Spring Love)",
+   "by": "Eric Nam",
+   "year": 2016,
+   "quote": "[얇아진] 외투 사이",
+   "translation": "Between our thinner coats",
+   "why": "Eric Nam and WENDY's spring duet: coats get thinner as spring comes.",
+   "url": "https://www.youtube.com/watch?v=LMwQFllwz5I",
+   "video": "https://www.youtube.com/watch?v=erErBFKPbMY",
+   "start": 44,
+   "embed": true,
+   "evidence": [
+    "lrclib:10109215@46.51",
+    "length:199"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:어두워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "촛불하나 (One Candle)",
+   "by": "g.o.d",
+   "year": 2000,
+   "quote": "너무 [어두워] 길이 보이지 않아",
+   "translation": "It's so dark I can't see the way",
+   "why": "g.o.d's song: too dark to see the way, so they light one candle.",
+   "url": "https://www.youtube.com/watch?v=IJRo4GJqTfE",
+   "start": 75,
+   "embed": true,
+   "evidence": [
+    "lrclib:17451984@77.81",
+    "length:212"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "LALISA",
+   "by": "LISA",
+   "year": 2021,
+   "quote": "[어두워질] 때 분홍빛이나",
+   "translation": "When it gets dark, a pink light glows",
+   "why": "LISA's solo debut opens with it: when it gets dark.",
+   "url": "https://www.youtube.com/watch?v=awkkyBH2zEo",
+   "embed": true,
+   "evidence": [
+    "lrclib:3369241@3.57"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:어려워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "마지막처럼 (AS IF IT'S YOUR LAST)",
+   "by": "BLACKPINK",
+   "year": 2017,
+   "quote": "그만 생각해, 뭐가 그리 [어려워]?",
+   "translation": "Stop thinking, what's so hard?",
+   "why": "BLACKPINK's hit asks it in every chorus, with the exact form: what's so hard?",
+   "url": "https://www.youtube.com/watch?v=9MbXeqCbS4Q",
+   "video": "https://www.youtube.com/watch?v=Amq-qlqbjYA",
+   "start": 64,
+   "embed": true,
+   "evidence": [
+    "lrclib:2465048@66.58",
+    "length:214"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "첫 만남은 계획대로 되지 않아 (plot twist)",
+   "by": "TWS",
+   "year": 2024,
+   "quote": "첫 만남은 너무 [어려워]",
+   "translation": "First meetings are so hard",
+   "why": "TWS's debut hook: a first meeting is so hard.",
+   "url": "https://www.youtube.com/watch?v=bKeU99EygzY",
+   "video": "https://www.youtube.com/watch?v=uO8uQlxk9RY",
+   "start": 43,
+   "embed": true,
+   "evidence": [
+    "lrclib:17537233@45.75",
+    "length:153"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:예뻐요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "누난 너무 예뻐 (Replay)",
+   "by": "SHINee",
+   "year": 2008,
+   "quote": "누난 너무 [예뻐]",
+   "translation": "Noona, you're so pretty",
+   "why": "SHINee's debut hit sings it in every chorus: noona, you're so pretty.",
+   "url": "https://www.youtube.com/watch?v=UyEkTQ0OVXw",
+   "video": "https://www.youtube.com/watch?v=VTASffPQGhY",
+   "start": 17,
+   "embed": true,
+   "evidence": [
+    "lrclib:5254493@19.66",
+    "length:214"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "예뻤어 (You Were Beautiful)",
+   "by": "DAY6",
+   "year": 2017,
+   "quote": "넌 너무 [예뻤어]",
+   "translation": "You were so beautiful",
+   "why": "DAY6's song is titled with the past form, 예뻤어, and sings it eight times.",
+   "url": "https://www.youtube.com/watch?v=Mhyi9p7T7OM",
+   "video": "https://www.youtube.com/watch?v=BS7tz2rAOSA",
+   "start": 97,
+   "embed": true,
+   "evidence": [
+    "lrclib:33808907@99.62",
+    "length:284"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:작아요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "작은 것들을 위한 시 (Boy With Luv)",
+   "by": "BTS",
+   "year": 2019,
+   "quote": "너무 [작던] 내가 영웅이 된 거라고",
+   "translation": "That I, once so small, became a hero",
+   "why": "The Korean title means A Poem for Small Things; here the small one becomes a hero.",
+   "url": "https://www.youtube.com/watch?v=Q-erYa8cwnc",
+   "video": "https://www.youtube.com/watch?v=XsX3ATc3FbA",
+   "start": 111,
+   "embed": true,
+   "evidence": [
+    "lrclib:35794411@113.81",
+    "length:230"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "drama",
+   "title": "작은 아씨들 (Little Women)",
+   "by": "tvN",
+   "year": 2022,
+   "quote": "[작은] 아씨들",
+   "translation": "Little Women",
+   "why": "tvN's 2022 thriller takes the Korean title of Little Women: 작은, little.",
+   "url": "https://www.youtube.com/watch?v=Y52PRIHr-YI",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Little_Women_(2022_TV_series)"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:재미없어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "아무노래 (Any Song)",
+   "by": "ZICO",
+   "year": 2020,
+   "quote": "왜들 그리 [재미없어]?",
+   "translation": "Why is everyone so boring?",
+   "why": "ZICO's viral hit asks why everyone's so boring, then admits he is too.",
+   "url": "https://www.youtube.com/watch?v=GOtF5_Ow0_Y",
+   "video": "https://www.youtube.com/watch?v=UuV2BmJ1p_I",
+   "start": 16,
+   "embed": true,
+   "evidence": [
+    "lrclib:33807563@18.28",
+    "length:228"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Hype Boy",
+   "by": "NewJeans",
+   "year": 2022,
+   "quote": "너 없이는 매일매일이, yeah, [재미없어]",
+   "translation": "Without you, every single day is boring",
+   "why": "NewJeans' debut hit: every day without you is no fun.",
+   "url": "https://www.youtube.com/watch?v=ghrlZIMDzbM",
+   "video": "https://www.youtube.com/watch?v=SHYWqy_X-tU",
+   "start": 40,
+   "embed": true,
+   "evidence": [
+    "lrclib:29254792@42.17",
+    "length:180"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:조용해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "공허해 (Empty)",
+   "by": "WINNER",
+   "year": 2014,
+   "quote": "(내 마음처럼 [조용해])",
+   "translation": "(Quiet, like my heart)",
+   "why": "WINNER's debut sings the exact form: the empty street is as quiet as his heart.",
+   "url": "https://www.youtube.com/watch?v=zTAUu-B0k80",
+   "video": "https://www.youtube.com/watch?v=gEqlF5N8UMs",
+   "start": 52,
+   "embed": true,
+   "evidence": [
+    "lrclib:4779103@54.15",
+    "length:221"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "너의 모든 순간 (Every Moment of You)",
+   "by": "Sung Si Kyung",
+   "year": 2014,
+   "quote": "가끔 나에게 [조용하게] 안겨주어서",
+   "translation": "For quietly falling into my arms now and then",
+   "why": "The My Love from the Star ballad: thank you for quietly coming into my arms.",
+   "url": "https://www.youtube.com/watch?v=OdFVPP_Rcos",
+   "video": "https://www.youtube.com/watch?v=Dbxzh078jr4",
+   "start": 150,
+   "embed": true,
+   "evidence": [
+    "lrclib:4454283@152.28",
+    "length:244"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:좁아요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "혜화동 (혹은 쌍문동) (Hyehwa-dong (or Ssangmun-dong))",
+   "by": "Park Boram",
+   "year": 2015,
+   "quote": "어릴 적 넓게만 보이던 [좁은] 골목길에",
+   "translation": "In the narrow alley that looked so wide when I was small",
+   "why": "The Reply 1988 song: the narrow alley of childhood, once so wide.",
+   "url": "https://www.youtube.com/watch?v=hhl-qoEyBTQ",
+   "video": "https://www.youtube.com/watch?v=7_mNEE3Y96A",
+   "start": 77,
+   "embed": true,
+   "evidence": [
+    "lrclib:36003687@79.49",
+    "length:265"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "달팽이",
+   "by": "Panic",
+   "year": 1995,
+   "quote": "[좁은] 욕조 속에 몸을 뉘었을 때",
+   "translation": "When I lay down in the narrow bathtub",
+   "why": "Panic's 달팽이 starts in a narrow bathtub before dreaming of the wide world.",
+   "url": "https://www.youtube.com/watch?v=gsLeCGz5j7s",
+   "start": 29,
+   "embed": true,
+   "evidence": [
+    "lrclib:16946981@31.52",
+    "length:296"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:좋아요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "좋은 날 (Good Day)",
+   "by": "IU",
+   "year": 2010,
+   "quote": "이렇게 [좋은] 날",
+   "translation": "Such a good day",
+   "why": "IU's breakthrough hit ends on its title: a good day.",
+   "url": "https://www.youtube.com/watch?v=OIHlzvEKncQ",
+   "video": "https://www.youtube.com/watch?v=jeqdYqsrsA0",
+   "start": 218,
+   "embed": true,
+   "evidence": [
+    "lrclib:34902657@220.77",
+    "length:236"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "좋아 (JOAH)",
+   "by": "Jay Park",
+   "year": 2013,
+   "quote": "기분이 [좋아] 기분이 좋아",
+   "translation": "I feel good, I feel good",
+   "why": "Jay Park's chorus repeats the casual form, 좋아: I feel good.",
+   "url": "https://www.youtube.com/watch?v=rMtCJC39SqU",
+   "embed": true,
+   "evidence": [
+    "lrclib:30127001@28.7"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:짧아요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "짧은 치마 (Miniskirt)",
+   "by": "AOA",
+   "year": 2014,
+   "quote": "[짧은] 치마를 입고",
+   "translation": "Wearing a short skirt",
+   "why": "AOA's hit is titled 짧은 치마, short skirt, and sings it in the chorus.",
+   "url": "https://www.youtube.com/watch?v=0uXWVDGvVVM",
+   "video": "https://www.youtube.com/watch?v=q6f-LLM1H6U",
+   "start": 46,
+   "embed": true,
+   "evidence": [
+    "lrclib:26466980@48.42",
+    "length:180"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "신호등 (Traffic light)",
+   "by": "Lee Mujin",
+   "year": 2021,
+   "quote": "그 사이 3초 그 [짧은] 시간",
+   "translation": "Those three seconds in between, that short time",
+   "why": "Lee Mujin's 2021 hit about the yellow light: those short three seconds.",
+   "url": "https://www.youtube.com/watch?v=9Ibf10h9U0c",
+   "video": "https://www.youtube.com/watch?v=SK6Sm2Ki9tI",
+   "start": 80,
+   "embed": true,
+   "evidence": [
+    "lrclib:35191585@82.31",
+    "length:232"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:차가워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "I NEED U",
+   "by": "BTS",
+   "year": 2015,
+   "quote": "I need you, girl (너무 [차가워])",
+   "translation": "I need you, girl (you're so cold)",
+   "why": "BTS's I NEED U chorus: she's beautiful, and so cold.",
+   "url": "https://www.youtube.com/watch?v=jip9EXrrf0o",
+   "video": "https://www.youtube.com/watch?v=DOuhvBJqKVY",
+   "start": 60,
+   "embed": true,
+   "evidence": [
+    "lrclib:17679784@62.84",
+    "length:211"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "눈의 꽃 (Snow Flower)",
+   "by": "Park Hyo Shin",
+   "year": 2004,
+   "quote": "바람이 [차가워지는] 만큼",
+   "translation": "As the wind grows colder",
+   "why": "Park Hyo Shin's winter ballad: the wind turns cold.",
+   "url": "https://www.youtube.com/watch?v=AqwyuF0Rp8k",
+   "start": 60,
+   "embed": true,
+   "evidence": [
+    "lrclib:11334977@62.74",
+    "length:340"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:추워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "가끔 (Sometimes)",
+   "by": "Crush",
+   "year": 2014,
+   "quote": "오늘 밤은 유난히 [추워]",
+   "translation": "Tonight it's unusually cold",
+   "why": "Crush's 2014 song opens on a cold night, with the exact casual form.",
+   "url": "https://www.youtube.com/watch?v=EcLWpIt3bag",
+   "video": "https://www.youtube.com/watch?v=NuWpcQlSKrY",
+   "start": 21,
+   "embed": true,
+   "evidence": [
+    "lrclib:16167877@23.63",
+    "length:264"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:커요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Fire",
+   "by": "2NE1",
+   "year": 2009,
+   "quote": "보다 [큰] 꿈을, 꿈을, 꿈을 꿔",
+   "translation": "Dream a bigger dream",
+   "why": "2NE1's debut single tells you to dream big: 큰 꿈, a big dream.",
+   "url": "https://www.youtube.com/watch?v=49AfuuRbgGo",
+   "start": 48,
+   "embed": true,
+   "evidence": [
+    "lrclib:35287043@50.96",
+    "length:228"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:피곤해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "안경 (Glasses)",
+   "by": "IU",
+   "year": 2015,
+   "quote": "나는 지금도 충분히 [피곤해]",
+   "translation": "I'm tired enough as it is",
+   "why": "IU's chorus: she's tired enough already and won't put on glasses to see more.",
+   "url": "https://www.youtube.com/watch?v=o598G9ht748",
+   "start": 62,
+   "embed": true,
+   "evidence": [
+    "lrclib:29873865@64.68",
+    "length:197"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "사랑이 잘 (Can't Love You Anymore)",
+   "by": "IU",
+   "year": 2017,
+   "quote": "[피곤해], 그만 오늘은 놔 줘",
+   "translation": "I'm tired, enough, let me go for today",
+   "why": "IU's duet with Oh Hyuk opens the line with the word itself.",
+   "url": "https://www.youtube.com/watch?v=E9HV6jh6qt0",
+   "start": 26,
+   "embed": true,
+   "evidence": [
+    "lrclib:34711502@28.82",
+    "length:196"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:행복해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "하루하루 (Haru Haru)",
+   "by": "BIGBANG",
+   "year": 2008,
+   "quote": "넌 그럴수록 [행복해야] 돼",
+   "translation": "You have to be all the happier",
+   "why": "BIGBANG's classic breakup song: in every chorus he wants her to be happy.",
+   "url": "https://www.youtube.com/watch?v=c84VnpGFbrw",
+   "video": "https://www.youtube.com/watch?v=8OAQ6RuYFGE",
+   "start": 96,
+   "embed": true,
+   "evidence": [
+    "lrclib:35235668@98.52",
+    "length:257"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "행복 (Happiness)",
+   "by": "Red Velvet",
+   "year": 2014,
+   "quote": "넘 귀여워서 [행복해]",
+   "translation": "It's so cute, I'm happy",
+   "why": "Red Velvet's debut song is titled 행복, happiness.",
+   "url": "https://www.youtube.com/watch?v=K0THWR1irk0",
+   "video": "https://www.youtube.com/watch?v=JFgv8bKfxEs",
+   "start": 44,
+   "embed": true,
+   "evidence": [
+    "lrclib:4063614@46.53",
+    "length:221"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Adjectives:힘들어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "촛불하나 (One Candle)",
+   "by": "g.o.d",
+   "year": 2000,
+   "quote": "지치고 [힘들] 땐, 내게 기대",
+   "translation": "When you're worn out and it's hard, lean on me",
+   "why": "g.o.d's song of comfort: when things are hard, lean on me.",
+   "url": "https://www.youtube.com/watch?v=IJRo4GJqTfE",
+   "start": 56,
+   "embed": true,
+   "evidence": [
+    "lrclib:17451984@58.13",
+    "length:212"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:갈색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "분홍신 (The Red Shoes)",
+   "by": "IU",
+   "year": 2013,
+   "quote": "길을 찾아 떠난 [갈색]머리 아가씨는",
+   "translation": "The brown-haired girl who set off to find her way",
+   "why": "A storybook line from IU's 'The Red Shoes'.",
+   "url": "https://www.youtube.com/watch?v=C-Mxyvv0IDY",
+   "video": "https://www.youtube.com/watch?v=Q0xvVgKJxfs",
+   "start": 91,
+   "embed": true,
+   "evidence": [
+    "lrclib:22145859@93.37",
+    "length:255"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Can't Nobody",
+   "by": "2NE1",
+   "year": 2010,
+   "quote": "까만 눈 [갈색]머리",
+   "translation": "Black eyes, brown hair",
+   "why": "2NE1 sketch themselves in Seoul in 'Can't Nobody': black eyes, brown hair.",
+   "url": "https://www.youtube.com/watch?v=f57HiOMOWg0",
+   "video": "https://www.youtube.com/watch?v=Ihi_kJJj_8A",
+   "start": 16,
+   "embed": true,
+   "evidence": [
+    "lrclib:15729655@18.88",
+    "length:209"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:검은색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "검은 고양이",
+   "by": "TURBO",
+   "quote": "[검은] 고양이 네로 네로 네로",
+   "translation": "Black cat Nero, Nero, Nero",
+   "why": "TURBO's 90s dance remake of an old children's song chants 'black cat' in every chorus.",
+   "url": "https://www.youtube.com/watch?v=aXu0kYijRjg",
+   "start": 64,
+   "embed": true,
+   "evidence": [
+    "lrclib:5863121@66.5",
+    "length:193"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Pretty Savage",
+   "by": "BLACKPINK",
+   "year": 2020,
+   "quote": "[검은색] 분홍빛이",
+   "translation": "Black, pink",
+   "why": "BLACKPINK sing their own name in Korean: 검은색 (black), 분홍빛 (pink).",
+   "url": "https://www.youtube.com/watch?v=F8c8f2nK82w",
+   "start": 51,
+   "embed": true,
+   "evidence": [
+    "lrclib:37168891@53.36",
+    "length:200"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:노란색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "신호등 (Traffic light)",
+   "by": "Lee Mujin",
+   "year": 2021,
+   "quote": "[노란색] 빛을 내는",
+   "translation": "Glowing yellow",
+   "why": "Lee Mujin's viral 'Traffic Light': red, green, and the yellow light in between.",
+   "url": "https://www.youtube.com/watch?v=9Ibf10h9U0c",
+   "video": "https://www.youtube.com/watch?v=SK6Sm2Ki9tI",
+   "start": 82,
+   "embed": true,
+   "evidence": [
+    "lrclib:35191585@84.87",
+    "length:232"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "늑대와 미녀 (Wolf)",
+   "by": "EXO",
+   "year": 2013,
+   "quote": "저 [노란] 달이 나를 놀려",
+   "translation": "That yellow moon is teasing me",
+   "why": "From EXO's 'Wolf': the howling wolf is mocked by a yellow moon.",
+   "url": "https://www.youtube.com/watch?v=Q5DdTBJ-Cfg",
+   "video": "https://www.youtube.com/watch?v=gAal8xHfV0c",
+   "start": 193,
+   "embed": true,
+   "evidence": [
+    "lrclib:4373052@195.84",
+    "length:231"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:보라색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "보라빛 밤 (pporappippam)",
+   "by": "SUNMI",
+   "year": 2020,
+   "quote": "[보라]빛 밤 I like it, like it",
+   "translation": "Purple night, I like it, like it",
+   "why": "SUNMI's 'pporappippam' (purple night) sings its title in every chorus.",
+   "url": "https://www.youtube.com/watch?v=wh7j1uEpNsQ",
+   "video": "https://www.youtube.com/watch?v=Is7glC9Jp7Q",
+   "start": 32,
+   "embed": true,
+   "evidence": [
+    "lrclib:34277534@34.27",
+    "length:207"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "팔레트 (Palette)",
+   "by": "IU",
+   "year": 2017,
+   "quote": "Hot pink보다 진한 [보라색]을 더 좋아해",
+   "translation": "I like deep purple better than hot pink",
+   "why": "In IU's 'Palette' she lists what she likes at 25; deep purple makes the cut.",
+   "url": "https://www.youtube.com/watch?v=2C1Jg04INb4",
+   "video": "https://www.youtube.com/watch?v=d9IxdwEFk1c",
+   "start": 36,
+   "embed": true,
+   "evidence": [
+    "lrclib:5108172@38.54",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:분홍색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "LALISA",
+   "by": "LISA",
+   "year": 2021,
+   "quote": "어두워질 때 [분홍]빛이나",
+   "translation": "When it gets dark, a pink light glows",
+   "why": "The second line of LISA's 'LALISA': pink light when the dark falls.",
+   "url": "https://www.youtube.com/watch?v=awkkyBH2zEo",
+   "embed": true,
+   "evidence": [
+    "lrclib:3369241@3.57"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Pretty Savage",
+   "by": "BLACKPINK",
+   "year": 2020,
+   "quote": "검은색 [분홍]빛이",
+   "translation": "Black, pink",
+   "why": "The PINK in BLACKPINK, sung in Korean: 분홍빛, a pink glow.",
+   "url": "https://www.youtube.com/watch?v=F8c8f2nK82w",
+   "start": 51,
+   "embed": true,
+   "evidence": [
+    "lrclib:37168891@53.36",
+    "length:200"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:빨간색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "빨간 맛 (Red Flavor)",
+   "by": "Red Velvet",
+   "year": 2017,
+   "quote": "[빨간] 맛, 궁금해 honey",
+   "translation": "Red flavor, I'm curious, honey",
+   "why": "Red Velvet's hit opens by singing the color: 빨간 맛, red flavor.",
+   "url": "https://www.youtube.com/watch?v=BLavT7w4R9I",
+   "video": "https://www.youtube.com/watch?v=WyiIGEHQP8o",
+   "start": 0,
+   "embed": true,
+   "evidence": [
+    "lrclib:4063586@1.46",
+    "length:192"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "빨개요 (Red)",
+   "by": "HyunA",
+   "year": 2014,
+   "quote": "[빨간] 건 현아",
+   "translation": "The red one is HyunA",
+   "why": "HyunA's 'Red' turns the color into a chant, sung over a dozen times.",
+   "url": "https://www.youtube.com/watch?v=LrJ4ATXneb0",
+   "video": "https://www.youtube.com/watch?v=wg4mV6CapGg",
+   "start": 49,
+   "embed": true,
+   "evidence": [
+    "lrclib:24357710@51.42",
+    "length:200"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:초록색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "다섯 번째 계절 (SSFWL)",
+   "by": "OH MY GIRL",
+   "year": 2019,
+   "quote": "짙은 [초록]의 색깔로 넌 내 하늘을 채우고",
+   "translation": "In deep green, you fill my sky",
+   "why": "OH MY GIRL's 'SSFWL' paints love as a tree growing deep green.",
+   "url": "https://www.youtube.com/watch?v=SKDd7AJNsx4",
+   "video": "https://www.youtube.com/watch?v=udGwca1HBM4",
+   "start": 33,
+   "embed": true,
+   "evidence": [
+    "lrclib:18306062@35.74",
+    "length:241"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:파란색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "좋은 날 (Good Day)",
+   "by": "IU",
+   "year": 2010,
+   "quote": "어쩜 이렇게 하늘은 더 [파란] 건지",
+   "translation": "How can the sky be this much bluer?",
+   "why": "From IU's breakthrough 'Good Day': the sky looks bluer than ever.",
+   "url": "https://www.youtube.com/watch?v=OIHlzvEKncQ",
+   "video": "https://www.youtube.com/watch?v=jeqdYqsrsA0",
+   "start": 13,
+   "embed": true,
+   "evidence": [
+    "lrclib:34902657@15.97",
+    "length:236"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Blue & Grey",
+   "by": "BTS",
+   "year": 2020,
+   "quote": "머릿속엔 [파란색] 물음표",
+   "translation": "A blue question mark in my head",
+   "why": "BTS sing the full color word in 'Blue & Grey'.",
+   "url": "https://www.youtube.com/watch?v=amnspvOH-EE",
+   "start": 49,
+   "embed": true,
+   "evidence": [
+    "lrclib:12072880@51.22",
+    "length:255"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:하늘색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "마리아 (Maria)",
+   "by": "HWASA",
+   "year": 2020,
+   "quote": "하늘은 [하늘색] 사는 게 다 뻔해",
+   "translation": "The sky is sky blue; life's all so predictable",
+   "why": "HWASA's 'Maria' uses sky blue as the most obvious thing there is.",
+   "url": "https://www.youtube.com/watch?v=GCWdUH18pPc",
+   "video": "https://www.youtube.com/watch?v=tDukIfFzX18",
+   "start": 86,
+   "embed": true,
+   "evidence": [
+    "lrclib:8315024@88.2",
+    "length:200"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:회색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Dream Girl",
+   "by": "SHINee",
+   "year": 2013,
+   "quote": "[회색] 빛 이 세상에 니 입술만 붉게 빛나",
+   "translation": "In this gray world, only your lips glow red",
+   "why": "SHINee's 'Dream Girl' opens on a gray world lit by one red color.",
+   "url": "https://www.youtube.com/watch?v=hFKyAGl8vvI",
+   "video": "https://www.youtube.com/watch?v=vhxjEXDAy6s",
+   "start": 13,
+   "embed": true,
+   "evidence": [
+    "lrclib:35593535@15.9",
+    "length:181"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Rain",
+   "by": "TAEYEON",
+   "year": 2016,
+   "quote": "텅 빈 [회색] 빛 거린 참 허전해",
+   "translation": "The empty gray street feels so hollow",
+   "why": "TAEYEON's 'Rain' opens on a rainy, gray street.",
+   "url": "https://www.youtube.com/watch?v=aDCzWqHCeYQ",
+   "video": "https://www.youtube.com/watch?v=eHir_vB1RUI",
+   "start": 11,
+   "embed": true,
+   "evidence": [
+    "lrclib:3366299@13.44",
+    "length:223"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Colors:흰색": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "나비야",
+   "by": "가람뮤직 (children's song)",
+   "quote": "노랑나비, [흰] 나비, 춤을 추며 오너라",
+   "translation": "Yellow butterfly, white butterfly, come dancing",
+   "why": "Every Korean child sings this nursery song about a yellow and a white butterfly.",
+   "url": "https://www.youtube.com/watch?v=Dr-TffCzg0A",
+   "start": 11,
+   "embed": true,
+   "evidence": [
+    "lrclib:13989833@13.13",
+    "length:64"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "에라 모르겠다 (FXXK IT)",
+   "by": "BIGBANG",
+   "year": 2016,
+   "quote": "희끗희끗, [흰]머리가 나",
+   "translation": "Going gray, I'm getting white hair",
+   "why": "BIGBANG joke about getting white hair in 'FXXK IT'.",
+   "url": "https://www.youtube.com/watch?v=rFJGzysu7WM",
+   "video": "https://www.youtube.com/watch?v=iIPH8LFYFRk",
+   "start": 89,
+   "embed": true,
+   "evidence": [
+    "lrclib:28500389@91.23",
+    "length:232"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Drinks:맥주": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "워커홀릭 (Workaholic)",
+   "by": "BOL4",
+   "year": 2017,
+   "quote": "시원한 [맥주]를 한 캔 마시다",
+   "translation": "drinking a can of cold beer",
+   "why": "BOL4's Workaholic: a can of cold beer after work, sung twice.",
+   "url": "https://www.youtube.com/watch?v=VDNtjtIMPL0",
+   "video": "https://www.youtube.com/watch?v=mrAIqeULUL0",
+   "start": 26,
+   "embed": true,
+   "evidence": [
+    "lrclib:37144298@28.54",
+    "length:192"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "아무노래 (Any Song)",
+   "by": "ZICO",
+   "year": 2020,
+   "quote": "병[맥주]랑 까까 몇 개 사 와",
+   "translation": "bring some bottled beer and a few snacks",
+   "why": "ZICO's Any Song: friends coming over with 병맥주, bottled beer.",
+   "url": "https://www.youtube.com/watch?v=GOtF5_Ow0_Y",
+   "video": "https://www.youtube.com/watch?v=UuV2BmJ1p_I",
+   "start": 55,
+   "embed": true,
+   "evidence": [
+    "lrclib:33807563@57.74",
+    "length:228"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Drinks:물": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "예쁘다 (Pretty U)",
+   "by": "SEVENTEEN",
+   "year": 2016,
+   "quote": "새벽에 [물]을 마시면서",
+   "translation": "drinking water at dawn",
+   "why": "SEVENTEEN's Pretty U: nervously drinking water at dawn, a line that comes back three times.",
+   "url": "https://www.youtube.com/watch?v=pxC7XsOHqxI",
+   "video": "https://www.youtube.com/watch?v=J5juKw-mnGw",
+   "start": 68,
+   "embed": true,
+   "evidence": [
+    "lrclib:7697986@70.92",
+    "length:208"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "뚜두뚜두 (DDU-DU DDU-DU)",
+   "by": "BLACKPINK",
+   "year": 2018,
+   "quote": "[물] 만난 물고기",
+   "translation": "a fish that found its water",
+   "why": "BLACKPINK's DDU-DU DDU-DU: 물 만난 물고기, a fish in water, the Korean way to say 'in my element'.",
+   "url": "https://www.youtube.com/watch?v=IPzouyj7FLA",
+   "video": "https://www.youtube.com/watch?v=IHNzOHi8sJs",
+   "start": 42,
+   "embed": true,
+   "evidence": [
+    "lrclib:33631648@44.96",
+    "length:210"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Drinks:우유": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "바나나 알러지 원숭이 (Banana Allergy Monkey)",
+   "by": "OH MY GIRL BANHANA",
+   "year": 2018,
+   "quote": "바나나 [우유] 있어서 행복해",
+   "translation": "I'm happy because there's banana milk",
+   "why": "Banana milk, the classic Korean convenience-store drink, in a repeated chorus line.",
+   "url": "https://www.youtube.com/watch?v=tcIAGuTr9J8",
+   "video": "https://www.youtube.com/watch?v=rW9r_1ys2ec",
+   "start": 108,
+   "embed": true,
+   "evidence": [
+    "lrclib:34531234@110.59",
+    "length:224"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Drinks:주스": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "멋쟁이 토마토",
+   "by": "엘키즈 동요",
+   "quote": "나는야 [주스] 될 거야",
+   "translation": "I'm going to become juice!",
+   "why": "Every Korean kid's tomato song: the tomato dreams of becoming juice (gulp!).",
+   "url": "https://www.youtube.com/watch?v=JoJTge76sNk",
+   "start": 19,
+   "embed": true,
+   "evidence": [
+    "lrclib:25227573@21.22",
+    "length:98"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Drinks:차": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "음오아예 (Um Oh Ah Yeh)",
+   "by": "MAMAMOO",
+   "year": 2015,
+   "quote": "아 시간되면 [차] 한잔 할래요?",
+   "translation": "If you have time, want to have a cup of tea?",
+   "why": "MAMAMOO's Um Oh Ah Yeh: 차 한잔 할래요?, the classic Korean invitation.",
+   "url": "https://www.youtube.com/watch?v=2atCp8rcYFQ",
+   "video": "https://www.youtube.com/watch?v=pFuJAIMQjHk",
+   "start": 60,
+   "embed": true,
+   "evidence": [
+    "lrclib:26907987@62.26",
+    "length:215"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "눈 (Snow)",
+   "by": "Zion.T",
+   "year": 2017,
+   "quote": "그럼 따뜻한 [차]를",
+   "translation": "then (I will brew you) a warm tea",
+   "why": "Zion.T's Snow: on a snowy day, he offers to make you a cup of warm tea.",
+   "url": "https://www.youtube.com/watch?v=m4L0_kwPpso",
+   "video": "https://www.youtube.com/watch?v=fiGSDywrX1Y",
+   "start": 31,
+   "embed": true,
+   "evidence": [
+    "lrclib:36714211@33.96",
+    "length:240"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Drinks:커피": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "강남스타일 (Gangnam Style)",
+   "by": "PSY",
+   "year": 2012,
+   "quote": "[커피] 한 잔의 여유를 아는 품격 있는 여자",
+   "translation": "a classy woman who knows how to enjoy a cup of coffee",
+   "why": "The first verse of Gangnam Style: 커피 opens the line.",
+   "url": "https://www.youtube.com/watch?v=4AgDYTuZWOw",
+   "video": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+   "start": 16,
+   "embed": true,
+   "evidence": [
+    "lrclib:34531668@18.31",
+    "length:220"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "drama",
+   "title": "커피프린스 1호점 (Coffee Prince)",
+   "by": "MBC",
+   "year": 2007,
+   "quote": "[커피]프린스 1호점",
+   "translation": "Coffee Prince, Shop No. 1",
+   "why": "Gong Yoo and Yoon Eun-hye's 2007 hit, set in a coffee shop: 커피 is the first word of the title.",
+   "url": "https://www.youtube.com/watch?v=arDS1j3og0c",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Coffee_Prince_(South_Korean_TV_series)",
+    "https://ko.wikipedia.org/wiki/커피프린스_1호점"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Drinks:콜라": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "MIC Drop",
+   "by": "BTS",
+   "year": 2017,
+   "quote": "우린 탁 쏴 마치 [콜라]지",
+   "translation": "We've got a kick, just like cola",
+   "why": "BTS in MIC Drop: sharp and fizzy, like a cola.",
+   "url": "https://www.youtube.com/watch?v=e95-Gaj2iXM",
+   "video": "https://www.youtube.com/watch?v=c5_LROaHGtw",
+   "start": 220,
+   "embed": true,
+   "evidence": [
+    "lrclib:21100471@222.83",
+    "length:239"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "싸구려 커피 (Cheap Coffee)",
+   "by": "Kiha & The Faces",
+   "year": 2008,
+   "quote": "미지근한 [콜라]가 담긴 캔을",
+   "translation": "the can of lukewarm cola",
+   "why": "Kiha & The Faces' slacker classic: a forgotten can of warm cola.",
+   "url": "https://www.youtube.com/watch?v=bL-ueHzY2yM",
+   "start": 142,
+   "embed": true,
+   "evidence": [
+    "lrclib:33388440@144.01",
+    "length:258"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:가족": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "상어 가족 (Baby Shark)",
+   "by": "Pinkfong",
+   "year": 2015,
+   "quote": "상어 [가족]!",
+   "translation": "Shark family!",
+   "why": "Baby Shark's Korean title is 상어 가족, Shark Family: the whole family is in it.",
+   "url": "https://www.youtube.com/watch?v=ZohENQEVfw0",
+   "start": 1,
+   "embed": true,
+   "evidence": [
+    "lrclib:38715388@3.28",
+    "length:103"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "가족사진 (Family Portrait)",
+   "by": "Kim Jin Ho",
+   "year": 2013,
+   "quote": "그날에 찍었던 [가족] 사진속에",
+   "translation": "In the family photo we took that day",
+   "why": "Kim Jin Ho's tearjerker titled 가족사진, family photo.",
+   "url": "https://www.youtube.com/watch?v=1Rce7tw5L90",
+   "start": 42,
+   "embed": true,
+   "evidence": [
+    "lrclib:34424490@44.36",
+    "length:267"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:남동생": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Dumb Dumb",
+   "by": "Red Velvet",
+   "year": 2015,
+   "quote": "[남동생] 로봇처럼",
+   "translation": "Like my little brother's robot",
+   "why": "Red Velvet's Dumb Dumb: she moves as stiffly as her little brother's toy robot.",
+   "url": "https://www.youtube.com/watch?v=EXknw6fStAs",
+   "video": "https://www.youtube.com/watch?v=XGdbaEDVWp0",
+   "start": 156,
+   "embed": true,
+   "evidence": [
+    "lrclib:36117919@158.18",
+    "length:203"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:남자": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "그 남자 (That Man)",
+   "by": "Hyun Bin",
+   "year": 2011,
+   "quote": "한 [남자]가 그대를 사랑합니다",
+   "translation": "A man loves you",
+   "why": "Hyun Bin sings the male twin of 그 여자 from Secret Garden: same line, with 남자.",
+   "url": "https://www.youtube.com/watch?v=P3vitPw0mLM",
+   "video": "https://www.youtube.com/watch?v=Olm9pxyshJU",
+   "start": 11,
+   "embed": true,
+   "evidence": [
+    "lrclib:20225779@13.89",
+    "length:272"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "나쁜 남자 (Bad Guy)",
+   "by": "RAIN",
+   "year": 2002,
+   "quote": "난 나쁜 [남자]야",
+   "translation": "I'm a bad guy",
+   "why": "RAIN's debut hit: the title phrase is the hook he keeps repeating.",
+   "url": "https://www.youtube.com/watch?v=z3Kdgd6Vqq4",
+   "video": "https://www.youtube.com/watch?v=Lfgg_AVzyIg",
+   "start": 74,
+   "embed": true,
+   "evidence": [
+    "lrclib:13976967@76.35",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:누나": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "내 여자라니까 (Because You're My Woman)",
+   "by": "Lee Seung Gi",
+   "year": 2004,
+   "quote": "[누난] 내 여자니까",
+   "translation": "Because you, noona, are my woman",
+   "why": "The hook of Lee Seung Gi's debut: a younger guy and his 누나 (누난 = 누나는).",
+   "url": "https://www.youtube.com/watch?v=l8vtZb2WpQ0",
+   "video": "https://www.youtube.com/watch?v=az2P1AP-zjw",
+   "start": 57,
+   "embed": true,
+   "evidence": [
+    "lrclib:13082940@59.68",
+    "length:241"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "drama",
+   "title": "밥 잘 사주는 예쁜 누나 (Something in the Rain)",
+   "by": "JTBC",
+   "year": 2018,
+   "quote": "밥 잘 사주는 예쁜 [누나]",
+   "translation": "The pretty noona who buys me dinner",
+   "why": "Son Ye-jin and Jung Hae-in's romance; the title is how he sees her: his 누나.",
+   "url": "https://www.youtube.com/watch?v=PxtaIuJkziY",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Something_in_the_Rain"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:동생": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Oh!",
+   "by": "Girls' Generation",
+   "year": 2010,
+   "quote": "[동생]으로만 생각하진 마라",
+   "translation": "Don't think of me as just a little sister",
+   "why": "In Oh!, she tells her 오빠 to stop seeing her as just a 동생.",
+   "url": "https://www.youtube.com/watch?v=5r6M-c3_7YA",
+   "video": "https://www.youtube.com/watch?v=TGbwL8kSpEk",
+   "start": 81,
+   "embed": true,
+   "evidence": [
+    "lrclib:18171673@83.31",
+    "length:189"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "SPOT!",
+   "by": "ZICO",
+   "year": 2024,
+   "quote": "여긴 내 [동생] 저기는 내 homie",
+   "translation": "This one's my little bro, that one's my homie",
+   "why": "ZICO's party hit with JENNIE: introducing his 동생, his younger bro.",
+   "url": "https://www.youtube.com/watch?v=33hE0Z0iNys",
+   "video": "https://www.youtube.com/watch?v=xfqBQ2XhBCg",
+   "start": 33,
+   "embed": true,
+   "evidence": [
+    "lrclib:33427949@35.82",
+    "length:168"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:딸": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "행복 (Happiness)",
+   "by": "Red Velvet",
+   "year": 2014,
+   "quote": "어휴, 착한 내 [딸]아",
+   "translation": "Aww, my good daughter",
+   "why": "Red Velvet's debut song: a teasing, parent-style aside to a 딸.",
+   "url": "https://www.youtube.com/watch?v=K0THWR1irk0",
+   "video": "https://www.youtube.com/watch?v=JFgv8bKfxEs",
+   "start": 36,
+   "embed": true,
+   "evidence": [
+    "lrclib:4063614@38.4",
+    "length:221"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:부모님": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "이등병의 편지",
+   "by": "Kim Kwang Seok",
+   "year": 1993,
+   "quote": "[부모님]께 큰 절하고 대문 밖을 나설 때",
+   "translation": "When I bow deeply to my parents and step out the gate",
+   "why": "Kim Kwang Seok's classic about leaving for military service: the farewell to 부모님.",
+   "url": "https://www.youtube.com/watch?v=NyekYb4y114",
+   "start": 29,
+   "embed": true,
+   "evidence": [
+    "lrclib:14419767@31.03",
+    "length:287"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "No More Dream",
+   "by": "BTS",
+   "year": 2013,
+   "quote": "어른들과 [부모님]은 틀에 박힌 꿈을 주입해",
+   "translation": "Adults and parents push the same old dreams on us",
+   "why": "BTS's debut song pushes back at the dreams adults and 부모님 hand down.",
+   "url": "https://www.youtube.com/watch?v=q0MsfNFrYlQ",
+   "video": "https://www.youtube.com/watch?v=rBG5L7UsUxA",
+   "start": 100,
+   "embed": true,
+   "evidence": [
+    "lrclib:36924407@102.76",
+    "length:223"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:아들": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "MIC Drop",
+   "by": "BTS",
+   "year": 2017,
+   "quote": "[아들]이 넘 잘나가서 미안해 엄마",
+   "translation": "Sorry, Mom, your son is doing way too well",
+   "why": "BTS's MIC Drop brag: sorry Mom, your 아들 is doing too well.",
+   "url": "https://www.youtube.com/watch?v=e95-Gaj2iXM",
+   "video": "https://www.youtube.com/watch?v=c5_LROaHGtw",
+   "start": 57,
+   "embed": true,
+   "evidence": [
+    "lrclib:21100471@59.28",
+    "length:239"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "양화대교 (Yanghwa BRDG)",
+   "by": "Zion.T",
+   "year": 2014,
+   "quote": "[아들] 잘 지내니",
+   "translation": "Son, are you doing well?",
+   "why": "In Yanghwa BRDG, his mother calls and asks after her 아들.",
+   "url": "https://www.youtube.com/watch?v=yP459cBS4f0",
+   "video": "https://www.youtube.com/watch?v=uLUvHUzd4UA",
+   "start": 99,
+   "embed": true,
+   "evidence": [
+    "lrclib:4847914@101.8",
+    "length:230"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:아버지": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "양화대교 (Yanghwa BRDG)",
+   "by": "Zion.T",
+   "year": 2014,
+   "quote": "[아버지]는 택시드라이버",
+   "translation": "My father was a taxi driver",
+   "why": "Zion.T's best-loved song opens with his father, a night-shift taxi driver.",
+   "url": "https://www.youtube.com/watch?v=yP459cBS4f0",
+   "video": "https://www.youtube.com/watch?v=uLUvHUzd4UA",
+   "start": 22,
+   "embed": true,
+   "evidence": [
+    "lrclib:4847914@24.97",
+    "length:230"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "아버지 (Father)",
+   "by": "PSY",
+   "year": 2005,
+   "quote": "[아버지] 이제야 난 깨달아요",
+   "translation": "Father, only now do I understand",
+   "why": "PSY's song titled 아버지: each chorus starts with the word.",
+   "url": "https://www.youtube.com/watch?v=HnbCKOd7BOA",
+   "video": "https://www.youtube.com/watch?v=ig8AaFSzzGI",
+   "start": 20,
+   "embed": true,
+   "evidence": [
+    "lrclib:17208730@22.12",
+    "length:209"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:아빠": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "상어 가족 (Baby Shark)",
+   "by": "Pinkfong",
+   "year": 2015,
+   "quote": "[아빠] 상어!",
+   "translation": "Daddy Shark!",
+   "why": "The Korean original of Baby Shark: Daddy Shark is 아빠 상어.",
+   "url": "https://www.youtube.com/watch?v=ZohENQEVfw0",
+   "start": 36,
+   "embed": true,
+   "evidence": [
+    "lrclib:38715388@38.03",
+    "length:103"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "show",
+   "title": "아빠! 어디가? (Dad! Where Are We Going?)",
+   "by": "MBC",
+   "year": 2013,
+   "quote": "[아빠]! 어디가?",
+   "translation": "Dad! Where are we going?",
+   "why": "MBC's hit variety show: celebrity dads travel with their kids, who call them 아빠.",
+   "url": "https://www.youtube.com/watch?v=ijrb1aE6hDE",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Dad!_Where_Are_We_Going%3F"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:어머니": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "어머님께 (To Mother)",
+   "by": "g.o.d",
+   "year": 1999,
+   "quote": "[어머니] 보고싶어요",
+   "translation": "Mother, I miss you",
+   "why": "g.o.d's legendary 1999 song to his mother opens with these words.",
+   "url": "https://www.youtube.com/watch?v=6H_IilsR6Fo",
+   "start": 7,
+   "embed": true,
+   "evidence": [
+    "lrclib:16979309@9.14",
+    "length:256"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "양화대교 (Yanghwa BRDG)",
+   "by": "Zion.T",
+   "year": 2014,
+   "quote": "전화가 오네, 내 [어머니]네",
+   "translation": "The phone rings: it's my mother",
+   "why": "In Yanghwa BRDG, the grown-up son gets a call from his mother.",
+   "url": "https://www.youtube.com/watch?v=yP459cBS4f0",
+   "video": "https://www.youtube.com/watch?v=uLUvHUzd4UA",
+   "start": 97,
+   "embed": true,
+   "evidence": [
+    "lrclib:4847914@99.06",
+    "length:230"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:언니": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "나쁜 기집애 (The Baddest Female)",
+   "by": "CL",
+   "year": 2013,
+   "quote": "여자들은 [언니]라 불러요",
+   "translation": "Girls call me unnie",
+   "why": "CL says who uses the word: women call an older woman 언니.",
+   "url": "https://www.youtube.com/watch?v=_meXpVfPycw",
+   "start": 84,
+   "embed": true,
+   "evidence": [
+    "lrclib:24969385@86.96",
+    "length:224"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "달라달라 (DALLA DALLA)",
+   "by": "ITZY",
+   "year": 2019,
+   "quote": "[언니]들이 말해 철들려면 멀었대",
+   "translation": "The older girls say I'm far from grown up",
+   "why": "ITZY's debut hit: the 언니들, the older girls, judging the young ones.",
+   "url": "https://www.youtube.com/watch?v=miqQAzOXPBo",
+   "video": "https://www.youtube.com/watch?v=pNfTK39k55U",
+   "start": 39,
+   "embed": true,
+   "evidence": [
+    "lrclib:2701072@41.62",
+    "length:200"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:엄마": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "불장난 (PLAYING WITH FIRE)",
+   "by": "BLACKPINK",
+   "year": 2016,
+   "quote": "[엄마] 말이 꼭 맞을지도 몰라",
+   "translation": "Maybe Mom was right after all",
+   "why": "BLACKPINK's hit: the verse opens with 엄마's warning about playing with fire.",
+   "url": "https://www.youtube.com/watch?v=ei0k_1Uro-U",
+   "video": "https://www.youtube.com/watch?v=9pdj4iJD08s",
+   "start": 28,
+   "embed": true,
+   "evidence": [
+    "lrclib:34694349@30.22",
+    "length:198"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "상어 가족 (Baby Shark)",
+   "by": "Pinkfong",
+   "year": 2015,
+   "quote": "[엄마] 상어!",
+   "translation": "Mommy Shark!",
+   "why": "The Korean original of Baby Shark: Mommy Shark is 엄마 상어.",
+   "url": "https://www.youtube.com/watch?v=ZohENQEVfw0",
+   "start": 27,
+   "embed": true,
+   "evidence": [
+    "lrclib:38715388@29.88",
+    "length:103"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:여자": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "그 여자 (That Woman)",
+   "by": "Baek Ji Young",
+   "year": 2010,
+   "quote": "한 [여자]가 그대를 사랑합니다",
+   "translation": "A woman loves you",
+   "why": "The Secret Garden ballad: 여자 is the title and the first line.",
+   "url": "https://www.youtube.com/watch?v=U2YI2MD1Wrg",
+   "video": "https://www.youtube.com/watch?v=3yOJEb9MuFY",
+   "start": 12,
+   "embed": true,
+   "evidence": [
+    "lrclib:16739526@14",
+    "length:274"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "내 여자라니까 (Because You're My Woman)",
+   "by": "Lee Seung Gi",
+   "year": 2004,
+   "quote": "너는 내 [여자]니까",
+   "translation": "Because you're my woman",
+   "why": "Lee Seung Gi's debut hit: 여자 is in the title and in every chorus.",
+   "url": "https://www.youtube.com/watch?v=l8vtZb2WpQ0",
+   "video": "https://www.youtube.com/watch?v=az2P1AP-zjw",
+   "start": 60,
+   "embed": true,
+   "evidence": [
+    "lrclib:13082940@62.55",
+    "length:241"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:오빠": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "강남스타일 (Gangnam Style)",
+   "by": "PSY",
+   "year": 2012,
+   "quote": "[오빤] 강남스타일",
+   "translation": "Oppa is Gangnam style",
+   "why": "PSY's global hit: he calls himself 오빠 (오빤 = 오빠는), the word women use for an older guy.",
+   "url": "https://www.youtube.com/watch?v=4AgDYTuZWOw",
+   "video": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+   "start": 4,
+   "embed": true,
+   "evidence": [
+    "lrclib:34531668@6.22",
+    "length:220"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Oh!",
+   "by": "Girls' Generation",
+   "year": 2010,
+   "quote": "Oh, oh, oh, oh! [오빠]를 사랑해",
+   "translation": "Oh, oh, oh, oh! I love you, oppa",
+   "why": "Girls' Generation's chorus: a girl's love call to her 오빠.",
+   "url": "https://www.youtube.com/watch?v=5r6M-c3_7YA",
+   "video": "https://www.youtube.com/watch?v=TGbwL8kSpEk",
+   "start": 41,
+   "embed": true,
+   "evidence": [
+    "lrclib:18171673@43.56",
+    "length:189"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:할머니": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "상어 가족 (Baby Shark)",
+   "by": "Pinkfong",
+   "year": 2015,
+   "quote": "[할머니] 상어!",
+   "translation": "Grandma Shark!",
+   "why": "The Korean original of Baby Shark: Grandma Shark is 할머니 상어.",
+   "url": "https://www.youtube.com/watch?v=ZohENQEVfw0",
+   "start": 44,
+   "embed": true,
+   "evidence": [
+    "lrclib:38715388@46.54",
+    "length:103"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "DOC와 춤을",
+   "by": "DJ DOC",
+   "year": 1997,
+   "quote": "할아버지 [할머니]도 춤을 춰요",
+   "translation": "Grandpa and grandma dance too",
+   "why": "DJ DOC's 90s party classic: everyone dances, even grandpa and grandma.",
+   "url": "https://www.youtube.com/watch?v=q-goc8nDMRg",
+   "start": 76,
+   "embed": true,
+   "evidence": [
+    "lrclib:29528156@78.01",
+    "length:193"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:할아버지": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "상어 가족 (Baby Shark)",
+   "by": "Pinkfong",
+   "year": 2015,
+   "quote": "[할아버지] 상어!",
+   "translation": "Grandpa Shark!",
+   "why": "The Korean original of Baby Shark: Grandpa Shark is 할아버지 상어.",
+   "url": "https://www.youtube.com/watch?v=ZohENQEVfw0",
+   "start": 52,
+   "embed": true,
+   "evidence": [
+    "lrclib:38715388@54.86",
+    "length:103"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "DOC와 춤을",
+   "by": "DJ DOC",
+   "year": 1997,
+   "quote": "[할아버지] 할머니도 춤을 춰요",
+   "translation": "Grandpa and grandma dance too",
+   "why": "DJ DOC's 90s party classic: everyone dances, even grandpa and grandma.",
+   "url": "https://www.youtube.com/watch?v=q-goc8nDMRg",
+   "start": 76,
+   "embed": true,
+   "evidence": [
+    "lrclib:29528156@78.01",
+    "length:193"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Family:형": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Rush Hour",
+   "by": "Crush",
+   "year": 2022,
+   "quote": "난 그냥 [형] 따라 직진",
+   "translation": "I just follow my hyung, straight ahead",
+   "why": "Crush's hit with BTS's j-hope: a guy calling an older guy 형.",
+   "url": "https://www.youtube.com/watch?v=UZlbKxB7K0E",
+   "video": "https://www.youtube.com/watch?v=PS0qkO5qty0",
+   "start": 89,
+   "embed": true,
+   "evidence": [
+    "lrclib:13509587@91.87",
+    "length:178"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Food:계란": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "후라이의 꿈 (FRY's Dream)",
+   "by": "AKMU",
+   "year": 2023,
+   "quote": "[계란] fry, fry 같이, 나른하게",
+   "translation": "lazy, like a fried egg",
+   "why": "AKMU's FRY's Dream: lying on warm rice like a lazy fried egg, in the hook.",
+   "url": "https://www.youtube.com/watch?v=ZlDDiHK4tQM",
+   "start": 66,
+   "embed": true,
+   "evidence": [
+    "lrclib:16136205@68.84",
+    "length:205"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Food:김치": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "김치",
+   "by": "Norazo",
+   "year": 2011,
+   "quote": "너무 너무 [김치]가 좋아",
+   "translation": "I love kimchi so, so much",
+   "why": "Norazo's comic ode to kimchi: the word is the title and the whole chorus.",
+   "url": "https://www.youtube.com/watch?v=w4_WbL6A9oc",
+   "start": 0,
+   "embed": true,
+   "evidence": [
+    "lrclib:18107433@2.29",
+    "length:197"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "All I Wanna Do",
+   "by": "Jay Park",
+   "year": 2016,
+   "quote": "[김치] 향기가 배어있지",
+   "translation": "the scent of kimchi has soaked into me",
+   "why": "Korean-American Jay Park raps that he still smells of kimchi: proudly Korean.",
+   "url": "https://www.youtube.com/watch?v=uThYrYgSP3g",
+   "embed": true,
+   "evidence": [
+    "lrclib:13788640@149.38"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Food:면": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "어머님께 (To Mother)",
+   "by": "g.o.d",
+   "year": 1999,
+   "quote": "어머님은 짜장[면]이 싫다고 하셨어",
+   "translation": "Mother said she didn't like jajangmyeon",
+   "why": "g.o.d's To Mother, one of K-pop's most quoted lines: 짜장면 ends in 면, noodles.",
+   "url": "https://www.youtube.com/watch?v=6H_IilsR6Fo",
+   "start": 52,
+   "embed": true,
+   "evidence": [
+    "lrclib:16979309@54.37",
+    "length:256"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Food:밥": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "SOLO",
+   "by": "JENNIE",
+   "year": 2018,
+   "quote": "매일 뭐 해? 어디야? [밥]은? 잘 자",
+   "translation": "What do you do all day? Where are you? Did you eat? Sleep well",
+   "why": "JENNIE's SOLO: 밥은? (did you eat?), the Korean way of saying 'I care'.",
+   "url": "https://www.youtube.com/watch?v=b73BI9eUkjM",
+   "embed": true,
+   "evidence": [
+    "lrclib:21590568@11.78"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "drama",
+   "title": "밥 잘 사주는 예쁜 누나 (Something in the Rain)",
+   "by": "JTBC",
+   "year": 2018,
+   "quote": "[밥] 잘 사주는 예쁜 누나",
+   "translation": "the pretty older woman who often treats me to a meal",
+   "why": "The 2018 Son Ye-jin and Jung Hae-in drama on Netflix: the title opens with 밥, a meal.",
+   "url": "https://www.youtube.com/watch?v=LnvubPR5oHI",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Something_in_the_Rain"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Food:빵": [
+  {
+   "id": "c1",
+   "media": "drama",
+   "title": "제빵왕 김탁구 (King of Baking, Kim Takgu)",
+   "by": "KBS2",
+   "year": 2010,
+   "quote": "제[빵]왕 김탁구",
+   "translation": "Kim Takgu, the king of bread-making",
+   "why": "A 2010 drama watched by half of Korea: a boy who becomes a master baker. 제빵 means making bread.",
+   "url": "https://www.youtube.com/watch?v=vNhSdhr6Ols",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/King_of_Baking,_Kim_Takgu"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Food:생선": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Oasis",
+   "by": "Crush",
+   "year": 2015,
+   "quote": "고양이한테 [생선]을 맡긴 거야",
+   "translation": "It's like leaving the fish with the cat",
+   "why": "Crush's Oasis quotes a Korean idiom: never leave the fish with the cat.",
+   "url": "https://www.youtube.com/watch?v=dYwWCUsIKbI",
+   "video": "https://www.youtube.com/watch?v=_1SX7W1IfJw",
+   "start": 118,
+   "embed": true,
+   "evidence": [
+    "lrclib:33163001@120",
+    "length:192"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Food:아이스크림": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "FANCY",
+   "by": "TWICE",
+   "year": 2019,
+   "quote": "달콤한 초콜릿 [아이스크림]처럼 녹아버리는",
+   "translation": "melting like sweet chocolate ice cream",
+   "why": "TWICE's FANCY: melting like chocolate ice cream, right before the chorus.",
+   "url": "https://www.youtube.com/watch?v=cOUBZjWXc5E",
+   "video": "https://www.youtube.com/watch?v=kOHB85vDuow",
+   "start": 41,
+   "embed": true,
+   "evidence": [
+    "lrclib:36852845@43.89",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Hot Summer",
+   "by": "f(x)",
+   "year": 2011,
+   "quote": "발 툭툭 털고 [아이스크림] 가게로",
+   "translation": "shake off my feet and head to the ice cream shop",
+   "why": "f(x)'s Hot Summer: a summer anthem with a trip to the ice cream shop.",
+   "url": "https://www.youtube.com/watch?v=xTfbMYBoFik",
+   "video": "https://www.youtube.com/watch?v=z-rftpZ7kCY",
+   "start": 96,
+   "embed": true,
+   "evidence": [
+    "lrclib:19524@98.32",
+    "length:226"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Food:치즈": [
+  {
+   "id": "c1",
+   "media": "drama",
+   "title": "치즈인더트랩 (Cheese in the Trap)",
+   "by": "tvN",
+   "year": 2016,
+   "quote": "[치즈]인더트랩",
+   "translation": "Cheese in the Trap",
+   "why": "The 2016 drama of the hit webtoon: 치즈 is the first word of the title, the cheese in a mousetrap.",
+   "url": "https://www.youtube.com/watch?v=_LsHv-pP2kg",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Cheese_in_the_Trap_(TV_series)"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "늑대와 미녀 (Wolf)",
+   "by": "EXO",
+   "year": 2013,
+   "quote": "널 한 입에 [치즈]처럼 집어넣을 테다",
+   "translation": "I'll gobble you up in one bite, like cheese",
+   "why": "EXO's Wolf: the wolf eyes his prey like a bite of cheese.",
+   "url": "https://www.youtube.com/watch?v=Q5DdTBJ-Cfg",
+   "video": "https://www.youtube.com/watch?v=gAal8xHfV0c",
+   "start": 21,
+   "embed": true,
+   "evidence": [
+    "lrclib:4373052@23.14",
+    "length:231"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Fruit:딸기": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "내 귀에 캔디 (My Ear's Candy)",
+   "by": "Baek Ji Young",
+   "year": 2009,
+   "quote": "달콤하게 적신 [딸기] 같은",
+   "translation": "like a strawberry soaked in sweetness",
+   "why": "Baek Ji Young's 2009 duet with Taecyeon: lips like a sweet strawberry, sung twice in a row.",
+   "url": "https://www.youtube.com/watch?v=fE3wlJoBenc",
+   "video": "https://www.youtube.com/watch?v=rMG1YtxHLB8",
+   "start": 85,
+   "embed": true,
+   "evidence": [
+    "lrclib:5339040@87.9",
+    "length:225"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Fruit:바나나": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "바나나 알러지 원숭이 (Banana Allergy Monkey)",
+   "by": "OH MY GIRL BANHANA",
+   "year": 2018,
+   "quote": "나는 [바나나] 알러지 원숭이",
+   "translation": "I'm a monkey allergic to bananas",
+   "why": "The chorus, sung again and again: a monkey who loves bananas but is allergic to them.",
+   "url": "https://www.youtube.com/watch?v=tcIAGuTr9J8",
+   "video": "https://www.youtube.com/watch?v=rW9r_1ys2ec",
+   "start": 43,
+   "embed": true,
+   "evidence": [
+    "lrclib:34531234@45.71",
+    "length:224"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Fruit:복숭아": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "빨간 맛 (Red Flavor)",
+   "by": "Red Velvet",
+   "year": 2017,
+   "quote": "[복숭아] juice, sweet and sour mix mood",
+   "translation": "Peach juice, a sweet and sour mood",
+   "why": "Red Velvet's summer anthem: peach juice is the taste of summer.",
+   "url": "https://www.youtube.com/watch?v=BLavT7w4R9I",
+   "video": "https://www.youtube.com/watch?v=WyiIGEHQP8o",
+   "start": 115,
+   "embed": true,
+   "evidence": [
+    "lrclib:4063586@117.55",
+    "length:192"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "도원경 (Shangri-La)",
+   "by": "VIXX",
+   "year": 2017,
+   "quote": "덜 익은 [복숭아]마저도 달다",
+   "translation": "Even an unripe peach tastes sweet",
+   "why": "VIXX's Shangri-La, set in a peach-blossom paradise: even unripe peaches are sweet.",
+   "url": "https://www.youtube.com/watch?v=JLTU3sT1kVc",
+   "video": "https://www.youtube.com/watch?v=CYEaI5y7QaM",
+   "start": 98,
+   "embed": true,
+   "evidence": [
+    "lrclib:20462478@100.77",
+    "length:203"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Fruit:사과": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "꺼내 먹어요 (Eat)",
+   "by": "Zion.T",
+   "year": 2015,
+   "quote": "아침 [사과]처럼 꺼내 먹어요",
+   "translation": "Take it out and eat it, like a morning apple",
+   "why": "Zion.T's comfort song: eat it like your morning apple. Here 사과 is the fruit, not an apology.",
+   "url": "https://www.youtube.com/watch?v=Sp_Z2tBVniI",
+   "video": "https://www.youtube.com/watch?v=Ibb5RhoKfzE",
+   "start": 75,
+   "embed": true,
+   "evidence": [
+    "lrclib:13876448@77.22",
+    "length:162"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "정이라고 하자",
+   "by": "Big Naughty",
+   "year": 2022,
+   "quote": "넌 아담의 [사과]일 수도",
+   "translation": "You might be Adam's apple",
+   "why": "Big Naughty's 2022 hit: the forbidden apple from Eden, as a temptation.",
+   "url": "https://www.youtube.com/watch?v=OlXr5YD-MWA",
+   "start": 41,
+   "embed": true,
+   "evidence": [
+    "lrclib:24451878@43.76",
+    "length:189"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Fruit:체리": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "팥빙수 (Patbingsu)",
+   "by": "Billlie & Yoon Jong Shin",
+   "quote": "[체리]로 장식해 장식해",
+   "translation": "Decorate it with cherries",
+   "why": "The patbingsu recipe song: shaved ice, red beans, fruit, and cherries on top.",
+   "url": "https://www.youtube.com/watch?v=6G3lqpPavck",
+   "embed": true,
+   "evidence": [
+    "lrclib:10316454@92.22"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Fruit:포도": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "MIC Drop",
+   "by": "BTS",
+   "year": 2017,
+   "quote": "우리 콘서트 절대 없어 [포도]",
+   "translation": "Our concerts never have “grapes” (unsold seats)",
+   "why": "BTS brag in MIC Drop: no 'grapes', the purple dots that mark unsold seats on Korean ticket sites.",
+   "url": "https://www.youtube.com/watch?v=e95-Gaj2iXM",
+   "video": "https://www.youtube.com/watch?v=c5_LROaHGtw",
+   "start": 62,
+   "embed": true,
+   "evidence": [
+    "lrclib:21100471@64.82",
+    "length:239"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "heading:계절": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "다섯 번째 계절 (SSFWL)",
+   "by": "OH MY GIRL",
+   "year": 2019,
+   "quote": "다섯 번째 [계절]이 보여 난",
+   "translation": "I can see a fifth season",
+   "why": "OH MY GIRL's 'SSFWL' (The Fifth Season): love as a season of its own.",
+   "url": "https://www.youtube.com/watch?v=SKDd7AJNsx4",
+   "video": "https://www.youtube.com/watch?v=udGwca1HBM4",
+   "start": 44,
+   "embed": true,
+   "evidence": [
+    "lrclib:18306062@46.95",
+    "length:241"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "사계 (Four Seasons)",
+   "by": "TAEYEON",
+   "year": 2019,
+   "quote": "또 [계절]이 바뀌잖아",
+   "translation": "The season is changing again",
+   "why": "From TAEYEON's 'Four Seasons', a song built on the turning seasons.",
+   "url": "https://www.youtube.com/watch?v=yxagVXtlE_0",
+   "video": "https://www.youtube.com/watch?v=4HG_CJzyX6A",
+   "start": 104,
+   "embed": true,
+   "evidence": [
+    "lrclib:35884925@106.38",
+    "length:189"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "heading:과일": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "팥빙수 (Patbingsu)",
+   "by": "Billlie & Yoon Jong Shin",
+   "quote": "[과일]만 건진다 건진다",
+   "translation": "scoop out just the fruit",
+   "why": "The patbingsu recipe song: drain the fruit cocktail and keep only the fruit.",
+   "url": "https://www.youtube.com/watch?v=6G3lqpPavck",
+   "embed": true,
+   "evidence": [
+    "lrclib:10316454@27.13"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "heading:색깔": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "불장난 (PLAYING WITH FIRE)",
+   "by": "BLACKPINK",
+   "year": 2016,
+   "quote": "내 심장의 [색깔]은 black (ah)",
+   "translation": "The color of my heart is black",
+   "why": "A short, punchy line from BLACKPINK's 'Playing with Fire'.",
+   "url": "https://www.youtube.com/watch?v=ei0k_1Uro-U",
+   "video": "https://www.youtube.com/watch?v=9pdj4iJD08s",
+   "start": 104,
+   "embed": true,
+   "evidence": [
+    "lrclib:34694349@106.35",
+    "length:198"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "빨간 맛 (Red Flavor)",
+   "by": "Red Velvet",
+   "year": 2017,
+   "quote": "태양보다 빨간 네 사랑의 [색깔]",
+   "translation": "The color of your love, redder than the sun",
+   "why": "From Red Velvet's 'Red Flavor', a song full of colors.",
+   "url": "https://www.youtube.com/watch?v=BLavT7w4R9I",
+   "video": "https://www.youtube.com/watch?v=WyiIGEHQP8o",
+   "start": 76,
+   "embed": true,
+   "evidence": [
+    "lrclib:4063586@78.73",
+    "length:192"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "heading:시간": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "시간을 달려서 (Rough)",
+   "by": "GFRIEND",
+   "year": 2016,
+   "quote": "[시간]을 달려서 어른이 될 수만 있다면",
+   "translation": "If only I could race through time and grow up",
+   "why": "GFRIEND's 'Rough' (literally 'running through time') sings this in every chorus.",
+   "url": "https://www.youtube.com/watch?v=YXCkpXY1cuc",
+   "video": "https://www.youtube.com/watch?v=0VKcLPdY9lI",
+   "start": 58,
+   "embed": true,
+   "evidence": [
+    "lrclib:2270518@60.15",
+    "length:210"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "시간을 거슬러 (Back in Time)",
+   "by": "LYn",
+   "year": 2012,
+   "quote": "[시간]을 거슬러 갈순 없나요",
+   "translation": "Can't I go back in time?",
+   "why": "The ballad from 'The Moon Embracing the Sun' asks it in every chorus.",
+   "url": "https://www.youtube.com/watch?v=Hgt-Ts2VhRQ",
+   "start": 52,
+   "embed": true,
+   "evidence": [
+    "lrclib:17377254@54.01",
+    "length:212"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "heading:영화": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "What is Love?",
+   "by": "TWICE",
+   "year": 2018,
+   "quote": "매일같이 [영화] 속에서나",
+   "translation": "only in movies, every day",
+   "why": "TWICE's What is Love?: love seen only in movies; 드라마 follows on the next line.",
+   "url": "https://www.youtube.com/watch?v=w4nihuYVTW0",
+   "video": "https://www.youtube.com/watch?v=i0p1bmr0EmE",
+   "start": 13,
+   "embed": true,
+   "evidence": [
+    "lrclib:3000099@15.48",
+    "length:209"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Alone",
+   "by": "SISTAR",
+   "year": 2012,
+   "quote": "나 혼자 [영화]를 보고",
+   "translation": "I watch a movie alone",
+   "why": "SISTAR's Alone: after a breakup, eating alone and watching movies alone.",
+   "url": "https://www.youtube.com/watch?v=kLka40yzGWQ",
+   "video": "https://www.youtube.com/watch?v=E0ZHXVp_wUE",
+   "start": 64,
+   "embed": true,
+   "evidence": [
+    "lrclib:14991143@66.67",
+    "length:207"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "heading:음료": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Cookie",
+   "by": "NewJeans",
+   "year": 2022,
+   "quote": "[음료]는 없어 목말라도",
+   "translation": "no drinks, even if you're thirsty",
+   "why": "NewJeans' debut song Cookie: a hook line heard six times.",
+   "url": "https://www.youtube.com/watch?v=0M4QMVQJRsw",
+   "video": "https://www.youtube.com/watch?v=VOmIplFAGeg",
+   "start": 49,
+   "embed": true,
+   "evidence": [
+    "lrclib:37179866@51.41",
+    "length:236"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "heading:음식": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Love Lee",
+   "by": "AKMU",
+   "year": 2023,
+   "quote": "좋아하지 않는 [음식]을 먹어도",
+   "translation": "even if I eat food I don't like",
+   "why": "AKMU's Love Lee: in love, even food you don't like is fine. 음악 comes one line earlier.",
+   "url": "https://www.youtube.com/watch?v=fx227oTnnPc",
+   "video": "https://www.youtube.com/watch?v=EIz09kLzN9k",
+   "start": 11,
+   "embed": true,
+   "evidence": [
+    "lrclib:37162406@13.82",
+    "length:180"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "핸드폰 좀 꺼줄래 (Could You Turn Off Your Cell Phone)",
+   "by": "BTS",
+   "year": 2014,
+   "quote": "[음식]을 눈으로 먹냐",
+   "translation": "Do you eat food with your eyes?",
+   "why": "BTS tease people who photograph their food instead of eating it.",
+   "url": "https://www.youtube.com/watch?v=P1IiHBAVxqk",
+   "start": 106,
+   "embed": true,
+   "evidence": [
+    "lrclib:5258440@108.52",
+    "length:235"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "heading:음악": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "음악의 신 (God of Music)",
+   "by": "SEVENTEEN",
+   "year": 2023,
+   "quote": "세상에 [음악]의 신이 있다면",
+   "translation": "If there's a god of music in this world",
+   "why": "SEVENTEEN's God of Music: the title is the song's first line.",
+   "url": "https://www.youtube.com/watch?v=uXq_VHY8qW8",
+   "video": "https://www.youtube.com/watch?v=srA8JDMSl6E",
+   "start": 0,
+   "embed": true,
+   "evidence": [
+    "lrclib:18076889@0.65",
+    "length:206"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "비처럼 음악처럼",
+   "by": "Kim Hyun Sik",
+   "year": 1986,
+   "quote": "비가 내리고 [음악]이 흐르면",
+   "translation": "When the rain falls and the music plays",
+   "why": "Kim Hyun-sik's 1986 classic Like Rain, Like Music: 음악 in the title and the first line.",
+   "url": "https://www.youtube.com/watch?v=lZaOiTaFYks",
+   "start": 30,
+   "embed": true,
+   "evidence": [
+    "lrclib:26229441@32.19",
+    "length:278"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "heading:장소": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "비밀정원 (Secret Garden)",
+   "by": "OH MY GIRL",
+   "year": 2018,
+   "quote": "내 안에 소중한 혼자만의 [장소]가 있어",
+   "translation": "Inside me there's a precious place all my own",
+   "why": "OH MY GIRL's Secret Garden is that place: a spot of your own inside you.",
+   "url": "https://www.youtube.com/watch?v=5iD0z_5n6dQ",
+   "video": "https://www.youtube.com/watch?v=Lznx5A7fNto",
+   "start": 38,
+   "embed": true,
+   "evidence": [
+    "lrclib:11304594@40.26",
+    "length:245"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "사랑에 연습이 있었다면 (If There Was Practice in Love)",
+   "by": "Lim Jae Hyun",
+   "year": 2018,
+   "quote": "내가 널 만난 시간 혹은 그 [장소]",
+   "translation": "The time I met you, or that place",
+   "why": "Lim Jae-hyun's chart-climbing ballad replays when and where it all began.",
+   "url": "https://www.youtube.com/watch?v=lNNPWLC8sTo",
+   "video": "https://www.youtube.com/watch?v=kXAvbHPdTZ0",
+   "start": 25,
+   "embed": true,
+   "evidence": [
+    "lrclib:11513875@27.65",
+    "length:256"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Jobs / Occupations:가수": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "폰서트 (phonecert)",
+   "by": "10CM",
+   "year": 2017,
+   "quote": "[가수]는 나고 관객은 너 하나",
+   "translation": "I'm the singer, and you're my only audience",
+   "why": "10CM's concert over the phone: he is the 가수, you are the whole crowd.",
+   "url": "https://www.youtube.com/watch?v=txi3VEdStJ4",
+   "video": "https://www.youtube.com/watch?v=mOo8bVzN9M8",
+   "start": 14,
+   "embed": true,
+   "evidence": [
+    "lrclib:6159969@16.04",
+    "length:198"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "연예인 (Entertainer)",
+   "by": "PSY",
+   "year": 2006,
+   "quote": "난 당신의 댄스 [가수]",
+   "translation": "I'm your dance singer",
+   "why": "PSY promises to be your personal entertainer: your own dance 가수.",
+   "url": "https://www.youtube.com/watch?v=k7pyYz-AMh0",
+   "start": 142,
+   "embed": true,
+   "evidence": [
+    "lrclib:15733194@144.68",
+    "length:205"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Jobs / Occupations:경찰": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "불장난 (PLAYING WITH FIRE)",
+   "by": "BLACKPINK",
+   "year": 2016,
+   "quote": "내 맘 도둑인데 왜 [경찰]도 몰라",
+   "translation": "My heart's a thief, so why don't the police know?",
+   "why": "BLACKPINK's PLAYING WITH FIRE: a stolen heart, and the 경찰 have no idea.",
+   "url": "https://www.youtube.com/watch?v=ei0k_1Uro-U",
+   "video": "https://www.youtube.com/watch?v=9pdj4iJD08s",
+   "start": 94,
+   "embed": true,
+   "evidence": [
+    "lrclib:34694349@96.32",
+    "length:198"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Jobs / Occupations:배우": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "마.피.아. In the morning (Mafia In the morning)",
+   "by": "ITZY",
+   "year": 2021,
+   "quote": "[배우]보다 더 배우",
+   "translation": "More of an actor than an actor",
+   "why": "ITZY's mafia-game song: she plays her part better than any 배우.",
+   "url": "https://www.youtube.com/watch?v=o6k2pS-agVI",
+   "video": "https://www.youtube.com/watch?v=_ysomCGaZLw",
+   "start": 76,
+   "embed": true,
+   "evidence": [
+    "lrclib:21886458@78.08",
+    "length:173"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Jobs / Occupations:변호사": [
+  {
+   "id": "c1",
+   "media": "drama",
+   "title": "이상한 변호사 우영우 (Extraordinary Attorney Woo)",
+   "by": "ENA",
+   "year": 2022,
+   "quote": "이상한 [변호사] 우영우",
+   "translation": "Strange attorney Woo Young-woo",
+   "why": "The 2022 global Netflix hit about a brilliant autistic lawyer; 변호사 is in the title.",
+   "url": "https://www.youtube.com/watch?v=9SdYFYflVbw",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Extraordinary_Attorney_Woo"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Jobs / Occupations:선생님": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Power Up",
+   "by": "Red Velvet",
+   "year": 2018,
+   "quote": "[선생님]은 내게 말씀하셨죠",
+   "translation": "My teacher told me",
+   "why": "Red Velvet's summer hit: the teacher's advice is to enjoy both play and work.",
+   "url": "https://www.youtube.com/watch?v=oyqU1BjuK6A",
+   "video": "https://www.youtube.com/watch?v=aiHSVQy9xN8",
+   "start": 147,
+   "embed": true,
+   "evidence": [
+    "lrclib:33393451@149.06",
+    "length:203"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Jobs / Occupations:의사": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Electric Shock",
+   "by": "f(x)",
+   "year": 2012,
+   "quote": "[의사] 선생님 (yeah), 이건 뭔가요",
+   "translation": "Doctor (yeah), what is this?",
+   "why": "f(x)'s Electric Shock: love jolts her, so she asks the 의사 what is going on.",
+   "url": "https://www.youtube.com/watch?v=xWsA7CafvcQ",
+   "video": "https://www.youtube.com/watch?v=n8I8QGFA1oM",
+   "start": 84,
+   "embed": true,
+   "evidence": [
+    "lrclib:35592777@86.07",
+    "length:197"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "drama",
+   "title": "슬기로운 의사생활 (Hospital Playlist)",
+   "by": "tvN",
+   "year": 2020,
+   "quote": "슬기로운 [의사]생활",
+   "translation": "A wise doctor's life",
+   "why": "The hit drama about five doctor friends; 의사생활 means a doctor's life.",
+   "url": "https://www.youtube.com/watch?v=ulf9PtJjVjc",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Hospital_Playlist"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Jobs / Occupations:학생": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "챔피언 (Champion)",
+   "by": "PSY",
+   "year": 2002,
+   "quote": "전경과 [학생] (학생)",
+   "translation": "Riot police and students (students!)",
+   "why": "PSY's stadium anthem: 학생 is shouted twice, in a line about riot police and students.",
+   "url": "https://www.youtube.com/watch?v=MSiKm3kZ7No",
+   "start": 71,
+   "embed": true,
+   "evidence": [
+    "lrclib:22897427@73.71",
+    "length:187"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Movies:드라마": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "What is Love?",
+   "by": "TWICE",
+   "year": 2018,
+   "quote": "책 속에서나 [드라마] 속에서",
+   "translation": "only in books or in TV dramas",
+   "why": "TWICE's What is Love?: love they have only seen in books and dramas, in the opening lines.",
+   "url": "https://www.youtube.com/watch?v=w4nihuYVTW0",
+   "video": "https://www.youtube.com/watch?v=i0p1bmr0EmE",
+   "start": 16,
+   "embed": true,
+   "evidence": [
+    "lrclib:3000099@18.44",
+    "length:209"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "썸 (Some)",
+   "by": "SOYOU",
+   "year": 2014,
+   "quote": "티비에는 어제 본 것 같은 [드라마]",
+   "translation": "on TV, a drama just like the one I saw yesterday",
+   "why": "SOYOU and Junggigo's Some: a lonely night in front of a rerun-like TV drama.",
+   "url": "https://www.youtube.com/watch?v=sONklohp9Wo",
+   "video": "https://www.youtube.com/watch?v=Y-FhDScM_2w",
+   "start": 29,
+   "embed": true,
+   "evidence": [
+    "lrclib:9050210@31.59",
+    "length:212"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Music:가요": [
+  {
+   "id": "c1",
+   "media": "show",
+   "title": "인기가요 (Inkigayo)",
+   "by": "SBS",
+   "quote": "인기[가요]",
+   "translation": "popular songs",
+   "why": "SBS's weekly K-pop show since 1991: 인기 popular + 가요 songs. Its old English title was Popular Song.",
+   "url": "https://www.youtube.com/watch?v=H0z_x3KP72s",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Inkigayo"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Music:댄스": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "연예인 (Entertainer)",
+   "by": "PSY",
+   "year": 2006,
+   "quote": "분위기 띄울 땐 [댄스] 뮤직 한 곡 때리고",
+   "translation": "to lift the mood, I play a dance track",
+   "why": "PSY's Entertainer runs through the genres: dance, ballad, hip-hop, rock 'n' roll.",
+   "url": "https://www.youtube.com/watch?v=k7pyYz-AMh0",
+   "start": 84,
+   "embed": true,
+   "evidence": [
+    "lrclib:15733194@86.11",
+    "length:205"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Music:락": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "연예인 (Entertainer)",
+   "by": "PSY",
+   "year": 2006,
+   "quote": "하늘 높이 뛰고플 땐 [락]엔롤",
+   "translation": "when you want to jump sky-high: rock 'n' roll",
+   "why": "PSY's Entertainer: 락엔롤 is rock 'n' roll, with this card's 락 spelling.",
+   "url": "https://www.youtube.com/watch?v=k7pyYz-AMh0",
+   "start": 95,
+   "embed": true,
+   "evidence": [
+    "lrclib:15733194@97.97",
+    "length:205"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Music:발라드": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "연예인 (Entertainer)",
+   "by": "PSY",
+   "year": 2006,
+   "quote": "무드 잡을 땐 [발라드] 한 곡 뽑고",
+   "translation": "to set the mood, I sing a ballad",
+   "why": "PSY's Entertainer: a ballad for the mood, right after the dance track.",
+   "url": "https://www.youtube.com/watch?v=k7pyYz-AMh0",
+   "start": 87,
+   "embed": true,
+   "evidence": [
+    "lrclib:15733194@89.93",
+    "length:205"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Music:케이팝": [
+  {
+   "id": "c1",
+   "media": "animation",
+   "title": "케이팝 데몬 헌터스 (KPop Demon Hunters)",
+   "by": "Sony Pictures Animation / Netflix",
+   "year": 2025,
+   "quote": "[케이팝] 데몬 헌터스",
+   "translation": "KPop Demon Hunters",
+   "why": "Netflix's 2025 animated hit about a K-pop girl group that hunts demons; the Korean title starts with 케이팝.",
+   "url": "https://www.youtube.com/watch?v=xQnsFqn44uo",
+   "embed": true,
+   "evidence": [
+    "https://ko.wikipedia.org/wiki/케이팝_데몬_헌터스",
+    "https://en.wikipedia.org/wiki/KPop_Demon_Hunters"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Music:힙합": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "연예인 (Entertainer)",
+   "by": "PSY",
+   "year": 2006,
+   "quote": "리듬 타고플 땐 [힙합] 힙힙 힙합",
+   "translation": "when you want to ride the rhythm: hip-hop, hip-hip hip-hop",
+   "why": "PSY's Entertainer: hip-hop, hip-hip hip-hop, impossible to miss.",
+   "url": "https://www.youtube.com/watch?v=k7pyYz-AMh0",
+   "start": 91,
+   "embed": true,
+   "evidence": [
+    "lrclib:15733194@93.97",
+    "length:205"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "특 (S-Class)",
+   "by": "Stray Kids",
+   "year": 2023,
+   "quote": "[힙합] 스텝 큼지막이 밟지",
+   "translation": "I take big, bold hip-hop steps",
+   "why": "Stray Kids' S-Class: swaggering hip-hop steps.",
+   "url": "https://www.youtube.com/watch?v=_M409k9cOcg",
+   "video": "https://www.youtube.com/watch?v=JsOOis4bBFg",
+   "start": 74,
+   "embed": true,
+   "evidence": [
+    "lrclib:36389266@76.68",
+    "length:196"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:가방": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "새삥 (New Thing)",
+   "by": "ZICO",
+   "year": 2022,
+   "quote": "우리 엄만 생일마다 새 [가방]이 생기지",
+   "translation": "My mom gets a new bag every birthday",
+   "why": "ZICO's viral dance hit brags that his mom gets a new bag every birthday.",
+   "url": "https://www.youtube.com/watch?v=C_cpDd0WYTk",
+   "start": 89,
+   "embed": true,
+   "evidence": [
+    "lrclib:12029268@91.37",
+    "length:148"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "노래 (The Song)",
+   "by": "Zion.T",
+   "year": 2017,
+   "quote": "[가방], 귀걸이, 목걸이, 반지",
+   "translation": "Bags, earrings, necklaces, rings",
+   "why": "Zion.T skips the predictable gifts, bags first, and gives a song instead.",
+   "url": "https://www.youtube.com/watch?v=8T46xgyUUe4",
+   "video": "https://www.youtube.com/watch?v=ecxzqqHwe-4",
+   "start": 113,
+   "embed": true,
+   "evidence": [
+    "lrclib:16329125@115.94",
+    "length:217"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:돈": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "고민보다 Go (Go Go)",
+   "by": "BTS",
+   "year": 2017,
+   "quote": "[돈]은 없지만 떠나고 싶어 멀리로",
+   "translation": "I've got no money, but I want to go far away",
+   "why": "BTS's YOLO anthem: no money, but I still want to get far away.",
+   "url": "https://www.youtube.com/watch?v=AEm5O3VnKi8",
+   "start": 29,
+   "embed": true,
+   "evidence": [
+    "lrclib:4744786@31.89",
+    "length:236"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "돈 돈! (Don't Don)",
+   "by": "SUPER JUNIOR",
+   "year": 2007,
+   "quote": "[돈] 돈 모든 게 돈 세상",
+   "translation": "Money, money, a world where everything is money",
+   "why": "Super Junior's title and hook repeat 돈: a world run on money.",
+   "url": "https://www.youtube.com/watch?v=-pNHnfWc-h8",
+   "video": "https://www.youtube.com/watch?v=veEh0RYy9t4",
+   "start": 57,
+   "embed": true,
+   "evidence": [
+    "lrclib:4789195@59.68",
+    "length:253"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:시계": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "너랑 나 (You & I)",
+   "by": "IU",
+   "year": 2011,
+   "quote": "[시계]를 더 보채고 싶지만",
+   "translation": "I want to hurry the clock along, but",
+   "why": "IU's clockwork-fantasy hit, about pushing time forward to reach someone.",
+   "url": "https://www.youtube.com/watch?v=seFr4qWykgY",
+   "video": "https://www.youtube.com/watch?v=f_iQRO5BdCM",
+   "start": 60,
+   "embed": true,
+   "evidence": [
+    "lrclib:33736582@62.72",
+    "length:242"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "11:11",
+   "by": "TAEYEON",
+   "year": 2016,
+   "quote": "내 맘은 [시계] 속의 두 바늘처럼",
+   "translation": "My heart, like the two hands inside a clock",
+   "why": "Taeyeon's song is named after a clock time; her heart circles like the clock's hands.",
+   "url": "https://www.youtube.com/watch?v=LG5t2mvxhns",
+   "video": "https://www.youtube.com/watch?v=ulr0muQKjk0",
+   "start": 53,
+   "embed": true,
+   "evidence": [
+    "lrclib:31383477@55.78",
+    "length:224"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:안경": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "안경 (Glasses)",
+   "by": "IU",
+   "year": 2015,
+   "quote": "그렇다 해도 [안경]을 쓰지는 않으려고요",
+   "translation": "Even so, I won't put on glasses",
+   "why": "IU's song named after glasses: she'd rather not wear them and see every hidden flaw.",
+   "url": "https://www.youtube.com/watch?v=o598G9ht748",
+   "start": 40,
+   "embed": true,
+   "evidence": [
+    "lrclib:29873865@42.19",
+    "length:197"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "스토커 (Stalker)",
+   "by": "10CM",
+   "year": 2014,
+   "quote": "난 [안경] 쓴 샌님이니까",
+   "translation": "Because I'm a nerd in glasses",
+   "why": "10CM's wry hit: the shy narrator sums himself up as the nerd in glasses.",
+   "url": "https://www.youtube.com/watch?v=YSJ9_lP5sgI",
+   "start": 61,
+   "embed": true,
+   "evidence": [
+    "lrclib:9116876@63.78",
+    "length:253"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:열쇠": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Mr.Mr.",
+   "by": "Girls' Generation",
+   "year": 2014,
+   "quote": "미랠 여는 [열쇠] 바로 니가 가진걸",
+   "translation": "You're the one holding the key that opens the future",
+   "why": "Girls' Generation's 2014 hit: the key to the future is in your hands.",
+   "url": "https://www.youtube.com/watch?v=rWYD_rFu4_g",
+   "video": "https://www.youtube.com/watch?v=Z8j_XEn9b_8",
+   "start": 100,
+   "embed": true,
+   "evidence": [
+    "lrclib:34321644@102.06",
+    "length:236"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "XO (Only If You Say Yes)",
+   "by": "ENHYPEN",
+   "year": 2024,
+   "quote": "날 움직이는 단 하나 [열쇠]",
+   "translation": "The one and only key that moves me",
+   "why": "ENHYPEN's 2024 title track: your yes is the only key that moves me.",
+   "url": "https://www.youtube.com/watch?v=cxXHr9tf04M",
+   "video": "https://www.youtube.com/watch?v=FPDYeRk2PO8",
+   "start": 56,
+   "embed": true,
+   "evidence": [
+    "lrclib:34732087@58.51",
+    "length:189"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:우산": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "우산 (Umbrella)",
+   "by": "Epik High",
+   "year": 2008,
+   "quote": "그대는 내 머리 위의 [우산]",
+   "translation": "You are the umbrella over my head",
+   "why": "The title and hook of Epik High's rain classic with Younha.",
+   "url": "https://www.youtube.com/watch?v=Wbb7fWQjz4c",
+   "start": 225,
+   "embed": true,
+   "evidence": [
+    "lrclib:5315128@227.11",
+    "length:302"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "비도 오고 그래서 (You, Clouds, Rain)",
+   "by": "Heize",
+   "year": 2017,
+   "quote": "[우산] 속에 숨어서 네 집을 지나쳐",
+   "translation": "Hiding under my umbrella, I walk past your house",
+   "why": "Heize's rainy-day megahit, sung from under an umbrella outside your place.",
+   "url": "https://www.youtube.com/watch?v=hGWMhVbaJNg",
+   "video": "https://www.youtube.com/watch?v=afxLaQiLu-o",
+   "start": 75,
+   "embed": true,
+   "evidence": [
+    "lrclib:38151830@77.78",
+    "length:206"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:의자": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "우산 (Umbrella)",
+   "by": "Epik High",
+   "year": 2008,
+   "quote": "그대 없이 난 한쪽 다리가 짧은 [의자]",
+   "translation": "Without you I'm a chair with one short leg",
+   "why": "Epik High's rain classic: without you, I wobble like a chair with one short leg.",
+   "url": "https://www.youtube.com/watch?v=Wbb7fWQjz4c",
+   "start": 52,
+   "embed": true,
+   "evidence": [
+    "lrclib:5315128@54.87",
+    "length:302"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:종이": [
+  {
+   "id": "c1",
+   "media": "drama",
+   "title": "종이의 집: 공동경제구역 (Money Heist: Korea – Joint Economic Area)",
+   "by": "Netflix",
+   "year": 2022,
+   "quote": "[종이]의 집: 공동경제구역",
+   "translation": "House of Paper: Joint Economic Area",
+   "why": "Netflix's Korean remake of La casa de papel keeps the title: 종이의 집, house of paper.",
+   "url": "https://www.youtube.com/watch?v=53T3RIohIi0",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Money_Heist:_Korea_%E2%80%93_Joint_Economic_Area",
+    "https://ko.wikipedia.org/wiki/%EC%A2%85%EC%9D%B4%EC%9D%98_%EC%A7%91:_%EA%B3%B5%EB%8F%99%EA%B2%BD%EC%A0%9C%EA%B5%AC%EC%97%AD"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Fiction",
+   "by": "BEAST",
+   "year": 2011,
+   "quote": "눈물로 얼룩진 낡은 [종이] 위로",
+   "translation": "Onto old paper stained with tears",
+   "why": "BEAST's signature hit: a story written onto tear-stained paper.",
+   "url": "https://www.youtube.com/watch?v=epJfDd9qIq0",
+   "video": "https://www.youtube.com/watch?v=ZAzWT8mRoR0",
+   "start": 177,
+   "embed": true,
+   "evidence": [
+    "lrclib:26216816@179.66",
+    "length:235"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:지갑": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "사랑이 잘 (Can't Love You Anymore)",
+   "by": "IU",
+   "year": 2017,
+   "quote": "나 [지갑] 거기 두고 왔어",
+   "translation": "I left my wallet there",
+   "why": "In IU and Oh Hyuk's breakup duet, one everyday line: I left my wallet there.",
+   "url": "https://www.youtube.com/watch?v=E9HV6jh6qt0",
+   "start": 143,
+   "embed": true,
+   "evidence": [
+    "lrclib:34711502@145.91",
+    "length:196"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "나팔바지 (Napal Baji)",
+   "by": "PSY",
+   "year": 2015,
+   "quote": "얼굴 두껍지만 [지갑]도 두껍지 나",
+   "translation": "I'm thick-skinned, and my wallet's thick too",
+   "why": "PSY's bell-bottoms party song brags about a fat wallet.",
+   "url": "https://www.youtube.com/watch?v=ewba14Qt6iM",
+   "video": "https://www.youtube.com/watch?v=tF27TNC_4pc",
+   "start": 40,
+   "embed": true,
+   "evidence": [
+    "lrclib:22895121@42.22",
+    "length:224"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:창문": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Lovesick Girls",
+   "by": "BLACKPINK",
+   "year": 2020,
+   "quote": "[창문] 없는 방에 우릴 가둔 love",
+   "translation": "Love that locked us in a room with no windows",
+   "why": "BLACKPINK's hit opens with 창문: a room with no windows.",
+   "url": "https://www.youtube.com/watch?v=D8RZbI1jfQ0",
+   "video": "https://www.youtube.com/watch?v=dyRsYk0LyA8",
+   "start": 7,
+   "embed": true,
+   "evidence": [
+    "lrclib:34688624@9.05",
+    "length:193"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "가을 아침 (Autumn Morning)",
+   "by": "IU",
+   "year": 2017,
+   "quote": "[창문] 하나 햇살 가득 눈부시게 비쳐오고",
+   "translation": "Through one window, sunlight pours in, dazzling",
+   "why": "IU's gentle remake opens on a window full of morning sun.",
+   "url": "https://www.youtube.com/watch?v=ZDoH5dQ58ps",
+   "start": 12,
+   "embed": true,
+   "evidence": [
+    "lrclib:35084148@14.02",
+    "length:219"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:책": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "What is Love?",
+   "by": "TWICE",
+   "year": 2018,
+   "quote": "[책] 속에서나 드라마 속에서",
+   "translation": "In books, in dramas",
+   "why": "TWICE's hit opens on where love is learned: in movies, in books (책), in dramas.",
+   "url": "https://www.youtube.com/watch?v=w4nihuYVTW0",
+   "video": "https://www.youtube.com/watch?v=i0p1bmr0EmE",
+   "start": 16,
+   "embed": true,
+   "evidence": [
+    "lrclib:3000099@18.44",
+    "length:209"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "꿈과 책과 힘과 벽 (dreams, books, power and walls)",
+   "by": "JANNABI",
+   "year": 2019,
+   "quote": "꿈과 [책]과 힘과 벽 사이를",
+   "translation": "Between dreams and books and power and walls",
+   "why": "책 sits right in the title of this JANNABI song: dreams, books, power and walls.",
+   "url": "https://www.youtube.com/watch?v=SJUWooZnfVQ",
+   "start": 84,
+   "embed": true,
+   "evidence": [
+    "lrclib:18365561@86.22",
+    "length:297"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:책상": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Hot Summer",
+   "by": "f(x)",
+   "year": 2011,
+   "quote": "사무실 [책상]에서",
+   "translation": "At the office desk",
+   "why": "f(x)'s summer anthem names the places you're stuck in all summer, like the office desk.",
+   "url": "https://www.youtube.com/watch?v=xTfbMYBoFik",
+   "video": "https://www.youtube.com/watch?v=z-rftpZ7kCY",
+   "start": 36,
+   "embed": true,
+   "evidence": [
+    "lrclib:19524@38.41",
+    "length:226"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:펜": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Fiction",
+   "by": "BEAST",
+   "year": 2011,
+   "quote": "써 내려가 무뎌진 [펜]",
+   "translation": "I keep writing with a worn-down pen",
+   "why": "BEAST's signature hit writes its own fiction with a pen worn blunt.",
+   "url": "https://www.youtube.com/watch?v=epJfDd9qIq0",
+   "video": "https://www.youtube.com/watch?v=ZAzWT8mRoR0",
+   "start": 177,
+   "embed": true,
+   "evidence": [
+    "lrclib:26216816@179.66",
+    "length:235"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Objects:핸드폰": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "핸드폰 좀 꺼줄래 (Could You Turn Off Your Cell Phone)",
+   "by": "BTS",
+   "year": 2014,
+   "quote": "[핸드폰] 좀 꺼줄래",
+   "translation": "Could you turn off your phone?",
+   "why": "The title and chorus of this BTS track: put the phone away and talk to me.",
+   "url": "https://www.youtube.com/watch?v=P1IiHBAVxqk",
+   "start": 7,
+   "embed": true,
+   "evidence": [
+    "lrclib:5258440@9.4",
+    "length:235"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "내 손을 잡아 (Hold My Hand)",
+   "by": "IU",
+   "year": 2011,
+   "quote": "[핸드폰] 진동에 심장이 덜컥",
+   "translation": "My heart jumps at the phone's buzz",
+   "why": "IU's bright drama OST: one buzz of the phone and her heart skips.",
+   "url": "https://www.youtube.com/watch?v=r_-GQjN9Tpc",
+   "video": "https://www.youtube.com/watch?v=BYQBs_4-MOo",
+   "start": 109,
+   "embed": true,
+   "evidence": [
+    "lrclib:25079723@111.16",
+    "length:196"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "phrase:밥 먹어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "DOC와 춤을",
+   "by": "DJ DOC",
+   "year": 1997,
+   "quote": "잘못해도 서툴러도 [밥 잘 먹어요]",
+   "translation": "Even if I'm clumsy with chopsticks, I eat my meals just fine",
+   "why": "DJ DOC's classic: you don't need perfect chopsticks to eat your rice.",
+   "url": "https://www.youtube.com/watch?v=q-goc8nDMRg",
+   "start": 18,
+   "embed": true,
+   "evidence": [
+    "lrclib:29528156@20.76",
+    "length:193"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "phrase:제일 좋아해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "빨간 맛 (Red Flavor)",
+   "by": "Red Velvet",
+   "year": 2017,
+   "quote": "내가 [제일 좋아하는] 건 여름 그 맛",
+   "translation": "What I like the most is that summer taste",
+   "why": "Red Velvet's chorus: my favorite is the taste of summer.",
+   "url": "https://www.youtube.com/watch?v=BLavT7w4R9I",
+   "video": "https://www.youtube.com/watch?v=WyiIGEHQP8o",
+   "start": 11,
+   "embed": true,
+   "evidence": [
+    "lrclib:4063586@13.17",
+    "length:192"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:공원": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "London Boy",
+   "by": "Lim Young Woong",
+   "year": 2022,
+   "quote": "드넓은 [공원] 안에 널 담은 향기",
+   "translation": "In the wide park, a scent that holds you",
+   "why": "Lim Young-woong's song about missing someone in London, even across a vast park.",
+   "url": "https://www.youtube.com/watch?v=rsDrTHZ_SnM",
+   "video": "https://www.youtube.com/watch?v=TMfvkhkALbU",
+   "start": 19,
+   "embed": true,
+   "evidence": [
+    "lrclib:8169071@21",
+    "length:245"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:공항": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "여행 (Travel)",
+   "by": "BOL4",
+   "year": 2018,
+   "quote": "저 오늘 떠나요 [공항]으로",
+   "translation": "I'm leaving today, off to the airport",
+   "why": "BOL4's summer escape song: today I'm off to the airport.",
+   "url": "https://www.youtube.com/watch?v=DMcRIihAq9Q",
+   "video": "https://www.youtube.com/watch?v=xRbPAVnqtcs",
+   "start": 16,
+   "embed": true,
+   "evidence": [
+    "lrclib:35325893@18.93",
+    "length:221"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "drama",
+   "title": "공항 가는 길 (On the Way to the Airport)",
+   "by": "KBS2",
+   "year": 2016,
+   "quote": "[공항] 가는 길",
+   "translation": "On the way to the airport",
+   "why": "KBS melodrama with Kim Ha-neul; the title is the everyday phrase 'on the way to the airport'.",
+   "url": "https://www.youtube.com/watch?v=4NyY_DoyF4U",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/On_the_Way_to_the_Airport",
+    "https://ko.wikipedia.org/wiki/%EA%B3%B5%ED%95%AD_%EA%B0%80%EB%8A%94_%EA%B8%B8"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:교실": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Hot Summer",
+   "by": "f(x)",
+   "year": 2011,
+   "quote": "[교실]에서",
+   "translation": "In the classroom",
+   "why": "f(x)'s summer anthem names where you're stuck when it's hot: in the classroom.",
+   "url": "https://www.youtube.com/watch?v=xTfbMYBoFik",
+   "video": "https://www.youtube.com/watch?v=z-rftpZ7kCY",
+   "start": 33,
+   "embed": true,
+   "evidence": [
+    "lrclib:19524@35.53",
+    "length:226"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:도서관": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "좋다고 말해",
+   "by": "BOL4",
+   "year": 2016,
+   "quote": "몰래 오늘도 [도서관] 맨 앞자리에",
+   "translation": "Secretly, again today, in the library's front row",
+   "why": "BOL4's crush song: she sneaks a hello to him in the library's front row.",
+   "url": "https://www.youtube.com/watch?v=RRwLiAGZfc0",
+   "start": 84,
+   "embed": true,
+   "evidence": [
+    "lrclib:33506007@86.26",
+    "length:202"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:식당": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "어머님께 (To Mother)",
+   "by": "g.o.d",
+   "year": 1999,
+   "quote": "마침내 조그만한 [식당]을 하나 갖게 됐어",
+   "translation": "At last we had a little restaurant of our own",
+   "why": "g.o.d's tearful classic: after years of hardship, mom finally opens a small restaurant.",
+   "url": "https://www.youtube.com/watch?v=6H_IilsR6Fo",
+   "start": 145,
+   "embed": true,
+   "evidence": [
+    "lrclib:16979309@147.39",
+    "length:256"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "So Hot",
+   "by": "Wonder Girls",
+   "year": 2008,
+   "quote": "[식당], 길거리, 카페, 나이트",
+   "translation": "Restaurants, streets, cafés, clubs",
+   "why": "Wonder Girls' 2008 hit lists every place the spotlight follows her, starting with 식당.",
+   "url": "https://www.youtube.com/watch?v=agL-oiDlyYo",
+   "video": "https://www.youtube.com/watch?v=lmun5PO54VE",
+   "start": 140,
+   "embed": true,
+   "evidence": [
+    "lrclib:18633749@142.08",
+    "length:182"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:집": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "우리집 (My House)",
+   "by": "2PM",
+   "year": 2015,
+   "quote": "우리 [집]으로 가자",
+   "translation": "Let's go to my place",
+   "why": "The title and chorus of 2PM's viral hit: let's go to my house.",
+   "url": "https://www.youtube.com/watch?v=rJxNKKOuiAE",
+   "video": "https://www.youtube.com/watch?v=u2pFB1dCSo4",
+   "start": 43,
+   "embed": true,
+   "evidence": [
+    "lrclib:15372816@45.17",
+    "length:188"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "REALLY REALLY",
+   "by": "WINNER",
+   "year": 2017,
+   "quote": "어디야 [집]이야? 안 바쁨 나와봐",
+   "translation": "Where are you? Home? If you're not busy, come out",
+   "why": "WINNER's tropical hit opens like a late-night call: are you home?",
+   "url": "https://www.youtube.com/watch?v=aYlXNpaQydk",
+   "video": "https://www.youtube.com/watch?v=4tBnF46ybZk",
+   "start": 17,
+   "embed": true,
+   "evidence": [
+    "lrclib:35037173@19.4",
+    "length:204"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:카페": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "We don't talk together",
+   "by": "Heize",
+   "year": 2019,
+   "quote": "우리 자주갔던 [카페]",
+   "translation": "The café we used to go to",
+   "why": "Heize's SUGA-produced hit retraces a couple's old haunts, like their café.",
+   "url": "https://www.youtube.com/watch?v=RCNV7gPI7Zc",
+   "video": "https://www.youtube.com/watch?v=ByHNlfmmT-w",
+   "start": 125,
+   "embed": true,
+   "evidence": [
+    "lrclib:25295345@127.69",
+    "length:200"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "So Hot",
+   "by": "Wonder Girls",
+   "year": 2008,
+   "quote": "식당, 길거리, [카페], 나이트",
+   "translation": "Restaurants, streets, cafés, clubs",
+   "why": "Wonder Girls' 2008 hit lists every place the spotlight follows her, the café included.",
+   "url": "https://www.youtube.com/watch?v=agL-oiDlyYo",
+   "video": "https://www.youtube.com/watch?v=lmun5PO54VE",
+   "start": 140,
+   "embed": true,
+   "evidence": [
+    "lrclib:18633749@142.08",
+    "length:182"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:편의점": [
+  {
+   "id": "c1",
+   "media": "drama",
+   "title": "편의점 샛별이 (Backstreet Rookie)",
+   "by": "SBS",
+   "year": 2020,
+   "quote": "[편의점] 샛별이",
+   "translation": "Saet-byul of the convenience store",
+   "why": "SBS rom-com with Ji Chang-wook and Kim Yoo-jung, set in a 24-hour convenience store.",
+   "url": "https://www.youtube.com/watch?v=EnP8uKXNf0o",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Backstreet_Rookie",
+    "https://ko.wikipedia.org/wiki/%ED%8E%B8%EC%9D%98%EC%A0%90_%EC%83%9B%EB%B3%84%EC%9D%B4_(%EB%93%9C%EB%9D%BC%EB%A7%88)"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:학교": [
+  {
+   "id": "c1",
+   "media": "drama",
+   "title": "지금 우리 학교는 (All of Us Are Dead)",
+   "by": "Netflix",
+   "year": 2022,
+   "quote": "지금 우리 [학교]는",
+   "translation": "Now, at our school",
+   "why": "Netflix's global zombie hit is set in a high school; the Korean title means 'now, at our school'.",
+   "url": "https://www.youtube.com/watch?v=lXLWXjukWqU",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/All_of_Us_Are_Dead",
+    "https://about.netflix.com/en/news/netflix-introduces-new-original-series-all-of-us-are-dead-based-on-popular-korean-webtoon"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "No More Dream",
+   "by": "BTS",
+   "year": 2013,
+   "quote": "[학교] 때려 치기는 겁나지?",
+   "translation": "Scared to quit school, aren't you?",
+   "why": "BTS's debut single taunts students: too scared to drop out of school?",
+   "url": "https://www.youtube.com/watch?v=q0MsfNFrYlQ",
+   "video": "https://www.youtube.com/watch?v=rBG5L7UsUxA",
+   "start": 54,
+   "embed": true,
+   "evidence": [
+    "lrclib:36924407@56.55",
+    "length:223"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:화장실": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "DINOSAUR",
+   "by": "AKMU",
+   "year": 2017,
+   "quote": "[화장실] 문 밑엔 쥐가 파놓은 구멍이",
+   "translation": "Under the bathroom door, a hole a mouse had dug",
+   "why": "AKMU's quirky summer hit recalls childhood home scares, down to the bathroom door.",
+   "url": "https://www.youtube.com/watch?v=zzfYBupjwIc",
+   "video": "https://www.youtube.com/watch?v=8Oz7DG76ibY",
+   "start": 25,
+   "embed": true,
+   "evidence": [
+    "lrclib:9524582@27.21",
+    "length:241"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "핸드폰 좀 꺼줄래 (Could You Turn Off Your Cell Phone)",
+   "by": "BTS",
+   "year": 2014,
+   "quote": "[화장실] 간단 말까지",
+   "translation": "Even 'I'm going to the bathroom'",
+   "why": "BTS tease a friend who texts everything, even that they're off to the bathroom.",
+   "url": "https://www.youtube.com/watch?v=P1IiHBAVxqk",
+   "start": 27,
+   "embed": true,
+   "evidence": [
+    "lrclib:5258440@29.25",
+    "length:235"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Places:회사": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "DOC와 춤을",
+   "by": "DJ DOC",
+   "year": 1997,
+   "quote": "청바지 입고서 [회사]에 가도",
+   "translation": "Even if I go to the office in jeans",
+   "why": "DJ DOC's dance classic asks why jeans at the office should be a problem.",
+   "url": "https://www.youtube.com/watch?v=q-goc8nDMRg",
+   "start": 43,
+   "embed": true,
+   "evidence": [
+    "lrclib:29528156@45.73",
+    "length:193"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "오늘 뭐해 (Whatcha Doin' Today)",
+   "by": "4MINUTE",
+   "year": 2014,
+   "quote": "[회사] 끝나고 방황을 하나요",
+   "translation": "After work, do you just wander around?",
+   "why": "4MINUTE ask what you do after school, after housework, after work.",
+   "url": "https://www.youtube.com/watch?v=7XmkRZ8psCo",
+   "video": "https://www.youtube.com/watch?v=4xLFxfXWDUk",
+   "start": 35,
+   "embed": true,
+   "evidence": [
+    "lrclib:6944716@37.25",
+    "length:206"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Seasons:가을": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "가을 아침 (Autumn Morning)",
+   "by": "IU",
+   "year": 2017,
+   "quote": "[가을] 아침 내겐 정말 커다란 기쁨이야",
+   "translation": "An autumn morning is such a joy to me",
+   "why": "IU's remake of Yang Hee-eun's folk classic; each chorus starts with the word.",
+   "url": "https://www.youtube.com/watch?v=ZDoH5dQ58ps",
+   "start": 79,
+   "embed": true,
+   "evidence": [
+    "lrclib:35084148@81.12",
+    "length:219"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "drama",
+   "title": "가을동화 (Autumn in My Heart)",
+   "by": "KBS2",
+   "year": 2000,
+   "quote": "[가을]동화",
+   "translation": "Autumn in My Heart (literally 'autumn fairy tale')",
+   "why": "KBS's 2000 classic with Song Hye-kyo; the title means 'autumn fairy tale'.",
+   "url": "https://www.youtube.com/watch?v=4OyP1jQrD6s",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Autumn_in_My_Heart"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Seasons:겨울": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "BLUE",
+   "by": "BIGBANG",
+   "year": 2012,
+   "quote": "[겨울]이 가고 봄이 찾아오죠",
+   "translation": "Winter goes and spring comes",
+   "why": "The first line of BIGBANG's 'BLUE', sung again before each chorus.",
+   "url": "https://www.youtube.com/watch?v=k2zDLzfcb3I",
+   "video": "https://www.youtube.com/watch?v=2GRP1rkE4O0",
+   "start": 6,
+   "embed": true,
+   "evidence": [
+    "lrclib:9129391@8.24",
+    "length:234"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "drama",
+   "title": "겨울연가 (Winter Sonata)",
+   "by": "KBS2",
+   "year": 2002,
+   "quote": "[겨울]연가",
+   "translation": "Winter Sonata (literally 'winter love song')",
+   "why": "The 2002 KBS drama that set off the Korean Wave in Japan; the title means 'winter love song'.",
+   "url": "https://www.youtube.com/watch?v=5xQAm23lbyk",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Winter_Sonata"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Seasons:봄": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "봄날 (Spring Day)",
+   "by": "BTS",
+   "year": 2017,
+   "quote": "그리움들이 얼마나 눈처럼 내려야 그 [봄]날이 올까",
+   "translation": "How much longing must fall like snow before that spring day comes?",
+   "why": "BTS's best-loved song is named for a spring day (봄날).",
+   "url": "https://www.youtube.com/watch?v=ZO1xdXOXarc",
+   "video": "https://www.youtube.com/watch?v=xEeFrLSkMm8",
+   "start": 46,
+   "embed": true,
+   "evidence": [
+    "lrclib:15846963@48.3",
+    "length:275"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "봄봄봄 (Bom Bom Bom)",
+   "by": "Roy Kim",
+   "year": 2013,
+   "quote": "봄 봄 봄 [봄]이 왔네요",
+   "translation": "Spring, spring, spring, spring has come",
+   "why": "Roy Kim's 2013 hit sings the word over and over: spring is here.",
+   "url": "https://www.youtube.com/watch?v=iM0GXk9oArE",
+   "video": "https://www.youtube.com/watch?v=k3-BDy55tq4",
+   "start": 8,
+   "embed": true,
+   "evidence": [
+    "lrclib:6200709@10.33",
+    "length:207"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Seasons:여름": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "빨간 맛 (Red Flavor)",
+   "by": "Red Velvet",
+   "year": 2017,
+   "quote": "내가 제일 좋아하는 건 [여름] 그 맛",
+   "translation": "What I like best is that taste of summer",
+   "why": "Red Velvet's summer smash returns to this line in every chorus.",
+   "url": "https://www.youtube.com/watch?v=BLavT7w4R9I",
+   "video": "https://www.youtube.com/watch?v=WyiIGEHQP8o",
+   "start": 11,
+   "embed": true,
+   "evidence": [
+    "lrclib:4063586@13.17",
+    "length:192"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "여름여름해 (Sunny Summer)",
+   "by": "GFRIEND",
+   "year": 2018,
+   "quote": "[여름]여름해 sunny summer",
+   "translation": "So summery, sunny summer",
+   "why": "GFRIEND double the word into a feeling: 'summer-summery'.",
+   "url": "https://www.youtube.com/watch?v=1CZYtWN7QfY",
+   "video": "https://www.youtube.com/watch?v=M9P90QTo_uE",
+   "start": 56,
+   "embed": true,
+   "evidence": [
+    "lrclib:4745397@58.46",
+    "length:199"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:금요일": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "금요일에 만나요 (Friday)",
+   "by": "IU",
+   "year": 2013,
+   "quote": "이번 주 [금요일]에 만나요",
+   "translation": "Let's meet this Friday",
+   "why": "IU's song is named for Friday and ends on this invitation.",
+   "url": "https://www.youtube.com/watch?v=xKZ3U8viuIU",
+   "video": "https://www.youtube.com/watch?v=EiVmQZwJhsA",
+   "start": 178,
+   "embed": true,
+   "evidence": [
+    "lrclib:33948052@180.43",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:내일": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "마지막처럼 (AS IF IT'S YOUR LAST)",
+   "by": "BLACKPINK",
+   "year": 2017,
+   "quote": "[내일] 따윈 없는 것처럼",
+   "translation": "As if there's no tomorrow",
+   "why": "The hook of BLACKPINK's 'As If It's Your Last': love like there's no tomorrow.",
+   "url": "https://www.youtube.com/watch?v=9MbXeqCbS4Q",
+   "video": "https://www.youtube.com/watch?v=Amq-qlqbjYA",
+   "start": 87,
+   "embed": true,
+   "evidence": [
+    "lrclib:2465048@89.79",
+    "length:214"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "내일은 없어 (Now)",
+   "by": "Trouble Maker",
+   "year": 2013,
+   "quote": "우리에게 [내일]은 없어",
+   "translation": "For us, there is no tomorrow",
+   "why": "The title line of Trouble Maker's 'Now', back in every chorus.",
+   "url": "https://www.youtube.com/watch?v=0LxJbYE3UM0",
+   "video": "https://www.youtube.com/watch?v=6pw972Kl3L0",
+   "start": 63,
+   "embed": true,
+   "evidence": [
+    "lrclib:22967258@65.28",
+    "length:219"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:모레": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "KNOCK KNOCK",
+   "by": "TWICE",
+   "year": 2017,
+   "quote": "내일도 [모레]도 다시 와줘",
+   "translation": "Come back tomorrow, and the day after too",
+   "why": "TWICE's hook pairs tomorrow with the day after, three times over.",
+   "url": "https://www.youtube.com/watch?v=mYBpyKEcAa8",
+   "video": "https://www.youtube.com/watch?v=8A2t_tAjMz8",
+   "start": 55,
+   "embed": true,
+   "evidence": [
+    "lrclib:19828940@57.6",
+    "length:196"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:목요일": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "목요일 밤 (Thursday Night)",
+   "by": "URBAN ZAKAPA",
+   "quote": "평범한 [목요일] 밤",
+   "translation": "An ordinary Thursday night",
+   "why": "URBAN ZAKAPA's 'Thursday Night' keeps coming back to its title line.",
+   "url": "https://www.youtube.com/watch?v=rfykBICvtCo",
+   "video": "https://www.youtube.com/watch?v=Rcagb_psrbs",
+   "start": 17,
+   "embed": true,
+   "evidence": [
+    "lrclib:26318805@19.8",
+    "length:211"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "금요일에 만나요 (Friday)",
+   "by": "IU",
+   "year": 2013,
+   "quote": "수요일은 뭔가 어정쩡한 느낌, [목요일]은",
+   "translation": "Wednesday feels in-between, and Thursday…",
+   "why": "In IU's 'Friday', Thursday is the last day ruled out ('I just don't like it').",
+   "url": "https://www.youtube.com/watch?v=xKZ3U8viuIU",
+   "video": "https://www.youtube.com/watch?v=EiVmQZwJhsA",
+   "start": 23,
+   "embed": true,
+   "evidence": [
+    "lrclib:33948052@25.36",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:수요일": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "금요일에 만나요 (Friday)",
+   "by": "IU",
+   "year": 2013,
+   "quote": "[수요일]은 뭔가 어정쩡한 느낌",
+   "translation": "Wednesday feels kind of in-between",
+   "why": "IU's 'Friday' rules out Wednesday too: it feels neither here nor there.",
+   "url": "https://www.youtube.com/watch?v=xKZ3U8viuIU",
+   "video": "https://www.youtube.com/watch?v=EiVmQZwJhsA",
+   "start": 23,
+   "embed": true,
+   "evidence": [
+    "lrclib:33948052@25.36",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:어제": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "사랑했지만",
+   "by": "Kim Kwang Seok",
+   "year": 1991,
+   "quote": "[어제]는 하루종일 비가 내렸어",
+   "translation": "Yesterday it rained all day long",
+   "why": "The very first line of Kim Kwang-seok's classic ballad starts with the word.",
+   "url": "https://www.youtube.com/watch?v=NE3txQBtXKc",
+   "start": 14,
+   "embed": true,
+   "evidence": [
+    "lrclib:17649238@16.6",
+    "length:268"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "I AM",
+   "by": "IVE",
+   "year": 2023,
+   "quote": "[어제]랑 또 다른 짜릿한 나",
+   "translation": "A thrilling me, different from yesterday",
+   "why": "IVE's 2023 anthem: a new me, not yesterday's.",
+   "url": "https://www.youtube.com/watch?v=Bdzv7JBvkis",
+   "start": 68,
+   "embed": true,
+   "evidence": [
+    "lrclib:18435163@70.05",
+    "length:184"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:엊그제": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "LAST DANCE",
+   "by": "BIGBANG",
+   "year": 2016,
+   "quote": "[엊그제] 같은데",
+   "translation": "It feels like just the other day",
+   "why": "BIGBANG's farewell-era ballad looks back: it all feels like just the other day.",
+   "url": "https://www.youtube.com/watch?v=HaOz1PhGXhs",
+   "video": "https://www.youtube.com/watch?v=--zku6TB5NY",
+   "start": 54,
+   "embed": true,
+   "evidence": [
+    "lrclib:26878435@56.75",
+    "length:280"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:오늘": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "오늘부터 우리는 (Me Gustas Tu)",
+   "by": "GFRIEND",
+   "year": 2015,
+   "quote": "[오늘]부터 우리는",
+   "translation": "From today, we…",
+   "why": "GFRIEND's breakout hit sings its title again and again: from today on, we're together.",
+   "url": "https://www.youtube.com/watch?v=xJtqXz521mM",
+   "video": "https://www.youtube.com/watch?v=bjRMhQpOYAM",
+   "start": 17,
+   "embed": true,
+   "evidence": [
+    "lrclib:21697695@19.9",
+    "length:221"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "수고했어, 오늘도",
+   "by": "Rooftop Moonlight",
+   "quote": "수고했어 [오늘]도",
+   "translation": "You did well today, too",
+   "why": "A much-loved comfort song: its title and chorus thank you for getting through today.",
+   "url": "https://www.youtube.com/watch?v=U3e4AOd-DzE",
+   "start": 62,
+   "embed": true,
+   "evidence": [
+    "lrclib:9710773@64.67",
+    "length:180"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:월요일": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "금요일에 만나요 (Friday)",
+   "by": "IU",
+   "year": 2013,
+   "quote": "[월요일]엔 아마 바쁘지 않을까?",
+   "translation": "On Monday you'll probably be busy, won't you?",
+   "why": "IU's 'Friday' opens by walking through the week, starting with Monday.",
+   "url": "https://www.youtube.com/watch?v=xKZ3U8viuIU",
+   "video": "https://www.youtube.com/watch?v=EiVmQZwJhsA",
+   "start": 11,
+   "embed": true,
+   "evidence": [
+    "lrclib:33948052@13.42",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:주말": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "금요일에 만나요 (Friday)",
+   "by": "IU",
+   "year": 2013,
+   "quote": "[주말]까지 기다리긴 힘들어",
+   "translation": "It's hard to wait until the weekend",
+   "why": "In 'Friday', IU can't wait for the weekend; the line comes back before each chorus.",
+   "url": "https://www.youtube.com/watch?v=xKZ3U8viuIU",
+   "video": "https://www.youtube.com/watch?v=EiVmQZwJhsA",
+   "start": 45,
+   "embed": true,
+   "evidence": [
+    "lrclib:33948052@47.83",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "오늘 뭐해 (Whatcha Doin' Today)",
+   "by": "4MINUTE",
+   "year": 2014,
+   "quote": "[주말]에 뭐해",
+   "translation": "What are you doing this weekend?",
+   "why": "4MINUTE's hook asks it over and over.",
+   "url": "https://www.youtube.com/watch?v=7XmkRZ8psCo",
+   "video": "https://www.youtube.com/watch?v=4xLFxfXWDUk",
+   "start": 16,
+   "embed": true,
+   "evidence": [
+    "lrclib:6944716@18.85",
+    "length:206"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:토요일": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "토요일 밤에 (Saturday Night)",
+   "by": "Son Dam Bi",
+   "year": 2009,
+   "quote": "[토요일] 밤에 바로 그 날에",
+   "translation": "On Saturday night, that very day",
+   "why": "Son Dam Bi's retro hit sings its title in every chorus.",
+   "url": "https://www.youtube.com/watch?v=_FJu0rqYMR0",
+   "video": "https://www.youtube.com/watch?v=Gwvopq0u_BQ",
+   "start": 35,
+   "embed": true,
+   "evidence": [
+    "lrclib:31879951@37.8",
+    "length:226"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "넌 내게 반했어",
+   "by": "No Brain",
+   "quote": "뜨거운 [토요일]밤의 열기속에",
+   "translation": "In the heat of a hot Saturday night",
+   "why": "No Brain's best-known punk anthem.",
+   "url": "https://www.youtube.com/watch?v=Rm6R92J4bbY",
+   "start": 37,
+   "embed": true,
+   "evidence": [
+    "lrclib:18380688@39.88",
+    "length:224"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Time & days:화요일": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "금요일에 만나요 (Friday)",
+   "by": "IU",
+   "year": 2013,
+   "quote": "[화요일]도 성급해 보이지",
+   "translation": "Tuesday seems too soon, too",
+   "why": "Line two of IU's 'Friday': Tuesday is too soon for a date.",
+   "url": "https://www.youtube.com/watch?v=xKZ3U8viuIU",
+   "video": "https://www.youtube.com/watch?v=EiVmQZwJhsA",
+   "start": 17,
+   "embed": true,
+   "evidence": [
+    "lrclib:33948052@19.55",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Useful words:많이": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "피 땀 눈물 (Blood Sweat & Tears)",
+   "by": "BTS",
+   "year": 2016,
+   "quote": "원해 [많이] 많이 많이 많이",
+   "translation": "I want it, so much, so much",
+   "why": "BTS's hook repeats 많이 four times: I want you, so much.",
+   "url": "https://www.youtube.com/watch?v=tuEZ_8HdnwQ",
+   "video": "https://www.youtube.com/watch?v=hmE9f-TEutc",
+   "start": 84,
+   "embed": true,
+   "evidence": [
+    "lrclib:17679642@86.82",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "사건의 지평선 (Event Horizon)",
+   "by": "Younha",
+   "year": 2022,
+   "quote": "[많이] 많이 그리워할 거야",
+   "translation": "I'll miss you so, so much",
+   "why": "Younha's chart-topping ballad: 많이 많이, so very much.",
+   "url": "https://www.youtube.com/watch?v=j1uXcHwLhHM",
+   "video": "https://www.youtube.com/watch?v=BBdC1rl5sKY",
+   "start": 108,
+   "embed": true,
+   "evidence": [
+    "lrclib:32426749@110.08",
+    "length:301"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Useful words:무슨": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "ANTIFRAGILE",
+   "by": "LE SSERAFIM",
+   "year": 2022,
+   "quote": "[무슨] 말이 더 필요해?",
+   "translation": "What more needs to be said?",
+   "why": "LE SSERAFIM's hit: 무슨 말, what words, a phrase you will hear everywhere.",
+   "url": "https://www.youtube.com/watch?v=SZiwpL62to8",
+   "video": "https://www.youtube.com/watch?v=pyf8cbqyfPs",
+   "start": 35,
+   "embed": true,
+   "evidence": [
+    "lrclib:13439490@37.5",
+    "length:185"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "I NEED U",
+   "by": "BTS",
+   "year": 2015,
+   "quote": "나 [무슨] 짓을 해봐도",
+   "translation": "Whatever I do",
+   "why": "BTS's breakthrough song: 무슨 짓, whatever kind of thing I try.",
+   "url": "https://www.youtube.com/watch?v=jip9EXrrf0o",
+   "video": "https://www.youtube.com/watch?v=DOuhvBJqKVY",
+   "start": 88,
+   "embed": true,
+   "evidence": [
+    "lrclib:17679784@90.96",
+    "length:211"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Useful words:여행": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "에잇 (eight)",
+   "by": "IU",
+   "year": 2020,
+   "quote": "기억 속을 [여행]해",
+   "translation": "I travel through my memories",
+   "why": "IU's hit with BTS's SUGA: 여행해, I travel, back through memories.",
+   "url": "https://www.youtube.com/watch?v=5_IYVichXbA",
+   "video": "https://www.youtube.com/watch?v=TgOu00Mf3kI",
+   "start": 44,
+   "embed": true,
+   "evidence": [
+    "lrclib:36678848@46.18",
+    "length:168"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Useful words:제일": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "내가 제일 잘 나가 (I Am the Best)",
+   "by": "2NE1",
+   "year": 2011,
+   "quote": "내가 [제일] 잘 나가",
+   "translation": "I'm the best of all",
+   "why": "2NE1's signature hit: 제일 is in the title and the whole chorus.",
+   "url": "https://www.youtube.com/watch?v=rnxZyt3f708",
+   "video": "https://www.youtube.com/watch?v=j7_lSP8Vc3o",
+   "start": 5,
+   "embed": true,
+   "evidence": [
+    "lrclib:28335772@7.2",
+    "length:211"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "빨간 맛 (Red Flavor)",
+   "by": "Red Velvet",
+   "year": 2017,
+   "quote": "내가 [제일] 좋아하는 건 여름 그 맛",
+   "translation": "What I like most is the taste of summer",
+   "why": "Red Velvet's summer anthem: 제일 좋아하는, the thing I like most.",
+   "url": "https://www.youtube.com/watch?v=BLavT7w4R9I",
+   "video": "https://www.youtube.com/watch?v=WyiIGEHQP8o",
+   "start": 11,
+   "embed": true,
+   "evidence": [
+    "lrclib:4063586@13.17",
+    "length:192"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Useful words:한국": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "LALISA",
+   "by": "LISA",
+   "year": 2021,
+   "quote": "태국에서 [한국] 거쳐 여기까지",
+   "translation": "From Thailand, through Korea, all the way here",
+   "why": "LISA's solo debut sums up her path: Thailand, then Korea, then the world.",
+   "url": "https://www.youtube.com/watch?v=awkkyBH2zEo",
+   "embed": true,
+   "evidence": [
+    "lrclib:3369241@148.52"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "GANADARA",
+   "by": "Jay Park",
+   "year": 2022,
+   "quote": "난 [한국]말까지 서툴러",
+   "translation": "Even my Korean is clumsy",
+   "why": "Jay Park, who grew up in the US, admits his 한국말 (Korean) is shaky: relatable.",
+   "url": "https://www.youtube.com/watch?v=PK4ljesG8s0",
+   "video": "https://www.youtube.com/watch?v=gFb1TftvdoM",
+   "start": 19,
+   "embed": true,
+   "evidence": [
+    "lrclib:36050352@21.05",
+    "length:204"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:가르쳐요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "GANADARA",
+   "by": "Jay Park",
+   "year": 2022,
+   "quote": "[가르쳐]줘 오늘 밤",
+   "translation": "Teach me tonight",
+   "why": "A love song named after the Korean ABC (가나다라); the hook asks: teach me tonight.",
+   "url": "https://www.youtube.com/watch?v=PK4ljesG8s0",
+   "video": "https://www.youtube.com/watch?v=gFb1TftvdoM",
+   "start": 78,
+   "embed": true,
+   "evidence": [
+    "lrclib:36050352@80.22",
+    "length:204"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "작은 것들을 위한 시 (Boy With Luv)",
+   "by": "BTS",
+   "year": 2019,
+   "quote": "네 모든 걸 다 [가르쳐] 줘",
+   "translation": "Teach me everything about you",
+   "why": "Right after “Come be my teacher”: teach me all about you.",
+   "url": "https://www.youtube.com/watch?v=Q-erYa8cwnc",
+   "video": "https://www.youtube.com/watch?v=XsX3ATc3FbA",
+   "start": 40,
+   "embed": true,
+   "evidence": [
+    "lrclib:35794411@42.56",
+    "length:230"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:가요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "달이 차오른다, 가자",
+   "by": "Kiha & The Faces",
+   "year": 2008,
+   "quote": "달이 차오른다 [가자]",
+   "translation": "The moon is rising, let's go",
+   "why": "Jang Kiha's cult indie hit: every line ends on 가자, “let's go”, a dozen times.",
+   "url": "https://www.youtube.com/watch?v=wG2lDphHVR8",
+   "start": 2,
+   "embed": true,
+   "evidence": [
+    "lrclib:31574529@4.32",
+    "length:268"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "첫눈처럼 너에게 가겠다 (I Will Go to You Like the First Snow)",
+   "by": "Ailee",
+   "year": 2017,
+   "quote": "첫눈처럼 내가 [가겠다]",
+   "translation": "Like the first snow, I will go (to you)",
+   "why": "Goblin's theme song ends on its own title: 가겠다, I will go.",
+   "url": "https://www.youtube.com/watch?v=G5Lj9tsCK6A",
+   "start": 194,
+   "embed": true,
+   "evidence": [
+    "lrclib:30512376@196.91",
+    "length:230"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:걸어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "벚꽃 엔딩 (Cherry Blossom Ending)",
+   "by": "Busker Busker",
+   "year": 2012,
+   "quote": "오늘은 우리 같이 [걸어요] 이 거리를",
+   "translation": "Today, let's walk this street together",
+   "why": "Korea's eternal spring song, in the card's exact form: let's walk.",
+   "url": "https://www.youtube.com/watch?v=KvthiAoGTfo",
+   "start": 23,
+   "embed": true,
+   "evidence": [
+    "lrclib:36180972@25.39",
+    "length:261"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "아이야 나랑 걷자 (Walk With Me, Girl)",
+   "by": "IU",
+   "year": 2013,
+   "quote": "아이야 나랑 [걷자], 멀리",
+   "translation": "Come, child, walk with me, far away",
+   "why": "IU's duet with Choi Baek-ho is named after it: walk with me.",
+   "url": "https://www.youtube.com/watch?v=tYkOXrKViDk",
+   "start": 23,
+   "embed": true,
+   "evidence": [
+    "lrclib:31935503@25.33",
+    "length:300"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:기다려요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "꽃 길 (Flower Road)",
+   "by": "BIGBANG",
+   "year": 2018,
+   "quote": "그 자리 그곳에서 날 [기다려요]",
+   "translation": "Wait for me right there, in that place",
+   "why": "BIGBANG's goodbye to fans before military service, in the card's exact form: wait for me.",
+   "url": "https://www.youtube.com/watch?v=VWqxvBQKwKQ",
+   "start": 85,
+   "embed": true,
+   "evidence": [
+    "lrclib:14768814@87.5",
+    "length:229"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "롤린 (Rollin')",
+   "by": "Brave Girls",
+   "year": 2017,
+   "quote": "[기다리고] 있잖아, babe",
+   "translation": "I'm waiting for you, babe",
+   "why": "The hook of the chart-reversal hit: I'm right here, waiting.",
+   "url": "https://www.youtube.com/watch?v=0ZCCBPeRVLo",
+   "video": "https://www.youtube.com/watch?v=MthLgPs7oU4",
+   "start": 63,
+   "embed": true,
+   "evidence": [
+    "lrclib:37904531@65.37",
+    "length:198"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:다녀요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "잔소리 (Nitpicking)",
+   "by": "IU",
+   "year": 2010,
+   "quote": "늦게 [다니지]좀 마",
+   "translation": "Stop going around so late",
+   "why": "IU's duet opens with a nag: 다니다 is going somewhere habitually, here out late.",
+   "url": "https://www.youtube.com/watch?v=bzdsqPOJK_I",
+   "start": 10,
+   "embed": true,
+   "evidence": [
+    "lrclib:24861779@12.98",
+    "length:213"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:들어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Sing For You",
+   "by": "EXO",
+   "year": 2015,
+   "quote": "그냥 [들어요], I'll sing for you",
+   "translation": "Just listen, I'll sing for you",
+   "why": "EXO's winter ballad, in the card's exact form: just listen.",
+   "url": "https://www.youtube.com/watch?v=_8rXVCM9Efs",
+   "video": "https://www.youtube.com/watch?v=nqaSboKBIuA",
+   "start": 19,
+   "embed": true,
+   "evidence": [
+    "lrclib:36583204@21.35",
+    "length:236"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:마셔요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "우주를 줄게 (Galaxy)",
+   "by": "BOL4",
+   "year": 2016,
+   "quote": "커피를 너무 많이 [마셨나] 봐요",
+   "translation": "I must have drunk too much coffee",
+   "why": "The first line of BOL4's breakout hit: too much coffee, a racing heart.",
+   "url": "https://www.youtube.com/watch?v=0i2wOl5PDOw",
+   "start": 2,
+   "embed": true,
+   "evidence": [
+    "lrclib:4780494@4.46",
+    "length:214"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Alcohol-Free",
+   "by": "TWICE",
+   "year": 2021,
+   "quote": "[마신] 게 하나도 없는데",
+   "translation": "I haven't had a single drink",
+   "why": "TWICE's summer song: tipsy on love, though she drank nothing.",
+   "url": "https://www.youtube.com/watch?v=m8CyyxWgNd8",
+   "video": "https://www.youtube.com/watch?v=XA2YEHn-A8Q",
+   "start": 51,
+   "embed": true,
+   "evidence": [
+    "lrclib:16421194@53.52",
+    "length:211"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:만나요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "금요일에 만나요 (Friday)",
+   "by": "IU",
+   "year": 2013,
+   "quote": "돌아오는 이번 주 금요일에 [만나요]",
+   "translation": "Let's meet this coming Friday",
+   "why": "IU's title says it in the card's exact form: let's meet on Friday.",
+   "url": "https://www.youtube.com/watch?v=xKZ3U8viuIU",
+   "video": "https://www.youtube.com/watch?v=EiVmQZwJhsA",
+   "start": 178,
+   "embed": true,
+   "evidence": [
+    "lrclib:33948052@180.43",
+    "length:218"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "다시 만난 세계 (Into the New World)",
+   "by": "Girls' Generation",
+   "year": 2007,
+   "quote": "다시 [만난] 나의 세계",
+   "translation": "My world, met again",
+   "why": "Girls' Generation's debut anthem is named after it: the world we meet again.",
+   "url": "https://www.youtube.com/watch?v=I1OzfxybATE",
+   "video": "https://www.youtube.com/watch?v=0k2Zzkw_-0I",
+   "start": 109,
+   "embed": true,
+   "evidence": [
+    "lrclib:10228272@111.42",
+    "length:268"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:만들어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "WONDERLAND",
+   "by": "ATEEZ",
+   "year": 2019,
+   "quote": "없는 길도 [만들어]",
+   "translation": "I make a road even where there is none",
+   "why": "ATEEZ's anthem: we make our own road, repeated in every chorus.",
+   "url": "https://www.youtube.com/watch?v=mfXeqUR2RJ4",
+   "video": "https://www.youtube.com/watch?v=eLfpeg3Fofo",
+   "start": 64,
+   "embed": true,
+   "evidence": [
+    "lrclib:34542404@66.1",
+    "length:200"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "우주를 줄게 (Galaxy)",
+   "by": "BOL4",
+   "year": 2016,
+   "quote": "은하수를 [만들어] 어디든 날아가게 할거야",
+   "translation": "I'll make a Milky Way and let you fly anywhere",
+   "why": "BOL4's Galaxy: she'll make a galaxy just for you.",
+   "url": "https://www.youtube.com/watch?v=0i2wOl5PDOw",
+   "start": 42,
+   "embed": true,
+   "evidence": [
+    "lrclib:4780494@44.08",
+    "length:214"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:말해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "소원을 말해봐 (Genie)",
+   "by": "Girls' Generation",
+   "year": 2009,
+   "quote": "소원을 [말해] 봐",
+   "translation": "Tell me your wish",
+   "why": "Girls' Generation's genie chorus, in the title too: tell me your wish.",
+   "url": "https://www.youtube.com/watch?v=595byJz-obI",
+   "video": "https://www.youtube.com/watch?v=6SwiSpudKWI",
+   "start": 17,
+   "embed": true,
+   "evidence": [
+    "lrclib:24226321@19.41",
+    "length:230"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Tell Me",
+   "by": "Wonder Girls",
+   "year": 2007,
+   "quote": "내가 필요하다 [말해], 말해줘요",
+   "translation": "Say you need me, tell me",
+   "why": "The 2007 craze Tell Me, said in Korean: 말해, 말해줘요.",
+   "url": "https://www.youtube.com/watch?v=0wX6er00xrE",
+   "video": "https://www.youtube.com/watch?v=BlHv3BbBv6A",
+   "start": 58,
+   "embed": true,
+   "evidence": [
+    "lrclib:8915118@60.09",
+    "length:217"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:먹어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "꺼내 먹어요 (Eat)",
+   "by": "Zion.T",
+   "year": 2015,
+   "quote": "초콜릿처럼 꺼내 [먹어요]",
+   "translation": "Take it out and eat it, like chocolate",
+   "why": "The title is the hook: keep this song like a snack and eat it when you're tired.",
+   "url": "https://www.youtube.com/watch?v=Sp_Z2tBVniI",
+   "video": "https://www.youtube.com/watch?v=Ibb5RhoKfzE",
+   "start": 33,
+   "embed": true,
+   "evidence": [
+    "lrclib:13876448@35.01",
+    "length:162"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "밤양갱 (Bam Yang Gang)",
+   "by": "BIBI",
+   "year": 2024,
+   "quote": "내가 [먹고] 싶었던 건, 달디단, 밤양갱",
+   "translation": "What I wanted to eat was the sweet, sweet chestnut jelly",
+   "why": "2024's most-sung chorus: all she wanted to eat was bam-yanggaeng.",
+   "url": "https://www.youtube.com/watch?v=cvQQEs4TDGM",
+   "start": 43,
+   "embed": true,
+   "evidence": [
+    "lrclib:6582222@45.87",
+    "length:147"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:받아요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "REALLY REALLY",
+   "by": "WINNER",
+   "year": 2017,
+   "quote": "내 맘을 [받아]줘",
+   "translation": "Take my heart (accept it)",
+   "why": "Right after “I like you”, WINNER ask her to receive their heart.",
+   "url": "https://www.youtube.com/watch?v=aYlXNpaQydk",
+   "video": "https://www.youtube.com/watch?v=4tBnF46ybZk",
+   "start": 66,
+   "embed": true,
+   "evidence": [
+    "lrclib:35037173@68.8",
+    "length:204"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "줄리엣 (Juliette)",
+   "by": "SHINee",
+   "year": 2009,
+   "quote": "Oh Juliette! 제발 날 [받아] 줘요",
+   "translation": "Oh Juliette, please take me in",
+   "why": "SHINee's Romeo begs Juliette to accept him.",
+   "url": "https://www.youtube.com/watch?v=MVed7_dK23A",
+   "video": "https://www.youtube.com/watch?v=XwkP3qfwqs8",
+   "start": 45,
+   "embed": true,
+   "evidence": [
+    "lrclib:9117079@47.9",
+    "length:208"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:배워요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "What is Love?",
+   "by": "TWICE",
+   "year": 2018,
+   "quote": "사랑을 [배워]",
+   "translation": "I learn about love",
+   "why": "TWICE learn love from movies, books and dramas: short and clear.",
+   "url": "https://www.youtube.com/watch?v=w4nihuYVTW0",
+   "video": "https://www.youtube.com/watch?v=i0p1bmr0EmE",
+   "start": 20,
+   "embed": true,
+   "evidence": [
+    "lrclib:3000099@22.12",
+    "length:209"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "사랑을 했다 (Love Scenario)",
+   "by": "iKON",
+   "year": 2018,
+   "quote": "너에게 참 많이도 [배웠다]",
+   "translation": "I learned so much from you",
+   "why": "iKON's sing-along megahit looks back on a love that taught him a lot.",
+   "url": "https://www.youtube.com/watch?v=OmEPFmyKO74",
+   "video": "https://www.youtube.com/watch?v=vecSVX1QYbQ",
+   "start": 105,
+   "embed": true,
+   "evidence": [
+    "lrclib:36294466@107.34",
+    "length:210"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:봐요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "내 맘을 볼 수 있나요 (Can You See My Heart)",
+   "by": "Heize",
+   "year": 2019,
+   "quote": "내 맘을 [볼] 수 있나요?",
+   "translation": "Can you see my heart?",
+   "why": "The Hotel del Luna theme opens with its own title: can you see my heart?",
+   "url": "https://www.youtube.com/watch?v=c6if7ddujVc",
+   "start": 12,
+   "embed": true,
+   "evidence": [
+    "lrclib:21555579@14.49",
+    "length:226"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "봄날 (Spring Day)",
+   "by": "BTS",
+   "year": 2017,
+   "quote": "[보고] 싶다, 이렇게 말하니까 더 보고 싶다",
+   "translation": "I miss you; saying it makes me miss you more",
+   "why": "BTS's best-loved ballad opens on 보고 싶다, literally “want to see”: how Korean says I miss you.",
+   "url": "https://www.youtube.com/watch?v=ZO1xdXOXarc",
+   "video": "https://www.youtube.com/watch?v=xEeFrLSkMm8",
+   "start": 14,
+   "embed": true,
+   "evidence": [
+    "lrclib:15846963@16.9",
+    "length:275"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:사랑해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지 (How can I love the heartbreak, you're the one I love)",
+   "by": "AKMU",
+   "year": 2019,
+   "quote": "널 [사랑하는] 거지",
+   "translation": "It's you that I love",
+   "why": "AKMU's 2019 megahit: its title ends on “it's you I love”.",
+   "url": "https://www.youtube.com/watch?v=KczYjTVrK_o",
+   "video": "https://www.youtube.com/watch?v=m3DZsBw5bnE",
+   "start": 88,
+   "embed": true,
+   "evidence": [
+    "lrclib:9116940@90.14",
+    "length:291"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "사랑해 (I LOVE YOU)",
+   "by": "TREASURE",
+   "year": 2020,
+   "quote": "널 [사랑해]",
+   "translation": "I love you",
+   "why": "TREASURE's title is simply 사랑해, I love you, and the chorus repeats it.",
+   "url": "https://www.youtube.com/watch?v=UdtRNUGhTZ0",
+   "video": "https://www.youtube.com/watch?v=_hFarg-Obuc",
+   "start": 53,
+   "embed": true,
+   "evidence": [
+    "lrclib:2921697@55.37",
+    "length:182"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:사요": [
+  {
+   "id": "c1",
+   "media": "drama",
+   "title": "밥 잘 사주는 예쁜 누나 (Something in the Rain)",
+   "by": "JTBC",
+   "year": 2018,
+   "quote": "밥 잘 [사주는] 예쁜 누나",
+   "translation": "Pretty older sister who buys me meals",
+   "why": "The Netflix romance's Korean title: 사주다, to buy (someone) a meal.",
+   "url": "https://www.youtube.com/watch?v=i3dLqMxZj_E",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Something_in_the_Rain"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:싫어해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "너에게 (To You)",
+   "by": "Sung Si Kyung",
+   "year": 2013,
+   "quote": "너를 [싫어해서]가 아니야",
+   "translation": "It's not because I dislike you",
+   "why": "The Reply 1994 love song: he looks away, but not out of dislike.",
+   "url": "https://www.youtube.com/watch?v=YE9YnrFgib8",
+   "video": "https://www.youtube.com/watch?v=_kr3bOs5s8U",
+   "start": 90,
+   "embed": true,
+   "evidence": [
+    "lrclib:34013366@92.61",
+    "length:231"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "그냥 (Just)",
+   "by": "Zion.T",
+   "year": 2015,
+   "quote": "오히려 미워해 [싫어해]",
+   "translation": "If anything, I hate you, I dislike you",
+   "why": "Zion.T and Crush pretend: I don't like you; if anything, I dislike you.",
+   "url": "https://www.youtube.com/watch?v=tcCIylFRHlQ",
+   "video": "https://www.youtube.com/watch?v=Skhwqq-iGQM",
+   "start": 69,
+   "embed": true,
+   "evidence": [
+    "lrclib:7513734@71.53",
+    "length:193"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:써요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "흐린 가을 하늘에 편지를 써",
+   "by": "Kim Kwang Seok",
+   "year": 1993,
+   "quote": "흐린 가을 하늘에 편지를 [써]",
+   "translation": "I write a letter on the cloudy autumn sky",
+   "why": "Kim Kwang-seok's folk classic: title and refrain both end on 써, write.",
+   "url": "https://www.youtube.com/watch?v=yjmFZ8YSOdA",
+   "start": 58,
+   "embed": true,
+   "evidence": [
+    "lrclib:12228420@60.81",
+    "length:285"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "스물셋 (Twenty-three)",
+   "by": "IU",
+   "year": 2015,
+   "quote": "단 한 줄의 거짓말도 [쓴] 적이 없거든",
+   "translation": "I've never written a single line of lies",
+   "why": "IU at twenty-three insists she has never written a single lie.",
+   "url": "https://www.youtube.com/watch?v=GXNHaLIhyMY",
+   "video": "https://www.youtube.com/watch?v=42Gtm4-Ax2U",
+   "start": 56,
+   "embed": true,
+   "evidence": [
+    "lrclib:24219124@58.06",
+    "length:195"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:씻어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "팥빙수 (Patbingsu)",
+   "by": "Yoon Jong Shin",
+   "year": 2001,
+   "quote": "깨끗이 [씻는다] 씻는다",
+   "translation": "Wash them clean, wash them",
+   "why": "The summer shaved-ice recipe song: wash the cherries clean.",
+   "url": "https://www.youtube.com/watch?v=6G3lqpPavck",
+   "embed": true,
+   "evidence": [
+    "lrclib:10316454@33.35"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "누구 없소 (NO ONE)",
+   "by": "LEE HI",
+   "year": 2019,
+   "quote": "눈을 [씻고] 찾아봐도 보이지가 않는데",
+   "translation": "Even if I wash my eyes and look, I can't find anyone",
+   "why": "An idiom in LEE HI's first lines: you “wash your eyes” to look really hard.",
+   "url": "https://www.youtube.com/watch?v=HzI31KhV9WU",
+   "video": "https://www.youtube.com/watch?v=GQqyCeKf8rw",
+   "start": 13,
+   "embed": true,
+   "evidence": [
+    "lrclib:24547924@15.17",
+    "length:195"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:와요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "눈 (Snow)",
+   "by": "Zion.T",
+   "year": 2017,
+   "quote": "눈 눈이 [와요]",
+   "translation": "Snow, the snow is coming down",
+   "why": "In Korean snow “comes”: 눈이 와요, the card's exact form, sung over and over.",
+   "url": "https://www.youtube.com/watch?v=m4L0_kwPpso",
+   "video": "https://www.youtube.com/watch?v=fiGSDywrX1Y",
+   "start": 159,
+   "embed": true,
+   "evidence": [
+    "lrclib:36714211@161.65",
+    "length:240"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "drama",
+   "title": "별에서 온 그대 (My Love from the Star)",
+   "by": "SBS",
+   "year": 2013,
+   "quote": "별에서 [온] 그대",
+   "translation": "You who came from the stars",
+   "why": "The hit drama about an alien in Seoul: 온 is “came”, from 오다.",
+   "url": "https://www.youtube.com/watch?v=PX3k11lAwc8",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/My_Love_from_the_Star"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:요리해요": [
+  {
+   "id": "c1",
+   "media": "show",
+   "title": "흑백요리사: 요리 계급 전쟁 (Culinary Class Wars)",
+   "by": "Netflix",
+   "year": 2024,
+   "quote": "흑백요리사: [요리] 계급 전쟁",
+   "translation": "Black and White Chef: a cooking class war",
+   "why": "Netflix's 2024 cooking-contest hit: 요리, cooking, as in 요리해요.",
+   "url": "https://www.youtube.com/watch?v=vebF7wUQLMo",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Culinary_Class_Wars"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:울어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "울고 싶지 않아 (Don't Wanna Cry)",
+   "by": "SEVENTEEN",
+   "year": 2017,
+   "quote": "[울고] 싶지 않아",
+   "translation": "I don't want to cry",
+   "why": "SEVENTEEN's title and chorus: I don't wanna cry.",
+   "url": "https://www.youtube.com/watch?v=oZvRDa_metM",
+   "video": "https://www.youtube.com/watch?v=zEkg4GBQumc",
+   "start": 5,
+   "embed": true,
+   "evidence": [
+    "lrclib:18113114@7.84",
+    "length:204"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "2 Different Tears",
+   "by": "Wonder Girls",
+   "year": 2010,
+   "quote": "슬퍼서 [울었어]",
+   "translation": "I cried because I was sad",
+   "why": "The hook pairs two kinds of tears: I cried from joy, I cried from sadness.",
+   "url": "https://www.youtube.com/watch?v=ANQL7iBLW8A",
+   "video": "https://www.youtube.com/watch?v=Rxh3_sr5UAE",
+   "start": 10,
+   "embed": true,
+   "evidence": [
+    "lrclib:36425859@12.21",
+    "length:205"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:웃어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "좋은 날 (Good Day)",
+   "by": "IU",
+   "year": 2010,
+   "quote": "눈물은 나오는데 활짝 [웃어]",
+   "translation": "The tears are coming, but I smile wide",
+   "why": "IU's signature song: smiling through tears at its climax.",
+   "url": "https://www.youtube.com/watch?v=OIHlzvEKncQ",
+   "video": "https://www.youtube.com/watch?v=jeqdYqsrsA0",
+   "start": 171,
+   "embed": true,
+   "evidence": [
+    "lrclib:34902657@173.83",
+    "length:236"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "HAPPY",
+   "by": "DAY6",
+   "year": 2024,
+   "quote": "매일 [웃고] 싶어요",
+   "translation": "I want to smile every day",
+   "why": "DAY6's 2024 hit wishes for days that make you smile.",
+   "url": "https://www.youtube.com/watch?v=2o1zdX72400",
+   "start": 56,
+   "embed": true,
+   "evidence": [
+    "lrclib:12946660@58.13",
+    "length:190"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:일어나요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "파이팅 해야지 (Fighting)",
+   "by": "BSS",
+   "year": 2023,
+   "quote": "아뿔싸 [일어나야지] 아침인데",
+   "translation": "Oh no, I have to get up, it's morning",
+   "why": "BSS's office-worker anthem opens with an oversleep: time to get up!",
+   "url": "https://www.youtube.com/watch?v=Y4JQokTmBTA",
+   "start": 6,
+   "embed": true,
+   "evidence": [
+    "lrclib:36506067@8.79",
+    "length:205"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "ON",
+   "by": "BTS",
+   "year": 2020,
+   "quote": "넘어져도 다시 [일어나], scream",
+   "translation": "Even if I fall, I get up again, scream",
+   "why": "BTS's ON: fall down, get up again.",
+   "url": "https://www.youtube.com/watch?v=1o0CtxZ_Cbo",
+   "video": "https://www.youtube.com/watch?v=mPVDGOVjRQ0",
+   "start": 104,
+   "embed": true,
+   "evidence": [
+    "lrclib:36493713@106.47",
+    "length:247"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:일해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "쩔어 (Dope)",
+   "by": "BTS",
+   "year": 2015,
+   "quote": "밤새 [일했지], every day",
+   "translation": "I worked all night, every day",
+   "why": "BTS's breakout hit brags about the grind: worked all night while you were clubbing.",
+   "url": "https://www.youtube.com/watch?v=qi3dicwdbdQ",
+   "video": "https://www.youtube.com/watch?v=H8lYMWZD5P8",
+   "start": 19,
+   "embed": true,
+   "evidence": [
+    "lrclib:24856475@21.88",
+    "length:241"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "Power Up",
+   "by": "Red Velvet",
+   "year": 2018,
+   "quote": "놀 때도 [일할] 때도 즐겁게 해",
+   "translation": "Have fun when you play and when you work",
+   "why": "Red Velvet's summer song quotes a teacher: enjoy work as much as play.",
+   "url": "https://www.youtube.com/watch?v=oyqU1BjuK6A",
+   "video": "https://www.youtube.com/watch?v=aiHSVQy9xN8",
+   "start": 149,
+   "embed": true,
+   "evidence": [
+    "lrclib:33393451@151.98",
+    "length:203"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:읽어요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "CHEER UP",
+   "by": "TWICE",
+   "year": 2016,
+   "quote": "메시지만 [읽고] 확인 안 하는 건 기본",
+   "translation": "Reading his texts but leaving them unopened is basic",
+   "why": "TWICE playing hard to get: read his messages, never let him see it.",
+   "url": "https://www.youtube.com/watch?v=prWVZFgZ3Zc",
+   "video": "https://www.youtube.com/watch?v=c7rCyll5AeY",
+   "start": 85,
+   "embed": true,
+   "evidence": [
+    "lrclib:35269284@87.16",
+    "length:209"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "주저하는 연인들을 위해 (For Lovers Who Hesitate)",
+   "by": "JANNABI",
+   "year": 2019,
+   "quote": "나는 [읽기] 쉬운 마음이야",
+   "translation": "I'm a heart that's easy to read",
+   "why": "JANNABI's retro ballad opens with it: I'm easy to read.",
+   "url": "https://www.youtube.com/watch?v=t8P-zdkoeJA",
+   "video": "https://www.youtube.com/watch?v=GdoNGNe5CSg",
+   "start": 5,
+   "embed": true,
+   "evidence": [
+    "lrclib:35852122@7.54",
+    "length:265"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:자요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "자니",
+   "by": "Primary",
+   "year": 2012,
+   "quote": "너는 지금 뭐해, [자니], 밖이야?",
+   "translation": "What are you doing now? Are you asleep? Are you out?",
+   "why": "Named after the classic late-night text 자니?, “are you asleep?”, sung in the hook.",
+   "url": "https://www.youtube.com/watch?v=sQxrSj6g-3o",
+   "start": 54,
+   "embed": true,
+   "evidence": [
+    "lrclib:38115993@56.23",
+    "length:234"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:좋아해요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "REALLY REALLY",
+   "by": "WINNER",
+   "year": 2017,
+   "quote": "널 [좋아해]",
+   "translation": "I like you",
+   "why": "WINNER's tropical hit says it outright, again and again: I like you.",
+   "url": "https://www.youtube.com/watch?v=aYlXNpaQydk",
+   "video": "https://www.youtube.com/watch?v=4tBnF46ybZk",
+   "start": 52,
+   "embed": true,
+   "evidence": [
+    "lrclib:35037173@54.87",
+    "length:204"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "빨간 맛 (Red Flavor)",
+   "by": "Red Velvet",
+   "year": 2017,
+   "quote": "외쳐보자 [좋아해요] 솔직히",
+   "translation": "Let's shout it honestly: I like you",
+   "why": "Red Velvet's summer anthem uses the card's exact form: 좋아해요.",
+   "url": "https://www.youtube.com/watch?v=BLavT7w4R9I",
+   "video": "https://www.youtube.com/watch?v=WyiIGEHQP8o",
+   "start": 124,
+   "embed": true,
+   "evidence": [
+    "lrclib:4063586@126.96",
+    "length:192"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:줘요": [
+  {
+   "id": "c1",
+   "media": "song",
+   "title": "Give Love",
+   "by": "AKMU",
+   "year": 2014,
+   "quote": "사랑을 좀 [주세요]",
+   "translation": "Please give me some love",
+   "why": "AKMU's Give Love, in its Korean chorus: please give me some love.",
+   "url": "https://www.youtube.com/watch?v=_bWN1LYQHvI",
+   "video": "https://www.youtube.com/watch?v=x2XX3cNW4K0",
+   "start": 61,
+   "embed": true,
+   "evidence": [
+    "lrclib:9029544@63.46",
+    "length:177"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "소원을 말해봐 (Genie)",
+   "by": "Girls' Generation",
+   "year": 2009,
+   "quote": "꿈도 열정도 다 [주고] 싶어",
+   "translation": "I want to give you all my dreams and passion",
+   "why": "The genie of Genie wants to give you everything.",
+   "url": "https://www.youtube.com/watch?v=595byJz-obI",
+   "video": "https://www.youtube.com/watch?v=6SwiSpudKWI",
+   "start": 53,
+   "embed": true,
+   "evidence": [
+    "lrclib:24226321@55.31",
+    "length:230"
+   ],
+   "checked": "2026-10-12"
+  }
+ ],
+ "Verbs:타요": [
+  {
+   "id": "c1",
+   "media": "animation",
+   "title": "꼬마버스 타요 (Tayo the Little Bus)",
+   "by": "EBS / Iconix",
+   "year": 2010,
+   "quote": "꼬마버스 [타요]",
+   "translation": "Tayo the Little Bus (tayo: “ride!”)",
+   "why": "Korea's favorite cartoon bus is named after the verb: 타요, “ride”.",
+   "url": "https://www.youtube.com/watch?v=a9RL-9GH4ck",
+   "embed": true,
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Tayo_the_Little_Bus",
+    "https://ko.wikipedia.org/wiki/꼬마버스_타요"
+   ],
+   "checked": "2026-10-12"
+  },
+  {
+   "id": "c2",
+   "media": "song",
+   "title": "풍선 (Balloons)",
+   "by": "TVXQ!",
+   "year": 2006,
+   "quote": "풍선을 [타고] 날아가는 예쁜 꿈도 꾸었지",
+   "translation": "I dreamed a pretty dream of riding a balloon into the sky",
+   "why": "TVXQ's remake of a children's classic: riding a red balloon away.",
+   "url": "https://www.youtube.com/watch?v=hF2AKRvSMeE",
+   "video": "https://www.youtube.com/watch?v=rdTVb64pfMs",
+   "start": 11,
+   "embed": true,
+   "evidence": [
+    "lrclib:25533102@13.65",
+    "length:230"
+   ],
+   "checked": "2026-10-12"
+  }
+ ]
+}

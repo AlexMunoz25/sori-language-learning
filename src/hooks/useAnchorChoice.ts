@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { anchorEvidence, type RecallEntry } from '../recall/review'
 import type { AnchorCandidate, VocabularyItem } from '../types/vocabulary'
 import { isRecord, readStorage, writeStorage } from './storage'
 
@@ -84,10 +85,13 @@ export function anchorFor(item: VocabularyItem, record: AnchorRecord): AnchorCan
 export const selectedAnchor = (item: VocabularyItem, record: AnchorRecord) =>
   anchorFor(item, record) ?? (record.selected ? undefined : item.anchors.find(anchor => anchor.preselected))
 
+/** Which anchor the learner is using for a card right now, read fresh from storage. */
+export const selectedAnchorId = (item: VocabularyItem) => selectedAnchor(item, readAnchorRecords()[item.id] ?? {})?.id
+
 /** The anchor a test hint may draw on, read fresh from storage. */
 export function savedAnchor(item: VocabularyItem) {
   const anchor = selectedAnchor(item, readAnchorRecords()[item.id] ?? {})
-  return anchor && { text: anchor.text, kind: anchor.kind, own: anchor.id === customAnchorId }
+  return anchor && { text: anchor.text, kind: anchor.kind, own: anchor.id === customAnchorId, ...anchor.source ? { source: anchor.source } : {} }
 }
 
 export function useAnchorChoice(item: VocabularyItem) {
@@ -136,29 +140,35 @@ export function useAnchorChoice(item: VocabularyItem) {
 }
 export type AnchorChoice = ReturnType<typeof useAnchorChoice>
 
-/** Everything the learner has told the app about anchors, for the next round of improvements. */
-export function anchorFeedback(vocabulary: VocabularyItem[]) {
+/**
+ * Everything the learner has told the app about anchors, for the next round of improvements: choices, ratings, recall
+ * checks, and how each anchor did when its card was asked in tests, reviews, and lessons.
+ */
+export function anchorFeedback(vocabulary: VocabularyItem[], entries: RecallEntry[] = [], languages: string[] = []) {
   const records = readAnchorRecords()
   const cards = vocabulary.flatMap(item => {
-    const record = records[item.id]
-    if (!record || !Object.keys(record).length) return []
+    const record = records[item.id] ?? {}
+    const evidence = anchorEvidence(entries, item.id)
+    if (!Object.keys(record).length && !Object.keys(evidence).length) return []
     const selected = anchorFor(item, record)
     return [{
       id: item.id, korean: item.korean, meaning: item.meaning,
-      candidates: item.anchors.map(anchor => ({ id: anchor.id, text: anchor.text })),
+      candidates: item.anchors.map(anchor => ({ id: anchor.id, language: anchor.language, text: anchor.text })),
       ...(selected ? { selected: selected.id, selectedText: selected.text, selectedAt: record.selectedAt } : {}),
       ...(record.custom ? { custom: record.custom } : {}),
       ...(record.ratings ? { ratings: record.ratings } : {}),
       ...(record.checks ? { checks: record.checks } : {}),
+      ...(Object.keys(evidence).length ? { tests: evidence } : {}),
       ...(record.wantsNew ? { wantsNewIdeas: true } : {}),
     }]
   })
   return {
-    app: 'sori', kind: 'memory-anchor-feedback', version: 1, exportedAt: new Date().toISOString(),
+    app: 'sori', kind: 'memory-anchor-feedback', version: 2, exportedAt: new Date().toISOString(), languages,
     summary: {
       chosen: cards.filter(card => card.selected).length,
       rated: cards.filter(card => card.ratings).length,
       recallChecks: cards.reduce((total, card) => total + (card.checks?.length ?? 0), 0),
+      tested: cards.filter(card => card.tests).length,
       wantNewIdeas: cards.filter(card => card.wantsNewIdeas).length,
     },
     cards,

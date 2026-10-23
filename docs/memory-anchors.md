@@ -1,79 +1,112 @@
 # Memory Anchors and Roots
 
-A Memory Anchor connects an unfamiliar Korean word to something you already know. The reaction it should produce is: *“That sounds like X, and X goes with this meaning.”* It links three things at once: the Korean **sound**, the **meaning**, and a **familiar** word, phrase, situation, or reference.
+A Memory Anchor connects an unfamiliar Korean word to something you already know. The reaction it should produce is: *“That sounds like X, and X goes with this meaning.”* It links three things at once: the Korean **sound**, the **meaning**, and a **familiar** word, phrase, situation, reference, or moment.
 
-Most anchors are sound hooks. When a word genuinely breaks into meaningful parts, one of its three candidates explains them instead, a **root-based anchor**: 말 mal = WORDS + 해요 hae-yo = DO → doing speech: to speak. It shows *why* the word means what it means, and its parts recur across the deck (空 in 공항 and 공책, 師 in 의사, 약사, and 요리사). The full research, sources, and related words stay in **Roots**; a conjugation note alone (“예쁘다 → 예뻐요. 으 drops.”) is not an anchor.
+Every vocabulary word offers five or six candidates of three kinds, so the learner can pick the route that works for them:
 
-What works for this learner was derived from their ratings: see [the feedback analysis](anchor-feedback-analysis.md). In short, the best anchors have one instantly familiar keyword that sounds like the head of the Korean word and already implies the meaning: light BULB → 밝아요 (bright), BALA → 빨라요 (fast), MORDOR → 멀어요 (far).
+| Kind | Candidates | Example (밝아요, bright; 봄, spring) |
+| --- | --- | --- |
+| **Sounds like** | 3 | A light BULB: bright → bal-ga-yo |
+| **Korean roots** | 1 | 공 (空) gong = AIR + 항 (港) hang = PORT → air-port; or a pattern: 예쁘다 → 예뻐요 like 바쁘다 → 바빠요 |
+| **Heard in Korean media** | 0–2 | BTS, 봄날 (Spring Day): “그 [봄]날이 올까”, played from the moment |
 
-## Three candidates, one choice
+What works for this learner was derived from their ratings: see [the feedback analysis](anchor-feedback-analysis.md). In short, the best sound hooks have one instantly familiar keyword that sounds like the head of the Korean word and already implies the meaning: light BULB → 밝아요 (bright), BALA → 빨라요 (fast), MORDOR → 멀어요 (far). How each kind is written, step by step, is in [the brief](anchor-brief.md).
 
-Every card offers three candidates. In the app, all three show until the learner picks one; from then on only that anchor shows, with a small **Change** button to bring the others back. A choice is saved in this browser (`sori.anchors.v1` in localStorage, separate from Difficult/Known progress).
+## Five or six candidates, one choice
 
-- The candidates take different routes when good routes exist: an everyday word, a concept from science, tech, music, sports, or gaming, and a pop-culture reference or another language.
-- Ratings decide how much changes. ★★★★★ anchors are kept verbatim and preselected (`1*` in the data); ★★★★ keep their keyword with polished wording as candidate 1; ★★★ keep the working element; ★★ and ★ start over.
-- Candidate ids are stable within a card. Polishing the wording keeps the id, and with it the learner's choice; a genuinely new idea gets a new id.
+A vocabulary word has three sound hooks, one Korean-roots candidate, and up to two verified media moments; grammar cards keep one to three candidates, as before. A slot stays empty rather than hold a weak candidate: a word with no genuine media moment gets none, and a word whose third sound hook would be a stretch keeps two.
+
+In the app, the candidates show grouped by kind (**Sounds like**, **Korean roots**, **Heard in Korean media**) until the learner picks one; from then on only that anchor shows, with a small **Change** button to bring the others back. A choice is saved in this browser (`sori.anchors.v1` in localStorage, separate from Difficult/Known progress), and the same anchor follows the card into Learn, the Library, and Review.
+
+- The three sound hooks take different routes when good routes exist: an everyday word, a concept from science, tech, music, sports, or gaming, and a pop-culture reference or another language.
+- Ratings decide how much changes. ★★★★★ anchors are kept verbatim and preselected (`1*` in the data); ★★★★ keep their keyword; ★★★ keep the working element; ★★ and ★ start over. The learner's own example anchors are kept verbatim.
+- Candidate ids are stable within a card. Polishing the wording keeps the id, and with it the learner's choice; a genuinely new idea gets a new id. Media moments are `c1` and `c2`.
 - Under the selected anchor, five small stars record how well it sticks. **None of these work?** lets the learner write their own anchor or ask for new ideas.
 - One, three, and seven calendar days after a choice, the Meaning reveal asks whether the word came back. Two or more misses (and more misses than hits) with the same anchor show a gentle “try another?” nudge. The app never changes a choice by itself.
-- The guide (?) downloads all of this as `sori-anchor-feedback-<date>.json`: choices, ratings, recall checks, custom anchors, and words that need new ideas. That file is the input for the next round of anchor improvements; the app has no backend that could generate candidates on its own.
+- Every graded answer, in a test, a review, or a lesson's practice, is logged with the anchor in use. The selected anchor shows how its card did since (*In tests and reviews: 2 of 3 recalled · 1 with a hint*), and each candidate in the chooser shows its own tally. See [Learn, Library, Review](learn-and-review.md).
+- The guide (?) downloads all of this as `sori-anchor-feedback-<date>.json`: choices, ratings, recall checks, test tallies per anchor, custom anchors, the learner's languages, and words that need new ideas. That file is the input for the next round of anchor improvements; the app has no backend that could generate candidates on its own.
 
-## Writing an anchor
+## Languages
 
-1. **Find the sound-alike.** Say the Korean word aloud and ask what it sounds like: an English, Spanish, or French word or phrase, a well-known name, a familiar sound. Match the actual Korean pronunciation, not the romanization (see rule 2 below).
-2. **Link it to the meaning with one short, logical scene.** The meaning should follow naturally: NAPPA, the Dragon Ball Z villain → 나빠요, *bad*. Fast as a BALA (Spanish for bullet) → 빨라요, *fast*. ERROR, ERROR… this is hard → 어려워요, *difficult*. A scene that only works once explained is not good enough.
+A hook only works in a language you know. The learner picks their languages (English is always on; the deck starts with English, Spanish, and French), and **Sounds like** lists the hooks in English, mixed hooks, loanwords, and those languages; the rest wait under **More ideas in other languages**, one tap away, never hidden for good. Korean roots and media moments show for everyone. The anchor in use always shows.
+
+A sound hook may be in any of six languages: English, Spanish, French, Italian, Portuguese, or German, judged by that language's own sound rules (Spanish *j* = h, Portuguese *ch* = sh, Italian *ci* = chi, German *w* = v). Beside a card's own candidates, `languageEntries` in `memory-aids.ts` holds extra hooks written for speakers of Italian, Portuguese, or German: at most one per card and language (`it1`, `pt1`, `de1`), shown first to those learners.
+
+## Sounds like: writing a hook
+
+1. **Find the sound-alike.** Say the Korean word aloud and ask what it sounds like: a word or phrase in a language you know, a well-known name, a familiar sound. Match the actual Korean pronunciation, not the romanization (see rule 2 below). Try the dictionary form and the conjugated forms too: 차갑다 *cha-gap-da* and 차가워요 *cha-ga-wo-yo* suggest different hooks. A hook built on another form says so.
+2. **Link it to the meaning with one short, logical scene.** The meaning should follow naturally: NAPPA, the Dragon Ball Z villain → 나빠요, *bad*. Fast as a BALA (Spanish for bullet) → 빨라요, *fast*. Siberian CHAGA — WHOA, YO! It's cold → 차가워요. A scene that only works once explained is not good enough.
 3. **End with the Korean reading** (→ *na-ppa-yo*) so the hook leads back to the real pronunciation. The audio is still the reference.
 
-Pop-culture, tech, music, and sports references are welcome when they are genuinely well known (Dragon Ball Z, Star Wars, Dr. Dre, Bob Marley, Psy). They are not required: a plain situation (“Grandma always slips you some MONEY” → 할머니) is often better. Avoid obscure references, forced or cringeworthy links, and anything that could confuse two cards.
-
-Special cases:
+Pop-culture, tech, music, gaming, and sports references are welcome when they are genuinely well known (Dragon Ball Z, The King of Fighters, Star Wars, Bob Marley, Psy). A plain situation (“Grandma always slips you some MONEY” → 할머니) is often better. Avoid obscure references, forced or cringeworthy links, and anything that could confuse two cards.
 
 - **Loanwords:** the source word is the familiar thing. Name it and point out the sound changes: COFFEE → 커피 *keo-pi* (Korean has no f).
 - **Phrases:** chain the hooks of the words inside, so each word's own anchor is reinforced: 날씨 ≈ NASTY weather + 가 + 더워요 ≈ hot DEHORS.
-- **Cognates you already know:** when the real origin *is* the familiar thing, it can be the anchor: CHAI → 차, SENSEI → 선생님, BULGOGI → 고기, Tokyo's CHIKATETSU → 지하철역.
-- **Root-based anchors:** when the card's Roots record breaks the word into meaningful parts (Hanja, a native compound, a noun + 하다 / 있다 / 없다, a stem + a word-forming ending), one candidate spells them out, part by part: `Korean (Hanja) reading = MEANING + … → gloss`. Examples: 공 (空) gong = AIR + 항 (港) hang = PORT → air-port, word for word; 맛 mat = TASTE + 있어요 i-sseo-yo = THERE IS → it has taste: delicious; 열 yeol = OPEN + 쇠 ssoe = METAL → metal that opens: key. Point to another card only when the two really share the component (“Same 綠 as 초록색”), and warn where a syllable only sounds the same (“Not 공원's 원 (園)”). The other two candidates stay sound hooks or references, so the learner can choose between understanding and association.
-- **No forced breakdowns:** a single stem (좋다), a conjugation pattern (예쁘다 → 예뻐요), a loanword, or a word whose record asserts no decomposition (사과, 김치, the 편 of 남편) gets no root-based anchor. A part is never given a meaning the record doesn't state, and a mnemonic is never presented as history.
-- **Connectors and particles:** the hook carries the item's job rather than a word's meaning: something that sounds like 도 and means *also*, like 만 and means *only*. Many sentence connectors are genuine compounds of a “do / be so” stem and a clause ending (그래 + 도, 그러 + 면), so they get a root-based candidate where the sourced record gives that derivation. Tempting splits stay out when no source gives them: 그리고 only shares a root with 그 and 그렇다, so it keeps three sound hooks, as do most particles. See [Connectors and Particles](grammar-cards.md).
+- **Cognates you already know:** when the real origin *is* the familiar thing, it can be the hook: CHAI → 차, SENSEI → 선생님, BULGOGI → 고기.
+- **Grammar:** the hook carries the item's job rather than a word's meaning: something that sounds like 도 and means *also*, like 만 and means *only*, like *JAMAIS* and means *please don't* (-지 마세요). See [Grammar](grammar-cards.md).
+
+## Korean roots: how Korean builds the word
+
+One candidate per word explains the word itself, so it holds across the deck (空 in 공항 and 공책, 師 in 의사, 약사, and 요리사):
+
+- **Root-based** (kind `roots`), when the card's Roots record breaks the word into meaningful parts (Hanja, a native compound, a noun + 하다 / 있다 / 없다, a stem + a word-forming ending): part by part, `Korean (Hanja) reading = MEANING + … → gloss`. 공 (空) gong = AIR + 항 (港) hang = PORT → air-port; 말 mal = WORDS + 해요 hae-yo = DO → doing speech: to speak. Point to another card only when the two really share the component (“Same 綠 as 초록색”), and warn where a syllable only sounds the same (“Not 공원's 원 (園)”).
+- **Pattern** (kind `pattern`), when there are no parts to show: the conjugation pattern the word follows, with other words that follow it (예쁘다 → 예뻐요: the ㅡ drops before 어, as in 바쁘다 → 바빠요); the family it belongs to (물, water, in 눈물, eye-water: tears); or, for a loanword, the regular change Korean makes (f → ㅍ, a final consonant takes 으), with other borrowed words from the deck.
+- **Never forced:** a part is never given a meaning the record doesn't state, a shared syllable is never presented as a shared root, and a mnemonic is never presented as history.
+
+## Heard in Korean media: real moments
+
+A media moment is the word heard in context: sung in a song, spoken in a show, or in the Korean title of a drama, film, or children's animation. It is the one kind of anchor that is never invented. Each lives in `src/data/culture-anchors.json` with what it was checked against, and the data check refuses one without its evidence:
+
+- **The line is real.** A song's line is taken from its **timed lyrics** on LRCLIB (`lrclib:<record>@<second>` in the evidence); a title is confirmed by a source page. The word in brackets must be the card's word or one of its forms, in the card's own sense.
+- **The upload is official and alive.** For a song, its **official audio** (the artist's Official Artist Channel or “Artist - Topic”, which carries the album recording) and its official music video; for a title, an official trailer or clip. YouTube's oEmbed confirms each one exists and whether the app may embed it. A Western scene with Korean subtitles doesn't count: the audio must be Korean.
+- **The second is checked.** The moment starts two seconds before the line only when the official audio is exactly as long as the timed track (`length:<seconds>`, ±2 s), so the lyrics' seconds are that upload's seconds. Otherwise the link opens at 0:00.
+
+In the app, a moment shows the line with the word highlighted, its English, and what it is (*BTS · 봄날 (Spring Day) · 2017*), with **Play from** the second just before the line, and **Music video**. Nothing loads from YouTube until the learner presses play: the player is an embed from `youtube-nocookie.com`, created on that tap and removed on **Close**. An upload that can't be embedded opens on YouTube instead. A moment's hints are its line in English with the meaning blanked (Korean → English) and the song's English title (English → Korean), never its Korean.
+
+Links rot: `npm run anchors:culture -- --recheck` re-runs every check. See [the brief](anchor-brief.md) for finding and checking moments.
 
 ## Labels and conventions
 
-- **Phonetic mnemonic · EN / ES / FR / KO:** a sound-alike hook. The UI notes it is not the word's origin. KO means the hook is another Korean word with the same sound (배우, actor / 배우다, to learn).
-- **Verified word components:** root-based anchors, phrase chains, and cognates of familiar words (CHAI, SENSEI), each resting on a verified fact. Every factual statement must be supported by the card's Roots record. Root-based anchors show one part per line; inside other anchors, **≈** marks a sound-alike, and the UI explains it.
+- **Phonetic mnemonic · EN / ES / FR / IT / PT / DE / MIXED / KO:** a sound-alike hook, labelled with the language of its hook. The UI notes it is not the word's origin. KO means the hook is another Korean word with the same sound (배우, actor / 배우다, to learn).
+- **Verified word components:** root-based anchors, phrase chains, and cognates of familiar words (CHAI, SENSEI), each resting on a verified fact in the card's Roots record. Root-based anchors show one part per line; inside other anchors, **≈** marks a sound-alike, and the UI explains it.
+- **Korean pattern:** a conjugation pattern, word family, or loanword change.
 - **Borrowed word:** a loanword whose source word is the anchor.
+- **Song / Drama / Film / TV show / Animation · who:** a media moment, labelled as a real moment with the day it was checked.
 - CAPITALS mark the hook to picture.
 
 ## Four distinct kinds of information
 
-- **Memory Anchor:** the hook described above. The reveal includes the source meaning as a retrieval prompt.
+- **Memory Anchor:** the candidates described above. The reveal includes the source meaning as a retrieval prompt.
 - **Roots:** researched origin, Hanja, lexical components, or morphology (including conjugation patterns), with source links.
 - **Related vocabulary:** up to five existing cards, each with the specific shared component, its meaning, and the relationship type: shared Hanja, same word/stem, shared pattern, or same loanword.
 - **Pronunciation:** the reading guide, independent of the anchor.
 
-The Memory Anchor and Roots controls reveal independently. Pronunciation and the full Meaning section remain separate. Listening mode is a writing exercise and shows none of the four; its Learn button opens the word in Standard mode with the Memory Anchor already open.
+The Memory Anchor and Roots controls reveal independently. Pronunciation and the full Meaning section remain separate. Listening mode is a writing exercise and shows none of the four; its Study button opens the word in Standard mode with the Memory Anchor already open. In Learn, a card's anchor chooser is part of meeting it.
 
 ## Editorial rules
 
 1. Ask: “Would this make me think *that sounds like something I know*, and would that thing lead me to the meaning?” If not, keep looking.
 2. Check the hook against the real Korean sound: 어 is the vowel in “cup,” 으 is an unrounded “oo,” 시 sounds like “shi,” initial ㄱ/ㄷ/ㅂ/ㅈ sit between g/k, d/t, b/p, and j/ch, and ㄹ is a flap between vowels.
 3. Never present a shared syllable as a shared root. Homophones (공원 公 vs 공항 空, 배 pear vs 배구 排) stay apart in Roots. A Korean sound-alike hook must not imply a relationship.
-4. Any fact inside an anchor must be supported by the card's Roots record. Add the source and note to `origin-reviews.json` first. The validator enforces it for root-based anchors: every Hanja must be in the card's record, and every Korean piece must come from the card, its note and components, or a card that shares a component.
-5. Wherever a record breaks a word into meaningful parts, one candidate should be root-based. When adding one, replace the weakest remaining candidate under a new id (a five-star default and a kept ★★★★ keyword are never replaced); when an existing candidate already was the breakdown, polish it under its own id so the learner's choice survives.
+4. Any fact inside an anchor must be supported: root-based anchors by the card's Roots record (every Hanja in the record, every Korean piece from the card, its note and components, or a card that shares a component); pattern anchors by the deck (every Korean word is a card, a form of one, in the card's record, or reviewed in `family-words.ts`); media moments by their evidence.
+5. A media moment uses the word in the card's sense: 차 is tea, not car; 배 is a pear, not a stomach. A famous title with the word in passing beats an obscure song with it in the chorus only if the learner is likely to know it.
 6. In Roots, verify both membership and meaning. The same Hanja can have different senses, so character identity alone is not sufficient.
 7. Distinguish a modern morphological pattern from historical origin. Do not force older decompositions for native or nativized words.
 8. Preserve `vocabulary.md` meanings and forms even when a dictionary entry differs. Document discrepancies.
 
 ## Editing data
 
-- `src/data/memory-aids.ts`: one reviewed block per card (connectors and particles in `grammarEntries`, keyed by card id), and the only source of Memory Anchors. A `key|reading guide` line, then three indented candidates: `id|hook language|kind|anchor`, where kind is `sound`, `roots`, `loanword`, or `reading`, and `1*` marks a five-star default.
+- `src/data/memory-aids.ts`: one reviewed block per card (grammar in `grammarEntries`, keyed by card id), the source of written anchors. A `key|reading guide` line, then indented candidates: `id|hook language|kind|anchor`, where kind is `sound`, `roots`, `pattern`, `loanword`, or `reading`, and `1*` marks a five-star default. `languageEntries` adds the extra-language hooks: a key line, then `it1|it|sound|anchor` and the like. `npm run anchors:apply` edits it from reviewed candidates.
+- `src/data/culture-anchors.json`: media moments by card id, written by `npm run anchors:culture` after it checks them: `media`, `title`, `by`, `year`, `quote` (the word in brackets), `translation`, `why`, `url` (the official audio or clip), `start`, `video` (a song's music video), `embed`, `evidence`, and `checked`.
+- `src/data/family-words.ts`: reviewed Korean words outside the deck that pattern anchors may cite.
 - `src/data/origin-reviews.json`: one record per **card ID**, including dictionary lemma, origin classification, source IDs, curated component IDs, and an optional note. Record an omission reason when there is no useful origin. The two unconfirmed origin lookups retain attempted URLs.
 - `src/data/root-concepts.json`: semantic component identities. Hanja keys include the actual character, e.g. `hanja:書`. Lexical stems, grammatical patterns, and loanword components use different key namespaces.
 - `src/data/origin-sources.json`: reviewed source titles and URLs. The research is static; study never calls a dictionary API.
 - `src/data/roots.ts`: creates related-card edges only from explicitly curated component IDs. It does not infer roots from substrings or pronunciation.
 
-Run `npm run data:validate`, `npm run build`, and `npm test` after changes. Automated checks catch coverage, placeholders, missing or duplicate candidates, two candidates built on the same hook, oversized anchors, factual anchors without sourced Roots, unsupported graph edges, and known homophone mistakes. They cannot tell whether a hook sticks. Every content edit still needs a human pass, ideally out loud with the audio, and the learner's recall checks are the real test.
+The pipeline for a new word: `npm run anchors:packets` (research packet) → write candidates by [the brief](anchor-brief.md) → `npm run anchors:apply` → find and check media moments with `npm run anchors:culture` → `npm run data:validate`, `npm run build`, and `npm test`. Automated checks catch coverage, placeholders, the number of candidates of each kind, two candidates built on the same hook (and `anchors:apply` refuses a new keyword of three letters or more that another card already uses, except between a phrase and its own words), oversized anchors, factual anchors without sourced Roots, unreviewed Korean in a pattern, media moments without evidence or whose bracket isn't the word, start seconds that weren't checked against their upload, unsupported graph edges, and known homophone mistakes. They cannot tell whether a hook sticks. Every content edit still needs a human pass, ideally out loud with the audio, and the learner's recall checks are the real test.
 
 See [the research audit](roots-research.md) for sources, limitations, and the review of all 325 cards.
-
-
 
 ---
 

@@ -64,7 +64,10 @@ export function assignTypes(items: VocabularyItem[], rules: QuestionRule[], rand
       return rule
     }
   }
-  for (const item of [...shuffle(items.filter(contested), undefined, random), ...shuffle(items.filter(item => !contested(item)), undefined, random)]) {
+  // Cards with the fewest ways to be asked go first, so the flexible ones can even out the shares (a phrase has no sentence).
+  const ways = (item: VocabularyItem) => rules.filter(rule => rule.supports(item)).length
+  const byWays = (list: VocabularyItem[]) => shuffle(list, undefined, random).sort((a, b) => ways(a) - ways(b))
+  for (const item of [...byWays(items.filter(contested)), ...byWays(items.filter(item => !contested(item)))]) {
     const open = shuffle(rules, undefined, random)
       .filter(rule => rule.supports(item) && !used.has(promptOf(rule, item)))
       .sort((a, b) => share.get(b)! - share.get(a)!)

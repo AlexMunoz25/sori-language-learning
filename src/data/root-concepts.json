@@ -1059,5 +1059,143 @@
     "kind": "hanja",
     "weight": 7,
     "hanja": "體"
+  },
+  "pattern:-어": {
+    "label": "-아 / -어",
+    "meaning": "the linking form of a verb (먹어, 가)",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-ㄹ": {
+    "label": "-(으)ㄹ",
+    "meaning": "something not yet done: future or possible",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-시-": {
+    "label": "-(으)시-",
+    "meaning": "shows respect for the person doing it",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-요": {
+    "label": "-요",
+    "meaning": "makes a sentence polite",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "stem:주다": {
+    "label": "주다",
+    "meaning": "to give",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:이다": {
+    "label": "이다",
+    "meaning": "to be (A is B)",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:아니다": {
+    "label": "아니다",
+    "meaning": "to not be",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:싶다": {
+    "label": "싶다",
+    "meaning": "to want (after a verb + -고)",
+    "kind": "stem",
+    "weight": 5
+  },
+  "hanja:手": {
+    "label": "수",
+    "meaning": "hand; way, means",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "手"
+  },
+  "stem:아니": {
+    "label": "아니",
+    "meaning": "not; no",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:못": {
+    "label": "못",
+    "meaning": "cannot; poorly",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:말다": {
+    "label": "말다",
+    "meaning": "to not do, to stop (after -지)",
+    "kind": "stem",
+    "weight": 5
+  },
+  "pattern:-지": {
+    "label": "-지",
+    "meaning": "puts a verb before a negating verb: 가지 않아요, 가지 마세요",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "pattern:-까": {
+    "label": "-까",
+    "meaning": "marks a question: -(으)ㄹ까요?, -습니까?",
+    "kind": "pattern",
+    "weight": 1
+  },
+  "stem:것": {
+    "label": "것 / 거",
+    "meaning": "thing; the fact that",
+    "kind": "stem",
+    "weight": 5
+  },
+  "hanja:半": {
+    "label": "반",
+    "meaning": "half",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "半"
+  },
+  "stem:들다:enter": {
+    "label": "들다",
+    "meaning": "to enter, go in",
+    "kind": "stem",
+    "weight": 5
+  },
+  "stem:들다:hold": {
+    "label": "들다",
+    "meaning": "to hold, lift; also a polite 'to eat'",
+    "kind": "stem",
+    "weight": 5
+  },
+  "hanja:姓": {
+    "label": "성",
+    "meaning": "family name",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "姓"
+  },
+  "hanja:銜": {
+    "label": "함",
+    "meaning": "title, rank",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "銜"
+  },
+  "hanja:年": {
+    "label": "년 / 연",
+    "meaning": "year",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "年"
+  },
+  "hanja:歲": {
+    "label": "세",
+    "meaning": "year of age",
+    "kind": "hanja",
+    "weight": 7,
+    "hanja": "歲"
   }
 }

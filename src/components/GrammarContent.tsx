@@ -39,6 +39,18 @@ export function GrammarExamples({ grammar, speech }: { grammar: GrammarDetails; 
   </ol>
 }
 
+/** One sentence with its English and a play button: a word at work, shown after its meaning. */
+export function ExampleSentence({ example, speech }: { example: { korean: string; english: string }; speech: Speech }) {
+  return <div className="word-example" data-testid="word-example">
+    <div className="grammar-example-text">
+      <p className="grammar-sentence"><Sentence korean={example.korean} /></p>
+      <p className="grammar-english">{example.english}</p>
+    </div>
+    <button className="grammar-play" aria-label={`Play: ${plainSentence(example.korean)}`} disabled={!speech.supported}
+      onClick={() => speech.speak(plainSentence(example.korean), 'normal')}><Volume2 size={16} aria-hidden="true" /></button>
+  </div>
+}
+
 export function GrammarUsage({ grammar }: { grammar: GrammarDetails }) {
   return <div className="grammar-usage" data-testid="grammar-usage">
     <dl className="grammar-forms">

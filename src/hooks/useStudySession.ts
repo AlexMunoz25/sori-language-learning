@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react'
-import { cardById, cards, sectionInfo, sectionOf, sections } from '../data/cards'
+import { cardById, cards, inSelection, sectionInfo, sectionOf, sections } from '../data/cards'
 import { shuffle } from '../recall/random'
-import type { AppMode, Progress, Section, WordStatus } from '../types/vocabulary'
+import type { Progress, Section, StudyMode, WordStatus } from '../types/vocabulary'
 import { isRecord, readStorage, writeStorage } from './storage'
+import { markForReview } from './useReview'
 
 export type StudyFilter = 'all' | 'difficult'
+/** The app's three places: guided lessons, the whole Library to explore, and Review to recall and revisit. */
+export type Destination = 'learn' | 'library' | 'review'
+const destinations: Destination[] = ['learn', 'library', 'review']
 /** One section's deck: its category, collection, and place. */
 interface Deck {
   category: string
@@ -13,20 +17,20 @@ interface Deck {
   index: number
 }
 interface Session extends Deck {
-  mode: AppMode
+  destination: Destination
+  /** How the Library shows cards. */
+  mode: StudyMode
   progress: Progress
   revision: number
   /** The other sections' decks, as they were left, so coming back finds the same card. */
   decks: Partial<Record<Section, Deck>>
 }
-/** A section's “All …” or one of its categories. The category names the section, so it's all a session needs to store. */
+/** A section's or collection's “All …”, or a category. The selection names the section, so it's all a session needs to store. */
 export const validCategory = (value: unknown): value is string => typeof value === 'string' && sectionOf(value) !== undefined
 
-/** The ids in a collection (all or difficult) and category, in source order. Decks and tests both draw from it. */
+/** The ids in a selection, all or only the difficult ones, in source order. Decks and tests both draw from it. */
 export function eligible(category: string, filter: StudyFilter, progress: Progress) {
-  const section = sectionOf(category)
-  return cards.filter(item => item.section === section && (category === sectionInfo[item.section].all || item.category === category)
-    && (filter === 'all' || progress[item.id] === 'difficult')).map(item => item.id)
+  return cards.filter(item => inSelection(item, category) && (filter === 'all' || progress[item.id] === 'difficult')).map(item => item.id)
 }
 
 /**
@@ -68,7 +72,10 @@ function initialSession(): Session {
   const prefs = readStorage('localStorage', 'sori.preferences.v1')
   const saved = readStorage('sessionStorage', 'sori.session.v1')
   const settings = isRecord(saved) ? saved : isRecord(prefs) ? prefs : {}
-  const mode: AppMode = settings.mode === 'listening' || settings.mode === 'test' ? settings.mode : 'standard'
+  const mode: StudyMode = settings.mode === 'listening' ? 'listening' : 'standard'
+  // A first visit starts with Learn; anyone who has studied before comes back to where they were (Test lives in Review now).
+  const destination: Destination = destinations.includes(settings.destination as Destination) ? settings.destination as Destination
+    : settings.mode === 'test' ? 'review' : isRecord(saved) || isRecord(prefs) ? 'library' : 'learn'
   // Preferences keep only categories and collections; order and position last as long as the tab.
   const deck = restoreDeck(isRecord(saved) ? saved : { category: settings.category, filter: settings.filter }, progress, sectionInfo.vocabulary.all)
   const current = sectionOf(deck.category)!
@@ -78,19 +85,19 @@ function initialSession(): Session {
     const other = others[id]
     if (id !== current && isRecord(other) && sectionOf(String(other.category)) === id) decks[id] = restoreDeck(other, progress, all)
   }
-  return { ...deck, mode, progress, revision: 0, decks }
+  return { ...deck, destination, mode, progress, revision: 0, decks }
 }
 
 export function useStudySession() {
   const [session, setSession] = useState(initialSession)
   const [storageAvailable, setStorageAvailable] = useState(true)
   useEffect(() => {
-    const { category, mode, filter, order, index, progress, decks } = session
+    const { category, destination, mode, filter, order, index, progress, decks } = session
     const results = [
       writeStorage('localStorage', 'sori.progress.v1', progress),
-      writeStorage('localStorage', 'sori.preferences.v1', { category, mode, filter,
+      writeStorage('localStorage', 'sori.preferences.v1', { category, destination, mode, filter,
         decks: Object.fromEntries(Object.entries(decks).map(([id, deck]) => [id, { category: deck!.category, filter: deck!.filter }])) }),
-      writeStorage('sessionStorage', 'sori.session.v1', { category, mode, filter, order, index, decks }),
+      writeStorage('sessionStorage', 'sori.session.v1', { category, destination, mode, filter, order, index, decks }),
     ]
     setStorageAvailable(results.every(Boolean))
   }, [session])
@@ -126,7 +133,24 @@ export function useStudySession() {
       return { ...previous, index: (index + previous.order.length) % previous.order.length, revision: previous.revision + 1 }
     })
   }
+  /** Puts a card in front: in the current selection when it's part of it, else in its whole section. */
+  function open(id: string) {
+    const item = cardById.get(id)
+    if (!item) return
+    setSession(previous => {
+      const from = sectionOf(previous.category)!
+      const keeps = inSelection(item, previous.category) && (previous.filter === 'all' || previous.progress[id] === 'difficult')
+      const category = keeps ? previous.category : sectionInfo[item.section].all
+      const filter = keeps ? previous.filter : 'all'
+      const decks = from === item.section ? previous.decks : setAside(previous, from, item.section)
+      const order = [id, ...shuffle(eligible(category, filter, previous.progress).filter(other => other !== id))]
+      return { ...previous, decks, category, filter, order, index: 0, destination: 'library', revision: previous.revision + 1 }
+    })
+  }
   function mark(status: WordStatus) {
+    const id = session.order[session.index]
+    // Difficult brings the card back in Review today; Known schedules a later check. Taking a mark off changes nothing there.
+    if (id && session.progress[id] !== status) markForReview([id], status)
     setSession(previous => {
       const id = previous.order[previous.index]
       if (!id) return previous
@@ -138,6 +162,7 @@ export function useStudySession() {
   }
   /** Sets (never toggles) a mark on any words, e.g. from test results; null clears it. */
   function setStatus(ids: string[], status: WordStatus | null) {
+    if (status) markForReview(ids.filter(id => session.progress[id] !== status), status)
     setSession(previous => {
       const progress = { ...previous.progress }
       for (const id of ids) {
@@ -160,11 +185,14 @@ export function useStudySession() {
     storageAvailable,
     select,
     switchSection,
+    open,
     navigate,
     mark,
     setStatus,
-    setMode: (mode: AppMode) => setSession(previous => ({ ...previous, mode })),
+    setMode: (mode: StudyMode) => setSession(previous => ({ ...previous, mode })),
+    go: (destination: Destination) => setSession(previous => previous.destination === destination ? previous : { ...previous, destination }),
     reshuffle: () => setSession(previous => ({ ...previous, index: 0,
       order: shuffle(previous.order, previous.order[previous.index]), revision: previous.revision + 1 })),
   }
 }
+export type StudySession = ReturnType<typeof useStudySession>
